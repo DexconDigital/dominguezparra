@@ -47,7 +47,7 @@ $datos_contacto = [
 		"telefono_fijo" => [
 			"link"=> "0376520909",
 			"imprimir" => "+57 (7) 652 0909",
-			"icono" => "fas fa-phone-alt",
+			"icono" => "fas fa-phone",
 		],
 		// "celular" => [
 			// "link"=> "+573505781268",

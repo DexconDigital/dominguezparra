@@ -1,15 +1,108 @@
+@font-face {
+    font-family: oswald-regular;
+    src: url(../fonts/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: oswald-bold;
+    src: url(../fonts/Oswald-Bold.ttf);
+}
+
+@font-face {
+    font-family: harabara;
+    src: url(../fonts/Harabara-Bold.ttf);
+}
+
+@font-face {
+    font-family: preplay;
+    src: url(../fonts/BPreplay.otf);
+}
+
+body {
+    font-family: oswald-regular;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: harabara;
+}
+
 a {
+    transition: all 150ms ease-in-out;
     text-decoration: none;
     color: black;
+    &:hover {
+        color: black;
+        text-decoration: none;
+    }
 }
+
+.margin_top {
+    margin-top: 112px;
+}
+
+p{
+    margin:0!important;
+}
+
+.bg_verde {
+    background-color: $verde;
+}
+
+.bg_verde_oscuro {
+    background-color: $verde_oscuro;
+}
+
+.bg_gris {
+    background-color: $gris;
+}
+
+.bg_gris_oscuro {
+    background-color: $gris_oscuro;    
+}
+
+/* ------------------------------ BOTONES ------------------------------ */
+
+.btn {
+
+    color: black;
+
+    &:hover {
+        color: black;
+    }
+
+}
+
+.boton_principal {
+
+    background-color: $verde;
+    color: white;
+
+    &:hover {
+
+    background-color: transparent;
+    color: $verde;
+    border-color: $verde;
+        
+    }
+
+}
+
+/* ------------------------------ BOTONES ------------------------------ */
+
+
 
 header {
 
-    background-color: #222222;
+    box-shadow: 0 1px 12px grey;
+    background-color: white;
     width: 100%;
-    height: 30px;
+    height: 112px;
 
     #seccion_redes {
+
+        background-color: #222222;
+        height: 30px;
+        width: 100%;
 
         .contenedor_iconos {
 
@@ -17,20 +110,209 @@ header {
 
             .color_iconos {
 
-                color: $verde;
+                color: white;
                 font-size: 20px;
                 transition: all 150ms ease-in-out;             
 
                 &:hover {
-                    color: $gris;
+                    color: $verde;
                 }
             }
 
         }
 
     
-    
+    }
+
+    #menu {
+
+        .navbar {
+            height: 82px;
+        }
+
+        .telefono {
+
+            right: 53px;
+            top: 30px;
+            width: 161px;
+            color: white;
+            padding: 17px;
+            background-color: #3BA52B;
+        
+            a {
+
+                color: white;
+
+                &:hover {
+
+                    color: $gris;
+
+                    i {
+                        color: $gris; 
+                    }
+                }
+            }
+
+            &::before {
+                content: '';
+                right: 161px;
+                display: block;
+                border-top: solid 0 transparent;
+                border-bottom: solid 82px #3BA52B;
+                border-left: solid 22px transparent;
+                position: absolute;
+                bottom: 0;
+                top: 0;
+            }
+
+            &:after {
+                content: '';
+                padding: 41px;
+                width: -23px;
+                z-index: -1;
+                right: -53px;
+                top: 0;
+                position: absolute;
+                background-color: #3BA52B;
+            }
+ 
+
+        }
+
+        
+        
+        img{
+            width: 350px;
+        }
+
+        .logo_pse {
+            width: 40px;
+            transition: all 200ms ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+
     }
 
 }
+
+#buscador {
+
+    width: 100%;
+    height: 319px;
+    color: white;
+
+    .titulo_buscador {
+        background-color: #191919;
+        height: 100%;
+        width: 100%;   
+    }
+    
+    .contenido_buscador {
+        background-color: #2C2C2C;
+        height: 100%;   
+        width: 100%;
+
+    }
+
+}
+
+#propiedades_destacadas {
+
+    .card {
+
+        
+        border: none;
+        width: 30%;
+
+        &:hover {
+
+            .mr-2,.ml-2 {
+                -webkit-text-stroke: 1px transparent;
+            } 
+
+            img {
+                filter: brightness(0.7);
+            }
+        }
+
+        .mr-2,.ml-2 {
+            color: white;
+            transition: all 200ms ease-in-out;
+        } 
+
+        .caja_imagen {
+            width: 100%;
+            height: 250px;
+        }
+
+        img {
+            transition: all 250ms ease-in-out;
+            width: 100%;
+            height: 100%;
+        }
+
+        .tipo_inmueble {
+            background-color: $verde;
+            padding-right: 2px;
+            height: 25px;
+            top:20px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: -53px;
+                padding-left: 38px;
+                width: 0;
+                height: 0;
+                top: 0;
+                border-top: 14px solid transparent;
+                border-left: 15px solid $verde;
+                border-bottom: 11px solid transparent;
+            }
+        }
+
+        .tipo_gestion {
+            background-color: $gris;
+            padding-right: 2px;
+            height: 25px;
+            right: 0;
+            top:20px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                padding-left: 38px;
+                width: 0;
+                height: 0;
+                left: -53px;
+                top: 0;
+                border-top: 14px solid transparent;
+                border-right: 15px solid $gris;
+                border-bottom: 11px solid transparent;
+            }
+        }
+
+
+
+
+
+
+
+    }
+
+
+}
+
+
+
+/* MEDIAS QUERIES */
+
+
+
+/* MEDIAS QUERIES */
+
 
