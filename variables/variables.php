@@ -39,7 +39,7 @@ $redes_sociales = [
 //datos de contacto 
 $datos_contacto = [
 	"principal" =>[
-		"nombre_sede" => "Princial",
+		"nombre_sede" => "Sede Principal",
 		"direccion" => [
 			"direccion" => "Edificio Cámara de Comercio Local 216 – Bucaramanga",
 			"icono" => "fas fa-map-marker-alt",
@@ -74,18 +74,18 @@ $datos_contacto = [
 		"telefono_fijo" => [
 			"link"=> "0376321212",
 			"imprimir" => "+57 (7) 632 1212",
-			"icono" => "fas fa-phone-alt",
+			"icono" => "fas fa-phone",
 		],
 		// "celular" => [
 			// "link"=> "+573505781268",
 			// "imprimir" => "350 578 1268",
 			// "icono" => "fas fa-mobile-alt",
 		// ],
-		// "whatsapp" => [
-			// "link"=> "https://api.whatsapp.com/send?phone=573505781268&text=&source=&data=",
-			// "imprimir" => "350 578 1268",
-			// "icono" => "fab fa-whatsapp",
-		// ],
+		"whatsapp" => [
+			"link"=> "https://api.whatsapp.com/send?phone=573505781268&text=&source=&data=",
+			"imprimir" => "350 578 1268",
+			"icono" => "fab fa-whatsapp",
+		],
 		"correo" => "cabecera@dominguezparra.com.co",
 		"horario" => [
 			"horario" => "Lunes a Viernes de 8:30 a.m. 12:30 a.m. – 2:30 p.m. 6:30 p.m. - Sábados de 8:30 a.m. 12:30 p.m.",
@@ -101,18 +101,18 @@ $datos_contacto = [
 		"telefono_fijo" => [
 			"link"=> "0376784848",
 			"imprimir" => "+57 (7) 678 4848",
-			"icono" => "fas fa-phone-alt",
+			"icono" => "fas fa-phone",
 		],
 		// "celular" => [
 			// "link"=> "+573505781268",
 			// "imprimir" => "350 578 1268",
 			// "icono" => "fas fa-mobile-alt",
 		// ],
-		// "whatsapp" => [
-			// "link"=> "https://api.whatsapp.com/send?phone=573505781268&text=&source=&data=",
-			// "imprimir" => "350 578 1268",
-			// "icono" => "fab fa-whatsapp",
-		// ],
+		"whatsapp" => [
+			"link"=> "https://api.whatsapp.com/send?phone=573505781268&text=&source=&data=",
+			"imprimir" => "350 578 1268",
+			"icono" => "fab fa-whatsapp",
+		],
 		"correo" => "canaveral@dominguezparra.com",
 		"horario" => [
 			"horario" => "Lunes a Viernes de 8:30 a.m. 12:30 a.m. – 2:30 p.m. 6:30 p.m. - Sábados de 8:30 a.m. 12:30 p.m.",

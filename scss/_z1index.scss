@@ -44,6 +44,27 @@ p{
     margin:0!important;
 }
 
+.blanco {
+    color: white;
+}
+
+.verde {
+    color: $verde;
+}
+
+.verde_oscuro {
+    color: $verde_oscuro;
+}
+
+.gris {
+    color: $gris;
+}
+
+.gris_oscuro {
+    color: $gris_oscuro;    
+}
+
+
 .bg_verde {
     background-color: $verde;
 }
@@ -224,12 +245,11 @@ header {
 
     .card {
 
-        
         border: none;
         width: 30%;
 
-        &:hover {
-
+        &:hover { 
+            
             .mr-2,.ml-2 {
                 -webkit-text-stroke: 1px transparent;
             } 
@@ -237,8 +257,20 @@ header {
             img {
                 filter: brightness(0.7);
             }
+
         }
 
+        .lupa {
+            position: absolute;
+            left: 46%;
+            font-size: 25px;
+            // font-size: 25px;
+            top: 35%;
+            color: white;
+            display: none;
+        }
+
+    
         .mr-2,.ml-2 {
             color: white;
             transition: all 200ms ease-in-out;
@@ -296,14 +328,91 @@ header {
             }
         }
 
+        .precio {
+            bottom: 136px;
+            right: 20px;
+        }
 
+        .verde {
+            transition: all 250ms ease-in-out;
+        }
 
+        .fondo_caracteristicas {
+            height: 32px;
+            background-color: $gris;
+        }
 
-
+        
 
 
     }
 
+}
+
+#nuestros_aliados {
+
+    img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .logos1 {
+        width: 400px;
+        height: 100px;
+    }
+
+    .logos2 {
+        width: 400px;
+        height: 150px;
+    }
+}
+
+#formulario_aseguradoras {
+
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+    background-color: #191919;
+
+    .blanco {
+        transition: all 200ms ease-in-out;
+    }
+
+    &:hover {
+        .blanco {
+            color: transparent;
+            -webkit-text-stroke: 0.7px white;
+        }
+    }
+
+}
+
+footer {
+
+    .hover_iconos {
+
+        a{
+            color: white;
+        }
+
+        &:hover {
+
+            a,i{
+                color: $verde;
+            }
+
+        }
+ 
+    }
+
+    
+
+    color:white;
+    background-color: #2C2C2C;
+
+
+    li {
+        list-style: square;
+    }
 
 }
 
