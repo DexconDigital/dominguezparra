@@ -31,7 +31,7 @@ a {
     text-decoration: none;
     color: black;
     &:hover {
-        color: black;
+        color: $verde;
         text-decoration: none;
     }
 }
@@ -81,6 +81,14 @@ p{
     background-color: $gris_oscuro;    
 }
 
+#fondo_negro {
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #0000009e;
+}
+
 /* ------------------------------ BOTONES ------------------------------ */
 
 .btn {
@@ -104,6 +112,11 @@ p{
     color: $verde;
     border-color: $verde;
         
+    }
+
+    &:focus {
+        border: 1px solid white;
+        box-shadow: 1px 4px 12px gray;
     }
 
 }
@@ -255,7 +268,7 @@ header {
             } 
 
             img {
-                filter: brightness(0.7);
+                filter: brightness(0.5);
             }
 
         }
@@ -282,6 +295,7 @@ header {
         }
 
         img {
+            filter: brightness(0.8);
             transition: all 250ms ease-in-out;
             width: 100%;
             height: 100%;
@@ -331,6 +345,7 @@ header {
         .precio {
             bottom: 136px;
             right: 20px;
+            color: white;
         }
 
         .verde {
@@ -413,6 +428,62 @@ footer {
     li {
         list-style: square;
     }
+
+    .copyright {
+        a {
+            color: $verde;
+
+            &:hover {
+                color: $verde_oscuro
+            }
+        }
+    }
+
+}
+
+#banner {
+
+    width: 100%;
+    height: 150px;
+
+    a {
+        color: $verde;
+        &:hover {
+            color: white;
+        }
+    }
+
+   
+    .imagen {
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .fondo_negro {
+        background-color: rgba(0, 0, 0, 0.534);
+        width: 100%;
+        height: 100%;
+        z-index: 200;
+        position: absolute;
+    }
+
+    .contenido_banner {
+        position: absolute;
+        color:white;
+        z-index: 300;
+        width: 100%;
+        height: 100%;
+    }
+    
+
+
 
 }
 

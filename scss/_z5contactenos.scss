@@ -1,0 +1,37 @@
+#sucursales {
+
+    .informacion_botones {
+
+        a {
+
+            color:black;
+
+            &:hover {
+                color: $verde;
+            }
+
+        }
+
+
+        p {
+            color: black;
+        }
+
+        
+    }
+
+    .mapa {
+
+        width: 100%;
+        height: 200px;
+
+     iframe {
+
+        width: 100%;
+        height: 100%;
+
+      } 
+
+    }
+
+}

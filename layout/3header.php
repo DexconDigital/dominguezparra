@@ -39,19 +39,19 @@
                     <ul class="navbar-nav">
 
                         <li class="nav-item active">
-                            <a class="nav-link" href="#"> Inicio </a>
+                            <a class="nav-link" href="index.php"> Inicio </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Nosotros </a>
+                            <a class="nav-link" href="nosotros.php"> Nosotros </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Servicios </a>
+                            <a class="nav-link" href="servicios.php"> Servicios </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> Inmuebles </a>
+                            <a class="nav-link" href="inmuebles.php"> Inmuebles </a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -64,6 +64,10 @@
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactenos.php"> Contáctenos </a>
                         </li>
 
                         <li class="nav-item">
