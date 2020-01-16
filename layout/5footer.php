@@ -73,7 +73,7 @@
                                         </div>
 
                                         <div class="modal-footer">
-                                            <button type="button" class="btn boton_principal" data-dismiss="modal"> Cerrar </button>
+                                            <button type="button" class="btn boton_footer" data-dismiss="modal"> Cerrar </button>
                                         </div>
 
                                     </div>
@@ -150,7 +150,7 @@
                                         </div>
 
                                         <div class="modal-footer">
-                                            <button type="button" class="btn boton_principal" data-dismiss="modal"> Cerrar </button>
+                                            <button type="button" class="btn boton_footer" data-dismiss="modal"> Cerrar </button>
                                         </div>
 
                                     </div>
@@ -226,7 +226,7 @@
                                         </div>
 
                                         <div class="modal-footer">
-                                            <button type="button" class="btn boton_principal" data-dismiss="modal"> Cerrar </button>
+                                            <button type="button" class="btn boton_footer" data-dismiss="modal"> Cerrar </button>
                                         </div>
 
                                     </div>

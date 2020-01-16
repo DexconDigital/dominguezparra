@@ -114,7 +114,7 @@ $page = "Contáctenos" ?>
                                     <div class="col-12  d-flex align-items-center justify-content-center hover_iconos">
                                         <div class="d-flex align-items-baseline justify-content-baseline">
                                             <i class="mr-1 verde <?php echo $datos_contacto['principal']['horario']['icono'] ?>"> </i>
-                                            <p class="mt-3 w-100"> <?php echo $datos_contacto['principal']['horario']['horario'] ?> </p>
+                                            <p class="mt-3 w-100"> Lunes a Viernes de 8:00 a.m. 12:00 am – 2:00 p.m. 6:00 p.m. Sábados de 8:30 a.m. 12:30 p.m.</p>
                                         </div>
                                     </div>
 
@@ -172,7 +172,7 @@ $page = "Contáctenos" ?>
                                     <div class="col-12  d-flex align-items-center justify-content-center hover_iconos">
                                         <div class="d-flex align-items-baseline justify-content-baseline">
                                             <i class="mr-1 verde <?php echo $datos_contacto['principal']['horario']['icono'] ?>"> </i>
-                                            <p class="mt-3 w-100"> <?php echo $datos_contacto['principal']['horario']['horario'] ?> </p>
+                                            <p class="mt-3 w-100"> Lunes a Viernes de 8:30 a.m. 12:30 a.m. – 2:30 p.m. 6:30 p.m. Sábados de 8:30 a.m. 12:30 p.m. </p>
                                         </div>
                                     </div>
 
@@ -230,7 +230,7 @@ $page = "Contáctenos" ?>
                                     <div class="col-12  d-flex align-items-center justify-content-center hover_iconos">
                                         <div class="d-flex align-items-baseline justify-content-baseline">
                                             <i class="mr-1 verde <?php echo $datos_contacto['cañaveral']['horario']['icono'] ?>"> </i>
-                                            <p class="mt-3 w-100"> <?php echo $datos_contacto['cañaveral']['horario']['horario'] ?> </p>
+                                            <p class="mt-3 w-100"> Lunes a Viernes de 8:30 a.m. 12:30 a.m. – 2:30 p.m. 6:30 p.m. Sábados de 8:30 a.m. 12:30 p.m. </p>
                                         </div>
                                     </div>
 
@@ -250,6 +250,8 @@ $page = "Contáctenos" ?>
 
                 </div>
 
+
+                <!-- FORMULARIO -->
                 <div class="container">
                     <form action="email/enviarCorreo.php" method="POST" class="margen_contenedores_index">
 
@@ -308,6 +310,8 @@ $page = "Contáctenos" ?>
                         </div>
                     </form>
                 </div>
+                <!-- FORMULARIO -->
+
 
                 <!----------INFORMACION BOTONES---------->
 

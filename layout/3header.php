@@ -1,3 +1,52 @@
+<!-- Codigo del preloader -->
+<style>
+    #wrap-preload {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #fff;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity .5s ease, visibility .5s ease;
+        z-index: 1032;
+    }
+
+    #wrap-preload.close {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    #wrap-preload>img.gif {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        z-index: 1032;
+        height: 15%;
+    }
+</style>
+<div id="wrap-preload">
+    <img src="images/preloader.gif" alt="gif" class="gif" id="gif">
+</div>
+<script>
+    var loader = document.getElementById("wrap-preload");
+    window.addEventListener("load", function() {
+        loader.style.visibility = "hidden";
+    });
+</script>
+<!-- Fin de codigo preloader -->
+
 <header class="sticky-top position-fixed">
 
     <section id="seccion_redes">
@@ -38,19 +87,27 @@
                 <div class="ml-5 collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
 
-                        <li class="nav-item <?php if ($page == 'Inicio') { echo 'active2';} ?>">
+                        <li class="nav-item <?php if ($page == 'Inicio') {
+                                                echo 'active2';
+                                            } ?>">
                             <a class="nav-link" href="index.php"> Inicio </a>
                         </li>
 
-                        <li class="nav-item <?php if ($page == 'Nosotros') { echo 'active2';} ?>">
+                        <li class="nav-item <?php if ($page == 'Nosotros') {
+                                                echo 'active2';
+                                            } ?>">
                             <a class="nav-link" href="nosotros.php"> Nosotros </a>
                         </li>
 
-                        <li class="nav-item <?php if ($page == 'Servicios') { echo 'active2';} ?>">
+                        <li class="nav-item <?php if ($page == 'Servicios') {
+                                                echo 'active2';
+                                            } ?>">
                             <a class="nav-link" href="servicios.php"> Servicios </a>
                         </li>
 
-                        <li class="nav-item <?php if ($page == 'Inmuebles') { echo 'active2';} ?>">
+                        <li class="nav-item <?php if ($page == 'Inmuebles') {
+                                                echo 'active2';
+                                            } ?>">
                             <a class="nav-link" href="inmuebles.php"> Inmuebles </a>
                         </li>
 
@@ -60,13 +117,15 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" target="blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&tipo=2"> Arrendatarios </a>
-                                <a class="dropdown-item" target="blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&tipo=1"> Propietarios </a>    
+                                <a class="dropdown-item" target="blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&tipo=1"> Propietarios </a>
                                 <a class="dropdown-item" href="#"> Pagos PSE </a>
 
                             </div>
                         </li>
 
-                        <li class="nav-item <?php if ($page == 'Contáctenos') { echo 'active2';} ?>">
+                        <li class="nav-item <?php if ($page == 'Contáctenos') {
+                                                echo 'active2';
+                                            } ?>">
                             <a class="nav-link" href="contactenos.php"> Contáctenos </a>
                         </li>
 

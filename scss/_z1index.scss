@@ -416,6 +416,7 @@ header {
 
 footer {
 
+
     border-top: 1px solid $verde;
 
     .modal {
@@ -429,6 +430,19 @@ footer {
         p,a,button {
             color: black;
         }
+
+        .boton_footer {
+
+            color:white;
+            background-color: $verde;
+    
+            &:hover {
+                color: $verde;
+                background-color: white;
+                border: 1px solid $verde;
+            }
+        }
+    
 
     }
 
