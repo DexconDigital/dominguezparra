@@ -301,7 +301,7 @@ $page = "Inicio" ?>
         </div>
 
         <div class="d-flex justify-content-center pb-5">
-            <button class="boton_principal btn boton_aseguradoras"> DESCARGAR </button>
+            <button class="boton_principal btn boton_aseguradoras"> Descargar </button>
         </div>
     </section>
     <!-- FORMULARIO DE ASEGURADORAS -->

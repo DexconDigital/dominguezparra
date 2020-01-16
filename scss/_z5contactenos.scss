@@ -1,5 +1,23 @@
 #sucursales {
 
+    .boton_contactenos {
+
+
+        background-color: $verde;
+        color: white;
+
+        &:focus {
+            background-color: $gris;
+            color: white; 
+        }
+
+        &:hover {
+            background-color: $gris;
+            color: white;   
+        }
+        
+    }
+
     .informacion_botones {
 
         a {

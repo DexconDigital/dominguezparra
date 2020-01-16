@@ -23,9 +23,8 @@ $page = "Contáctenos" ?>
     <!-- BANNER -->
     <section id="banner" class="margin_top position-relative">
 
-        <div class="imagen">
-            <img src="images/banner_nosotros.jpg" alt="">
-        </div>
+        <div class="imagen imagen_contactanos"> </div>
+
         <div id="fondo_negro"></div>
 
         <div class="contenido_banner d-flex align-items-center justify-content-center flex-column">
@@ -51,19 +50,19 @@ $page = "Contáctenos" ?>
 
                         <div class="d-flex">
                             <div class="col-3 m-auto">
-                                <button class="btn boton_principal col-12 collapsed" type="button" data-toggle="collapse" data-target="#uno" aria-expanded="false" aria-controls="collapseExample">
+                                <button class="btn boton_contactenos col-12 collapsed" type="button" data-toggle="collapse" data-target="#uno" aria-expanded="false" aria-controls="collapseExample">
                                     Principal
                                 </button>
                             </div>
 
                             <div class="col-3 m-auto">
-                                <button class="boton_principal btn col-12 collapsed" type="button" data-toggle="collapse" data-target="#dos" aria-expanded="true" aria-controls="dos">
+                                <button class="boton_contactenos btn col-12 collapsed" type="button" data-toggle="collapse" data-target="#dos" aria-expanded="true" aria-controls="dos">
                                     Cabecera
                                 </button>
                             </div>
 
                             <div class="col-3 m-auto">
-                                <button class="boton_principal btn col-12 collapsed" type="button" data-toggle="collapse" data-target="#tres" aria-expanded="true" aria-controls="dos">
+                                <button class="boton_contactenos btn col-12 collapsed" type="button" data-toggle="collapse" data-target="#tres" aria-expanded="true" aria-controls="dos">
                                     Cañaveral
                                 </button>
                             </div>
@@ -251,6 +250,65 @@ $page = "Contáctenos" ?>
 
                 </div>
 
+                <div class="container">
+                    <form action="email/enviarCorreo.php" method="POST" class="margen_contenedores_index">
+
+                        <div class="text-center row">
+
+                            <div class="my-3 col-12 col-md-6 col-lg-6 col-xl-6">
+                                <select class="border form-control" id="" required>
+                                    <option selected disabled> Tipo de Solicitud </option>
+                                    <option> Información de Arriendos </option>
+                                    <option> Consignación de Inmuebe - Arriendo </option>
+                                    <option> Petición, Queja o Reclamo </option>
+                                    <option> Sugerencia </option>
+                                    <option> Reporte de Mantenimiento </option>
+                                </select>
+                            </div>
+
+                            <div class="my-3 col-12 col-md-6 col-lg-6 col-xl-6">
+                                <input type="text" class="border form-control" id="" name="name" aria-describedby="emailHelp" placeholder="Nombre(s)" required>
+                            </div>
+
+                            <div class="my-3 col-12 col-md-6 col-lg-6 col-xl-6">
+                                <input type="text" class="border form-control" id="" name="name" aria-describedby="emailHelp" placeholder="Apellido(s)" required>
+                            </div>
+
+                            <div class="mb-3 mb-md-0 mb-lg-0 mb-xl-0 align-items-center d-flex col-12 col-md-6 col-lg-6 col-xl-6">
+                                <input type="number" class="border form-control" name="email" aria-describedby="emailHelp" placeholder="Celular" required>
+                            </div>
+
+                            <div class="mb-3 col-12 col-md-6 col-lg-6 col-xl-6">
+                                <input type="number" class="border form-control" name="telefono" aria-describedby="emailHelp" placeholder="Telefono Fijo" required>
+                            </div>
+
+                            <div class="mb-3 align-items-center d-flex col-12 col-md-6 col-lg-6 col-xl-6">
+                                <input type="text" class="border form-control" name="email" aria-describedby="emailHelp" placeholder="Correo electrónico" required>
+                            </div>
+
+                            <div class="mb-3 col-12 col-md-6 col-lg-6 col-xl-6">
+                                <input type="text" class="border form-control" name="asunto" aria-describedby="emailHelp" placeholder="Asunto del mensaje" required>
+                            </div>
+
+                            <div class="mb-3 col-12 form-group d-flex align-items-start">
+                                <label for="exampleFormControlTextarea1"></label>
+                                <textarea class="form-control" name="message" placeholder="Ingresa tu mensaje" rows="3"></textarea>
+                            </div>
+
+                            <div class="ml-3 form-group form-check">
+                                <input type="checkbox" class="form-check-input" required>
+                                <label class="form-check-label" for="exampleCheck1"> Confirmo que he leído, entendido y acepto la <span class="tratamiento"><a href="POLITICA_DE_PROTECCION_DE_DATOS.pdf" download="POLITICA_DE_PROTECCION_DE_DATOS.pdf"></span>política de tratamiento de datos personales.</a> </label>
+                            </div>
+
+
+                            <div class="m-0 justify-content-center justify-content-lg-start justify-content-xl-start col-6 mb-3 row">
+                                <button class="col-3 boton_contactenos btn" type="submit" value="Enviar"> Enviar
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
                 <!----------INFORMACION BOTONES---------->
 
             </div>
@@ -260,6 +318,8 @@ $page = "Contáctenos" ?>
 
     </section>
     <!-- BOTONES DE SUCURSALES -->
+
+
 
 
 

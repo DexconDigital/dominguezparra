@@ -23,9 +23,8 @@ $page = "Nosotros" ?>
     <!-- BANNER -->
     <section id="banner" class="margin_top position-relative">
 
-        <div class="imagen">
-            <img src="images/banner_nosotros.jpg" alt="">
-        </div>
+        <div class="imagen imagen_nosotros"> </div>
+
         <div id="fondo_negro"></div>
 
         <div class="contenido_banner d-flex align-items-center justify-content-center flex-column">
@@ -52,10 +51,20 @@ $page = "Nosotros" ?>
                         <p class="mt-4"> <?php echo $texto_quienes_somos['nosotros']['parrafos']['2'] ?> </p>
                     </div>
 
+                    <div class="col-12 mt-4 d-flex justify-content-center align-items-center flex-column">
+                    <h2 class="d-flex justify-content-center"> Matriculas Arrendador </h2>
+                    <ul class="px-3">
+                        <li> MA 023 Oficio 192/2003 - Bucaramanga </li>
+                        <li> R.I 009-2009/ Resolución 0073/2009 - Floridablanca </li>
+                        <li> M.A 0030/ Resolución 0030/2014 - Piedecuesta </li>
+                        <li> M.A 078/ Resolución 078/2014 – Girón </li>
+                    </ul>
+                </div>
+
                 </div>
 
                 <div class="col-6 pr-0">
-                    <div class="d-flex align-items-center justify-content-center imagen"> <img src="images/imagen_nosotros.png" alt=""></div>
+                    <div class="d-flex align-items-center justify-content-center imagen"> <img src="images/imagen_nosotros.jpg" alt=""></div>
                 </div>
 
             </div>
@@ -129,11 +138,11 @@ $page = "Nosotros" ?>
 
             <div class="col-12 p-0 d-flex">
 
-                <div class="col-5 pl-0 d-flex">
-                    <img class="rounded w-100 h-100" src="images/reconocimientos.jpg" alt="">
+                <div class="col-4 pl-0 d-flex">
+                    <img class="rounded w-100 m-auto" style="height:60%" src="images/imagen_reconocimientos.jpg" alt="">
                 </div>
 
-                <div class="col-7 pr-0 d-flex flex-column">
+                <div class="col-8 pr-0 d-flex flex-column">
 
                     <h2 class="text-strong text-center"> <?php echo  $texto_quienes_somos['reconocimientos']['titulo'] ?> </h2>
                     <p> <?php echo  $texto_quienes_somos['reconocimientos']['parrafos']['0'] ?> </p>
@@ -144,6 +153,7 @@ $page = "Nosotros" ?>
                     <p> <?php echo  $texto_quienes_somos['reconocimientos']['parrafos']['5'] ?> </p>
                     <p> <?php echo  $texto_quienes_somos['reconocimientos']['parrafos']['6'] ?> </p>
                     <p> <?php echo  $texto_quienes_somos['reconocimientos']['parrafos']['7'] ?> </p>
+                    <p> <?php echo  $texto_quienes_somos['reconocimientos']['parrafos']['8'] ?> </p>
 
                 </div>
 
@@ -154,10 +164,6 @@ $page = "Nosotros" ?>
 
     </section>
     <!-- RENOCOCIMIENTOS -->
-
-
-
-
 
 
 

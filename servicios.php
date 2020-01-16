@@ -23,9 +23,8 @@ $page = "Servicios" ?>
     <!-- BANNER -->
     <section id="banner" class="margin_top position-relative">
 
-        <div class="imagen">
-            <img src="images/banner_servicio.jpg" alt="">
-        </div>
+        <div class="imagen imagen_servicios"> </div>
+        
         <div id="fondo_negro"></div>
 
         <div class="contenido_banner d-flex align-items-center justify-content-center flex-column">

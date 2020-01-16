@@ -28,29 +28,29 @@
             <nav class="navbar w-100 d-flex align-items-center justify-content-between navbar navbar-expand-lg navbar-light p-0">
 
                 <div>
-                    <img style="width:350px" src="images/logo_color.png" alt="">
+                    <a href="index.php"><img style="width:350px" src="images/logo_color.png" alt=""></a>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="ml-5 collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
 
-                        <li class="nav-item active">
+                        <li class="nav-item <?php if ($page == 'Inicio') { echo 'active2';} ?>">
                             <a class="nav-link" href="index.php"> Inicio </a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item <?php if ($page == 'Nosotros') { echo 'active2';} ?>">
                             <a class="nav-link" href="nosotros.php"> Nosotros </a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item <?php if ($page == 'Servicios') { echo 'active2';} ?>">
                             <a class="nav-link" href="servicios.php"> Servicios </a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item <?php if ($page == 'Inmuebles') { echo 'active2';} ?>">
                             <a class="nav-link" href="inmuebles.php"> Inmuebles </a>
                         </li>
 
@@ -59,14 +59,14 @@
                                 Clientes
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" target="blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&tipo=2"> Arrendatarios </a>
+                                <a class="dropdown-item" target="blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&tipo=1"> Propietarios </a>    
+                                <a class="dropdown-item" href="#"> Pagos PSE </a>
+
                             </div>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item <?php if ($page == 'Contáctenos') { echo 'active2';} ?>">
                             <a class="nav-link" href="contactenos.php"> Contáctenos </a>
                         </li>
 
