@@ -257,6 +257,52 @@ $page = "Inicio" ?>
     </section>
     <!-- PROPIEDADES DESTACADAS -->
 
+    <!-- ASESORES -->
+    <section id="asesores">
+
+        <div class="container">
+
+            <div class="col-4">
+                <a href="#">
+                    <div class="carta d-flex flex-column">
+
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                        <div>
+                            <!-- IMAGEN ASESOR -->
+                            <div class="imagen">
+                                <img class="w-100 h-100" src="images/no_image.png" class="card-img-top" alt="...">
+                            </div>
+                            <!-- IMAGEN ASESOR -->
+
+                            <!-- TEXTO ANIMADO -->
+                            <p class="texto-animado px-2 mt-4"> Información extra del asesor </p>
+                            <!-- TEXTO ANIMADO -->
+                        </div>
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+
+
+                        <div class="caja_texto position-relative d-flex align-items-center justify-content-center">
+                            <h4 class="text-center font-weight-bold"> Nombre de Asesor </h4>
+                        </div>
+
+                    </div>
+                </a>
+
+                <div class="position-absolute caja_verde d-flex align-items-center justify-content-center">
+
+                    <a class="mr-2" href="mailto:ktlaboral@hotmail.com"><i class="fas fa-envelope"> </i></a>
+                    <a class="mr-2" href="tel:311123123"> <i class="fas fa-phone"></i> </a>
+                    <a class="mr-2" href="#"> <i class="fab fa-whatsapp"></i> </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ASESORES -->
+
+
 
     <!-- NUESTROS ALIADOS -->
     <section id="nuestros_aliados" class="mt-5">

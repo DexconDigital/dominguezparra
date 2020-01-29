@@ -47,28 +47,30 @@
 </script>
 <!-- Fin de codigo preloader -->
 
-<header class="sticky-top position-fixed">
 
-    <section id="seccion_redes">
 
-        <div class="container d-flex align-items-center justify-content-end h-100">
-            <div class="contenedor_iconos d-flex justify-content-around align-items-center h-100">
-                <div>
-                    <a target="blank" href="<?php echo $redes_sociales['facebook']['link'] ?>"><i class="color_iconos <?php echo $redes_sociales['facebook']['icono'] ?>"></i></a>
-                </div>
+<section id="seccion_redes" class="rounded">
 
-                <div>
-                    <a target="blank" href="<?php echo $redes_sociales['twitter']['link'] ?>"><i class="color_iconos <?php echo $redes_sociales['twitter']['icono'] ?>"></i></a>
-                </div>
-
-                <div>
-                    <a target="blank" href="<?php echo $datos_contacto['principal']['whatsapp']['link'] ?>"><i class="color_iconos <?php echo $datos_contacto['principal']['whatsapp']['icono'] ?>"></i></a>
-                </div>
-            </div>
-
+    <div class="contenedor_iconos rounded flex-column d-flex justify-content-around align-items-center h-100">
+        <div class="border-bottom w-100">
+            <a target="blank" href="<?php echo $redes_sociales['facebook']['link'] ?>"><i class="iconos icono_f ml-1 <?php echo $redes_sociales['facebook']['icono'] ?>"></i></a>
         </div>
 
-    </section>
+        <div class="border-bottom w-100">
+            <a target="blank" href="<?php echo $redes_sociales['twitter']['link'] ?>"><i class="iconos icono_t <?php echo $redes_sociales['twitter']['icono'] ?>"></i></a>
+        </div>
+
+        <div class="">
+            <a target="blank" href="<?php echo $datos_contacto['principal']['whatsapp']['link'] ?>"><i class="iconos icono_w rounded <?php echo $datos_contacto['principal']['whatsapp']['icono'] ?>"></i></a>
+        </div>
+    </div>
+
+</section>
+
+<header class="sticky-top position-fixed">
+
+
+
 
     <section id="menu">
 
@@ -87,28 +89,36 @@
                 <div class="ml-5 collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
 
-                        <li class="nav-item <?php if ($page == 'Inicio') {
-                                                echo 'active2';
-                                            } ?>">
-                            <a class="nav-link" href="index.php"> Inicio </a>
+                        <li class="nav-item position-relative">
+                            <a class="a2 nav-link <?php if ($page == 'Inicio') {
+                                                        echo 'span';
+                                                    } ?>" href="index.php"> <span class="<?php if ($page == 'Inicio') {
+                                                                                                echo 'active2';
+                                                                                            } ?>"></span> Inicio </a>
                         </li>
 
-                        <li class="nav-item <?php if ($page == 'Nosotros') {
-                                                echo 'active2';
-                                            } ?>">
-                            <a class="nav-link" href="nosotros.php"> Nosotros </a>
+                        <li class="nav-item position-relative">
+                            <a class="a2 nav-link <?php if ($page == 'Nosotros') {
+                                                        echo 'span';
+                                                    } ?>" href="nosotros.php"> <span class="<?php if ($page == 'Nosotros') {
+                                                                                                echo 'active2';
+                                                                                            } ?>"></span> Nosotros </a>
                         </li>
 
-                        <li class="nav-item <?php if ($page == 'Servicios') {
-                                                echo 'active2';
-                                            } ?>">
-                            <a class="nav-link" href="servicios.php"> Servicios </a>
+                        <li class="nav-item position-relative">
+                            <a class="a2 nav-link <?php if ($page == 'Servicios') {
+                                                        echo 'span';
+                                                    } ?>" href="servicios.php"> <span class="<?php if ($page == 'Servicios') {
+                                                                                                    echo 'active2';
+                                                                                                } ?>"></span> Servicios </a>
                         </li>
 
-                        <li class="nav-item <?php if ($page == 'Inmuebles') {
-                                                echo 'active2';
-                                            } ?>">
-                            <a class="nav-link" href="inmuebles.php"> Inmuebles </a>
+                        <li class="nav-item position-relative">
+                            <a class="a2 nav-link <?php if ($page == 'Inmuebles') {
+                                                        echo 'span';
+                                                    } ?>" href="inmuebles.php"> <span class="<?php if ($page == 'Inmuebles') {
+                                                                                                    echo 'active2';
+                                                                                                } ?>"></span> Inmuebles </a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -123,10 +133,12 @@
                             </div>
                         </li>
 
-                        <li class="nav-item <?php if ($page == 'Contáctenos') {
-                                                echo 'active2';
-                                            } ?>">
-                            <a class="nav-link" href="contactenos.php"> Contáctenos </a>
+                        <li class="nav-item position-relative">
+                            <a class="a2 nav-link <?php if ($page == 'Contáctenos') {
+                                                        echo 'span';
+                                                    } ?>" href="contactenos.php"> <span class="<?php if ($page == 'Contáctenos') {
+                                                                                                    echo 'active2';
+                                                                                                } ?>"></span> Contáctenos </a>
                         </li>
 
                         <li class="nav-item">

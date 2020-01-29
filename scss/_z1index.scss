@@ -19,11 +19,11 @@
 }
 
 body {
-    font-family: oswald-regular;
+    font-family: lato;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: harabara;
+    font-family: roboto;
 }
 
 a {
@@ -37,7 +37,7 @@ a {
 }
 
 .margin_top {
-    margin-top: 112px;
+    margin-top: 82px;
 }
 
 p{
@@ -107,6 +107,7 @@ p{
 
 .boton_principal {
 
+    font-size: 15px;
     background-color: $verde;
     color: white;
 
@@ -127,6 +128,50 @@ p{
 
 /* ------------------------------ BOTONES ------------------------------ */
 
+#seccion_redes {
+
+    background-color: white;
+    height: 100px;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    z-index: 1000;
+
+    .contenedor_iconos {
+
+        border: 1px solid gray;
+        padding: 6px;
+
+        .icono_f {
+            color: #395794;
+        }
+
+        .icono_t {
+            color: #00A7E7;
+        }
+
+        .icono_w {
+            color: #17990E;
+
+            &:hover {
+                color: black!important;
+            }
+        }
+
+        .iconos {
+
+            font-size: 20px;
+            transition: all 150ms ease-in-out;             
+
+            &:hover {
+                color: $verde;
+            }
+        }
+
+    }
+
+
+}
 
 
 header {
@@ -134,33 +179,9 @@ header {
     box-shadow: 0 1px 12px grey;
     background-color: white;
     width: 100%;
-    height: 112px;
-
-    #seccion_redes {
-
-        background-color: #222222;
-        height: 30px;
-        width: 100%;
-
-        .contenedor_iconos {
-
-            width:100px;
-
-            .color_iconos {
-
-                color: white;
-                font-size: 20px;
-                transition: all 150ms ease-in-out;             
-
-                &:hover {
-                    color: $verde;
-                }
-            }
-
-        }
+    height: 82px;
 
     
-    }
 
 
     #menu {
@@ -169,16 +190,125 @@ header {
             height: 82px;
         }
 
-        li, a {
-            &:focus {
-                color: $verde;
+        a{ 
+            color: black;
+            transition: 250ms ease-in-out; 
+
+            &:hover {
+                // transform: scale(1.02);
+                font-size: 16.4px;
+                // color: $gris_oscuro;
             }
+        }
+
+        .a2{
+
+            transition: all 250ms;
+           
+            &:hover {
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    height: 4px;
+                    width: 10px;
+                    background-color: $verde;
+                    transform: skew(0deg,-150deg);
+                }
+    
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    height: 4px;
+                    width: 10px;
+                    margin-left: -10px;
+                    background-color: $verde;
+                    transform: skew(0deg,150deg);
+                }
+                
+                span {
+
+                    &::after {
+                        content: "";
+                        background-color: #3BA52B;
+                        position: absolute;
+                        width: 60%;
+                        bottom: 0px;
+                        height: 4px;
+                        left: 20%;
+                    }
+
+                }
+            }
+        }
+
+        .span {
+
+            transition: all 250ms;
+           
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                height: 4px;
+                width: 10px;
+                background-color: $verde;
+                transform: skew(0deg,-150deg);
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                height: 4px;
+                width: 10px;
+                margin-left: -10px;
+                background-color: $verde;
+                transform: skew(0deg,150deg);
+            }
+        }
+
+        .active2 {
+
+            transition: all 250ms;
+
+            &:hover::after {
+
+                content: "";
+                background-color: #3BA52B;
+                position: absolute;
+                width: 60%;
+                bottom: 0px;
+                height: 4px;
+                left: 20%;
+                opacity: 1; 
+            } 
+
+
+
+            &::after {
+                content: "";
+                background-color: #3BA52B;
+                position: absolute;
+                width: 60%;
+                bottom: 0px;
+                height: 4px;
+                left: 20%;
+            }
+
         }
 
         .telefono {
 
             right: 53px;
-            top: 30px;
+            top: 0px;
             width: 161px;
             color: white;
             padding: 17px;
@@ -243,20 +373,12 @@ header {
 
 }
 
-.active2 {
-
-    a {
-        color: $verde!important; 
-    }
-
-
-}
 
 
 #buscador {
 
     width: 100%;
-    height: 319px;
+    height: 250px;
     color: white;
 
     .titulo_buscador {
@@ -501,9 +623,28 @@ footer {
 
 }
 
-input {
-    color: black!important;
+.f11 {
+
+    option,input  {
+        :focus {
+            box-shadow: 0 0px 7px 1px #3BA52B!important;
+        }
+    }
+
+    ::placeholder {
+        color: white!important;
+    }
+
+    .f1 {
+        font-size: 14px;
+        color: white!important;
+        border: 1px solid #565656!important;
+        background-color: #2C2C2C!important;
+    }
+
 }
+
+
 
 #banner {
 
@@ -583,27 +724,164 @@ input {
     
 }
 
+#asesores {
+
+    a {
+        .carta {
+
+            color: white;
+
+            .imagen {
+                overflow: hidden;
+            }
+
+            .caja_texto {
+                height: 80px;
+                background-color: #222222;
+            }
+
+            .texto-animado {
+                position: absolute;
+                opacity: 0;
+                top:100%;
+                transition: all 350ms ease-in-out;
+            }
+
+            &:hover {
+
+                img {
+                    filter: brightness(.7);
+                    transition: all 250ms;
+                    transform: scale(1.1);
+                }
+
+                .texto-animado {
+                    top: 0;
+                    opacity: 1;
+                }
+    
+            }
+
+        }
+    }
+
+    .caja_verde {
+
+        z-index: 300;
+        width: 60%;
+        bottom: -17.5px; 
+        height: 35px;
+        left: calc(50% - 102px);
+        background-color: $verde;
+
+        a{ 
+            color: white;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+        
+    }
+
+    a:last-of-type {
+
+    }
+
+}
+
 // ------------------- BOTON_SUBIR -------------------
 
 .subir {
-    display: none;
-    transition: all 200ms ease-in-out;
-    padding: 5px;
-    background-color: $verde;
-    color: white;
-    font-size: 40px;
-    cursor: pointer;
-    position: fixed;
-    bottom: 47px;
-    right: 20px;
-    -webkit-box-shadow: -1px 1px 5px 1px grey;
-    box-shadow: -1px 1px 5px 1px grey;
-    z-index: 100;
+// COLOR DE FONDO
+background-color: $white;
+// COLOR DE FONDO
 
-    &:hover {
-        background-color: $verde_oscuro;
-    }
+// COLOR DEL ICONO
+color: $verde;
+// COLOR DEL ICONO
+
+border: 2px solid $verde;
+display: none;
+transition: all 200ms ease-in-out;
+padding: 5px;
+font-size: 40px;
+cursor: pointer;
+position: fixed;
+bottom: 47px;
+width: 50px!important;
+height: 50px!important;
+border-radius: 25px;
+right: 20px;
+-webkit-box-shadow: -1px 1px 5px 1px grey;
+box-shadow: -1px 1px 5px 1px grey;
+z-index: 1000;
+overflow: hidden;
+
+.icono {
+    // TIEMPO DE TRANSICION DEL ICONO
+    transition: all 250ms;
+   // TIEMPO DE TRANSICION DEL ICONO
+    left: 0;
+    top: 0;
 }
+
+.efecto {
+    border-radius: 25px;
+    background-color: white;
+    opacity: 0;
+    // TIEMPO DE TRANSICION DEL FONDO
+    transition: all 250ms;
+    // TIEMPO DE TRANSICION DEL FONDO
+    top: 0;
+    left: 0;
+    transform: scale(0);
+
+}
+
+&:hover {
+
+    border-color: white;
+
+
+    .efecto {
+        // COLOR DE FONDO CON HOVER
+        background-color: $verde;
+        // COLOR DE FONDO CON HOVER
+        height: 58px;
+        padding: 33px;
+        opacity: 1;
+        transform: scale(2);
+    }
+
+   
+.icono {
+        // COLOR DEL ICONO CON HOVER
+        color: white;
+        // COLOR DEL ICONO CON HOVER
+        animation: icono 300ms ease-in-out;
+    }
+
+    @keyframes icono {
+        0% {
+            filter: none;
+        }
+
+        50% {
+            filter: blur(10px);
+        }
+
+        100% {
+            filter: none;
+        }
+
+    }
+   
+    
+}
+}
+
 
 // ------------------- BOTON_SUBIR -------------------
 

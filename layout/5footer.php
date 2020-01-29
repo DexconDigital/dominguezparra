@@ -1,4 +1,7 @@
-<i class="fas fa-angle-double-up rounded subir"></i>
+<div class="subir">
+    <div class="position-absolute w-100 h-100 efecto"></div>
+    <i class="icono position-absolute w-100 h-100 fas fa-angle-up"></i>
+</div>
 
 <footer class="pt-3">
 
