@@ -122,17 +122,28 @@
 }
 
 // Icons for within
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+
+.carousel-control-prev-icon1,
+.carousel-control-next-icon1 {
   display: inline-block;
   width: $carousel-control-icon-width;
   height: $carousel-control-icon-width;
   background: no-repeat 50% / 100% 100%;
 }
-.carousel-control-prev-icon {
+
+.carousel-control-prev-icon2,
+.carousel-control-next-icon2 {
+  color: black;
+  font-size: 30px;
+  display: inline-block;
+  width: $carousel-control-icon-width;
+  height: $carousel-control-icon-width;
+  background: no-repeat 50% / 100% 100%;
+}
+.carousel-control-prev-icon1 {
   background-image: escape-svg($carousel-control-prev-icon-bg);
 }
-.carousel-control-next-icon {
+.carousel-control-next-icon1 {
   background-image: escape-svg($carousel-control-next-icon-bg);
 }
 

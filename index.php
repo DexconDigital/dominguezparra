@@ -35,11 +35,11 @@ $page = "Inicio" ?>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon1" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon1" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
         </div>
@@ -53,256 +53,657 @@ $page = "Inicio" ?>
     <!-- BUSCADOR -->
 
     <!-- PROPIEDADES DESTACADAS -->
-    <section id="propiedades_destacadas" class="mt-5">
+    <section id="inmuebles2" style="padding-bottom:100px;" class="my-5 container">
 
-        <h2 class="w-100 d-flex justify-content-center mb-5"> Propiedades Destacadas </h2>
+        <h2 class="text-center mb-5"> Inmuebles Destacados </h2>
 
-        <div class="container d-flex align-items-center justify-content-between">
+        <div class=" d-flex align-items-start justify-content-between flex-wrap">
 
             <!-- CARD -->
-            <div class="card p-0 col-4 mb-5">
+            <div class="col-4">
+                <div style="height:200px;" class="carta mb-5 ">
+                    <a href="#" class="d-flex flex-wrap" id="inmuebles2">
 
-                <a class="border rounded mx-2" href="#">
-                    <div class="position-relative">
-                        <div class="caja_imagen"><img src="images/no_image.png" class="card-img-top" alt="..."></div>
-                        <!-- <i class="lupa fas fa-search"></i> -->
+                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
+                        <div class="card2 col-12 p-0 position-relative">
 
-                        <div class="tipo_inmueble position-absolute d-flex align-items-center">
-                            <p class="ml-2"> Tipo de Inmueble </p>
-                        </div>
-
-                        <div class="tipo_gestion position-absolute d-flex align-items-center">
-                            <p class="mr-2"> Tipo de Gestión </p>
-                        </div>
-
-                        <div class="card-body p-3">
-
-                            <div class="d-flex precio align-items-center position-absolute">
-                                <i class="blanco fas fa-dollar-sign"></i>
-                                <h4 class="my-0 pl-1"> 1.000.000 </h4>
+                            <div class="imagen w-100 h-100">
+                                <img src="images/casa1.jpg" class="card-img-top" alt="...">
                             </div>
 
-                            <div class="d-flex align-items-center">
-                                <i class="verde fas fa-map-marker-alt"></i>
-                                <h4 class="my-0 pl-2"> Dirección </h4>
+                            <div class="caja_negra"> </div>
+
+                            <div class="tipo_inmueble d-flex align-items-center">
+                                <p class="ml-2"> Apartamento </p>
                             </div>
+
+                            <div class="tipo_gestion d-flex align-items-center">
+                                <p class="mr-2"> Arriendo </p>
+                            </div>
+
+                        </div>
+                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
+
+                        <!-- DESCRIPCIÓN DE INMUEBLE -->
+                        <div style="height:120px" class="contenido col-12 d-flex flex-column">
 
                             <div>
-                                <p class="text-muted"> Código: </p>
+                                <div class="d-flex pl-3 mt-3 align-items-baseline">
+                                    <i class="mr-1 fas fa-map-marker-alt"></i>
+                                    <h4> Dirección </h4>
+                                </div>
+
+                                <div class="ml-3 d-flex">
+                                    <p class="mr-5"> $1.234.567.890 </p>
+                                    <p class="text-muted"> Código: 000 </p>
+                                </div>
+
                             </div>
+
+                            <!-- ICONOS -->
+                            <div class="fondo_caracteristicas1 d-flex align-items-center justify-content-around">
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-chart-area"></i>
+                                    <p class="blanco pl-2"> 200 Mts<sup>2 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-bath"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-bed"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-warehouse"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                            </div>
+                            <!-- ICONOS -->
+
+                            <!-- FONDO NEGRO -->
+                            <div class="fondo_caracteristicas2"></div>
+                            <!-- FONDO NEGRO -->
+
+                            <!-- FONDO VERDE -->
+                            <div class="fondo_caracteristicas3"></div>
+                            <!-- FONDO VERDE -->
+
 
                         </div>
+                        <!-- DESCRIPCIÓN DE INMUEBLE -->
 
-                        <div class="fondo_caracteristicas d-flex align-items-center justify-content-around">
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-chart-area"></i>
-                                <p class="blanco pl-2"> 200 Mts<sup>2 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bath"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bed"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-warehouse"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </a>
-
+                    </a>
+                </div>
             </div>
             <!-- CARD -->
 
             <!-- CARD -->
-            <div class="card p-0 col-4 mb-5">
+            <div class="col-4">
+                <div style="height:200px;" class="carta mb-5 ">
+                    <a href="#" class="d-flex flex-wrap" id="inmuebles2">
 
-                <a class="border rounded mx-2" href="#">
-                    <div class="position-relative">
-                        <div class="caja_imagen"><img src="images/no_image.png" class="card-img-top" alt="..."></div>
-                        <!-- <i class="lupa fas fa-search"></i> -->
+                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
+                        <div class="card2 col-12 p-0 position-relative">
 
-                        <div class="tipo_inmueble position-absolute d-flex align-items-center">
-                            <p class="ml-2"> Tipo de Inmueble </p>
-                        </div>
-
-                        <div class="tipo_gestion position-absolute d-flex align-items-center">
-                            <p class="mr-2"> Tipo de Gestión </p>
-                        </div>
-
-                        <div class="card-body p-3">
-
-                            <div class="d-flex precio align-items-center position-absolute">
-                                <i class="blanco fas fa-dollar-sign"></i>
-                                <h4 class="my-0 pl-1"> 1.000.000 </h4>
+                            <div class="imagen w-100 h-100">
+                                <img src="images/casa2.jpg" class="card-img-top" alt="...">
                             </div>
 
-                            <div class="d-flex align-items-center">
-                                <i class="verde fas fa-map-marker-alt"></i>
-                                <h4 class="my-0 pl-2"> Dirección </h4>
+                            <div class="caja_negra"> </div>
+
+                            <div class="tipo_inmueble d-flex align-items-center">
+                                <p class="ml-2"> Apartamento </p>
                             </div>
+
+                            <div class="tipo_gestion d-flex align-items-center">
+                                <p class="mr-2"> Arriendo </p>
+                            </div>
+
+                        </div>
+                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
+
+                        <!-- DESCRIPCIÓN DE INMUEBLE -->
+                        <div style="height:120px" class="contenido col-12 d-flex flex-column">
 
                             <div>
-                                <p class="text-muted"> Código: </p>
+                                <div class="d-flex pl-3 mt-3 align-items-baseline">
+                                    <i class="mr-1 fas fa-map-marker-alt"></i>
+                                    <h4> Dirección </h4>
+                                </div>
+
+                                <div class="ml-3 d-flex">
+                                    <p class="mr-5"> $1.234.567.890 </p>
+                                    <p class="text-muted"> Código: 000 </p>
+                                </div>
+
                             </div>
+
+                            <!-- ICONOS -->
+                            <div class="fondo_caracteristicas1 d-flex align-items-center justify-content-around">
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-chart-area"></i>
+                                    <p class="blanco pl-2"> 200 Mts<sup>2 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-bath"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-bed"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-warehouse"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                            </div>
+                            <!-- ICONOS -->
+
+                            <!-- FONDO NEGRO -->
+                            <div class="fondo_caracteristicas2"></div>
+                            <!-- FONDO NEGRO -->
+
+                            <!-- FONDO VERDE -->
+                            <div class="fondo_caracteristicas3"></div>
+                            <!-- FONDO VERDE -->
+
 
                         </div>
+                        <!-- DESCRIPCIÓN DE INMUEBLE -->
 
-                        <div class="fondo_caracteristicas d-flex align-items-center justify-content-around">
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-chart-area"></i>
-                                <p class="blanco pl-2"> 200 Mts<sup>2 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bath"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bed"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-warehouse"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </a>
-
+                    </a>
+                </div>
             </div>
             <!-- CARD -->
 
             <!-- CARD -->
-            <div class="card p-0 col-4 mb-5">
+            <div class="col-4">
+                <div style="height:200px;" class="carta mb-5 ">
+                    <a href="#" class="d-flex flex-wrap" id="inmuebles2">
 
-                <a class="border rounded mx-2" href="#">
-                    <div class="position-relative">
-                        <div class="caja_imagen"><img src="images/no_image.png" class="card-img-top" alt="..."></div>
-                        <!-- <i class="lupa fas fa-search"></i> -->
+                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
+                        <div class="card2 col-12 p-0 position-relative">
 
-                        <div class="tipo_inmueble position-absolute d-flex align-items-center">
-                            <p class="ml-2"> Tipo de Inmueble </p>
-                        </div>
-
-                        <div class="tipo_gestion position-absolute d-flex align-items-center">
-                            <p class="mr-2"> Tipo de Gestión </p>
-                        </div>
-
-                        <div class="card-body p-3">
-
-                            <div class="d-flex precio align-items-center position-absolute">
-                                <i class="blanco fas fa-dollar-sign"></i>
-                                <h4 class="my-0 pl-1"> 1.000.000 </h4>
+                            <div class="imagen w-100 h-100">
+                                <img src="images/casa3.jpg" class="card-img-top" alt="...">
                             </div>
 
-                            <div class="d-flex align-items-center">
-                                <i class="verde fas fa-map-marker-alt"></i>
-                                <h4 class="my-0 pl-2"> Dirección </h4>
+                            <div class="caja_negra"> </div>
+
+                            <div class="tipo_inmueble d-flex align-items-center">
+                                <p class="ml-2"> Apartamento </p>
                             </div>
+
+                            <div class="tipo_gestion d-flex align-items-center">
+                                <p class="mr-2"> Arriendo </p>
+                            </div>
+
+                        </div>
+                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
+
+                        <!-- DESCRIPCIÓN DE INMUEBLE -->
+                        <div style="height:120px" class="contenido col-12 d-flex flex-column">
 
                             <div>
-                                <p class="text-muted"> Código: </p>
+                                <div class="d-flex pl-3 mt-3 align-items-baseline">
+                                    <i class="mr-1 fas fa-map-marker-alt"></i>
+                                    <h4> Dirección </h4>
+                                </div>
+
+                                <div class="ml-3 d-flex">
+                                    <p class="mr-5"> $1.234.567.890 </p>
+                                    <p class="text-muted"> Código: 000 </p>
+                                </div>
+
                             </div>
+
+                            <!-- ICONOS -->
+                            <div class="fondo_caracteristicas1 d-flex align-items-center justify-content-around">
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-chart-area"></i>
+                                    <p class="blanco pl-2"> 200 Mts<sup>2 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-bath"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-bed"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-warehouse"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                            </div>
+                            <!-- ICONOS -->
+
+                            <!-- FONDO NEGRO -->
+                            <div class="fondo_caracteristicas2"></div>
+                            <!-- FONDO NEGRO -->
+
+                            <!-- FONDO VERDE -->
+                            <div class="fondo_caracteristicas3"></div>
+                            <!-- FONDO VERDE -->
+
 
                         </div>
+                        <!-- DESCRIPCIÓN DE INMUEBLE -->
 
-                        <div class="fondo_caracteristicas d-flex align-items-center justify-content-around">
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-chart-area"></i>
-                                <p class="blanco pl-2"> 200 Mts<sup>2 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bath"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bed"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-warehouse"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </a>
-
+                    </a>
+                </div>
             </div>
             <!-- CARD -->
 
         </div>
-
 
     </section>
     <!-- PROPIEDADES DESTACADAS -->
 
+
     <!-- ASESORES -->
-    <section id="asesores">
+    <div id="carrusel2" class="carousel slide" data-ride="carousel">
 
-        <div class="container">
+        <h2 class="text-center mb-5"> Nuestros Asesores </h2>
 
-            <div class="col-4">
-                <a href="#">
-                    <div class="carta d-flex flex-column">
+        <div class="carousel-inner">
 
-                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
-                        <div>
-                            <!-- IMAGEN ASESOR -->
-                            <div class="imagen">
-                                <img class="w-100 h-100" src="images/no_image.png" class="card-img-top" alt="...">
+            <!-- TRES PRIMEROS ASESORES -->
+            <div class="carousel-item active">
+                <section id="asesores">
+
+                    <div class="container d-flex">
+
+                        <!-- ASESOR -->
+                        <div class="col-4">
+                            <a href="#">
+                                <div class="carta d-flex flex-column">
+
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                                    <div clas="text-break">
+                                        <!-- IMAGEN ASESOR -->
+                                        <div class="imagen">
+                                            <img class="w-100 h-100" src="images/asesor1.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <!-- IMAGEN ASESOR -->
+
+                                        <!-- TEXTO ANIMADO -->
+                                        <p class="texto-animado px-2 mr-3 mt-4 text-break"> INFORMACIÓN EXTRA DEL ASESOR Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ipsam eligendi sunt distinctio a voluptatem deleniti quae sed cum. </p>
+                                        <!-- TEXTO ANIMADO -->
+                                    </div>
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+
+
+                                    <div class="caja_texto position-relative d-flex align-items-center justify-content-center">
+                                        <h4 class="text-center font-weight-bold"> Nombre de Asesor </h4>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                                <a class="mr-2" href="mailto:ktlaboral@hotmail.com"><i class="fas fa-envelope"> </i></a>
+                                <a class="mr-2" href="tel:311123123"> <i class="fas fa-phone"></i> </a>
+                                <a class="mr-2" href="#"> <i class="fab fa-whatsapp"></i> </a>
                             </div>
-                            <!-- IMAGEN ASESOR -->
 
-                            <!-- TEXTO ANIMADO -->
-                            <p class="texto-animado px-2 mt-4"> Información extra del asesor </p>
-                            <!-- TEXTO ANIMADO -->
                         </div>
-                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                        <!-- ASESOR -->
+
+                        <!-- ASESOR -->
+                        <div class="col-4">
+                            <a href="#">
+                                <div class="carta d-flex flex-column">
+
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                                    <div clas="text-break">
+                                        <!-- IMAGEN ASESOR -->
+                                        <div class="imagen">
+                                            <img class="w-100 h-100" src="images/asesor2.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <!-- IMAGEN ASESOR -->
+
+                                        <!-- TEXTO ANIMADO -->
+                                        <p class="texto-animado px-2 mr-3 mt-4 text-break"> INFORMACIÓN EXTRA DEL ASESOR Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ipsam eligendi sunt distinctio a voluptatem deleniti quae sed cum. </p>
+                                        <!-- TEXTO ANIMADO -->
+                                    </div>
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
 
 
-                        <div class="caja_texto position-relative d-flex align-items-center justify-content-center">
-                            <h4 class="text-center font-weight-bold"> Nombre de Asesor </h4>
+                                    <div class="caja_texto position-relative d-flex align-items-center justify-content-center">
+                                        <h4 class="text-center font-weight-bold"> Nombre de Asesor </h4>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                                <a class="mr-2" href="mailto:ktlaboral@hotmail.com"><i class="fas fa-envelope"> </i></a>
+                                <a class="mr-2" href="tel:311123123"> <i class="fas fa-phone"></i> </a>
+                                <a class="mr-2" href="#"> <i class="fab fa-whatsapp"></i> </a>
+                            </div>
+
                         </div>
+                        <!-- ASESOR -->
+
+                        <!-- ASESOR -->
+                        <div class="col-4">
+                            <a href="#">
+                                <div class="carta d-flex flex-column">
+
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                                    <div clas="text-break">
+                                        <!-- IMAGEN ASESOR -->
+                                        <div class="imagen">
+                                            <img class="w-100 h-100" src="images/asesor3.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <!-- IMAGEN ASESOR -->
+
+                                        <!-- TEXTO ANIMADO -->
+                                        <p class="texto-animado px-2 mr-3 mt-4 text-break"> INFORMACIÓN EXTRA DEL ASESOR Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ipsam eligendi sunt distinctio a voluptatem deleniti quae sed cum. </p>
+                                        <!-- TEXTO ANIMADO -->
+                                    </div>
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+
+
+                                    <div class="caja_texto position-relative d-flex align-items-center justify-content-center">
+                                        <h4 class="text-center font-weight-bold"> Nombre de Asesor </h4>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                                <a class="mr-2" href="mailto:ktlaboral@hotmail.com"><i class="fas fa-envelope"> </i></a>
+                                <a class="mr-2" href="tel:311123123"> <i class="fas fa-phone"></i> </a>
+                                <a class="mr-2" href="#"> <i class="fab fa-whatsapp"></i> </a>
+                            </div>
+
+                        </div>
+                        <!-- ASESOR -->
 
                     </div>
-                </a>
 
-                <div class="position-absolute caja_verde d-flex align-items-center justify-content-center">
-
-                    <a class="mr-2" href="mailto:ktlaboral@hotmail.com"><i class="fas fa-envelope"> </i></a>
-                    <a class="mr-2" href="tel:311123123"> <i class="fas fa-phone"></i> </a>
-                    <a class="mr-2" href="#"> <i class="fab fa-whatsapp"></i> </a>
-                </div>
-
+                </section>
             </div>
+            <!-- TRES PRIMEROS ASESORES -->
+
+            <!-- TRES SIGUIENTES ASESORES -->
+            <div class="carousel-item">
+                <section id="asesores">
+
+                    <div class="container d-flex">
+
+                        <!-- ASESOR -->
+                        <div class="col-4">
+                            <a href="#">
+                                <div class="carta d-flex flex-column">
+
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                                    <div clas="text-break">
+                                        <!-- IMAGEN ASESOR -->
+                                        <div class="imagen">
+                                            <img class="w-100 h-100" src="images/asesor4.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <!-- IMAGEN ASESOR -->
+
+                                        <!-- TEXTO ANIMADO -->
+                                        <p class="texto-animado px-2 mr-3 mt-4 text-break"> INFORMACIÓN EXTRA DEL ASESOR Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ipsam eligendi sunt distinctio a voluptatem deleniti quae sed cum. </p>
+                                        <!-- TEXTO ANIMADO -->
+                                    </div>
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+
+
+                                    <div class="caja_texto position-relative d-flex align-items-center justify-content-center">
+                                        <h4 class="text-center font-weight-bold"> Nombre de Asesor </h4>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                                <a class="mr-2" href="mailto:ktlaboral@hotmail.com"><i class="fas fa-envelope"> </i></a>
+                                <a class="mr-2" href="tel:311123123"> <i class="fas fa-phone"></i> </a>
+                                <a class="mr-2" href="#"> <i class="fab fa-whatsapp"></i> </a>
+                            </div>
+
+                        </div>
+                        <!-- ASESOR -->
+
+                        <!-- ASESOR -->
+                        <div class="col-4">
+                            <a href="#">
+                                <div class="carta d-flex flex-column">
+
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                                    <div clas="text-break">
+                                        <!-- IMAGEN ASESOR -->
+                                        <div class="imagen">
+                                            <img class="w-100 h-100" src="images/asesor2.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <!-- IMAGEN ASESOR -->
+
+                                        <!-- TEXTO ANIMADO -->
+                                        <p class="texto-animado px-2 mr-3 mt-4 text-break"> INFORMACIÓN EXTRA DEL ASESOR Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ipsam eligendi sunt distinctio a voluptatem deleniti quae sed cum. </p>
+                                        <!-- TEXTO ANIMADO -->
+                                    </div>
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+
+
+                                    <div class="caja_texto position-relative d-flex align-items-center justify-content-center">
+                                        <h4 class="text-center font-weight-bold"> Nombre de Asesor </h4>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                                <a class="mr-2" href="mailto:ktlaboral@hotmail.com"><i class="fas fa-envelope"> </i></a>
+                                <a class="mr-2" href="tel:311123123"> <i class="fas fa-phone"></i> </a>
+                                <a class="mr-2" href="#"> <i class="fab fa-whatsapp"></i> </a>
+                            </div>
+
+                        </div>
+                        <!-- ASESOR -->
+
+                        <!-- ASESOR -->
+                        <div class="col-4">
+                            <a href="#">
+                                <div class="carta d-flex flex-column">
+
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                                    <div clas="text-break">
+                                        <!-- IMAGEN ASESOR -->
+                                        <div class="imagen">
+                                            <img class="w-100 h-100" src="images/asesor3.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <!-- IMAGEN ASESOR -->
+
+                                        <!-- TEXTO ANIMADO -->
+                                        <p class="texto-animado px-2 mr-3 mt-4 text-break"> INFORMACIÓN EXTRA DEL ASESOR Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ipsam eligendi sunt distinctio a voluptatem deleniti quae sed cum. </p>
+                                        <!-- TEXTO ANIMADO -->
+                                    </div>
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+
+
+                                    <div class="caja_texto position-relative d-flex align-items-center justify-content-center">
+                                        <h4 class="text-center font-weight-bold"> Nombre de Asesor </h4>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                                <a class="mr-2" href="mailto:ktlaboral@hotmail.com"><i class="fas fa-envelope"> </i></a>
+                                <a class="mr-2" href="tel:311123123"> <i class="fas fa-phone"></i> </a>
+                                <a class="mr-2" href="#"> <i class="fab fa-whatsapp"></i> </a>
+                            </div>
+
+                        </div>
+                        <!-- ASESOR -->
+
+                    </div>
+
+                </section>
+            </div>
+            <!-- TRES SIGUIENTES ASESORES -->
+
+            <!-- TRES SIGUIENTES ASESORES -->
+            <div class="carousel-item">
+                <section id="asesores">
+
+                    <div class="container d-flex">
+
+                        <!-- ASESOR -->
+                        <div class="col-4">
+                            <a href="#">
+                                <div class="carta d-flex flex-column">
+
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                                    <div clas="text-break">
+                                        <!-- IMAGEN ASESOR -->
+                                        <div class="imagen">
+                                            <img class="w-100 h-100" src="images/asesor1.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <!-- IMAGEN ASESOR -->
+
+                                        <!-- TEXTO ANIMADO -->
+                                        <p class="texto-animado px-2 mr-3 mt-4 text-break"> INFORMACIÓN EXTRA DEL ASESOR Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ipsam eligendi sunt distinctio a voluptatem deleniti quae sed cum. </p>
+                                        <!-- TEXTO ANIMADO -->
+                                    </div>
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+
+
+                                    <div class="caja_texto position-relative d-flex align-items-center justify-content-center">
+                                        <h4 class="text-center font-weight-bold"> Nombre de Asesor </h4>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                                <a class="mr-2" href="mailto:ktlaboral@hotmail.com"><i class="fas fa-envelope"> </i></a>
+                                <a class="mr-2" href="tel:311123123"> <i class="fas fa-phone"></i> </a>
+                                <a class="mr-2" href="#"> <i class="fab fa-whatsapp"></i> </a>
+                            </div>
+
+                        </div>
+                        <!-- ASESOR -->
+
+                        <!-- ASESOR -->
+                        <div class="col-4">
+                            <a href="#">
+                                <div class="carta d-flex flex-column">
+
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                                    <div clas="text-break">
+                                        <!-- IMAGEN ASESOR -->
+                                        <div class="imagen">
+                                            <img class="w-100 h-100" src="images/asesor4.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <!-- IMAGEN ASESOR -->
+
+                                        <!-- TEXTO ANIMADO -->
+                                        <p class="texto-animado px-2 mr-3 mt-4 text-break"> INFORMACIÓN EXTRA DEL ASESOR Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ipsam eligendi sunt distinctio a voluptatem deleniti quae sed cum. </p>
+                                        <!-- TEXTO ANIMADO -->
+                                    </div>
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+
+
+                                    <div class="caja_texto position-relative d-flex align-items-center justify-content-center">
+                                        <h4 class="text-center font-weight-bold"> Nombre de Asesor </h4>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                                <a class="mr-2" href="mailto:ktlaboral@hotmail.com"><i class="fas fa-envelope"> </i></a>
+                                <a class="mr-2" href="tel:311123123"> <i class="fas fa-phone"></i> </a>
+                                <a class="mr-2" href="#"> <i class="fab fa-whatsapp"></i> </a>
+                            </div>
+
+                        </div>
+                        <!-- ASESOR -->
+
+                        <!-- ASESOR -->
+                        <div class="col-4">
+                            <a href="#">
+                                <div class="carta d-flex flex-column">
+
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                                    <div clas="text-break">
+                                        <!-- IMAGEN ASESOR -->
+                                        <div class="imagen">
+                                            <img class="w-100 h-100" src="images/asesor3.jpg" class="card-img-top" alt="...">
+                                        </div>
+                                        <!-- IMAGEN ASESOR -->
+
+                                        <!-- TEXTO ANIMADO -->
+                                        <p class="texto-animado px-2 mr-3 mt-4 text-break"> INFORMACIÓN EXTRA DEL ASESOR Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quasi ipsam eligendi sunt distinctio a voluptatem deleniti quae sed cum. </p>
+                                        <!-- TEXTO ANIMADO -->
+                                    </div>
+                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+
+
+                                    <div class="caja_texto position-relative d-flex align-items-center justify-content-center">
+                                        <h4 class="text-center font-weight-bold"> Nombre de Asesor </h4>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                                <a class="mr-2" href="mailto:ktlaboral@hotmail.com"><i class="fas fa-envelope"> </i></a>
+                                <a class="mr-2" href="tel:311123123"> <i class="fas fa-phone"></i> </a>
+                                <a class="mr-2" href="#"> <i class="fab fa-whatsapp"></i> </a>
+                            </div>
+
+                        </div>
+                        <!-- ASESOR -->
+
+                    </div>
+
+                </section>
+            </div>
+            <!-- TRES SIGUIENTES ASESORES -->
 
         </div>
-
-    </section>
+        <a class="carousel-control-prev" href="#carrusel2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon2" aria-hidden="true"> <i class="fas fa-caret-left"></i> </span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carrusel2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon2" aria-hidden="true"> <i class="fas fa-caret-right"></i> </span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
     <!-- ASESORES -->
-
-
 
     <!-- NUESTROS ALIADOS -->
     <section id="nuestros_aliados" class="mt-5">

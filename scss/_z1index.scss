@@ -195,9 +195,7 @@ header {
             transition: 250ms ease-in-out; 
 
             &:hover {
-                // transform: scale(1.02);
-                font-size: 16.4px;
-                // color: $gris_oscuro;
+                color: $gris_oscuro;
             }
         }
 
@@ -732,7 +730,12 @@ footer {
             color: white;
 
             .imagen {
+                height: 300px;
                 overflow: hidden;
+
+                img {
+                    transition: all 250ms ease-in-out;
+                }
             }
 
             .caja_texto {
@@ -744,7 +747,7 @@ footer {
                 position: absolute;
                 opacity: 0;
                 top:100%;
-                transition: all 350ms ease-in-out;
+                transition: all 250ms ease-in-out;
             }
 
             &:hover {
@@ -772,7 +775,7 @@ footer {
         bottom: -17.5px; 
         height: 35px;
         left: calc(50% - 102px);
-        background-color: $verde;
+        background: linear-gradient(45deg, $verde, #193a15);
 
         a{ 
             color: white;
@@ -787,6 +790,14 @@ footer {
 
     a:last-of-type {
 
+    }
+
+}
+
+#carrusel2 {
+
+    .carousel-inner {
+        height: 420px;
     }
 
 }

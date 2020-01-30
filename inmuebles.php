@@ -21,10 +21,10 @@ $page = "Inmuebles" ?>
     <!-- HEADER -->
 
     <!-- BANNER -->
-    <section id="banner" class="margin_top position-relative">
+    <section id="banner" style="height:250px" class="margin_top position-relative">
 
         <div class="imagen imagen_inmuebles"> </div>
-        
+
         <div id="fondo_negro"></div>
 
         <div class="contenido_banner d-flex align-items-center justify-content-center flex-column">
@@ -35,405 +35,337 @@ $page = "Inmuebles" ?>
     </section>
     <!-- BANNER -->
 
-    <!-- BUSCADOR -->
-    <section id="buscador">
-        <?php include 'layout/4buscador.php' ?>
-    </section>
-    <!-- BUSCADOR -->
-
     <!-- INMUEBLES -->
-    <section id="propiedades_destacadas" class="mt-5 mb-5">
+    <section id="inmuebles2" class="my-5 container">
 
-        <h2 class="w-100 d-flex justify-content-center mb-5"> Inmuebles Disponibles </h2>
+        <div class=" d-flex align-items-start justify-content-between flex-wrap">
 
-        <div class="container d-flex align-items-center justify-content-between flex-wrap">
 
-            <!-- CARD -->
-            <div class="card p-0 col-4 mb-5">
+            <!-- BUSCADOR -->
+            <section id="formulario2" class="col-3
+             rounded">
 
-                <a class="border rounded mx-2" href="#">
-                    <div class="position-relative">
-                        <div class="caja_imagen"><img src="images/no_image.png" class="card-img-top" alt="..."></div>
-                        <!-- <i class="lupa fas fa-search"></i> -->
+                <div class="col-12 p-0">
+                    <div class="row ">
 
-                        <div class="tipo_inmueble position-absolute d-flex align-items-center">
-                            <p class="ml-2"> Tipo de Inmueble </p>
+                        <div class="col-12 form-group pt-3 f11">
+                            <input placeholder="Código" type="number" class="form-control f1" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
 
-                        <div class="tipo_gestion position-absolute d-flex align-items-center">
-                            <p class="mr-2"> Tipo de Gestión </p>
+                        <div class="col-12 form-group f11">
+                            <select class="form-control f1" id="exampleFormControlSelect1">
+                                <option selected default> Tipo de Inmueble </option>
+                            </select>
                         </div>
 
-                        <div class="card-body p-3">
-
-                            <div class="d-flex precio align-items-center position-absolute">
-                                <i class="blanco fas fa-dollar-sign"></i>
-                                <h4 class="my-0 pl-1"> 1.000.000 </h4>
-                            </div>
-
-                            <div class="d-flex align-items-center">
-                                <i class="verde fas fa-map-marker-alt"></i>
-                                <h4 class="my-0 pl-2"> Dirección </h4>
-                            </div>
-
-                            <div>
-                                <p class="text-muted"> Código: </p>
-                            </div>
-
+                        <div class="col-6 form-group f11">
+                            <select class="form-control f1" id="exampleFormControlSelect1">
+                                <option selected default> Ciudad </option>
+                            </select>
                         </div>
 
-                        <div class="fondo_caracteristicas d-flex align-items-center justify-content-around">
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-chart-area"></i>
-                                <p class="blanco pl-2"> 200 Mts<sup>2 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bath"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bed"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-warehouse"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
+                        <div class="col-6 form-group f11">
+                            <select class="form-control f1" id="exampleFormControlSelect1">
+                                <option selected default> Barrio </option>
+                            </select>
                         </div>
 
-                    </div>
-                </a>
-
-            </div>
-            <!-- CARD -->
-
-            <!-- CARD -->
-            <div class="card p-0 col-4 mb-5">
-
-                <a class="border rounded mx-2" href="#">
-                    <div class="position-relative">
-                        <div class="caja_imagen"><img src="images/no_image.png" class="card-img-top" alt="..."></div>
-                        <!-- <i class="lupa fas fa-search"></i> -->
-
-                        <div class="tipo_inmueble position-absolute d-flex align-items-center">
-                            <p class="ml-2"> Tipo de Inmueble </p>
+                        <div class="col-12 form-group f11">
+                            <input placeholder="Precio Mínimo" type="number" class="form-control f1" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
 
-                        <div class="tipo_gestion position-absolute d-flex align-items-center">
-                            <p class="mr-2"> Tipo de Gestión </p>
+                        <div class="col-12 form-group f11">
+                            <input placeholder="Precio Máximo" type="number" class="form-control f1" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
 
-                        <div class="card-body p-3">
-
-                            <div class="d-flex precio align-items-center position-absolute">
-                                <i class="blanco fas fa-dollar-sign"></i>
-                                <h4 class="my-0 pl-1"> 1.000.000 </h4>
-                            </div>
-
-                            <div class="d-flex align-items-center">
-                                <i class="verde fas fa-map-marker-alt"></i>
-                                <h4 class="my-0 pl-2"> Dirección </h4>
-                            </div>
-
-                            <div>
-                                <p class="text-muted"> Código: </p>
-                            </div>
-
+                        <div class="col-12 form-group f11">
+                            <input placeholder="Área Mínima" type="number" class="form-control f1" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
 
-                        <div class="fondo_caracteristicas d-flex align-items-center justify-content-around">
+                        <div class="col-12 form-group f11">
+                            <input placeholder="Área Máxima" type="number" class="form-control f1" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
 
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-chart-area"></i>
-                                <p class="blanco pl-2"> 200 Mts<sup>2 </p>
-                            </div>
+                        <div class="col-12 form-group f11">
+                            <input placeholder="Baños" type="number" class="form-control f1" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
 
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bath"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
+                        <div class="col-12 form-group f11">
+                            <input placeholder="Alcobas" type="number" class="form-control f1" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
 
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bed"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
+                        <div class="col-12 form-group f11">
+                            <input placeholder="Garajes " type="number" class="form-control f1" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
 
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-warehouse"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
+                        <div class="col-12 pb-3 d-flex align-items center justify-content-center">
+                            <button type="submit" class="col-12 btn boton_principal"> Buscar </button>
                         </div>
 
                     </div>
-                </a>
+                </div>
 
-            </div>
-            <!-- CARD -->
+            </section>
+            <!-- BUSCADOR -->
 
-            <!-- CARD -->
-            <div class="card p-0 col-4 mb-5">
+            <div class="col-9">
+                <h2 class="text-center mb-5"> Inmuebles Disponibles </h2>
 
-                <a class="border rounded mx-2" href="#">
-                    <div class="position-relative">
-                        <div class="caja_imagen"><img src="images/no_image.png" class="card-img-top" alt="..."></div>
-                        <!-- <i class="lupa fas fa-search"></i> -->
+                <!-- CARD -->
+                <div style="height:200px;" class="carta my-5 ">
+                    <a href="#" class="d-flex" id="inmuebles2">
 
-                        <div class="tipo_inmueble position-absolute d-flex align-items-center">
-                            <p class="ml-2"> Tipo de Inmueble </p>
-                        </div>
+                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
+                        <div class="card2 col-6 p-0 position-relative">
 
-                        <div class="tipo_gestion position-absolute d-flex align-items-center">
-                            <p class="mr-2"> Tipo de Gestión </p>
-                        </div>
-
-                        <div class="card-body p-3">
-
-                            <div class="d-flex precio align-items-center position-absolute">
-                                <i class="blanco fas fa-dollar-sign"></i>
-                                <h4 class="my-0 pl-1"> 1.000.000 </h4>
+                            <div class="imagen w-100 h-100">
+                                <img src="images/casa1.jpg" class="card-img-top" alt="...">
                             </div>
 
-                            <div class="d-flex align-items-center">
-                                <i class="verde fas fa-map-marker-alt"></i>
-                                <h4 class="my-0 pl-2"> Dirección </h4>
+                            <div class="caja_negra"> </div>
+
+                            <div class="tipo_inmueble d-flex align-items-center">
+                                <p class="ml-2"> Apartamento </p>
+                            </div>
+
+                            <div class="tipo_gestion d-flex align-items-center">
+                                <p class="mr-2"> Arriendo </p>
+                            </div>
+
+                        </div>
+                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
+
+                        <!-- DESCRIPCIÓN DE INMUEBLE -->
+                        <div class="contenido col-6">
+
+                            <div class="d-flex pl-3 align-items-baseline">
+                                <i class="mr-1 fas fa-map-marker-alt"></i>
+                                <h4> Dirección </h4>
+                            </div>
+
+                            <div class="ml-3 d-flex">
+                                <p class="mr-5"> $1.234.567.890 </p>
+                                <p class="text-muted"> Código: 000 </p>
                             </div>
 
                             <div>
-                                <p class="text-muted"> Código: </p>
+                                <p> *Descripción* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, deleniti tempore! Cupiditate sed nemo aliquid distinctio corporis soluta reprehenderit commodi! </p>
+                            </div>
+
+                            <div class="fondo_caracteristicas1 d-flex align-items-center justify-content-around">
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-chart-area"></i>
+                                    <p class="blanco pl-2"> 200 Mts<sup>2 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-bath"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-bed"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-warehouse"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                            </div>
+
+                            <!-- FONDO NEGRO -->
+                            <div class="fondo_caracteristicas2"></div>
+                            <!-- FONDO NEGRO -->
+
+                            <!-- FONDO VERDE -->
+                            <div class="fondo_caracteristicas3"></div>
+                            <!-- FONDO VERDE -->
+
+
+                        </div>
+                        <!-- DESCRIPCIÓN DE INMUEBLE -->
+
+                    </a>
+                </div>
+                <!-- CARD -->
+
+                <!-- CARD -->
+                <div style="height:200px;" class="carta my-5 ">
+                    <a href="#" class="d-flex" id="inmuebles2">
+
+                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
+                        <div class="card2 col-6 p-0 position-relative">
+
+                            <div class="imagen w-100 h-100">
+                                <img src="images/casa1.jpg" class="card-img-top" alt="...">
+                            </div>
+
+                            <div class="caja_negra"> </div>
+
+                            <div class="tipo_inmueble d-flex align-items-center">
+                                <p class="ml-2"> Apartamento </p>
+                            </div>
+
+                            <div class="tipo_gestion d-flex align-items-center">
+                                <p class="mr-2"> Arriendo </p>
                             </div>
 
                         </div>
+                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
 
-                        <div class="fondo_caracteristicas d-flex align-items-center justify-content-around">
+                        <!-- DESCRIPCIÓN DE INMUEBLE -->
+                        <div class="contenido col-6">
 
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-chart-area"></i>
-                                <p class="blanco pl-2"> 200 Mts<sup>2 </p>
+                            <div class="d-flex pl-3 align-items-baseline">
+                                <i class="mr-1 fas fa-map-marker-alt"></i>
+                                <h4> Dirección </h4>
                             </div>
 
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bath"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bed"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-warehouse"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </a>
-
-            </div>
-            <!-- CARD -->
-
-            <!-- CARD -->
-            <div class="card p-0 col-4 mb-5">
-
-                <a class="border rounded mx-2" href="#">
-                    <div class="position-relative">
-                        <div class="caja_imagen"><img src="images/no_image.png" class="card-img-top" alt="..."></div>
-                        <!-- <i class="lupa fas fa-search"></i> -->
-
-                        <div class="tipo_inmueble position-absolute d-flex align-items-center">
-                            <p class="ml-2"> Tipo de Inmueble </p>
-                        </div>
-
-                        <div class="tipo_gestion position-absolute d-flex align-items-center">
-                            <p class="mr-2"> Tipo de Gestión </p>
-                        </div>
-
-                        <div class="card-body p-3">
-
-                            <div class="d-flex precio align-items-center position-absolute">
-                                <i class="blanco fas fa-dollar-sign"></i>
-                                <h4 class="my-0 pl-1"> 1.000.000 </h4>
-                            </div>
-
-                            <div class="d-flex align-items-center">
-                                <i class="verde fas fa-map-marker-alt"></i>
-                                <h4 class="my-0 pl-2"> Dirección </h4>
+                            <div class="ml-3 d-flex">
+                                <p class="mr-5"> $1.234.567.890 </p>
+                                <p class="text-muted"> Código: 000 </p>
                             </div>
 
                             <div>
-                                <p class="text-muted"> Código: </p>
+                                <p> *Descripción* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, deleniti tempore! Cupiditate sed nemo aliquid distinctio corporis soluta reprehenderit commodi! </p>
+                            </div>
+
+                            <div class="fondo_caracteristicas1 d-flex align-items-center justify-content-around">
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-chart-area"></i>
+                                    <p class="blanco pl-2"> 200 Mts<sup>2 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-bath"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-bed"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-warehouse"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                            </div>
+
+                            <!-- FONDO NEGRO -->
+                            <div class="fondo_caracteristicas2"></div>
+                            <!-- FONDO NEGRO -->
+
+                            <!-- FONDO VERDE -->
+                            <div class="fondo_caracteristicas3"></div>
+                            <!-- FONDO VERDE -->
+
+
+                        </div>
+                        <!-- DESCRIPCIÓN DE INMUEBLE -->
+
+                    </a>
+                </div>
+                <!-- CARD -->
+
+                <!-- CARD -->
+                <div style="height:200px;" class="carta my-5 ">
+                    <a href="#" class="d-flex" id="inmuebles2">
+
+                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
+                        <div class="card2 col-6 p-0 position-relative">
+
+                            <div class="imagen w-100 h-100">
+                                <img src="images/casa1.jpg" class="card-img-top" alt="...">
+                            </div>
+
+                            <div class="caja_negra"> </div>
+
+                            <div class="tipo_inmueble d-flex align-items-center">
+                                <p class="ml-2"> Apartamento </p>
+                            </div>
+
+                            <div class="tipo_gestion d-flex align-items-center">
+                                <p class="mr-2"> Arriendo </p>
                             </div>
 
                         </div>
+                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
 
-                        <div class="fondo_caracteristicas d-flex align-items-center justify-content-around">
+                        <!-- DESCRIPCIÓN DE INMUEBLE -->
+                        <div class="contenido col-6">
 
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-chart-area"></i>
-                                <p class="blanco pl-2"> 200 Mts<sup>2 </p>
+                            <div class="d-flex pl-3 align-items-baseline">
+                                <i class="mr-1 fas fa-map-marker-alt"></i>
+                                <h4> Dirección </h4>
                             </div>
 
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bath"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bed"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-warehouse"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </a>
-
-            </div>
-            <!-- CARD -->
-
-            <!-- CARD -->
-            <div class="card p-0 col-4 mb-5">
-
-                <a class="border rounded mx-2" href="#">
-                    <div class="position-relative">
-                        <div class="caja_imagen"><img src="images/no_image.png" class="card-img-top" alt="..."></div>
-                        <!-- <i class="lupa fas fa-search"></i> -->
-
-                        <div class="tipo_inmueble position-absolute d-flex align-items-center">
-                            <p class="ml-2"> Tipo de Inmueble </p>
-                        </div>
-
-                        <div class="tipo_gestion position-absolute d-flex align-items-center">
-                            <p class="mr-2"> Tipo de Gestión </p>
-                        </div>
-
-                        <div class="card-body p-3">
-
-                            <div class="d-flex precio align-items-center position-absolute">
-                                <i class="blanco fas fa-dollar-sign"></i>
-                                <h4 class="my-0 pl-1"> 1.000.000 </h4>
-                            </div>
-
-                            <div class="d-flex align-items-center">
-                                <i class="verde fas fa-map-marker-alt"></i>
-                                <h4 class="my-0 pl-2"> Dirección </h4>
+                            <div class="ml-3 d-flex">
+                                <p class="mr-5"> $1.234.567.890 </p>
+                                <p class="text-muted"> Código: 000 </p>
                             </div>
 
                             <div>
-                                <p class="text-muted"> Código: </p>
+                                <p> *Descripción* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, deleniti tempore! Cupiditate sed nemo aliquid distinctio corporis soluta reprehenderit commodi! </p>
                             </div>
+
+                            <div class="fondo_caracteristicas1 d-flex align-items-center justify-content-around">
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-chart-area"></i>
+                                    <p class="blanco pl-2"> 200 Mts<sup>2 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-bath"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-bed"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                                <div class="d-flex py-2 align-items-center">
+                                    <i class="blanco fas fa-warehouse"></i>
+                                    <p class="blanco pl-2"> 5 </p>
+                                </div>
+
+                            </div>
+
+                            <!-- FONDO NEGRO -->
+                            <div class="fondo_caracteristicas2"></div>
+                            <!-- FONDO NEGRO -->
+
+                            <!-- FONDO VERDE -->
+                            <div class="fondo_caracteristicas3"></div>
+                            <!-- FONDO VERDE -->
+
 
                         </div>
+                        <!-- DESCRIPCIÓN DE INMUEBLE -->
 
-                        <div class="fondo_caracteristicas d-flex align-items-center justify-content-around">
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-chart-area"></i>
-                                <p class="blanco pl-2"> 200 Mts<sup>2 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bath"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bed"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-warehouse"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </a>
+                    </a>
+                </div>
+                <!-- CARD -->
 
             </div>
-            <!-- CARD -->
-
-            <!-- CARD -->
-            <div class="card p-0 col-4 mb-5">
-
-                <a class="border rounded mx-2" href="#">
-                    <div class="position-relative">
-                        <div class="caja_imagen"><img src="images/no_image.png" class="card-img-top" alt="..."></div>
-                        <!-- <i class="lupa fas fa-search"></i> -->
-
-                        <div class="tipo_inmueble position-absolute d-flex align-items-center">
-                            <p class="ml-2"> Tipo de Inmueble </p>
-                        </div>
-
-                        <div class="tipo_gestion position-absolute d-flex align-items-center">
-                            <p class="mr-2"> Tipo de Gestión </p>
-                        </div>
-
-                        <div class="card-body p-3">
-
-                            <div class="d-flex precio align-items-center position-absolute">
-                                <i class="blanco fas fa-dollar-sign"></i>
-                                <h4 class="my-0 pl-1"> 1.000.000 </h4>
-                            </div>
-
-                            <div class="d-flex align-items-center">
-                                <i class="verde fas fa-map-marker-alt"></i>
-                                <h4 class="my-0 pl-2"> Dirección </h4>
-                            </div>
-
-                            <div>
-                                <p class="text-muted"> Código: </p>
-                            </div>
-
-                        </div>
-
-                        <div class="fondo_caracteristicas d-flex align-items-center justify-content-around">
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-chart-area"></i>
-                                <p class="blanco pl-2"> 200 Mts<sup>2 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bath"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-bed"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                            <div class="d-flex py-2 align-items-center">
-                                <i class="verde fas fa-warehouse"></i>
-                                <p class="blanco pl-2"> 5 </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </a>
-
-            </div>
-            <!-- CARD -->   
 
 
         </div>
+
+    </section>
+    <!-- INMUEBLES -->
+
+
+
+
+    </div>
 
 
     </section>
