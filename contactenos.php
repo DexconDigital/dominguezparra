@@ -50,7 +50,7 @@ $page = "Contáctenos" ?>
 
                         <div class="d-flex">
                             <div class="col-3 m-auto">
-                                <button class="btn boton_contactenos col-12 collapsed" type="button" data-toggle="collapse" data-target="#uno" aria-expanded="false" aria-controls="collapseExample">
+                                <button id="active_boton" class="btn boton_contactenos col-12 collapsed" type="button" data-toggle="collapse" data-target="#uno" aria-expanded="false" aria-controls="collapseExample">
                                     Principal
                                 </button>
                             </div>

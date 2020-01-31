@@ -1,4 +1,5 @@
 <?php require 'variables/variables.php';
+require 'controllers/indexController.php';
 $page = "Inicio" ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -8,6 +9,7 @@ $page = "Inicio" ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php include 'layout/1archivos_header.php' ?>
+    <link rel="stylesheet" href="css/rangos.css">
 
     <title> <?php echo $page . ' | ' . $nombre_inmobiliaria ?> </title>
 </head>
@@ -59,257 +61,13 @@ $page = "Inicio" ?>
 
         <div class=" d-flex align-items-start justify-content-between flex-wrap">
 
-            <!-- CARD -->
-            <div class="col-4">
-                <div style="height:200px;" class="carta mb-5 ">
-                    <a href="#" class="d-flex flex-wrap" id="inmuebles2">
-
-                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
-                        <div class="card2 col-12 p-0 position-relative">
-
-                            <div class="imagen w-100 h-100">
-                                <img src="images/casa1.jpg" class="card-img-top" alt="...">
-                            </div>
-
-                            <div class="caja_negra"> </div>
-
-                            <div class="tipo_inmueble d-flex align-items-center">
-                                <p class="ml-2"> Apartamento </p>
-                            </div>
-
-                            <div class="tipo_gestion d-flex align-items-center">
-                                <p class="mr-2"> Arriendo </p>
-                            </div>
-
-                        </div>
-                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
-
-                        <!-- DESCRIPCIÓN DE INMUEBLE -->
-                        <div style="height:120px" class="contenido col-12 d-flex flex-column">
-
-                            <div>
-                                <div class="d-flex pl-3 mt-3 align-items-baseline">
-                                    <i class="mr-1 fas fa-map-marker-alt"></i>
-                                    <h4> Dirección </h4>
-                                </div>
-
-                                <div class="ml-3 d-flex">
-                                    <p class="mr-5"> $1.234.567.890 </p>
-                                    <p class="text-muted"> Código: 000 </p>
-                                </div>
-
-                            </div>
-
-                            <!-- ICONOS -->
-                            <div class="fondo_caracteristicas1 d-flex align-items-center justify-content-around">
-
-                                <div class="d-flex py-2 align-items-center">
-                                    <i class="blanco fas fa-chart-area"></i>
-                                    <p class="blanco pl-2"> 200 Mts<sup>2 </p>
-                                </div>
-
-                                <div class="d-flex py-2 align-items-center">
-                                    <i class="blanco fas fa-bath"></i>
-                                    <p class="blanco pl-2"> 5 </p>
-                                </div>
-
-                                <div class="d-flex py-2 align-items-center">
-                                    <i class="blanco fas fa-bed"></i>
-                                    <p class="blanco pl-2"> 5 </p>
-                                </div>
-
-                                <div class="d-flex py-2 align-items-center">
-                                    <i class="blanco fas fa-warehouse"></i>
-                                    <p class="blanco pl-2"> 5 </p>
-                                </div>
-
-                            </div>
-                            <!-- ICONOS -->
-
-                            <!-- FONDO NEGRO -->
-                            <div class="fondo_caracteristicas2"></div>
-                            <!-- FONDO NEGRO -->
-
-                            <!-- FONDO VERDE -->
-                            <div class="fondo_caracteristicas3"></div>
-                            <!-- FONDO VERDE -->
-
-
-                        </div>
-                        <!-- DESCRIPCIÓN DE INMUEBLE -->
-
-                    </a>
-                </div>
-            </div>
-            <!-- CARD -->
-
-            <!-- CARD -->
-            <div class="col-4">
-                <div style="height:200px;" class="carta mb-5 ">
-                    <a href="#" class="d-flex flex-wrap" id="inmuebles2">
-
-                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
-                        <div class="card2 col-12 p-0 position-relative">
-
-                            <div class="imagen w-100 h-100">
-                                <img src="images/casa2.jpg" class="card-img-top" alt="...">
-                            </div>
-
-                            <div class="caja_negra"> </div>
-
-                            <div class="tipo_inmueble d-flex align-items-center">
-                                <p class="ml-2"> Apartamento </p>
-                            </div>
-
-                            <div class="tipo_gestion d-flex align-items-center">
-                                <p class="mr-2"> Arriendo </p>
-                            </div>
-
-                        </div>
-                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
-
-                        <!-- DESCRIPCIÓN DE INMUEBLE -->
-                        <div style="height:120px" class="contenido col-12 d-flex flex-column">
-
-                            <div>
-                                <div class="d-flex pl-3 mt-3 align-items-baseline">
-                                    <i class="mr-1 fas fa-map-marker-alt"></i>
-                                    <h4> Dirección </h4>
-                                </div>
-
-                                <div class="ml-3 d-flex">
-                                    <p class="mr-5"> $1.234.567.890 </p>
-                                    <p class="text-muted"> Código: 000 </p>
-                                </div>
-
-                            </div>
-
-                            <!-- ICONOS -->
-                            <div class="fondo_caracteristicas1 d-flex align-items-center justify-content-around">
-
-                                <div class="d-flex py-2 align-items-center">
-                                    <i class="blanco fas fa-chart-area"></i>
-                                    <p class="blanco pl-2"> 200 Mts<sup>2 </p>
-                                </div>
-
-                                <div class="d-flex py-2 align-items-center">
-                                    <i class="blanco fas fa-bath"></i>
-                                    <p class="blanco pl-2"> 5 </p>
-                                </div>
-
-                                <div class="d-flex py-2 align-items-center">
-                                    <i class="blanco fas fa-bed"></i>
-                                    <p class="blanco pl-2"> 5 </p>
-                                </div>
-
-                                <div class="d-flex py-2 align-items-center">
-                                    <i class="blanco fas fa-warehouse"></i>
-                                    <p class="blanco pl-2"> 5 </p>
-                                </div>
-
-                            </div>
-                            <!-- ICONOS -->
-
-                            <!-- FONDO NEGRO -->
-                            <div class="fondo_caracteristicas2"></div>
-                            <!-- FONDO NEGRO -->
-
-                            <!-- FONDO VERDE -->
-                            <div class="fondo_caracteristicas3"></div>
-                            <!-- FONDO VERDE -->
-
-
-                        </div>
-                        <!-- DESCRIPCIÓN DE INMUEBLE -->
-
-                    </a>
-                </div>
-            </div>
-            <!-- CARD -->
-
-            <!-- CARD -->
-            <div class="col-4">
-                <div style="height:200px;" class="carta mb-5 ">
-                    <a href="#" class="d-flex flex-wrap" id="inmuebles2">
-
-                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
-                        <div class="card2 col-12 p-0 position-relative">
-
-                            <div class="imagen w-100 h-100">
-                                <img src="images/casa3.jpg" class="card-img-top" alt="...">
-                            </div>
-
-                            <div class="caja_negra"> </div>
-
-                            <div class="tipo_inmueble d-flex align-items-center">
-                                <p class="ml-2"> Apartamento </p>
-                            </div>
-
-                            <div class="tipo_gestion d-flex align-items-center">
-                                <p class="mr-2"> Arriendo </p>
-                            </div>
-
-                        </div>
-                        <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
-
-                        <!-- DESCRIPCIÓN DE INMUEBLE -->
-                        <div style="height:120px" class="contenido col-12 d-flex flex-column">
-
-                            <div>
-                                <div class="d-flex pl-3 mt-3 align-items-baseline">
-                                    <i class="mr-1 fas fa-map-marker-alt"></i>
-                                    <h4> Dirección </h4>
-                                </div>
-
-                                <div class="ml-3 d-flex">
-                                    <p class="mr-5"> $1.234.567.890 </p>
-                                    <p class="text-muted"> Código: 000 </p>
-                                </div>
-
-                            </div>
-
-                            <!-- ICONOS -->
-                            <div class="fondo_caracteristicas1 d-flex align-items-center justify-content-around">
-
-                                <div class="d-flex py-2 align-items-center">
-                                    <i class="blanco fas fa-chart-area"></i>
-                                    <p class="blanco pl-2"> 200 Mts<sup>2 </p>
-                                </div>
-
-                                <div class="d-flex py-2 align-items-center">
-                                    <i class="blanco fas fa-bath"></i>
-                                    <p class="blanco pl-2"> 5 </p>
-                                </div>
-
-                                <div class="d-flex py-2 align-items-center">
-                                    <i class="blanco fas fa-bed"></i>
-                                    <p class="blanco pl-2"> 5 </p>
-                                </div>
-
-                                <div class="d-flex py-2 align-items-center">
-                                    <i class="blanco fas fa-warehouse"></i>
-                                    <p class="blanco pl-2"> 5 </p>
-                                </div>
-
-                            </div>
-                            <!-- ICONOS -->
-
-                            <!-- FONDO NEGRO -->
-                            <div class="fondo_caracteristicas2"></div>
-                            <!-- FONDO NEGRO -->
-
-                            <!-- FONDO VERDE -->
-                            <div class="fondo_caracteristicas3"></div>
-                            <!-- FONDO VERDE -->
-
-
-                        </div>
-                        <!-- DESCRIPCIÓN DE INMUEBLE -->
-
-                    </a>
-                </div>
-            </div>
-            <!-- CARD -->
+            <?php
+            if (is_array($api)) {
+                inmuebles_destacados($api);
+            } else {
+                echo '<h2 class="text-center" >No tiene Inmuebles Destacados</h2>';
+            }
+            ?>
 
         </div>
 
@@ -805,7 +563,11 @@ $page = "Inicio" ?>
     <!-- Carrusel -->
 
     <?php include 'layout/2archivos_footer.php' ?>
-
+    <!-- buscador -->
+    <script src="conexion_api/validadores.js"></script>
+    <script src="conexion_api/buscador.js"></script>
+    <!-- barra de rangos -->
+    <script src="js/rangos.js"></script>
 </body>
 
 </html>

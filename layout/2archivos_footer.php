@@ -3,5 +3,6 @@
 <script src="js/3bootstrap.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/boton_subir.js"></script>
-
+<!--  CONEXION API -->
+<script src="conexion_api/token_api.js"></script>
 

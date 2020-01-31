@@ -17,6 +17,14 @@
     font-family: preplay;
     src: url(../fonts/BPreplay.otf);
 }
+@font-face{
+    font-family: roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family: lato;
+    src: url(../fonts/Lato-Regular.ttf);
+}
 
 body {
     font-family: lato;
@@ -376,11 +384,11 @@ header {
 #buscador {
 
     width: 100%;
-    height: 250px;
+    height: 222px;
     color: white;
 
     .titulo_buscador {
-        background-color: $verde;
+        background-color: #1C1C1C;
         height: 100%;
         width: 100%;   
     }
@@ -891,6 +899,16 @@ overflow: hidden;
    
     
 }
+}
+
+.page-item.active .page-link{
+    z-index: 3;
+    color: #fff;
+    background-color: $verde !important;
+    border-color:  $verde !important;
+}
+.page-link{
+    color: #2C2C2C !important;
 }
 
 

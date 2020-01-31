@@ -116,7 +116,7 @@
                         <li class="nav-item position-relative">
                             <a class="a2 nav-link <?php if ($page == 'Inmuebles') {
                                                         echo 'span';
-                                                    } ?>" href="inmuebles.php"> <span class="<?php if ($page == 'Inmuebles') {
+                                                    } ?>" href="inmuebles.php?"> <span class="<?php if ($page == 'Inmuebles') {
                                                                                                     echo 'active2';
                                                                                                 } ?>"></span> Inmuebles </a>
                         </li>
