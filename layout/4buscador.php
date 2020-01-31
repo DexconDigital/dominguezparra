@@ -65,7 +65,9 @@
                             <input placeholder="Garajes " type="number" class="form-control f1" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
 
-                        <div class="col-12 d-flex align-items center justify-content-center"><button type="submit" class="col-3 btn boton_principal"> Buscar </button></div>
+                        <div class="col-3">
+                            <button type="submit" class="col-12 btn boton_principal"> Buscar </button>
+                        </div>
 
                     </div>
                 </div>

@@ -42,7 +42,7 @@ $page = "Inmuebles" ?>
 
 
             <!-- BUSCADOR -->
-            <section id="formulario2" class="col-3
+            <section id="formulario2" class="sticky-top col-3
              rounded">
 
                 <div class="col-12 p-0">
