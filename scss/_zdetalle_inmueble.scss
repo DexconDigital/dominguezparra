@@ -1,0 +1,39 @@
+#imagenes_inmueble {
+
+    .linea {
+        &:after {
+            content: "";
+            position: absolute;
+            background-color: $verde;
+            height: 4px;
+            width: 20px;
+        }
+    }
+
+
+    .asesor {
+
+        .caja_asesor {
+            overflow: hidden;
+
+            img {
+                transition: all 250ms;
+            }
+        }
+
+
+        
+
+        &:hover {
+
+            img {
+                transform: scale(1.1);
+                filter: brightness(.5);
+            }
+
+        }
+
+    }
+    
+
+}
