@@ -15,13 +15,34 @@ $page = "Inicio" ?>
 <style>
 
 
-   
+
 </style>
 
 <body>
 
 
-   <button href="https://www.google.com"> dsfdslkjafsdkljf </button>
+
+    <p id="parrafo" class=""> PRUUEBA Lorem ipsum dolor sit.    </p>
+
+    <button id="botonnn">
+        enviar
+    </button>
+
+
+    <?php include 'layout/2archivos_footer.php' ?>
+
+    <script>
+
+        parrafo = document.getElementById('parrafo');
+       
+
+
+        document.getElementById('botonnn').addEventListener('click', function(){
+            parrafo.classList.add('font-weight-bold');
+        });
+    </script>
+
+
 
 </body>
 

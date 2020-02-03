@@ -59,7 +59,7 @@ $page = "Inicio" ?>
 
         <h2 class="text-center mb-5"> Inmuebles Destacados </h2>
 
-        <div class=" d-flex align-items-start justify-content-between flex-wrap">
+        <div class=" d-flex align-items-start justify-content-center flex-wrap">
 
             <?php
             if (is_array($api)) {
