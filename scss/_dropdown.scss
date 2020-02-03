@@ -126,11 +126,15 @@
   padding: $dropdown-item-padding-y $dropdown-item-padding-x;
   clear: both;
   font-weight: $font-weight-normal;
-  color: white;
+  color: white!important;
   text-align: inherit; // For `<button>`s
   white-space: nowrap; // prevent links from randomly breaking onto new lines
   background-color: $verde; // For `<button>`s
   border: 0; // For `<button>`s
+
+  &:hover {
+    color: black!important;
+  }
 
   // Prevent dropdown overflow if there's no padding
   // See https://github.com/twbs/bootstrap/pull/27703

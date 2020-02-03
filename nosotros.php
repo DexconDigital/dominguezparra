@@ -52,18 +52,30 @@ $page = "Nosotros" ?>
                     </div>
 
                     <div class="col-12 mt-4 d-flex justify-content-center align-items-center flex-column">
-                    <h2 class="d-flex justify-content-center"> Matriculas Arrendador </h2>
-                    <ul class="px-3">
-                        <li> MA 023 Oficio 192/2003 - Bucaramanga </li>
-                        <li> R.I 009-2009/ Resolución 0073/2009 - Floridablanca </li>
-                        <li> M.A 0030/ Resolución 0030/2014 - Piedecuesta </li>
-                        <li> M.A 078/ Resolución 078/2014 – Girón </li>
-                    </ul>
-                </div>
+                        <h2 class="d-flex justify-content-center"> Matriculas Arrendador </h2>
+                        <ul class="px-3">
+                            <li> MA 023 Oficio 192/2003 - Bucaramanga </li>
+                            <li> R.I 009-2009/ Resolución 0073/2009 - Floridablanca </li>
+                            <li> M.A 0030/ Resolución 0030/2014 - Piedecuesta </li>
+                            <li> M.A 078/ Resolución 078/2014 – Girón </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 text-justify mt-4">
+                        <h2 class="text-center text-strong"> <?php echo $texto_quienes_somos['mision']['titulo'] ?> </h2>
+                        <p> <?php echo $texto_quienes_somos['mision']['parrafo'] ?> </p>
+                    </div>
+
+                    <div class="col-12 text-justify mt-4">
+                        <h2 class="text-center text-strong"> <?php echo $texto_quienes_somos['vision']['titulo'] ?> </h2>
+                        <p> <?php echo $texto_quienes_somos['vision']['parrafo'] ?> </p>
+                    </div>
+
+
 
                 </div>
 
-                <div class="col-6 pr-0">
+                <div class="col-6 pr-0 p-0">
                     <div class="d-flex align-items-center justify-content-center imagen"> <img class="rounded" src="images/imagen_nosotros.jpg" alt=""></div>
                 </div>
 
@@ -71,26 +83,6 @@ $page = "Nosotros" ?>
         </div>
         <!-- NOSOTROS -->
 
-        <!-- MISION Y VISION -->
-        <div class="container">
-
-            <div class="d-flex col-12 p-0">
-
-                <div class="col-6 pl-0 text-justify mt-4">
-                    <h2 class="text-center text-strong"> <?php echo $texto_quienes_somos['mision']['titulo'] ?> </h2>
-                    <p> <?php echo $texto_quienes_somos['mision']['parrafo'] ?> </p>
-                </div>
-
-                <div class="col-6 pr-0 text-justify mt-4">
-                    <h2 class="text-center text-strong"> <?php echo $texto_quienes_somos['vision']['titulo'] ?> </h2>
-                    <p> <?php echo $texto_quienes_somos['vision']['parrafo'] ?> </p>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- MISION Y VISION -->
 
     </section>
     <!-- TEXTOS NOSOTROS -->
@@ -98,30 +90,30 @@ $page = "Nosotros" ?>
     <!-- BANNER ESTADISTICAS -->
     <section id="banner_estadisticas" class="mt-5">
 
-        <div id="fondo_negro"></div>
+        <!-- <div id="fondo_negro"></div> -->
 
         <div class="contenido_estadisticas d-flex container">
 
             <div class="blanco col-12 p-0 d-flex">
 
                 <div class="col-3 d-flex flex-column justify-content-center align-items-center">
-                    <h4 class="text-center"> Total Inmuebles </h4>
-                    <p class="text-center"> 100 </p>
+                    <h4 class="gris  text-center"> Total Inmuebles </h4>
+                    <p class="numeros text-center"> 100 </p>
                 </div>
 
                 <div class="col-3 d-flex flex-column justify-content-center align-items-center">
-                    <h4 class="text-center"> Total Arriendo </h4>
-                    <p class="text-center"> 100 </p>
+                    <h4 class="gris  text-center"> Total Arriendo </h4>
+                    <p class="numeros text-center"> 100 </p>
                 </div>
 
                 <div class="col-3 d-flex flex-column justify-content-center align-items-center">
-                    <h4 class="text-center"> Total Venta </h4>
-                    <p class="text-center"> 100 </p>
+                    <h4 class="gris  text-center"> Total Venta </h4>
+                    <p class="numeros text-center"> 100 </p>
                 </div>
 
                 <div class="col-3 d-flex flex-column justify-content-center align-items-center">
-                    <h4 class="text-center"> Total Arriendo/Venta </h4>
-                    <p class="text-center"> 100 </p>
+                    <h4 class="gris  text-center"> Total Arriendo/Venta </h4>
+                    <p class="numeros text-center"> 100 </p>
                 </div>
 
             </div>

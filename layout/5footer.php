@@ -14,7 +14,7 @@
 
                     <!-- SEDE PRINCIPAL -->
                     <div class="col-4">
-                        <h3 class="text-justify d-flex justify-content-center"> <b class="verde_oscuro"> Sucursal Principal </b> </h3>
+                        <h3 class="titulos text-justify d-flex justify-content-center"> <b class=" verde_oscuro"> Sucursal Principal </b> </h3>
 
                         <!-- MODAL -->
                         <div class="d-flex justify-content-center mt-3">
@@ -91,7 +91,7 @@
 
                     <!-- SEDE CABECERA -->
                     <div class="col-4">
-                        <h3 class="text-justify d-flex justify-content-center"> <b class="verde_oscuro"> Sucursal Cabecera </b> </h3>
+                        <h3 class="titulos text-justify d-flex justify-content-center"> <b class=" verde_oscuro"> Sucursal Cabecera </b> </h3>
 
                         <!-- MODAL -->
                         <div class="d-flex justify-content-center mt-3">
@@ -168,7 +168,7 @@
 
                     <!-- SEDE CAÑAVERAL -->
                     <div class="col-4">
-                        <h3 class="text-justify d-flex justify-content-center"> <b class="verde_oscuro"> Sucursal Cañaveral </b> </h3>
+                        <h3 class="titulos text-justify d-flex justify-content-center"> <b class=" verde_oscuro"> Sucursal Cañaveral </b> </h3>
 
                         <!-- MODAL -->
                         <div class="d-flex justify-content-center mt-3">
