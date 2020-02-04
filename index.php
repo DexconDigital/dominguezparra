@@ -82,7 +82,7 @@ $page = "Inicio" ?>
 
         <div class="carousel-inner">
 
-            <!-- TRES PRIMEROS ASESORES -->
+            <!-- PRIMER TRIO DE ASESORES -->
             <div class="carousel-item active">
                 <section id="asesores">
 
@@ -97,7 +97,7 @@ $page = "Inicio" ?>
                                     <div clas="text-break">
                                         <!-- IMAGEN ASESOR -->
                                         <div class="imagen">
-                                            <img class="w-100 h-100" src="images/asesor1.jpg" class="card-img-top" alt="...">
+                                            <img class="w-100" src="images/asesor1.png" class="card-img-top" alt="...">
                                         </div>
                                         <!-- IMAGEN ASESOR -->
 
@@ -134,7 +134,7 @@ $page = "Inicio" ?>
                                     <div clas="text-break">
                                         <!-- IMAGEN ASESOR -->
                                         <div class="imagen">
-                                            <img class="w-100 h-100" src="images/asesor2.jpg" class="card-img-top" alt="...">
+                                            <img class="w-100" src="images/asesor2.png" class="card-img-top" alt="...">
                                         </div>
                                         <!-- IMAGEN ASESOR -->
 
@@ -171,7 +171,7 @@ $page = "Inicio" ?>
                                     <div clas="text-break">
                                         <!-- IMAGEN ASESOR -->
                                         <div class="imagen">
-                                            <img class="w-100 h-100" src="images/asesor3.jpg" class="card-img-top" alt="...">
+                                            <img class="w-100" src="images/asesor3.png" class="card-img-top" alt="...">
                                         </div>
                                         <!-- IMAGEN ASESOR -->
 
@@ -203,10 +203,10 @@ $page = "Inicio" ?>
 
                 </section>
             </div>
-            <!-- TRES PRIMEROS ASESORES -->
+            <!-- PRIMER TRIO DE ASESORES -->
 
-            <!-- TRES SIGUIENTES ASESORES -->
-            <div class="carousel-item">
+            <!-- SEGUNDO TRIO DE ASESORES -->
+            <div class="carousel-item ">
                 <section id="asesores">
 
                     <div class="container d-flex">
@@ -220,7 +220,7 @@ $page = "Inicio" ?>
                                     <div clas="text-break">
                                         <!-- IMAGEN ASESOR -->
                                         <div class="imagen">
-                                            <img class="w-100 h-100" src="images/asesor4.jpg" class="card-img-top" alt="...">
+                                            <img class="w-100" src="images/asesor1.png" class="card-img-top" alt="...">
                                         </div>
                                         <!-- IMAGEN ASESOR -->
 
@@ -257,7 +257,7 @@ $page = "Inicio" ?>
                                     <div clas="text-break">
                                         <!-- IMAGEN ASESOR -->
                                         <div class="imagen">
-                                            <img class="w-100 h-100" src="images/asesor2.jpg" class="card-img-top" alt="...">
+                                            <img class="w-100" src="images/asesor2.png" class="card-img-top" alt="...">
                                         </div>
                                         <!-- IMAGEN ASESOR -->
 
@@ -294,7 +294,7 @@ $page = "Inicio" ?>
                                     <div clas="text-break">
                                         <!-- IMAGEN ASESOR -->
                                         <div class="imagen">
-                                            <img class="w-100 h-100" src="images/asesor3.jpg" class="card-img-top" alt="...">
+                                            <img class="w-100" src="images/asesor3.png" class="card-img-top" alt="...">
                                         </div>
                                         <!-- IMAGEN ASESOR -->
 
@@ -326,10 +326,10 @@ $page = "Inicio" ?>
 
                 </section>
             </div>
-            <!-- TRES SIGUIENTES ASESORES -->
+            <!-- SEGUNDO TRIO DE ASESORES -->
 
-            <!-- TRES SIGUIENTES ASESORES -->
-            <div class="carousel-item">
+            <!-- TERCER TRIO DE ASESORES -->
+            <div class="carousel-item ">
                 <section id="asesores">
 
                     <div class="container d-flex">
@@ -343,7 +343,7 @@ $page = "Inicio" ?>
                                     <div clas="text-break">
                                         <!-- IMAGEN ASESOR -->
                                         <div class="imagen">
-                                            <img class="w-100 h-100" src="images/asesor1.jpg" class="card-img-top" alt="...">
+                                            <img class="w-100" src="images/asesor1.png" class="card-img-top" alt="...">
                                         </div>
                                         <!-- IMAGEN ASESOR -->
 
@@ -380,7 +380,7 @@ $page = "Inicio" ?>
                                     <div clas="text-break">
                                         <!-- IMAGEN ASESOR -->
                                         <div class="imagen">
-                                            <img class="w-100 h-100" src="images/asesor4.jpg" class="card-img-top" alt="...">
+                                            <img class="w-100" src="images/asesor2.png" class="card-img-top" alt="...">
                                         </div>
                                         <!-- IMAGEN ASESOR -->
 
@@ -417,7 +417,7 @@ $page = "Inicio" ?>
                                     <div clas="text-break">
                                         <!-- IMAGEN ASESOR -->
                                         <div class="imagen">
-                                            <img class="w-100 h-100" src="images/asesor3.jpg" class="card-img-top" alt="...">
+                                            <img class="w-100" src="images/asesor3.png" class="card-img-top" alt="...">
                                         </div>
                                         <!-- IMAGEN ASESOR -->
 
@@ -449,9 +449,10 @@ $page = "Inicio" ?>
 
                 </section>
             </div>
-            <!-- TRES SIGUIENTES ASESORES -->
+            <!-- TERCER TRIO DE ASESORES -->
 
         </div>
+
         <a class="carousel-control-prev" href="#carrusel2" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon2" aria-hidden="true"> <i class="fas fa-caret-left"></i> </span>
             <span class="sr-only">Previous</span>

@@ -765,13 +765,17 @@ footer {
 
             &:hover {
 
+                
+
+
                 img {
-                    filter: brightness(.7);
+                    filter: brightness(.5);
                     transition: all 250ms;
                     transform: scale(1.1);
                 }
 
                 .texto-animado {
+                    filter: drop-shadow(1px 1px 1px black);
                     top: 0;
                     opacity: 1;
                 }

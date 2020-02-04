@@ -76,7 +76,7 @@ $page = "Nosotros" ?>
                 </div>
 
                 <div class="col-6 pr-0 p-0">
-                    <div class="d-flex align-items-center justify-content-center imagen"> <img class="rounded" src="images/imagen_nosotros.jpg" alt=""></div>
+                    <div class="d-flex align-items-center justify-content-center imagen"> <img class="rounded" src="images/imagen_nosotros5.png" alt=""></div>
                 </div>
 
             </div>
