@@ -88,39 +88,7 @@ $page = "Nosotros" ?>
     <!-- TEXTOS NOSOTROS -->
 
     <!-- BANNER ESTADISTICAS -->
-    <section id="banner_estadisticas" class="mt-5">
-
-        <!-- <div id="fondo_negro"></div> -->
-
-        <div class="contenido_estadisticas d-flex container">
-
-            <div class="blanco col-12 p-0 d-flex">
-
-                <div class="col-3 d-flex flex-column justify-content-center align-items-center">
-                    <h4 class="gris  text-center"> Total Inmuebles </h4>
-                    <p class="numeros text-center"> 100 </p>
-                </div>
-
-                <div class="col-3 d-flex flex-column justify-content-center align-items-center">
-                    <h4 class="gris  text-center"> Total Arriendo </h4>
-                    <p class="numeros text-center"> 100 </p>
-                </div>
-
-                <div class="col-3 d-flex flex-column justify-content-center align-items-center">
-                    <h4 class="gris  text-center"> Total Venta </h4>
-                    <p class="numeros text-center"> 100 </p>
-                </div>
-
-                <div class="col-3 d-flex flex-column justify-content-center align-items-center">
-                    <h4 class="gris  text-center"> Total Arriendo/Venta </h4>
-                    <p class="numeros text-center"> 100 </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
+  
     <!-- BANNER ESTADISTICAS -->
 
     <!-- RENOCOCIMIENTOS -->
@@ -166,7 +134,6 @@ $page = "Nosotros" ?>
     <!-- FOOTER -->
 
     <?php include 'layout/2archivos_footer.php' ?>
-
 </body>
 
 </html>

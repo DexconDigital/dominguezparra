@@ -5,4 +5,5 @@
 <script src="js/boton_subir.js"></script>
 <!--  CONEXION API -->
 <script src="conexion_api/token_api.js"></script>
+<script src="conexion_api/validadores.js"></script>
 
