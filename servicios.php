@@ -41,7 +41,7 @@ $page = "Servicios" ?>
     
         <div class="accordion" id="accordionExample">
 
-            <div class="card">
+            <div class="card card1">
                 <div class="card-header" id="headingOne">
                     <div class="container">
                         <h2 class="mb-0">
@@ -53,7 +53,7 @@ $page = "Servicios" ?>
                                         <h2 class="text-center m-0"> <?php echo $texto_servicios['arrendamientos']['titulo'] ?> </h2>
                                     </div>
                                     <div>
-                                        <p> Ver Más. . . </p>
+                                        <p class="verm1"> Ver Más. . . </p>
                                     </div>
 
                                 </div>
@@ -82,7 +82,7 @@ $page = "Servicios" ?>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card card2">
                 <div class="card-header" id="headingOne">
                     <div class="container">
                         <h2 class="mb-0">
@@ -94,7 +94,7 @@ $page = "Servicios" ?>
                                         <h2 class="text-center m-0"> <?php echo $texto_servicios['ventas']['titulo'] ?> </h2>
                                     </div>
                                     <div>
-                                        <p> Ver Más. . . </p>
+                                        <p class="verm2"> Ver Más. . . </p>
                                     </div>
 
                                 </div>
@@ -122,7 +122,7 @@ $page = "Servicios" ?>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card card3">
                 <div class="card-header" id="headingOne">
                     <div class="container">
                         <h2 class="mb-0">
@@ -134,7 +134,7 @@ $page = "Servicios" ?>
                                         <h2 class="text-center m-0"> <?php echo $texto_servicios['propiedad']['titulo'] ?> </h2>
                                     </div>
                                     <div>
-                                        <p> Ver Más. . . </p>
+                                        <p class="verm3"> Ver Más. . . </p>
                                     </div>
 
                                 </div>
@@ -152,7 +152,7 @@ $page = "Servicios" ?>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card card4">
                 <div class="card-header" id="headingOne">
                     <div class="container">
                         <h2 class="mb-0">
@@ -164,7 +164,7 @@ $page = "Servicios" ?>
                                         <h2 class="text-center m-0"> <?php echo $texto_servicios['avaluos']['titulo'] ?> </h2>
                                     </div>
                                     <div>
-                                        <p> Ver Más. . . </p>
+                                        <p class="verm4"> Ver Más. . . </p>
                                     </div>
 
                                 </div>
@@ -184,7 +184,7 @@ $page = "Servicios" ?>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card card5">
                 <div class="card-header" id="headingOne">
                     <div class="container">
                         <h2 class="mb-0">
@@ -196,7 +196,7 @@ $page = "Servicios" ?>
                                         <h2 class="text-center m-0"> <?php echo $texto_servicios['asesoria']['titulo'] ?> </h2>
                                     </div>
                                     <div>
-                                        <p> Ver Más. . . </p>
+                                        <p class="verm5"> Ver Más. . . </p>
                                     </div>
 
                                 </div>
@@ -228,6 +228,8 @@ $page = "Servicios" ?>
     <!-- FOOTER -->
 
     <?php include 'layout/2archivos_footer.php' ?>
+
+    <script src="js/servicios.js"></script>
 
 
 </body>

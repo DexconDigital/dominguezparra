@@ -296,7 +296,7 @@ $texto_servicios = [
 	],
 	"asesoria" =>[
 		"titulo" => "Asesoría Jurídica, consultoría administrativa y contable en el campo inmobiliario",
-		"parrafo" => "En la INMOBILIARIA ALEJANDRO DOMINGUEZ PARRA S.A contamos con un excelente Equipo Profesional de Asesores y Consultores Jurídicos especializados en Derecho Inmobiliario y Comercialque le garantizan una correcta interpretación de las normas legales.",
+		"parrafo" => "En la INMOBILIARIA ALEJANDRO DOMINGUEZ PARRA S.A contamos con un excelente Equipo Profesional de Asesores y Consultores Jurídicos especializados en Derecho Inmobiliario y Comercial que le garantizan una correcta interpretación de las normas legales.",
 		],
 	// "mantenimiento" =>[
 		// "titulo" => "Mantenimiento",

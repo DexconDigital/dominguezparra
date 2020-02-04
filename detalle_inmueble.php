@@ -201,7 +201,7 @@ $page = "Detalle de Inmueble" ?>
 
                         <!----------BOTONES---------->
 
-                        <div class="d-flex flex-wrap">
+                        <div class="d-flex flex-wrap mb-3">
 
                             <div id="boton1" class="activo d-flex justify-content-center align-items-center boton_caracteristicas p-0 col-3" type="button" data-toggle="collapse" data-target="#uno" aria-expanded="true" aria-controls="collapseExample">
                                 Características Internas
