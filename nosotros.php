@@ -54,10 +54,10 @@ $page = "Nosotros" ?>
                     <div class="col-12 mt-4 d-flex justify-content-center align-items-center flex-column">
                         <h2 class="d-flex justify-content-center"> Matriculas Arrendador </h2>
                         <ul class="px-3">
-                            <li> MA 023 Oficio 192/2003 - Bucaramanga </li>
-                            <li> R.I 009-2009/ Resolución 0073/2009 - Floridablanca </li>
-                            <li> M.A 0030/ Resolución 0030/2014 - Piedecuesta </li>
-                            <li> M.A 078/ Resolución 078/2014 – Girón </li>
+                            <p> <span class='viñetas mr-2'>»</span>MA 023 Oficio 192/2003 - Bucaramanga </p>
+                            <p> <span class='viñetas mr-2'>»</span>R.I 009-2009/ Resolución 0073/2009 - Floridablanca </p>
+                            <p> <span class='viñetas mr-2'>»</span>M.A 0030/ Resolución 0030/2014 - Piedecuesta </p>
+                            <p> <span class='viñetas mr-2'>»</span>M.A 078/ Resolución 078/2014 – Girón </p>
                         </ul>
                     </div>
 

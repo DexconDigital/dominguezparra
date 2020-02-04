@@ -5,7 +5,7 @@
 
 <footer class="pt-3">
 
-    <div class="container">
+    <div class="container py-2">
         <div class="col-12 p-0 d-flex flex-column">
 
             <div class="col-12">
@@ -13,7 +13,7 @@
                 <div class="d-flex">
 
                     <!-- SEDE PRINCIPAL -->
-                    <div class="col-4">
+                    <div class="col-4 mt-2">
                         <h3 class="titulos text-justify d-flex justify-content-center"> <b class=" verde_oscuro"> Sucursal Principal </b> </h3>
 
                         <!-- MODAL -->
@@ -90,7 +90,7 @@
 
 
                     <!-- SEDE CABECERA -->
-                    <div class="col-4">
+                    <div class="col-4 mt-2">
                         <h3 class="titulos text-justify d-flex justify-content-center"> <b class=" verde_oscuro"> Sucursal Cabecera </b> </h3>
 
                         <!-- MODAL -->
@@ -167,7 +167,7 @@
 
 
                     <!-- SEDE CAÑAVERAL -->
-                    <div class="col-4">
+                    <div class="col-4 mt-2">
                         <h3 class="titulos text-justify d-flex justify-content-center"> <b class=" verde_oscuro"> Sucursal Cañaveral </b> </h3>
 
                         <!-- MODAL -->

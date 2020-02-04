@@ -181,8 +181,8 @@ $texto_quienes_somos = [
 		"titulo" => "Nosotros",//en negrita
 		"parrafos" => [
 			0 => "Nuestra compañía fundada en 1930, siendo la de mayor tradición en la Ciudad continua como organización líder por sus modernos procesos  y agilidad en la consecución de calificados arrendatarios, ofreciendo servicios de calidad.",
-			1 => "•	Un grupo humano comprometido para atenderle con la mayor calidad y profesionalismo.",
-			2 => "•	Tres oficinas distribuidas estratégicamente en el área metropolitana para brindar atención integral y conseguir su mejor opción de vivienda.",
+			1 => "<span class='viñetas'>»</span>	Un grupo humano comprometido para atenderle con la mayor calidad y profesionalismo.",
+			2 => "<span class='viñetas'>»</span>	Tres oficinas distribuidas estratégicamente en el área metropolitana para brindar atención integral y conseguir su mejor opción de vivienda.",
 		],	
 	],
 	"mision" => [
