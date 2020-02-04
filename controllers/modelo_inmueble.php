@@ -113,7 +113,7 @@ function modelo_inmueble2($r)
         }
         echo '
         <div style="height:200px;" class="carta my-5 ">
-        <a href="#" class="d-flex" id="inmuebles2">
+        <a href="./detalle_inmueble.php?co=' . $codigo . '" class="d-flex" id="inmuebles2">
 
             
             <div class="card2 col-6 p-0 position-relative">
@@ -206,41 +206,81 @@ function modelo_inmueble_similare($r)
 
     for ($i = 0; $i < count($r); $i++) {
         $imagen = existeImagen(($r[$i]['foto1']));
-        $codigo = str_ireplace("987-", "", $r[$i]['Codigo_Inmueble']);
+        $codigo = str_ireplace("986-", "", $r[$i]['Codigo_Inmueble']);
         $api = $r[$i];
 
         echo '
-    <div class="col-lg-12 col-md-6 col-12">
-    <div class="item mb-4">
-    <div class="card" style="">
-        <div class="property">
-            <a href="./detalle_inmueble.php?co=' . $codigo . '">
-                <div class="property-image">
-                    <img class="alto_img" alt="" src="' . $imagen . '"></div>
-                <div class="overlay">
+
+        <div class="col-12 py-3">
+
+        <div class="d-flex align-items-center caja_direccion">
+            <i class="mx-2 fas fa-map-marker-alt"></i>
+            <p>' . $api['Barrio'] . ', ' . $api['Ciudad'] . ' </p>
+        </div>
+        <div style="height:200px;" class="carta mb-5 ">
+            <a href="./detalle_inmueble.php?co=' . $codigo . '" class="d-flex flex-wrap" id="inmuebles2">
+
+                <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
+                <div class="card2 col-12 p-0 position-relative">
+
+                    <div class="imagen w-100 h-100">
+                        <img src="' . $imagen . '" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="caja_negra"> </div>
+
+                    <div class="tipo_inmueble d-flex align-items-center">
+                        <p class="ml-2">' . $api['Tipo_Inmueble'] . ' </p>
+                    </div>
+
+                    <div class="tipo_gestion d-flex align-items-center">
+                        <p class="mr-2"> ' . $api['Gestion'] . '</p>
+                    </div>
 
                 </div>
+                <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
+
+                <!-- DESCRIPCIÓN DE INMUEBLE -->
+                <div style="height:40px" class="contenido col-12 d-flex flex-column">
+
+
+                    <!-- ICONOS -->
+                    <div class="fondo_caracteristicas1 d-flex align-items-center justify-content-around">
+
+                        <div class="d-flex py-2 align-items-center">
+                            <i class="blanco fas fa-chart-area"></i>
+                            <p class="blanco pl-2">' . $api['AreaConstruida'] . 'm<sup>2</sup> </p>
+                        </div>
+
+                        <div class="d-flex py-2 align-items-center">
+                            <i class="blanco fas fa-bath"></i>
+                            <p class="blanco pl-2"> ' . $api['banios'] . '</p>
+                        </div>
+
+                        <div class="d-flex py-2 align-items-center">
+                            <i class="blanco fas fa-bed"></i>
+                            <p class="blanco pl-2"> ' . $api['Alcobas'] . ' </p>
+                        </div>
+
+                        <div class="d-flex py-2 align-items-center">
+                            <i class="blanco fas fa-warehouse"></i>
+                            <p class="blanco pl-2"> ' . $api['garaje'] . ' </p>
+                        </div>
+
+                    </div>
+                    <div class="fondo_caracteristicas2"></div>
+                    <div class="fondo_caracteristicas3"></div>
+
+
+
+                </div>
+
+
             </a>
         </div>
-        <div class=" row col-12 margen_card">
-            <div class="col-12">
-                <p class="mb-1"><b>' . $api['Tipo_Inmueble'] . ' en ' . $api['Gestion'] . ' </b></p>
-            </div>
-            <div class="col-12">
-                <p class="mb-1"><i class="fas fa-map-marker-alt mr-2"></i>' . $api['Barrio'] . ', ' . $api['Ciudad'] . '</p>
-            </div>
-            <hr>
-            <div class="col-12">
-                <p class="mb-1"> <small>
-                        Código: ' . $codigo . '
-                    </small>
-                </p>
-            </div>
-        </div>
+
+
     </div>
- </div>
-    </div>
-    
     ';
     }
 }

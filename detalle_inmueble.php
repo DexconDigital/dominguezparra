@@ -1,4 +1,5 @@
 <?php require 'variables/variables.php';
+require 'controllers/detalleInmuebleController.php';
 $page = "Detalle de Inmueble" ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -8,12 +9,39 @@ $page = "Detalle de Inmueble" ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php include 'layout/1archivos_header.php' ?>
+    <link rel="stylesheet" href="css/carousel.inmuebles.css">
+    <link rel="stylesheet" href="mapas/leaflet.css" crossorigin="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?php echo 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
+    <meta property="og:title" content="<?php echo $r['Tipo_Inmueble'] . ' en ' . $r['Gestion']; ?>" />
+    <meta property="og:description" content="Inmueble ubicado en: <?php echo $r['barrio'] . ', ' . $r['ciudad'] . ', ' . $r['depto']; ?> " />
+    <meta property="og:image" itemprop="image" content="<?php echo $r['fotos'][0]['foto']; ?>" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <style>
+        #map {
+            height: 300px;
+            z-index: 20;
+        }
 
+        .leaflet-control {
+            z-index: 200;
+        }
+
+        .leaflet-control {
+            z-index: 20;
+        }
+    </style>
     <title> <?php echo $page . ' | ' . $nombre_inmobiliaria ?> </title>
+
 </head>
 
 <body>
-
+    <link itemprop="thumbnailUrl" href="<?php echo $r['fotos'][0]['foto']; ?>">
+    <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+        <link itemprop="url" href="<?php echo $r['fotos'][0]['foto']; ?>">
+    </span>
     <!-- HEADER -->
     <section>
         <?php include 'layout/3header.php' ?>
@@ -46,38 +74,19 @@ $page = "Detalle de Inmueble" ?>
             <div>
                 <!-- IMAGENES -->
                 <section class="mt-3" id="slide-detalle">
-
-                    <div class="contenedor-img">
-                        <img src="images/casa1.jpg" alt="">
-                    </div>
-
-                    <div class="contenedor-img">
-                        <img src="images/casa2.jpg" alt="">
-                    </div>
-
-                    <div class="contenedor-img">
-                        <img src="images/casa1.jpg" alt="">
-                    </div>
-
-                    <div class="contenedor-img">
-                        <img src="images/casa2.jpg" alt="">
-                    </div>
-
-                    <div class="contenedor-img">
-                        <img src="images/casa1.jpg" alt="">
-                    </div>
-
-                    <div class="contenedor-img">
-                        <img src="images/casa2.jpg" alt="">
-                    </div>
-
-                    <div class="contenedor-img">
-                        <img src="images/casa1.jpg" alt="">
-                    </div>
-
-                    <div class="contenedor-img">
-                        <img src="images/casa2.jpg" alt="">
-                    </div>
+                    <?php
+                    if (isset($r['fotos'])) {
+                        for ($i = 0; $i < count($r['fotos']); $i++) {
+                            echo '<div class="contenedor-img">
+                                        <img src="' . $r['fotos'][$i]['foto'] . '" alt="">
+                                    </div>';
+                        }
+                    } else {
+                        echo  '<div class="contenedor-img">
+                                        <img src="images/no_image.png" alt="">
+                                    </div>';
+                    }
+                    ?>
 
                 </section>
                 <!-- IMAGENES -->
@@ -85,37 +94,19 @@ $page = "Detalle de Inmueble" ?>
                 <!-- MINIATURAS -->
                 <section class="vertical-center-4 slider" id="miniaturas">
 
-                    <div class="contenedor-img">
-                        <img src="images/casa1.jpg" alt="">
-                    </div>
-
-                    <div class="contenedor-img">
-                        <img src="images/casa2.jpg" alt="">
-                    </div>
-
-                    <div class="contenedor-img">
-                        <img src="images/casa1.jpg" alt="">
-                    </div>
-
-                    <div class="contenedor-img">
-                        <img src="images/casa2.jpg" alt="">
-                    </div>
-
-                    <div class="contenedor-img">
-                        <img src="images/casa1.jpg" alt="">
-                    </div>
-
-                    <div class="contenedor-img">
-                        <img src="images/casa2.jpg" alt="">
-                    </div>
-
-                    <div class="contenedor-img">
-                        <img src="images/casa1.jpg" alt="">
-                    </div>
-
-                    <div class="contenedor-img">
-                        <img src="images/casa2.jpg" alt="">
-                    </div>
+                    <?php
+                    if (isset($r['fotos'])) {
+                        for ($i = 0; $i < count($r['fotos']); $i++) {
+                            echo '<div class="contenedor-img">
+                                        <img src="' . $r['fotos'][$i]['foto'] . '" alt="">
+                                    </div>';
+                        }
+                    } else {
+                        echo  '<div class="contenedor-img">
+                                        <img src="images/no_image.png" alt="">
+                                    </div>';
+                    }
+                    ?>
 
                 </section>
                 <!-- MINIATURAS -->
@@ -128,17 +119,26 @@ $page = "Detalle de Inmueble" ?>
                 <div class="d-flex align-items-center justify-content-between">
 
                     <div class="d-flex align-items-center">
-                        <h5 class="m-0"> Tipo de Inmueble/Tipo de Gestion </h5>
+                        <h5 class="m-0"> <?php echo $r['Tipo_Inmueble'] . ' /' . $r['Gestion']; ?> </h5>
                     </div>
 
                     <div class="d-flex align-items-center">
                         <i class="verde mr-2 fas fa-map-marker-alt"></i>
-                        <h5 class="m-0"> Dirección </h5>
+                        <h5 class="m-0"> <?php echo $r['barrio'] . ', ' . $r['ciudad']; ?> </h5>
                     </div>
 
                 </div>
 
-                <h5 class="mt-2 m-0"> $ 1.000.000.000.000 </h5>
+                <h5 class="mt-2 m-0">
+                    <?php if ($r['Gestion'] == 'Arriendo') {
+                        echo '<span class="precio">$ ' . $r['ValorCanon'] . '</span>';
+                    } else if ($r['Gestion'] == 'Venta') {
+                        echo '<span class="precio">$ ' . $r['ValorVenta'] . '</span>';
+                    } else {
+                        echo '<span class="precio">$ ' . $r['ValorCanon'] . ' /$' . $r['ValorVenta'] . '</span>';
+                    }
+                    ?>
+                </h5>
             </div>
             <!-- PRECIO Y DIRECCIÓN -->
 
@@ -151,28 +151,29 @@ $page = "Detalle de Inmueble" ?>
                     <!-- AREA -->
                     <div class="d-flex mr-3 align-items-center">
                         <i class="verde mr-1 fas fa-chart-area"> </i>
-                        <p> 5 </p>
+                        <p> <?php echo $r['AreaConstruida'] . 'm<sup>2'; ?> </p>
                     </div>
                     <!-- AREA -->
 
                     <!-- BAÑOS -->
                     <div class="d-flex mr-3 align-items-center">
                         <i class="verde mr-1 fas fa-bath"> </i>
-                        <p> 5 </p>
+                        <p> <?php echo $r['banos']; ?></php>
+                        </p>
                     </div>
                     <!-- BAÑOS -->
 
                     <!-- ALCOBAS -->
                     <div class="d-flex mr-3 align-items-center">
                         <i class="verde mr-1 fas fa-bed"> </i>
-                        <p> 5 </p>
+                        <p> <?php echo  $r['alcobas']; ?> </p>
                     </div>
                     <!-- ALCOBAS -->
 
                     <!-- GARAJES -->
                     <div class="d-flex mr-3 align-items-center">
                         <i class="verde mr-1 fas fa-warehouse"> </i>
-                        <p> 5 </p>
+                        <p> <?php echo $r['garaje']; ?> </p>
                     </div>
                     <!-- GARAJES -->
 
@@ -180,7 +181,7 @@ $page = "Detalle de Inmueble" ?>
                 <!-- CARACTERISTICAS -->
 
                 <div>
-                    <p class="text-muted"> Código: 12345 </p>
+                    <p class="text-muted"> Código: <?php echo $co; ?> </p>
                 </div>
 
             </div>
@@ -189,7 +190,7 @@ $page = "Detalle de Inmueble" ?>
             <!-- DESCRIPCION -->
             <div class="mt-5">
                 <h5 class="d-inline-block m-0 position-relative linea font-weight-bold"> Descripción </h5>
-                <p class="my-3"> *DESCRIPCIÓN* Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem suscipit culpa natus quia debitis, consectetur ullam expedita laudantium ex, numquam mollitia? Autem veniam dolore quis, soluta hic in architecto. </p>
+                <p class="my-3"> <?php echo  $r['descripcionlarga']; ?> </p>
             </div>
             <!-- DESCRIPCION -->
 
@@ -229,10 +230,21 @@ $page = "Detalle de Inmueble" ?>
 
                             <div id="uno" class="collapse show" aria-labelledby="uno" data-parent="#accordion">
 
-                                <h5 class="font-weight-bold mt-3 d-inline-block linea position-relative">Características Internas </h5>
-
-                                <p class="mb-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat odio aliquid iusto? Assumenda nesciunt corrupti incidunt ratione facere excepturi dignissimos quasi voluptatum in laborum soluta, vitae obcaecati temporibus! Ipsa consequuntur, laudantium sed blanditiis labore quasi, quaerat ratione accusantium iusto quod iure veniam debitis, repellendus cupiditate nostrum veritatis quibusdam ut. </p>
-
+                                <?php
+                                if (count($r['caracteristicasInternas']) > 0) {
+                                    echo
+                                        '<div class="col-md-12" style="margin-bottom: 12px;">
+                                        <h5 class="font-weight-bold mt-3 d-inline-block linea position-relative">Características Internas </h5>
+                                        <ul>';
+                                    for ($i = 0; $i < count($r['caracteristicasInternas']); $i++) {
+                                        $caracteristicas = ltrim($r['caracteristicasInternas'][$i]['Descripcion']);
+                                        echo '<li>' . $caracteristicas . '</li>';
+                                    }
+                                    echo  '</ul>
+                                </div>
+                            ';
+                                }
+                                ?>
                             </div>
                         </div>
                         <!-- DESCRIPCIÓN CARACTERISTICAS INTERNAS -->
@@ -240,8 +252,21 @@ $page = "Detalle de Inmueble" ?>
                         <!-- DESCRIPCIÓN CATACTERISTICAS EXTERNAS -->
                         <div class="col-12 p-0">
                             <div id="dos" class="collapse" aria-labelledby="dos" data-parent="#accordion">
-                                <h5 class="font-weight-bold mt-3 d-inline-block linea position-relative">Características Externas </h5>
-                                <p class="mb-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat odio aliquid iusto? Assumenda nesciunt corrupti incidunt ratione facere excepturi dignissimos quasi voluptatum in laborum soluta, vitae obcaecati temporibus! Ipsa consequuntur, laudantium sed blanditiis labore quasi, quaerat ratione accusantium iusto quod iure veniam debitis, repellendus cupiditate nostrum veritatis quibusdam ut. </p>
+                                <?php
+                                if (count($r['caracteristicasExternas']) > 0) {
+                                    echo
+                                        '<div class="col-md-12" style="margin-bottom: 12px;">
+                                        <h5 class="font-weight-bold mt-3 d-inline-block linea position-relative">Características Externas </h5>
+                                        <ul>';
+                                    for ($i = 0; $i < count($r['caracteristicasExternas']); $i++) {
+                                        $caracteristicas = ltrim($r['caracteristicasExternas'][$i]['Descripcion']);
+                                        echo '<li>' . $caracteristicas . '</li>';
+                                    }
+                                    echo  '</ul>
+                                </div>
+                            ';
+                                }
+                                ?>
                             </div>
                         </div>
                         <!-- DESCRIPCIÓN CATACTERISTICAS EXTERNAS -->
@@ -249,8 +274,21 @@ $page = "Detalle de Inmueble" ?>
                         <!-- DESCRIPCIÓN CARACTERISTICAS ALREDEDORES -->
                         <div class="col-12 p-0 ">
                             <div id="tres" class="collapse" aria-labelledby="dos" data-parent="#accordion">
-                                <h5 class="font-weight-bold mt-3 d-inline-block linea position-relative">Características Alrededores </h5>
-                                <p class="mb-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat odio aliquid iusto? Assumenda nesciunt corrupti incidunt ratione facere excepturi dignissimos quasi voluptatum in laborum soluta, vitae obcaecati temporibus! Ipsa consequuntur, laudantium sed blanditiis labore quasi, quaerat ratione accusantium iusto quod iure veniam debitis, repellendus cupiditate nostrum veritatis quibusdam ut. </p>
+                                <?php
+                                if (count($r['caracteristicasAlrededores']) > 0) {
+                                    echo
+                                        '<div class="col-md-12" style="margin-bottom: 12px;">
+                                        <h5 class="font-weight-bold mt-3 d-inline-block linea position-relative">Características Alrededores </h5>
+                                        <ul>';
+                                    for ($i = 0; $i < count($r['caracteristicasAlrededores']); $i++) {
+                                        $caracteristicas = ltrim($r['caracteristicasAlrededores'][$i]['Descripcion']);
+                                        echo '<li>' . $caracteristicas . '</li>';
+                                    }
+                                    echo  '</ul>
+                                </div>
+                            ';
+                                }
+                                ?>
                             </div>
                         </div>
                         <!-- DESCRIPCIÓN CARACTERISTICAS ALREDEDORES -->
@@ -258,8 +296,24 @@ $page = "Detalle de Inmueble" ?>
                         <!-- VIDEO -->
                         <div class="col-12 p-0">
                             <div id="cuatro" class="collapse" aria-labelledby="dos" data-parent="#accordion">
-                                <h5 class="font-weight-bold mt-3 d-inline-block linea position-relative"> Video </h5>
-                                <iframe class="w-100" height="409" src="https://www.youtube.com/embed/tHt0UvoPrJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div id="referencia_inmueble" class="col-md-12 mt-3  ">
+                                    <?php if ($r['video'] != "") {
+                                        echo
+                                            ' <h5 class="font-weight-bold mt-3 d-inline-block linea position-relative"> Video </h5>
+                                    <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Video</h5>
+                                    <div class="row">
+                                        <div class="col-12 col-md-4">
+                                        <iframe class="w-100" height="409" src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                ';
+                                    } ?>
+
+                                </div>
                             </div>
                         </div>
                         <!-- VIDEO -->
@@ -271,7 +325,14 @@ $page = "Detalle de Inmueble" ?>
             <!-- BOTONES CARACTERISTICAS -->
 
             <!-- MAPA -->
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641084516!2d-74.24789504734623!3d4.6482837170972555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1580749761083!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div class="col-md-12 mb-3">
+                <h4 class="property-single-detail-title"><strong>Mapa de Ubicación</strong></h4>
+                <div class="card mapa_tamaño">
+                    <div class="">
+                        <div id="map" class="w-100"></div>
+                    </div>
+                </div>
+            </div>
             <!-- MAPA -->
 
 
@@ -288,22 +349,22 @@ $page = "Detalle de Inmueble" ?>
                 </div>
 
                 <div class="caja_asesor rounded m-auto w-75 pt-3">
-                    <img class="rounded w-100 h-100" src="images/no_image.png" alt="">
+                    <img class="rounded w-100 h-100" src="<?php echo $asesor['FotoAsesor']; ?>" width="100%" height="100%" alt="">
                 </div>
 
                 <div class="d-flex align-items-center mt-4 mb-2">
                     <i class="verde mr-2 fas fa-user"> </i>
-                    <p> Nombre de Asesor </p>
+                    <p> <?php echo $asesor['ntercero']; ?> </p>
                 </div>
 
-                <a href="#" class="d-flex align-items-center my-2">
+                <a href="tel:+57<?php echo $asesor['celular']; ?>" class="d-flex align-items-center  my-2">
                     <i class="verde mr-2 fas fa-phone"> </i>
-                    <p> Telefono Asesor </p>
+                    <p><?php echo $asesor['celular']; ?> </p>
                 </a>
 
-                <a href="#" class="d-flex align-items-center my-2">
+                <a href="mailto:<?php echo $asesor['correo']; ?>" class="d-flex align-items-center my-2 text-break">
                     <i class="verde mr-2 fas fa-envelope"> </i>
-                    <p> Correo </p>
+                    <p> <?php echo $asesor['correo']; ?> </p>
                 </a>
             </div>
             <!-- ASESOR -->
@@ -316,150 +377,7 @@ $page = "Detalle de Inmueble" ?>
                 <section id="inmuebles2" class="position-relative container">
 
                     <div class="d-flex align-items-start justify-content-between flex-wrap">
-
-                        <div class="col-12 py-3">
-
-                            <div class="d-flex align-items-center caja_direccion">
-                                <i class="mx-2 fas fa-map-marker-alt"></i>
-                                <p> Dirección </p>
-                            </div>
-                            <div style="height:200px;" class="carta mb-5 ">
-                                <a href="#" class="d-flex flex-wrap" id="inmuebles2">
-
-                                    <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
-                                    <div class="card2 col-12 p-0 position-relative">
-
-                                        <div class="imagen w-100 h-100">
-                                            <img src="images/casa2.jpg" class="card-img-top" alt="...">
-                                        </div>
-
-                                        <div class="caja_negra"> </div>
-
-                                        <div class="tipo_inmueble d-flex align-items-center">
-                                            <p class="ml-2"> tipo de inmueble </p>
-                                        </div>
-
-                                        <div class="tipo_gestion d-flex align-items-center">
-                                            <p class="mr-2"> tipo de gestion </p>
-                                        </div>
-
-                                    </div>
-                                    <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
-
-                                    <!-- DESCRIPCIÓN DE INMUEBLE -->
-                                    <div style="height:40px" class="contenido col-12 d-flex flex-column">
-
-
-                                        <!-- ICONOS -->
-                                        <div class="fondo_caracteristicas1 d-flex align-items-center justify-content-around">
-
-                                            <div class="d-flex py-2 align-items-center">
-                                                <i class="blanco fas fa-chart-area"></i>
-                                                <p class="blanco pl-2">100m<sup>2</sup> </p>
-                                            </div>
-
-                                            <div class="d-flex py-2 align-items-center">
-                                                <i class="blanco fas fa-bath"></i>
-                                                <p class="blanco pl-2"> 5</p>
-                                            </div>
-
-                                            <div class="d-flex py-2 align-items-center">
-                                                <i class="blanco fas fa-bed"></i>
-                                                <p class="blanco pl-2"> 5 </p>
-                                            </div>
-
-                                            <div class="d-flex py-2 align-items-center">
-                                                <i class="blanco fas fa-warehouse"></i>
-                                                <p class="blanco pl-2"> 5 </p>
-                                            </div>
-
-                                        </div>
-                                        <div class="fondo_caracteristicas2"></div>
-                                        <div class="fondo_caracteristicas3"></div>
-
-
-
-                                    </div>
-
-
-                                </a>
-                            </div>
-
-
-                        </div>
-
-                        <div class="col-12 py-3">
-
-                            <div class="d-flex align-items-center caja_direccion">
-                                <i class="mx-2 fas fa-map-marker-alt"></i>
-                                <p> Dirección </p>
-                            </div>
-
-                            <div style="height:200px;" class="carta mb-5 ">
-                                <a href="#" class="d-flex flex-wrap" id="inmuebles2">
-
-                                    <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
-                                    <div class="card2 col-12 p-0 position-relative">
-
-                                        <div class="imagen w-100 h-100">
-                                            <img src="images/casa1.jpg" class="card-img-top" alt="...">
-                                        </div>
-
-                                        <div class="caja_negra"> </div>
-
-                                        <div class="tipo_inmueble d-flex align-items-center">
-                                            <p class="ml-2"> tipo de inmueble </p>
-                                        </div>
-
-                                        <div class="tipo_gestion d-flex align-items-center">
-                                            <p class="mr-2"> tipo de gestion </p>
-                                        </div>
-
-                                    </div>
-                                    <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
-
-                                    <!-- DESCRIPCIÓN DE INMUEBLE -->
-                                    <div style="height:40px" class="contenido col-12 d-flex flex-column">
-
-
-                                        <!-- ICONOS -->
-                                        <div class="fondo_caracteristicas1 d-flex align-items-center justify-content-around">
-
-                                            <div class="d-flex py-2 align-items-center">
-                                                <i class="blanco fas fa-chart-area"></i>
-                                                <p class="blanco pl-2">100m<sup>2</sup> </p>
-                                            </div>
-
-                                            <div class="d-flex py-2 align-items-center">
-                                                <i class="blanco fas fa-bath"></i>
-                                                <p class="blanco pl-2"> 5</p>
-                                            </div>
-
-                                            <div class="d-flex py-2 align-items-center">
-                                                <i class="blanco fas fa-bed"></i>
-                                                <p class="blanco pl-2"> 5 </p>
-                                            </div>
-
-                                            <div class="d-flex py-2 align-items-center">
-                                                <i class="blanco fas fa-warehouse"></i>
-                                                <p class="blanco pl-2"> 5 </p>
-                                            </div>
-
-                                        </div>
-                                        <div class="fondo_caracteristicas2"></div>
-                                        <div class="fondo_caracteristicas3"></div>
-
-
-
-                                    </div>
-
-
-                                </a>
-                            </div>
-
-
-                        </div>
-
+                        <?php similares($r['IdCiudad'], $r['IdTpInm']); ?>
                     </div>
 
                 </section>
@@ -474,23 +392,6 @@ $page = "Detalle de Inmueble" ?>
     </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- FOOTER -->
     <section>
         <?php include 'layout/5footer.php' ?>
@@ -498,8 +399,7 @@ $page = "Detalle de Inmueble" ?>
     <!-- FOOTER -->
 
     <?php include 'layout/2archivos_footer.php' ?>
-
-
+    <script src="js/slick.min.js"></script>
     <!-- Carrusel -->
     <script>
         $('#slide-detalle').slick({
@@ -546,7 +446,19 @@ $page = "Detalle de Inmueble" ?>
     <!-- Carrusel -->
 
     <script src="js/botones.js"></script>
+    <!-- mapa del inmueble -->
+    <script src="mapas/leaflet.js" crossorigin=""></script>
+    <script>
+        var map = L.map('map').setView([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>], 14);
 
+        L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=1rAGHv3KcO1nrS6S9cgI', {
+            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>'
+        }).addTo(map);
+
+        L.marker([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>]).addTo(map)
+            .bindPopup('<img src="<?php echo $r['fotos'][0]['foto'] ?>"])" alt="" width="55px" height="auto"><br>Ubicación')
+            .openPopup();
+    </script>
 </body>
 
 </html>

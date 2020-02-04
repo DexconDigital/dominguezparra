@@ -20,13 +20,13 @@
                         </div>
 
                         <div  class="col-3 form-group f11">
-                            <select class="form-control f1" id="tipo_inmueble_buscar">
+                            <select class="form-control f1 select-min" id="tipo_inmueble_buscar">
                                 <option selected default> Tipo de Inmueble </option>
                             </select>
                         </div>
 
                         <div class="col-3 form-group f11">
-                            <select class="form-control f1" id="tipo_gestion_buscar">
+                            <select class="form-control f1 select-min" id="tipo_gestion_buscar">
                                 <option selected default> Tipo de Gestión </option>
                             </select>
                         </div>

@@ -63,7 +63,6 @@ $page = "Inmuebles" ?>
                                 <option selected default> Tipo de Gestión </option>
                             </select>
                         </div>
-
                         <div class="col-6 form-group f11 pl-0">
                             <select class="form-control f1" id="ciudad_buscar">
                                 <option selected default> Ciudad </option>
@@ -186,8 +185,9 @@ $page = "Inmuebles" ?>
     <!-- buscador -->
     <script src="conexion_api/validadores.js"></script>
     <script src="conexion_api/buscador.js"></script>
-     <!-- barra de rangos -->
-     <script src="js/rangos.js"></script>
+    <!-- barra de rangos -->
+    <script src="js/rangos.js"></script>
+    
 </body>
 
 </html>
