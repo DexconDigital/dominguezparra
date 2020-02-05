@@ -197,14 +197,14 @@ $texto_quienes_somos = [
 		"titulo" => "Reconocimientos",//en negrita
 		"parrafos" => [
 			0 => "Nuestra dedicación y profesionalismo, así como la vocación de servicio a la comunidad, nos han hecho acreedores a valiosos reconocimientos que nos honran y son un estimulo para continuar en nuestra labor. Entre estas distinciones se destacan:", 
-			1 => "<span class='viñetas'>»</span> Botón 50 años de servicios profesionales (Federación Colombiana de Lonjas de Propiedad Raiz).", 
-			2 => "<span class='viñetas'>»</span> Inmobiliaria del Año Medalla Socio Fundador (Lonja de Propiedad Raiz de Santander).",
-			3 => "<span class='viñetas'>»</span> Mención Especial Cámara de Comercio",
-			4 => "<span class='viñetas'>»</span> Orden al Mérito Comercial 'Grado de Oro' Aquileo Parra (Fenalco Santander).",
-			5 => "<span class='viñetas'>»</span> Orden al Mérito del Subsidio Familiar 'Grado de Oro' (Comfenalco Santander).",
-			6 => "<span class='viñetas'>»</span> Orden Ciudadano Meritorio categoria Gran Cruz Gobernación de Santander.",
-			7 => "<span class='viñetas'>»</span> Orden Ciudad de Bucaramanga al Merito Empresarial, Industrial y Comercial (Consejo de Bucaramanga).",
-			8 => "<span class='viñetas'>»</span> Orden de la Democracia Grado Cruz gran Oficial (Camara de Representantes)",
+			1 => "Botón 50 años de servicios profesionales (Federación Colombiana de Lonjas de Propiedad Raiz).", 
+			2 => "Inmobiliaria del Año Medalla Socio Fundador (Lonja de Propiedad Raiz de Santander).",
+			3 => "Mención Especial Cámara de Comercio",
+			4 => "Orden al Mérito Comercial 'Grado de Oro' Aquileo Parra (Fenalco Santander).",
+			5 => "Orden al Mérito del Subsidio Familiar 'Grado de Oro' (Comfenalco Santander).",
+			6 => "Orden Ciudadano Meritorio categoria Gran Cruz Gobernación de Santander.",
+			7 => "Orden Ciudad de Bucaramanga al Merito Empresarial, Industrial y Comercial (Consejo de Bucaramanga).",
+			8 => "Orden de la Democracia Grado Cruz gran Oficial (Camara de Representantes)",
 		],
 	],
 ];
