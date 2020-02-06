@@ -299,7 +299,7 @@ $page = "Contáctenos" ?>
 
                             <div class="ml-3 form-group form-check">
                                 <input type="checkbox" class="form-check-input" required>
-                                <label class="form-check-label" for="exampleCheck1"> Confirmo que he leído, entendido y acepto la <span class="tratamiento"><a href="POLITICA_DE_PROTECCION_DE_DATOS.pdf" download="POLITICA_DE_PROTECCION_DE_DATOS.pdf"></span>política de tratamiento de datos personales.</a> </label>
+                                <label class="form-check-label" for="exampleCheck1"> Confirmo que he leído, entendido y acepto la <a class="tratamiento" href="POLITICA_DE_PROTECCION_DE_DATOS.pdf" download="POLITICA_DE_PROTECCION_DE_DATOS.pdf">política de tratamiento de datos personales.</a> </label>
                             </div>
 
 

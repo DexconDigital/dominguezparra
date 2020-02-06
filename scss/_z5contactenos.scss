@@ -53,3 +53,12 @@
     }
 
 }
+
+.tratamiento {
+    
+    color: $verde;
+
+    &:hover {
+        color: $gris;
+    }
+}

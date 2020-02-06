@@ -18,6 +18,10 @@
   background-clip: padding-box;
   border: $input-border-width solid $input-border-color;
 
+  &:focus {
+    box-shadow: 0 0 0 0.2rem #00800061!important;
+  }
+
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
   @include border-radius($input-border-radius, 0);
 

@@ -909,10 +909,18 @@ overflow: hidden;
     
 }
 }
+.tratamiento {
+    
+    color: $verde;
+
+    &:hover {
+        color: $gris;
+    }
+}
 
 .page-item.active .page-link{
     z-index: 3;
-    color: #fff;
+    color: white!important;
     background-color: $verde !important;
     border-color:  $verde !important;
 }
