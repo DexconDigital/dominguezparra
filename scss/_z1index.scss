@@ -139,11 +139,20 @@ p{
 #seccion_redes {
 
     background-color: white;
-    height: 100px;
+    height: 145px;
     position: fixed;
-    top: 100px;
+    top: 140px;
     right: 0;
     z-index: 1000;
+
+    .logo_pse {
+        width: 31px;
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 
     .contenedor_iconos {
 
@@ -168,7 +177,7 @@ p{
 
         .iconos {
 
-            font-size: 20px;
+            font-size: 28px;
             transition: all 150ms ease-in-out;             
 
             &:hover {
@@ -177,8 +186,6 @@ p{
         }
 
     }
-
-
 }
 
 
@@ -187,12 +194,11 @@ header {
     box-shadow: 0 1px 12px grey;
     background-color: white;
     width: 100%;
-    height: 82px;
-
-    
-
+    height: 120px;
 
     #menu {
+
+        height: 100%;
 
         .navbar {
             height: 82px;
@@ -313,9 +319,9 @@ header {
 
         .telefono {
 
-            right: 53px;
+            right: 0px;
             top: 0px;
-            width: 161px;
+            width: 236px;
             color: white;
             height: 82px;
             padding: 17px;
@@ -337,26 +343,27 @@ header {
 
             &::before {
                 content: '';
-                right: 161px;
+                right: 236px;
                 display: block;
                 border-top: solid 0 transparent;
-                border-bottom: solid 82px #3BA52B;
+                border-bottom: solid 137px #3BA52B;
                 border-left: solid 22px transparent;
                 position: absolute;
                 bottom: 0;
-                top: 0;
+                top: -17px;
             }
 
-            &:after {
-                content: '';
-                padding: 41px;
-                width: -23px;
-                z-index: -1;
-                right: -53px;
-                top: 0;
-                position: absolute;
-                background-color: #3BA52B;
-            }
+            // &:after {
+            //     content: '';
+            //     padding: 41px;
+            //     width: -23px;
+            //     height:100%;
+            //     z-index: -1;
+            //     right: -53px;
+            //     top: 0;
+            //     position: absolute;
+            //     background-color: #3BA52B;
+            // }
  
 
         }
@@ -367,20 +374,11 @@ header {
             width: 350px;
         }
 
-        .logo_pse {
-            width: 40px;
-            transition: all 200ms ease-in-out;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
+        
 
     }
 
 }
-
-
 
 #buscador {
 

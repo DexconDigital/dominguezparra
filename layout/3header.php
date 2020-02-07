@@ -1,5 +1,5 @@
 <!-- Codigo del preloader -->
-<style>
+<!-- <style>
     #wrap-preload {
         position: fixed;
         z-index: 10;
@@ -44,42 +44,44 @@
     window.addEventListener("load", function() {
         loader.style.visibility = "hidden";
     });
-</script>
+</script> -->
 <!-- Fin de codigo preloader -->
-
 
 
 <section id="seccion_redes" class="rounded">
 
     <div class="contenedor_iconos rounded flex-column d-flex justify-content-around align-items-center h-100">
-        <div class="border-bottom w-100">
+        <div class="align-items-center border-bottom d-flex justify-content-center w-100">
             <a target="blank" href="<?php echo $redes_sociales['facebook']['link'] ?>"><i class="iconos icono_f ml-1 <?php echo $redes_sociales['facebook']['icono'] ?>"></i></a>
         </div>
 
-        <div class="border-bottom w-100">
+        <div class="align-items-center border-bottom d-flex justify-content-center w-100>
             <a target="blank" href="<?php echo $redes_sociales['twitter']['link'] ?>"><i class="iconos icono_t <?php echo $redes_sociales['twitter']['icono'] ?>"></i></a>
         </div>
 
-        <div class="">
+        <div class="align-items-center border-bottom d-flex justify-content-center w-100">
             <a target="blank" href="<?php echo $datos_contacto['principal']['whatsapp']['link'] ?>"><i class="iconos icono_w rounded <?php echo $datos_contacto['principal']['whatsapp']['icono'] ?>"></i></a>
         </div>
+
+        <div>
+            <a href="#"><img class="logo_pse" src="images/logopse.png" alt=""></a>
+        </div>
+    
     </div>
 
 </section>
 
 <header class="sticky-top position-fixed">
 
+    <section id="menu" class="d-flex align-items-center justify-content-center">
 
-
-
-    <section id="menu">
-
+        <!-- CAJA MENU -->
         <div class="container position-relative">
 
             <nav class="navbar w-100 d-flex align-items-center justify-content-between navbar navbar-expand-lg navbar-light p-0">
 
                 <div>
-                    <a href="index.php"><img style="width:350px" src="images/logo_color.png" alt=""></a>
+                    <a href="index.php"><img style="width:300px" src="images/logo_color.png" alt=""></a>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -114,6 +116,16 @@
                         </li>
 
                         <li class="nav-item position-relative">
+                            <a class="a2 nav-link <?php if ($page == 'Asesores') {
+                                                        echo 'span';
+                                                    } ?>" href="asesores.php"> <span class="<?php if ($page == 'Asesores') {
+                                                                                                echo 'active2';
+                                                                                            } ?>"></span> Asesores </a>
+                        </li>
+
+                        
+
+                        <li class="nav-item position-relative">
                             <a class="a2 nav-link <?php if ($page == 'Inmuebles') {
                                                         echo 'span';
                                                     } ?>" href="inmuebles.php?"> <span class="<?php if ($page == 'Inmuebles') {
@@ -130,9 +142,15 @@
                                 <a class="dropdown-item" target="blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&tipo=1"> Propietarios </a>
                                 <a class="dropdown-item" href="#"> Pagos PSE </a>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal"> Consignar Inmueble </a>
-
-
                             </div>
+                        </li>
+
+                        <li class="nav-item position-relative">
+                            <a class="a2 nav-link <?php if ($page == 'Asesores') {
+                                                        echo 'span';
+                                                    } ?>" href="asesores.php"> <span class="<?php if ($page == 'Asesores') {
+                                                                                                echo 'active2';
+                                                                                            } ?>"></span> Consiga <br> tu inmueble </a>
                         </li>
 
                         <li class="nav-item position-relative">
@@ -143,11 +161,7 @@
                                                                                                 } ?>"></span> Contáctenos </a>
                         </li>
 
-                        <li class="nav-item">
-                            <div>
-                                <a href="#"><img class="logo_pse" src="images/logopse.png" alt=""></a>
-                            </div>
-                        </li>
+
 
                     </ul>
 
@@ -156,11 +170,15 @@
             </nav>
 
         </div>
+        <!-- CAJA MENU -->
 
-        <div class="position-absolute telefono">
+
+        <!-- CAJA VERDE CON CELULAR -->
+        <div class="align-items-center d-flex flex-column h-100 justify-content-center position-absolute telefono">
 
             <a href="tel:<?php echo $datos_contacto['principal']['telefono_fijo']['link'] ?>">
-                <div class=" w-100 d-flex flex-column align-items-center justify-content-center">
+
+                <div class=" w-100 d-flex align-items-center justify-content-center">
 
                     <div><i class="<?php echo $datos_contacto['principal']['telefono_fijo']['icono'] ?>"></i></div>
 
@@ -168,7 +186,30 @@
                 </div>
             </a>
 
+            
+            <a href="tel:<?php echo $datos_contacto['cabecera']['telefono_fijo']['link'] ?>">
+
+                <div class=" w-100 d-flex align-items-center justify-content-center">
+
+                    <div><i class="<?php echo $datos_contacto['cabecera']['telefono_fijo']['icono'] ?>"></i></div>
+
+                    <div><?php echo $datos_contacto['cabecera']['telefono_fijo']['imprimir'] ?></div>
+                </div>
+            </a>
+
+            
+            <a href="tel:<?php echo $datos_contacto['cañaveral']['telefono_fijo']['link'] ?>">
+
+                <div class=" w-100 d-flex align-items-center justify-content-center">
+
+                    <div><i class="<?php echo $datos_contacto['cañaveral']['telefono_fijo']['icono'] ?>"></i></div>
+
+                    <div><?php echo $datos_contacto['cañaveral']['telefono_fijo']['imprimir'] ?></div>
+                </div>
+            </a>
+
         </div>
+        <!-- CAJA VERDE CON CELULAR -->
 
     </section>
 

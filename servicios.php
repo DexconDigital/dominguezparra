@@ -50,7 +50,7 @@ $page = "Servicios" ?>
 
                                     <div class="d-flex">
                                         <i class="iconos mr-2 <?php echo $iconos_servicios['arrendamientos'] ?>"></i>
-                                        <h2 class="text-center m-0"> <?php echo $texto_servicios['arrendamientos']['titulo'] ?> </h2>
+                                        <h2 class="text-center m-0 font-weight-bold"> <?php echo $texto_servicios['arrendamientos']['titulo'] ?> </h2>
                                     </div>
                                     <div>
                                         <p class="verm1"> Ver Más. . . </p>
@@ -91,7 +91,7 @@ $page = "Servicios" ?>
 
                                     <div class="d-flex">
                                         <i class="iconos mr-2 <?php echo $iconos_servicios['ventas'] ?>"></i>
-                                        <h2 class="text-center m-0"> <?php echo $texto_servicios['ventas']['titulo'] ?> </h2>
+                                        <h2 class="text-center m-0 font-weight-bold"> <?php echo $texto_servicios['ventas']['titulo'] ?> </h2>
                                     </div>
                                     <div>
                                         <p class="verm2"> Ver Más. . . </p>
@@ -131,7 +131,7 @@ $page = "Servicios" ?>
 
                                     <div class="d-flex">
                                         <i class="iconos mr-2 <?php echo $iconos_servicios['propiedad'] ?>"></i>
-                                        <h2 class="text-center m-0"> <?php echo $texto_servicios['propiedad']['titulo'] ?> </h2>
+                                        <h2 class="text-center m-0 font-weight-bold"> <?php echo $texto_servicios['propiedad']['titulo'] ?> </h2>
                                     </div>
                                     <div>
                                         <p class="verm3"> Ver Más. . . </p>
@@ -161,7 +161,7 @@ $page = "Servicios" ?>
 
                                     <div class="d-flex">
                                         <i class="iconos mr-2 <?php echo $iconos_servicios['avaluos'] ?>"></i>
-                                        <h2 class="text-center m-0"> <?php echo $texto_servicios['avaluos']['titulo'] ?> </h2>
+                                        <h2 class="text-center m-0 font-weight-bold"> <?php echo $texto_servicios['avaluos']['titulo'] ?> </h2>
                                     </div>
                                     <div>
                                         <p class="verm4"> Ver Más. . . </p>
@@ -193,7 +193,7 @@ $page = "Servicios" ?>
 
                                     <div class="d-flex">
                                         <i class="iconos mr-2 <?php echo $iconos_servicios['asesoria'] ?>"></i>
-                                        <h2 class="text-center m-0"> <?php echo $texto_servicios['asesoria']['titulo'] ?> </h2>
+                                        <h2 class="text-center m-0 font-weight-bold"> <?php echo $texto_servicios['asesoria']['titulo'] ?> </h2>
                                     </div>
                                     <div>
                                         <p class="verm5"> Ver Más. . . </p>
@@ -209,6 +209,36 @@ $page = "Servicios" ?>
                     <div class="card-body">
                         <div class="container">
                             <p> <?php echo $texto_servicios['asesoria']['parrafo'] ?> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card6">
+                <div class="card-header" id="headingOne">
+                    <div class="container">
+                        <h2 class="mb-0">
+                            <button class="p-0 col-12 btn btn-link" type="button" data-toggle="collapse" data-target="#seis" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="d-flex align-items-center justify-content-between">
+
+                                    <div class="d-flex">
+                                        <i class="iconos mr-2 fas fa-tools"></i>
+                                        <h2 class="text-center m-0 font-weight-bold"> Mantenimientos </h2>
+                                    </div>
+                                    <div>
+                                        <p class="verm5"> Ver Más. . . </p>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </h2>
+                    </div>
+                </div>
+
+                <div id="seis" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <div class="container">
+                            <p> <strong> *Texto de Mantenimiento* (PENDIENTE DE ENVIAR)</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit culpa facere voluptas ut ipsa quibusdam maxime, rerum voluptatum, dolore iusto suscipit recusandae. Delectus illum in quidem esse laudantium autem repudiandae quis corrupti? Itaque quis illo unde sint et, dolorum temporibus eligendi ullam, maxime fuga reprehenderit recusandae cumque blanditiis nostrum aut. </p>
                         </div>
                     </div>
                 </div>
