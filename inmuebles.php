@@ -22,7 +22,7 @@ $page = "Inmuebles" ?>
     <!-- HEADER -->
 
     <!-- BANNER -->
-    <section id="banner" style="height:250px" class="margin_top position-relative">
+    <section id="banner" class="margin_top position-relative">
 
         <div class="imagen imagen_inmuebles"> </div>
 

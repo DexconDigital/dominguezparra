@@ -392,7 +392,7 @@ $page = "Asesores" ?>
 
                             <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
 
-                                <a class="mr-2" href="mailto:directrocomercial@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
+                                <a class="mr-2" href="mailto:directorcomercial@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
                                 <a class="mr-2" href="tel:"> <i class="fas fa-phone"></i> </a>
                                 <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+57"> <i class="fab fa-whatsapp"></i> </a>
                             </div>
