@@ -52,10 +52,10 @@
 
     <div class="contenedor_iconos rounded flex-column d-flex justify-content-around align-items-center h-100">
         <div class="align-items-center border-bottom d-flex justify-content-center w-100">
-            <a target="blank" href="<?php echo $redes_sociales['facebook']['link'] ?>"><i class="iconos icono_f ml-1 <?php echo $redes_sociales['facebook']['icono'] ?>"></i></a>
+            <a target="blank" href="<?php echo $redes_sociales['facebook']['link'] ?>"><i class="iconos icono_f <?php echo $redes_sociales['facebook']['icono'] ?>"></i></a>
         </div>
 
-        <div class="align-items-center border-bottom d-flex justify-content-center w-100>
+        <div class="align-items-center border-bottom d-flex justify-content-center w-100">
             <a target="blank" href="<?php echo $redes_sociales['twitter']['link'] ?>"><i class="iconos icono_t <?php echo $redes_sociales['twitter']['icono'] ?>"></i></a>
         </div>
 
@@ -63,15 +63,52 @@
             <a target="blank" href="<?php echo $datos_contacto['principal']['whatsapp']['link'] ?>"><i class="iconos icono_w rounded <?php echo $datos_contacto['principal']['whatsapp']['icono'] ?>"></i></a>
         </div>
 
-        <div>
-            <a href="#"><img class="logo_pse" src="images/logopse.png" alt=""></a>
-        </div>
-    
     </div>
 
 </section>
 
 <header class="sticky-top position-fixed">
+
+    <!-- CAJA VERDE CON CELULAR -->
+   <div class="caja_telefono w-100 position-relative">
+
+        <div class="w-auto align-items-center d-flex h-100 justify-content-center position-absolute telefono">
+    
+            <a title="Sede Principal" class="mr-2" href="tel:<?php echo $datos_contacto['principal']['telefono_fijo']['link'] ?>">
+    
+                <div class=" w-100 d-flex align-items-center justify-content-center">
+    
+                    <div><i class="<?php echo $datos_contacto['principal']['telefono_fijo']['icono'] ?>"></i></div>
+    
+                    <div><?php echo $datos_contacto['principal']['telefono_fijo']['imprimir'] ?></div>
+                </div>
+            </a>
+    
+    
+            <a title="Sede Cabecera" class="mr-2" href="tel:<?php echo $datos_contacto['cabecera']['telefono_fijo']['link'] ?>">
+    
+                <div class=" w-100 d-flex align-items-center justify-content-center">
+    
+                    <div><i class="<?php echo $datos_contacto['cabecera']['telefono_fijo']['icono'] ?>"></i></div>
+    
+                    <div><?php echo $datos_contacto['cabecera']['telefono_fijo']['imprimir'] ?></div>
+                </div>
+            </a>
+    
+    
+            <a title="Sede Cañaveral" class="mr-2" href="tel:<?php echo $datos_contacto['cañaveral']['telefono_fijo']['link'] ?>">
+    
+                <div class=" w-100 d-flex align-items-center justify-content-center">
+    
+                    <div><i class="<?php echo $datos_contacto['cañaveral']['telefono_fijo']['icono'] ?>"></i></div>
+    
+                    <div><?php echo $datos_contacto['cañaveral']['telefono_fijo']['imprimir'] ?></div>
+                </div>
+            </a>
+    
+        </div>
+   </div>
+    <!-- CAJA VERDE CON CELULAR -->
 
     <section id="menu" class="d-flex align-items-center justify-content-center">
 
@@ -89,7 +126,7 @@
                 </button>
 
                 <div class="ml-5 collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav d-flex align-items-center">
 
                         <li class="nav-item position-relative">
                             <a class="a2 nav-link <?php if ($page == 'Inicio') {
@@ -123,7 +160,7 @@
                                                                                             } ?>"></span> Asesores </a>
                         </li>
 
-                        
+
 
                         <li class="nav-item position-relative">
                             <a class="a2 nav-link <?php if ($page == 'Inmuebles') {
@@ -150,7 +187,7 @@
                                                         echo 'span';
                                                     } ?>" href="asesores.php"> <span class="<?php if ($page == 'Asesores') {
                                                                                                 echo 'active2';
-                                                                                            } ?>"></span> Consiga <br> tu inmueble </a>
+                                                                                            } ?>"></span> Consigne su inmueble </a>
                         </li>
 
                         <li class="nav-item position-relative">
@@ -159,6 +196,10 @@
                                                     } ?>" href="contactenos.php"> <span class="<?php if ($page == 'Contáctenos') {
                                                                                                     echo 'active2';
                                                                                                 } ?>"></span> Contáctenos </a>
+                        </li>
+
+                        <li style="width:0px" class="nav-item position-relative">
+                            <a href="https://www.mipagoamigo.com/MPA_WebSite/ServicePayments" target="blank" class="nav-link"> <img class="logo_pse" src="images/mpa.png" alt=""> </a>
                         </li>
 
 
@@ -173,43 +214,7 @@
         <!-- CAJA MENU -->
 
 
-        <!-- CAJA VERDE CON CELULAR -->
-        <div class="align-items-center d-flex flex-column h-100 justify-content-center position-absolute telefono">
 
-            <a href="tel:<?php echo $datos_contacto['principal']['telefono_fijo']['link'] ?>">
-
-                <div class=" w-100 d-flex align-items-center justify-content-center">
-
-                    <div><i class="<?php echo $datos_contacto['principal']['telefono_fijo']['icono'] ?>"></i></div>
-
-                    <div><?php echo $datos_contacto['principal']['telefono_fijo']['imprimir'] ?></div>
-                </div>
-            </a>
-
-            
-            <a href="tel:<?php echo $datos_contacto['cabecera']['telefono_fijo']['link'] ?>">
-
-                <div class=" w-100 d-flex align-items-center justify-content-center">
-
-                    <div><i class="<?php echo $datos_contacto['cabecera']['telefono_fijo']['icono'] ?>"></i></div>
-
-                    <div><?php echo $datos_contacto['cabecera']['telefono_fijo']['imprimir'] ?></div>
-                </div>
-            </a>
-
-            
-            <a href="tel:<?php echo $datos_contacto['cañaveral']['telefono_fijo']['link'] ?>">
-
-                <div class=" w-100 d-flex align-items-center justify-content-center">
-
-                    <div><i class="<?php echo $datos_contacto['cañaveral']['telefono_fijo']['icono'] ?>"></i></div>
-
-                    <div><?php echo $datos_contacto['cañaveral']['telefono_fijo']['imprimir'] ?></div>
-                </div>
-            </a>
-
-        </div>
-        <!-- CAJA VERDE CON CELULAR -->
 
     </section>
 

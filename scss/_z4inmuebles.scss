@@ -9,8 +9,22 @@
     color: black; 
     height: black;
 
+    h4 {
+        white-space: nowrap;
+        font-size: 22px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
 
     .carta {
+
+        h4 {
+            white-space: nowrap;
+            font-size: 22px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
         
 
         .card2 {
@@ -19,6 +33,8 @@
             width: 500px;
             color: white;
             overflow: hidden;
+
+            
         
             .imagen {
         
