@@ -45,7 +45,7 @@ a {
 }
 
 .margin_top {
-    margin-top: 82px;
+    margin-top: 136px;
 }
 
 p{
@@ -765,7 +765,7 @@ footer {
             }
 
             .caja_texto {
-                height: 80px;
+                // height: 80px;
                 background-color: #222222;
             }
 
@@ -804,7 +804,8 @@ footer {
         width: 60%;
         bottom: -17.5px; 
         height: 35px;
-        left: calc(50% - 102px);
+        // left: calc(50% - 102px);
+        left: 20%;
         background: linear-gradient(45deg, $verde, #193a15);
 
         a{ 
@@ -827,7 +828,7 @@ footer {
 #carrusel2 {
 
     .carousel-inner {
-        height: 420px;
+        // height: 420px;   
     }
 
 }

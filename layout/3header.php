@@ -1,5 +1,5 @@
 <!-- Codigo del preloader -->
-<!-- <style>
+<style>
     #wrap-preload {
         position: fixed;
         z-index: 10;
@@ -44,7 +44,7 @@
     window.addEventListener("load", function() {
         loader.style.visibility = "hidden";
     });
-</script> -->
+</script>
 <!-- Fin de codigo preloader -->
 
 
@@ -70,49 +70,49 @@
 <header class="sticky-top position-fixed">
 
     <!-- CAJA VERDE CON CELULAR -->
-   <div class="caja_telefono w-100 position-relative">
+    <div class="caja_telefono w-100 position-relative">
 
         <div class="w-auto align-items-center d-flex h-100 justify-content-center position-absolute telefono">
-    
+
             <a title="Sede Principal" class="mr-2" href="tel:<?php echo $datos_contacto['principal']['telefono_fijo']['link'] ?>">
-    
+
                 <div class=" w-100 d-flex align-items-center justify-content-center">
-    
+
                     <div><i class="<?php echo $datos_contacto['principal']['telefono_fijo']['icono'] ?>"></i></div>
-    
+
                     <div><?php echo $datos_contacto['principal']['telefono_fijo']['imprimir'] ?></div>
                 </div>
             </a>
-    
-    
+
+
             <a title="Sede Cabecera" class="mr-2" href="tel:<?php echo $datos_contacto['cabecera']['telefono_fijo']['link'] ?>">
-    
+
                 <div class=" w-100 d-flex align-items-center justify-content-center">
-    
+
                     <div><i class="<?php echo $datos_contacto['cabecera']['telefono_fijo']['icono'] ?>"></i></div>
-    
+
                     <div><?php echo $datos_contacto['cabecera']['telefono_fijo']['imprimir'] ?></div>
                 </div>
             </a>
-    
-    
+
+
             <a title="Sede Cañaveral" class="mr-2" href="tel:<?php echo $datos_contacto['cañaveral']['telefono_fijo']['link'] ?>">
-    
+
                 <div class=" w-100 d-flex align-items-center justify-content-center">
-    
+
                     <div><i class="<?php echo $datos_contacto['cañaveral']['telefono_fijo']['icono'] ?>"></i></div>
-    
+
                     <div><?php echo $datos_contacto['cañaveral']['telefono_fijo']['imprimir'] ?></div>
                 </div>
             </a>
-    
+
         </div>
-   </div>
+    </div>
     <!-- CAJA VERDE CON CELULAR -->
 
+    <!-- CAJA MENU -->
     <section id="menu" class="d-flex align-items-center justify-content-center">
 
-        <!-- CAJA MENU -->
         <div class="container position-relative">
 
             <nav class="navbar w-100 d-flex align-items-center justify-content-between navbar navbar-expand-lg navbar-light p-0">
@@ -177,18 +177,23 @@
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" target="blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&tipo=2"> Arrendatarios </a>
                                 <a class="dropdown-item" target="blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&tipo=1"> Propietarios </a>
-                                <a class="dropdown-item" href="#"> Pagos PSE </a>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal"> Consignar Inmueble </a>
+                                <a class="dropdown-item" target="blank" href="https://www.mipagoamigo.com/MPA_WebSite/ServicePayments"> Pagos en línea </a>
                             </div>
                         </li>
 
                         <li class="nav-item position-relative">
-                            <a class="a2 nav-link <?php if ($page == 'Asesores') {
-                                                        echo 'span';
-                                                    } ?>" href="asesores.php"> <span class="<?php if ($page == 'Asesores') {
+                            <a data-toggle="modal" data-target="#exampleModal" class="a2 nav-link <?php if ($page == '') {
+                                                                                                        echo 'span';
+                                                                                                    } ?>" href="index.php"> <span class="<?php if ($page == '') {
                                                                                                 echo 'active2';
-                                                                                            } ?>"></span> Consigne su inmueble </a>
+                                                                                            } ?>"></span> Consigne su Inmueble </a>
                         </li>
+
+                        <!-- Button trigger modal -->
+
+
+                        <!-- Modal -->
+
 
                         <li class="nav-item position-relative">
                             <a class="a2 nav-link <?php if ($page == 'Contáctenos') {
@@ -211,17 +216,15 @@
             </nav>
 
         </div>
-        <!-- CAJA MENU -->
-
-
-
 
     </section>
+    <!-- CAJA MENU -->
+
 
 </header>
 
 
-<!-- MODAL BOTON -->
+<!-- MODAL DE CONSIGNAR INMUEBLE -->
 <section>
     <div class="modal fade show" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable" role="document">
@@ -305,4 +308,6 @@
         </div>
     </div>
 </section>
-<!-- MODAL BOTON -->
+<!-- MODAL DE CONSIGNAR INMUEBLE -->
+
+
