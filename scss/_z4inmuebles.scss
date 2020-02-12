@@ -45,6 +45,8 @@
                 img {
                     height:100%;
                     width:100%;
+                    object-fit: contain;
+                    background-color: #80808063;
                     transition: all 200ms ease-in;
         
                 }

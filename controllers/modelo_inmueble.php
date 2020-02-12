@@ -116,7 +116,7 @@ function modelo_inmueble2($r)
         <a href="./detalle_inmueble.php?co=' . $codigo . '" class="d-flex" id="inmuebles2">
 
             
-            <div class="card2 col-6 p-0 position-relative">
+            <div class="card2 col-4 p-0 position-relative">
 
                 <div class="imagen w-100 h-100">
                     <img src="' . $imagen . '" class="card-img-top" alt="...">
@@ -134,7 +134,7 @@ function modelo_inmueble2($r)
 
             </div>
             
-            <div class="contenido col-6">
+            <div class="contenido col-8">
 
                 <div class="d-flex pl-3 align-items-baseline">
                     <i class="mr-1 fas fa-map-marker-alt"></i>
