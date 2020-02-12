@@ -185,8 +185,8 @@
                             <a data-toggle="modal" data-target="#exampleModal" class="a2 nav-link <?php if ($page == '') {
                                                                                                         echo 'span';
                                                                                                     } ?>" href="index.php"> <span class="<?php if ($page == '') {
-                                                                                                echo 'active2';
-                                                                                            } ?>"></span> Consigne su Inmueble </a>
+                                                                                                                                                echo 'active2';
+                                                                                                                                            } ?>"></span> Consigne su Inmueble </a>
                         </li>
 
                         <!-- Button trigger modal -->
@@ -310,4 +310,34 @@
 </section>
 <!-- MODAL DE CONSIGNAR INMUEBLE -->
 
+<!-- MODAL FORMULARIOS -->
+<div class="modal fade" id="formulario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> Formulario de aseguradoras </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-0">
 
+                <div class="my-3 container-fluid d-flex flex-column align-items-center justify-content-center">
+                    <img class="w-50" src="images/a_libertador.png" alt="">
+                    <a target="blank" href="archivos/persona_juridica_el_libertador.pdf"> Persona Jurídica - El Libertador </a>
+                    <a target="blank" href="archivos/persona_natural_el_libertador.pdf"> Persona Natural - El Libertador </a>
+                </div>
+
+                <div class="my-3 container-fluid d-flex flex-column align-items-center justify-content-center">
+                    <img class="w-50" src="images/a_fianzasantander-logo-1.png" alt="">
+                    <a target="blank" href="archivos/personas_naturales_y_juridicas_fianzacredito.pdf"> Persona Natural y Jurídica - Fianzacredito </a>
+                </div>
+
+                <div class="modal-footer">
+                    <button style="color:white" type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL FORMULARIOS -->

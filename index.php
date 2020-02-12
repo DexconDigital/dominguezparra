@@ -118,8 +118,9 @@ $page = "Inicio" ?>
         </div>
 
         <div class="d-flex justify-content-center pb-5">
-            <button class="boton_principal btn boton_aseguradoras"> Descargar </button>
+            <button data-toggle="modal" data-target="#formulario" class="boton_principal btn boton_aseguradoras"> Descargar </button>
         </div>
+
     </section>
     <!-- FORMULARIO DE ASEGURADORAS -->
 
@@ -174,12 +175,17 @@ $page = "Inicio" ?>
     </script>
     <!-- Carrusel -->
 
+    <!-- Modal -->
+
+
     <?php include 'layout/2archivos_footer.php' ?>
     <!-- buscador -->
     <script src="conexion_api/validadores.js"></script>
     <script src="conexion_api/buscador.js"></script>
     <!-- barra de rangos -->
     <script src="js/rangos.js"></script>
+
+
 </body>
 
 </html>
