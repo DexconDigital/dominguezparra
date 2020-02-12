@@ -226,7 +226,7 @@ $page = "Servicios" ?>
                                         <h2 class="text-center m-0 font-weight-bold"> Mantenimientos </h2>
                                     </div>
                                     <div>
-                                        <p class="verm5"> Ver Más. . . </p>
+                                        <p class="verm6"> Ver Más. . . </p>
                                     </div>
 
                                 </div>

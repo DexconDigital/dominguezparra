@@ -187,6 +187,10 @@ header {
     width: 100%;
     height: 120px;
 
+    .logo {
+        width:300px;
+    }
+
     #menu {
 
         height: 80%;
@@ -326,9 +330,7 @@ header {
 
         
         
-        img{
-            width: 350px;
-        }
+      
 
         
 
@@ -942,6 +944,10 @@ overflow: hidden;
     color: #2C2C2C !important;
 }
 
+#celulares_responsive {
+    display: none;   
+}
+
 
 // ------------------- BOTON_SUBIR -------------------
 
@@ -949,6 +955,38 @@ overflow: hidden;
 
 
 /* MEDIAS QUERIES */
+
+// HEADER
+
+@media (max-width: 991px) {
+    #carouselExampleControls {
+        height: 35vh;
+    }
+
+    .carousel-item img {
+        height: 100%;
+    }
+}
+
+@media(max-width: 450px) {
+    #celulares {
+        display:none;
+    }
+
+    #celulares_responsive {
+        display: block;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .logo {
+        width:225px!important;
+    }
+}
+
+
+// HEADER
 
 
 

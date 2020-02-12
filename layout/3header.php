@@ -1,5 +1,5 @@
 <!-- Codigo del preloader -->
-<style>
+<!-- <style>
     #wrap-preload {
         position: fixed;
         z-index: 10;
@@ -44,7 +44,7 @@
     window.addEventListener("load", function() {
         loader.style.visibility = "hidden";
     });
-</script>
+</script> -->
 <!-- Fin de codigo preloader -->
 
 
@@ -70,7 +70,7 @@
 <header class="sticky-top position-fixed">
 
     <!-- CAJA VERDE CON CELULAR -->
-    <div class="caja_telefono w-100 position-relative">
+    <div id="celulares" class="caja_telefono w-100 position-relative col-12">
 
         <div class="w-auto align-items-center d-flex h-100 justify-content-center position-absolute telefono">
 
@@ -110,6 +110,20 @@
     </div>
     <!-- CAJA VERDE CON CELULAR -->
 
+    <!-- CAJA VERDE CON CELULAR (RESPONSIVE) -->
+    <div id="celulares_responsive" class="caja_telefono w-100 position-relative col-12">
+
+        <div class="w-auto align-items-center d-flex h-100 justify-content-center position-absolute telefono">
+
+            <div class="d-flex align-items-baseline" data-toggle="modal" data-target="#telefonos_responsive">
+                <i class="mr-2 <?php echo $datos_contacto['principal']['telefono_fijo']['icono'] ?>"></i>
+                <p> Teléfonos </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- CAJA VERDE CON CELULAR (RESPONSIVE) -->
+
     <!-- CAJA MENU -->
     <section id="menu" class="d-flex align-items-center justify-content-center">
 
@@ -118,7 +132,7 @@
             <nav class="navbar w-100 d-flex align-items-center justify-content-between navbar navbar-expand-lg navbar-light p-0">
 
                 <div>
-                    <a href="index.php"><img style="width:300px" src="images/logo_color.png" alt=""></a>
+                    <a href="index.php"><img class="logo" src="images/logo_color.png" alt=""></a>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -222,6 +236,72 @@
 
 
 </header>
+
+
+
+
+
+
+
+
+
+<!-- MODAL DEL BOTON DE TELEFONOS (RESPONSIVE) -->
+<div class="modal fade" id="telefonos_responsive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="linea position-relative modal-title" id="exampleModalLabel"> Teléfonos </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <a title="Sede Principal" class="mr-2" href="tel:<?php echo $datos_contacto['principal']['telefono_fijo']['link'] ?>">
+
+                    <div class=" w-100 d-flex align-items-center justify-content-center">
+
+                        <p class="mr-2"> Sede Principal: </p>
+
+                        <div><i class="verde <?php echo $datos_contacto['principal']['telefono_fijo']['icono'] ?>"></i></div>
+
+                        <div><?php echo $datos_contacto['principal']['telefono_fijo']['imprimir'] ?></div>
+                    </div>
+                </a>
+
+
+                <a title="Sede Cabecera" class="mr-2" href="tel:<?php echo $datos_contacto['cabecera']['telefono_fijo']['link'] ?>">
+
+                    <div class=" w-100 d-flex align-items-center justify-content-center">
+
+                        <p class="mr-2"> Sede Cabecera: </p>
+
+                        <div><i class="verde <?php echo $datos_contacto['cabecera']['telefono_fijo']['icono'] ?>"></i></div>
+
+                        <div><?php echo $datos_contacto['cabecera']['telefono_fijo']['imprimir'] ?></div>
+                    </div>
+                </a>
+
+
+                <a title="Sede Cañaveral" class="mr-2" href="tel:<?php echo $datos_contacto['cañaveral']['telefono_fijo']['link'] ?>">
+
+                    <div class=" w-100 d-flex align-items-center justify-content-center">
+
+                        <p class="mr-2"> Sede Cañaveral: </p>
+
+                        <div><i class="verde <?php echo $datos_contacto['cañaveral']['telefono_fijo']['icono'] ?>"></i></div>
+
+                        <div><?php echo $datos_contacto['cañaveral']['telefono_fijo']['imprimir'] ?></div>
+                    </div>
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button style="color:white" type="button" class="btn btn-secondary" data-dismiss="modal"> Cerrar </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MODAL DEL BOTON DE TELEFONOS (RESPONSIVE) -->
 
 
 <!-- MODAL DE CONSIGNAR INMUEBLE -->
@@ -340,4 +420,5 @@
             </div>
         </div>
     </div>
-    <!-- MODAL FORMULARIOS -->
+</div>
+<!-- MODAL FORMULARIOS -->

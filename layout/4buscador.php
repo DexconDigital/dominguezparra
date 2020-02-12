@@ -1,4 +1,4 @@
-<section id="buscador" class="d-flex">
+<section id="buscador" class="d-flex flex-wrap">
 
     <div class="d-flex align-items-center col-12 col-md-3 col-lg-3 col-xl-3 titulo_buscador">
         <div class="container">
