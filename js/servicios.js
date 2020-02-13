@@ -8,6 +8,9 @@ $(document).ready(function(){
             $('.verm1').html('Ver Más. . .');
         } 
         
+            $('.card5  .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card3  .d-flex h2').css({'white-space':'nowrap'});    
+
             $('.verm2').html('Ver Más. . .');
             $('.verm3').html('Ver Más. . .');
             $('.verm4').html('Ver Más. . .');
@@ -26,6 +29,8 @@ $(document).ready(function(){
             $('.verm2').html('Ver Más. . .');
         } 
 
+            $('.card5  .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card3  .d-flex h2').css({'white-space':'nowrap'});    
             $('.verm1').html('Ver Más. . .');
             $('.verm3').html('Ver Más. . .');
             $('.verm4').html('Ver Más. . .');
@@ -41,11 +46,14 @@ $(document).ready(function(){
     $('.card3').on('click', function(){
 
         if(!$('#tres').hasClass('show')) {
-            $('.verm3').html('Ver Menos. . .');
+            $('.verm3').html('Ver Menos. . .');   
+            $('.card3 .d-flex h2').css({'white-space':'pre-line'});    
         } else {
+            $('.card3 .d-flex h2').css({'white-space':'nowrap'});    
             $('.verm3').html('Ver Más. . .');
         } 
 
+            $('.card5  .d-flex h2').css({'white-space':'nowrap'});    
             $('.verm1').html('Ver Más. . .');
             $('.verm2').html('Ver Más. . .');
             $('.verm4').html('Ver Más. . .');
@@ -66,6 +74,8 @@ $(document).ready(function(){
             $('.verm4').html('Ver Más. . .');
         } 
 
+            $('.card5  .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card3  .d-flex h2').css({'white-space':'nowrap'});    
             $('.verm1').html('Ver Más. . .');
             $('.verm2').html('Ver Más. . .');
             $('.verm3').html('Ver Más. . .');
@@ -82,10 +92,13 @@ $(document).ready(function(){
 
         if(!$('#cinco').hasClass('show')) {
             $('.verm5').html('Ver Menos. . .');
+            $('.card5 .d-flex h2').css({'white-space':'pre-line'});    
         } else {
+            $('.card5 .d-flex h2').css({'white-space':'nowrap'});
             $('.verm5').html('Ver Más. . .');
         } 
 
+            $('.card3 .d-flex h2').css({'white-space':'nowrap'});
             $('.verm1').html('Ver Más. . .');
             $('.verm2').html('Ver Más. . .');
             $('.verm3').html('Ver Más. . .');
@@ -106,6 +119,8 @@ $(document).ready(function(){
             $('.verm6').html('Ver Más. . .');
         } 
 
+            $('.card5  .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card3  .d-flex h2').css({'white-space':'nowrap'});    
             $('.verm1').html('Ver Más. . .');
             $('.verm2').html('Ver Más. . .');
             $('.verm3').html('Ver Más. . .');
@@ -119,6 +134,7 @@ $(document).ready(function(){
     });
 
 });
+
 
 
 

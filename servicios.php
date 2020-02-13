@@ -193,7 +193,7 @@ $page = "Servicios" ?>
 
                                     <div class="d-flex">
                                         <i class="iconos mr-2 <?php echo $iconos_servicios['asesoria'] ?>"></i>
-                                        <h2 class="text-center m-0 font-weight-bold"> <?php echo $texto_servicios['asesoria']['titulo'] ?> </h2>
+                                        <h2 id="holi" class="text-center m-0 font-weight-bold"> <?php echo $texto_servicios['asesoria']['titulo'] ?> </h2>
                                     </div>
                                     <div>
                                         <p class="verm5"> Ver Más. . . </p>

@@ -9,8 +9,8 @@ function modelo_inmueble($r, $cantidad_inmuebles)
         $api = $r[$i];
 
         echo '
-        <div class="col-4">
-        <div style="height:200px;" class="carta mb-5 ">
+        <div class="col-12 col-lg-6 col-xl-6 col-md-6">
+        <div class="carta mb-5 ">
             <a href="./detalle_inmueble.php?co=' . $codigo . '" class="d-flex flex-wrap" id="inmuebles2">
 
                 <!-- IMAGEN, GESTION Y TIPO DE INMUEBLE -->
@@ -112,11 +112,11 @@ function modelo_inmueble2($r)
             $descripcion = $descripcion . '...';
         }
         echo '
-        <div style="height:200px;" class="carta my-5 ">
-        <a href="./detalle_inmueble.php?co=' . $codigo . '" class="d-flex" id="inmuebles2">
+        <div class="carta my-5 ">
+        <a  href="./detalle_inmueble.php?co=' . $codigo . '" class="d-flex flex-wrap" id="inmuebles2">
 
             
-            <div class="card2 col-4 p-0 position-relative">
+            <div class="card2 col-12 col-md-6 col-lg-4 col-xl-4 p-0 position-relative">
 
                 <div class="imagen w-100 h-100">
                     <img src="' . $imagen . '" class="card-img-top" alt="...">
@@ -134,7 +134,7 @@ function modelo_inmueble2($r)
 
             </div>
             
-            <div class="contenido col-8">
+            <div style="height:220px" class="contenido col-12 col-md-6 col-lg-8 col-xl-8">
 
                 <div class="d-flex pl-3 align-items-baseline">
                     <i class="mr-1 fas fa-map-marker-alt"></i>

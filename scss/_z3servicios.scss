@@ -29,3 +29,50 @@
   
 
 }
+
+@media (max-width:991px) {
+    .card1,.card2,.card3,.card4,.card5,.card6 {
+
+        .d-flex {
+            h2 {
+                max-width: 200px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    
+    }
+}
+
+
+@media (max-width:425px) {
+    .card1,.card2,.card3,.card4,.card5,.card6 {
+
+        .d-flex {
+            h2 {
+                max-width: 160px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    
+    }
+}
+
+@media (max-width:375px) {
+    .card1,.card2,.card3,.card4,.card5,.card6 {
+
+        .d-flex {
+            h2 {
+                max-width: 100px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    
+    }
+}
+

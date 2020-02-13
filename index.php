@@ -55,7 +55,7 @@ $page = "Inicio" ?>
     <!-- BUSCADOR -->
 
     <!-- PROPIEDADES DESTACADAS -->
-    <section id="inmuebles2" style="padding-bottom:100px;" class="my-5 container">
+    <section id="inmuebles2" class="mt-5 container">
 
         <h2 class="text-center mb-5"> Inmuebles Destacados </h2>
 
@@ -83,23 +83,23 @@ $page = "Inicio" ?>
 
             <div class="d-flex flex-wrap align-items-center justify-content-center">
 
-                <div class="logos1 col-4">
+                <div class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
                     <img src="images/a_Banco-Caja-Social .png" alt="">
                 </div>
 
-                <div class="logos1 col-4">
+                <div class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
                     <img src="images/a_fianzasantander-logo-1.png" alt="">
                 </div>
 
-                <div class="logos1 col-4">
+                <div class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
                     <img src="images/a_Libertador.png" alt="">
                 </div>
 
-                <div class="mt-5 logos1 col-4">
+                <div class="d-flex align-items-center justify-content-center mt-0 mt-lg-5 mt-xl-5 logos1 col-12 col-md-6 col-lg-4 col-xl-4">
                     <img src="images/a_logo_lonja_color.png" alt="">
                 </div>
 
-                <div class="mt-5 logos2 col-2">
+                <div class="d-flex align-items-center justify-content-center mt-0 mt-lg-5 mt-xl-5 logos2 col-6 col-md-3 col-lg-2 col-xl-2">
                     <img src="images/a_logo_fenalco_santander.png" alt="">
                 </div>
 
@@ -114,11 +114,11 @@ $page = "Inicio" ?>
     <!-- FORMULARIO DE ASEGURADORAS -->
     <section id="formulario_aseguradoras" class="mt-5">
         <div>
-            <h2 class="blanco d-flex justify-content-center pt-5 pb-1"> Descargar Formulario de Aseguradoras </h2>
+            <h2 class="blanco d-flex justify-content-center pt-5 pb-1 px-2 text-center"> Descargar Formulario de Aseguradoras </h2>
         </div>
 
         <div class="d-flex justify-content-center pb-5">
-            <button data-toggle="modal" data-target="#formulario" class="boton_principal btn boton_aseguradoras"> Descargar </button>
+            <button data-toggle="modal" data-target="#formulario3" class="boton_principal btn boton_aseguradoras"> Descargar </button>
         </div>
 
     </section>

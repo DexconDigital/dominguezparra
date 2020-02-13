@@ -10,11 +10,11 @@
 
             <div class="col-12">
                 <h2 class="d-flex justify-content-center"> Contáctenos </h2>
-                <div class="d-flex">
+                <div class="d-flex flex-wrap align-items-center justify-content-center">
 
                     <!-- SEDE PRINCIPAL -->
-                    <div class="col-4 mt-2">
-                        <h3 class="titulos text-justify d-flex justify-content-center"> <b class=" verde_oscuro"> Sucursal Principal </b> </h3>
+                    <div class="align-items-center justify-content-center d-flex flex-column col-6 col-md-4 col-lg-4 col-xl-4 mt-2">
+                        <h3 class="m-0 titulos text-justify d-flex justify-content-center"> <b class=" text-center verde_oscuro"> Sucursal Principal </b> </h3>
 
                         <!-- MODAL -->
                         <div class="d-flex justify-content-center mt-3">
@@ -90,8 +90,8 @@
 
 
                     <!-- SEDE CABECERA -->
-                    <div class="col-4 mt-2">
-                        <h3 class="titulos text-justify d-flex justify-content-center"> <b class=" verde_oscuro"> Sucursal Cabecera </b> </h3>
+                    <div class="align-items-center justify-content-center d-flex flex-column col-6 col-md-4 col-lg-4 col-xl-4 mt-2">
+                        <h3 class="m-0 titulos text-justify d-flex justify-content-center"> <b class=" text-center verde_oscuro"> Sucursal Cabecera </b> </h3>
 
                         <!-- MODAL -->
                         <div class="d-flex justify-content-center mt-3">
@@ -167,8 +167,8 @@
 
 
                     <!-- SEDE CAÑAVERAL -->
-                    <div class="col-4 mt-2">
-                        <h3 class="titulos text-justify d-flex justify-content-center"> <b class=" verde_oscuro"> Sucursal Cañaveral </b> </h3>
+                    <div class="align-items-center justify-content-center d-flex flex-column col-6 col-md-4 col-lg-4 col-xl-4 mt-2">
+                        <h3 class="m-0 titulos text-justify d-flex justify-content-center"> <b class=" text-center verde_oscuro"> Sucursal Cañaveral </b> </h3>
 
                         <!-- MODAL -->
                         <div class="d-flex justify-content-center mt-3">
@@ -250,7 +250,7 @@
     </div>
 
     <div class="copyright border-top p-2 mt-3">
-        <p class="d-flex align-items-center justify-content-center"> Diseñado y Desarrollado por <a class="mx-1" target="blank" href="dexcondigital.com"> Dexcon Digital </a> ©Copyright 2020 para Inmobiliaria
+        <p class="text-center px-2 text-justify"> Diseñado y Desarrollado por <a class="mx-1" target="blank" href="https://www.dexcondigital.com"> Dexcon Digital </a> ©Copyright 2020 para Inmobiliaria
             Alejandro Dominguez Parra. Todos los derechos reservados. </p>
     </div>
 

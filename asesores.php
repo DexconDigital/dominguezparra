@@ -8,6 +8,8 @@ $page = "Asesores" ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php include 'layout/1archivos_header.php' ?>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <title> <?php echo $page . ' | ' . $nombre_inmobiliaria ?> </title>
 
 </head>
@@ -39,385 +41,339 @@ $page = "Asesores" ?>
     </section>
     <!-- BANNER -->
 
-    <!-- ASESORES -->
-    <div id="carrusel2" class="carousel slide my-5" data-ride="carousel">
+
+    <div id="asesores" class="pb-4 col-12">
 
         <div class="d-flex align-items-center justify-content-center my-5">
             <h2 class="mb-3 d-inline-block m-0 position-relative linea font-weight-bold"> Nuestros Asesores </h2>
         </div>
 
+        <div class="ml-4 owl-carousel owl-theme" id="aliados_slide">
 
-        <div class="carousel-inner mb-5">
+            <!-- ASESOR -->
+            <div class="col-10">
+                <a href="#">
+                    <div class="carta d-flex flex-column">
 
-            <!-- PRIMER TRIO DE ASESORES -->
-            <div class="carousel-item active mb-5">
-                <section id="asesores" class="mb-5">
-
-                    <div class="container d-flex">
-
-                        <!-- ASESOR -->
-                        <div class="col-4"> 
-                            <a href="#">
-                                <div class="carta d-flex flex-column">
-
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
-                                    <div clas="text-break">
-                                        <!-- IMAGEN ASESOR -->
-                                        <div class="imagen">
-                                            <img class="w-100" src="images/asesor2.png" class="card-img-top" alt="...">
-                                        </div>
-                                        <!-- IMAGEN ASESOR -->
-
-                                        <!-- TEXTO ANIMADO -->
-                                        <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
-                                        <!-- TEXTO ANIMADO -->
-                                    </div>
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
-
-
-                                    <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
-                                        <div class="d-flex align-items-baseline jusutify-content-center"> 
-                                            <i class="fas fa-user mr-2 verde"></i>
-                                            <p class="pt-4 text-center font-weight-bold"> NIDIA K. RUEDA ROJAS </p>
-                                        </div>
-                                        <p class="pb-4 text-center font-weight-bold"> Ejecutiva Comercial - Oficina Principal </p>
-                                    </div>
-
-                                </div>
-                            </a>
-
-                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
-
-                                <a class="mr-2" href="mailto:ejecutivaprincipal@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
-                                <a class="mr-2" href="tel:3163033657"> <i class="fas fa-phone"></i> </a>
-                                <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+573163033657"> <i class="fab fa-whatsapp"></i> </a>
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                        <div clas="text-break">
+                            <!-- IMAGEN ASESOR -->
+                            <div class="imagen">
+                                <img class="w-100 h-100" src="images/asesor2.png" class="card-img-top" alt="...">
                             </div>
+                            <!-- IMAGEN ASESOR -->
+
+                            <!-- TEXTO ANIMADO -->
+                            <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
+                            <!-- TEXTO ANIMADO -->
                         </div>
-                        <!-- ASESOR -->
-
-                        <!-- ASESOR -->
-                        <div class="col-4"> 
-                            <a href="#">
-                                <div class="carta d-flex flex-column">
-
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
-                                    <div clas="text-break">
-                                        <!-- IMAGEN ASESOR -->
-                                        <div class="imagen">
-                                            <img class="w-100" src="images/asesor1.png" class="card-img-top" alt="...">
-                                        </div>
-                                        <!-- IMAGEN ASESOR -->
-
-                                        <!-- TEXTO ANIMADO -->
-                                        <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
-                                        <!-- TEXTO ANIMADO -->
-                                    </div>
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
 
 
-                                    <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
-                                        <div class="d-flex align-items-baseline jusutify-content-center"> 
-                                            <i class="fas fa-user mr-2 verde"></i>
-                                            <p class="pt-4 text-center font-weight-bold"> FREDY OMAR DIAZ SIERRA </p>
-                                        </div>
-                                        <p class="pb-4 text-center font-weight-bold"> Asesor Comercial - Oficina Principal </p>
-                                    </div>
-
-                                </div>
-                            </a>
-
-                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
-
-                                <a class="mr-2" href="mailto:comercialprincipal@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
-                                <a class="mr-2" href="tel:3133601037"> <i class="fas fa-phone"></i> </a>
-                                <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+573133601037"> <i class="fab fa-whatsapp"></i> </a>
+                        <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-baseline jusutify-content-center">
+                                <i class="fas fa-user mr-2 verde"></i>
+                                <p id="nombre_asesor" class="pt-4 text-center font-weight-bold"> NIDIA K. RUEDA ROJAS </p>
                             </div>
+                            <p class="pb-4 text-center font-weight-bold"> Ejecutiva Comercial - Oficina Principal </p>
                         </div>
-                        <!-- ASESOR -->
-
-                        <!-- ASESOR -->
-                        <div class="col-4"> 
-                            <a href="#">
-                                <div class="carta d-flex flex-column">
-
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
-                                    <div clas="text-break">
-                                        <!-- IMAGEN ASESOR -->
-                                        <div class="imagen">
-                                            <img class="w-100" src="images/asesor2.png" class="card-img-top" alt="...">
-                                        </div>
-                                        <!-- IMAGEN ASESOR -->
-
-                                        <!-- TEXTO ANIMADO -->
-                                        <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
-                                        <!-- TEXTO ANIMADO -->
-                                    </div>
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
-
-
-                                    <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
-                                        <div class="d-flex align-items-baseline jusutify-content-center"> 
-                                            <i class="fas fa-user mr-2 verde"></i>
-                                            <p class="pt-4 text-center font-weight-bold"> CARMEN C. SOTO MARQUEZ </p>
-                                        </div>
-                                        <p class="pb-4 text-center font-weight-bold"> Ejecutiva Comercial - Oficina Cabecera </p>
-                                    </div>
-
-                                </div>
-                            </a>
-
-                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
-
-                                <a class="mr-2" href="mailto:ejecutivacabecera@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
-                                <a class="mr-2" href="tel:3156700082"> <i class="fas fa-phone"></i> </a>
-                                <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+573156700082"> <i class="fab fa-whatsapp"></i> </a>
-                            </div>
-                        </div>
-                        <!-- ASESOR -->
 
                     </div>
+                </a>
 
-                </section>
+                <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                    <a class="mr-2" href="mailto:ejecutivaprincipal@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
+                    <a class="mr-2" href="tel:3163033657"> <i class="fas fa-phone"></i> </a>
+                    <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+573163033657"> <i class="fab fa-whatsapp"></i> </a>
+                </div>
             </div>
-            <!-- PRIMER TRIO DE ASESORES -->
+            <!-- ASESOR -->
 
-            <!-- SEGUNDO TRIO DE ASESORES -->
-            <div class="carousel-item mb-5">
-                <section id="asesores" class="mb-5">
+            <!-- ASESOR -->
+            <div class="col-10">
+                <a href="#">
+                    <div class="carta d-flex flex-column">
 
-                    <div class="container d-flex">
-
-                        <!-- ASESOR -->
-                        <div class="col-4"> 
-                            <a href="#">
-                                <div class="carta d-flex flex-column">
-
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
-                                    <div clas="text-break">
-                                        <!-- IMAGEN ASESOR -->
-                                        <div class="imagen">
-                                            <img class="w-100" src="images/asesor2.png" class="card-img-top" alt="...">
-                                        </div>
-                                        <!-- IMAGEN ASESOR -->
-
-                                        <!-- TEXTO ANIMADO -->
-                                        <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
-                                        <!-- TEXTO ANIMADO -->
-                                    </div>
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
-
-
-                                    <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
-                                        <div class="d-flex align-items-baseline jusutify-content-center"> 
-                                            <i class="fas fa-user mr-2 verde"></i>
-                                            <p class="pt-4 text-center font-weight-bold"> MARTHA LUCIA ACOSTA LEON </p>
-                                        </div>
-                                        <p class="pb-4 text-center font-weight-bold"> Asesora Comercial - Oficina Cabecera </p>
-                                    </div>
-
-                                </div>
-                            </a>
-
-                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
-
-                                <a class="mr-2" href="mailto:comercialcabecera@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
-                                <a class="mr-2" href="tel:3178548222"> <i class="fas fa-phone"></i> </a>
-                                <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+573178548222"> <i class="fab fa-whatsapp"></i> </a>
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                        <div clas="text-break">
+                            <!-- IMAGEN ASESOR -->
+                            <div class="imagen">
+                                <img class="w-100 h-100" src="images/asesor1.png" class="card-img-top" alt="...">
                             </div>
+                            <!-- IMAGEN ASESOR -->
+
+                            <!-- TEXTO ANIMADO -->
+                            <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
+                            <!-- TEXTO ANIMADO -->
                         </div>
-                        <!-- ASESOR -->
-
-                        <!-- ASESOR -->
-                        <div class="col-4"> 
-                            <a href="#">
-                                <div class="carta d-flex flex-column">
-
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
-                                    <div clas="text-break">
-                                        <!-- IMAGEN ASESOR -->
-                                        <div class="imagen">
-                                            <img class="w-100" src="images/asesor2.png" class="card-img-top" alt="...">
-                                        </div>
-                                        <!-- IMAGEN ASESOR -->
-
-                                        <!-- TEXTO ANIMADO -->
-                                        <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
-                                        <!-- TEXTO ANIMADO -->
-                                    </div>
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
 
 
-                                    <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
-                                        <div class="d-flex align-items-baseline jusutify-content-center"> 
-                                            <i class="fas fa-user mr-2 verde"></i>
-                                            <p class="pt-4 text-center font-weight-bold"> SANDA M. AGUILAR RINCON </p>
-                                        </div>
-                                        <p class="pb-4 text-center font-weight-bold"> Ejecutiva Comercial - Oficina Cañaveral </p>
-                                    </div>
-
-                                </div>
-                            </a>
-
-                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
-
-                                <a class="mr-2" href="mailto:ejecutivacanaveral@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
-                                <a class="mr-2" href="tel:3173674483"> <i class="fas fa-phone"></i> </a>
-                                <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+573173674483"> <i class="fab fa-whatsapp"></i> </a>
+                        <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-baseline jusutify-content-center">
+                                <i class="fas fa-user mr-2 verde"></i>
+                                <p id="nombre_asesor" class="pt-4 text-center font-weight-bold"> FREDY OMAR DIAZ SIERRA </p>
                             </div>
+                            <p class="pb-4 text-center font-weight-bold"> Asesor Comercial - Oficina Principal </p>
                         </div>
-                        <!-- ASESOR -->
-
-                        <!-- ASESOR -->
-                        <div class="col-4"> 
-                            <a href="#">
-                                <div class="carta d-flex flex-column">
-
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
-                                    <div clas="text-break">
-                                        <!-- IMAGEN ASESOR -->
-                                        <div class="imagen">
-                                            <img class="w-100" src="images/asesor3.png" class="card-img-top" alt="...">
-                                        </div>
-                                        <!-- IMAGEN ASESOR -->
-
-                                        <!-- TEXTO ANIMADO -->
-                                        <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
-                                        <!-- TEXTO ANIMADO -->
-                                    </div>
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
-
-
-                                    <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
-                                        <div class="d-flex align-items-baseline jusutify-content-center"> 
-                                            <i class="fas fa-user mr-2 verde"></i>
-                                            <p class="pt-4 text-center font-weight-bold"> ROBINSON A. BAEZ CARDENAS </p>
-                                        </div>
-                                        <p class="pb-4 text-center font-weight-bold"> Asesor Comercial - Fidelizacion </p>
-                                    </div>
-
-                                </div>
-                            </a>
-
-                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
-
-                                <a class="mr-2" href="mailto:comercialcanaveral@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
-                                <a class="mr-2" href="tel:3183863467"> <i class="fas fa-phone"></i> </a>
-                                <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+573183863467"> <i class="fab fa-whatsapp"></i> </a>
-                            </div>
-                        </div>
-                        <!-- ASESOR -->
 
                     </div>
+                </a>
 
-                </section>
+                <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                    <a class="mr-2" href="mailto:comercialprincipal@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
+                    <a class="mr-2" href="tel:3133601037"> <i class="fas fa-phone"></i> </a>
+                    <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+573133601037"> <i class="fab fa-whatsapp"></i> </a>
+                </div>
             </div>
-            <!-- SEGUNDO TRIO DE ASESORES -->
+            <!-- ASESOR -->
 
-            <!-- TERCEER TRIO DE ASESORES -->
-            <div class="carousel-item mb-5">
-                <section id="asesores" class="mb-5">
+            <!-- ASESOR -->
+            <div class="col-10">
+                <a href="#">
+                    <div class="carta d-flex flex-column">
 
-                    <div class="container d-flex">
-
-                        <!-- ASESOR -->
-                        <div class="col-4"> 
-                            <a href="#">
-                                <div class="carta d-flex flex-column">
-
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
-                                    <div clas="text-break">
-                                        <!-- IMAGEN ASESOR -->
-                                        <div class="imagen">
-                                            <img class="w-100" src="images/asesor2.png" class="card-img-top" alt="...">
-                                        </div>
-                                        <!-- IMAGEN ASESOR -->
-
-                                        <!-- TEXTO ANIMADO -->
-                                        <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
-                                        <!-- TEXTO ANIMADO -->
-                                    </div>
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
-
-
-                                    <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
-                                        <div class="d-flex align-items-baseline jusutify-content-center"> 
-                                            <i class="fas fa-user mr-2 verde"></i>
-                                            <p class="pt-4 text-center font-weight-bold"> YOLANY VERGEL ORTEGA </p>
-                                        </div>
-                                        <p class="pb-4 text-center font-weight-bold"> Ejecutiva Comercial Medios Electrónicos </p>
-                                    </div>
-
-                                </div>
-                            </a>
-
-                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
-
-                                <a class="mr-2" href="mailto:canalelectrónico@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
-                                <a class="mr-2" href="tel:3153161507"> <i class="fas fa-phone"></i> </a>
-                                <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+573153161507"> <i class="fab fa-whatsapp"></i> </a>
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                        <div clas="text-break">
+                            <!-- IMAGEN ASESOR -->
+                            <div class="imagen">
+                                <img class="w-100 h-100" src="images/asesor2.png" class="card-img-top" alt="...">
                             </div>
+                            <!-- IMAGEN ASESOR -->
+
+                            <!-- TEXTO ANIMADO -->
+                            <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
+                            <!-- TEXTO ANIMADO -->
                         </div>
-                        <!-- ASESOR -->
-
-                        <!-- ASESOR -->
-                        <div class="col-4"> 
-                            <a href="#">
-                                <div class="carta d-flex flex-column">
-
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
-                                    <div clas="text-break">
-                                        <!-- IMAGEN ASESOR -->
-                                        <div class="imagen">
-                                            <img class="w-100" src="images/asesor2.png" class="card-img-top" alt="...">
-                                        </div>
-                                        <!-- IMAGEN ASESOR -->
-
-                                        <!-- TEXTO ANIMADO -->
-                                        <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
-                                        <!-- TEXTO ANIMADO -->
-                                    </div>
-                                    <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
 
 
-                                    <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
-                                        <div class="d-flex align-items-baseline jusutify-content-center"> 
-                                            <i class="fas fa-user mr-2 verde"></i>
-                                            <p class="pt-4 text-center font-weight-bold"> LILIANA ORTIZ NIEVES </p>
-                                        </div>
-                                        <p class="pb-4 text-center font-weight-bold"> Directora Comercial </p>
-                                    </div>
-
-                                </div>
-                            </a>
-
-                            <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
-
-                                <a class="mr-2" href="mailto:directorcomercial@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
-                                <a class="mr-2" href="tel:"> <i class="fas fa-phone"></i> </a>
-                                <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+57"> <i class="fab fa-whatsapp"></i> </a>
+                        <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-baseline jusutify-content-center">
+                                <i class="fas fa-user mr-2 verde"></i>
+                                <p id="nombre_asesor" class="pt-4 text-center font-weight-bold"> CARMEN C. SOTO MARQUEZ </p>
                             </div>
+                            <p class="pb-4 text-center font-weight-bold"> Ejecutiva Comercial - Oficina Cabecera </p>
                         </div>
-                        <!-- ASESOR -->
-
 
                     </div>
+                </a>
 
-                </section>
+                <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                    <a class="mr-2" href="mailto:ejecutivacabecera@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
+                    <a class="mr-2" href="tel:3156700082"> <i class="fas fa-phone"></i> </a>
+                    <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+573156700082"> <i class="fab fa-whatsapp"></i> </a>
+                </div>
             </div>
-            <!-- TERCEER TRIO DE ASESORES -->
+            <!-- ASESOR -->
+
+            <!-- ASESOR -->
+            <div class="col-10">
+                <a href="#">
+                    <div class="carta d-flex flex-column">
+
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                        <div clas="text-break">
+                            <!-- IMAGEN ASESOR -->
+                            <div class="imagen">
+                                <img class="w-100 h-100" src="images/asesor2.png" class="card-img-top" alt="...">
+                            </div>
+                            <!-- IMAGEN ASESOR -->
+
+                            <!-- TEXTO ANIMADO -->
+                            <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
+                            <!-- TEXTO ANIMADO -->
+                        </div>
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+
+
+                        <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-baseline jusutify-content-center">
+                                <i class="fas fa-user mr-2 verde"></i>
+                                <p id="nombre_asesor" class="pt-4 text-center font-weight-bold"> MARTHA LUCIA ACOSTA LEON </p>
+                            </div>
+                            <p class="pb-4 text-center font-weight-bold"> Asesora Comercial - Oficina Cabecera </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                    <a class="mr-2" href="mailto:comercialcabecera@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
+                    <a class="mr-2" href="tel:3178548222"> <i class="fas fa-phone"></i> </a>
+                    <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+573178548222"> <i class="fab fa-whatsapp"></i> </a>
+                </div>
+            </div>
+            <!-- ASESOR -->
+
+            <!-- ASESOR -->
+            <div class="col-10">
+                <a href="#">
+                    <div class="carta d-flex flex-column">
+
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                        <div clas="text-break">
+                            <!-- IMAGEN ASESOR -->
+                            <div class="imagen">
+                                <img class="w-100 h-100" src="images/asesor2.png" class="card-img-top" alt="...">
+                            </div>
+                            <!-- IMAGEN ASESOR -->
+
+                            <!-- TEXTO ANIMADO -->
+                            <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
+                            <!-- TEXTO ANIMADO -->
+                        </div>
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+
+
+                        <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-baseline jusutify-content-center">
+                                <i class="fas fa-user mr-2 verde"></i>
+                                <p id="nombre_asesor" class="pt-4 text-center font-weight-bold"> SANDRA M. AGUILAR RINCON </p>
+                            </div>
+                            <p class="pb-4 text-center font-weight-bold"> Ejecutiva Comercial - Oficina Cañaveral </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                    <a class="mr-2" href="mailto:ejecutivacanaveral@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
+                    <a class="mr-2" href="tel:3173674483"> <i class="fas fa-phone"></i> </a>
+                    <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+573173674483"> <i class="fab fa-whatsapp"></i> </a>
+                </div>
+            </div>
+            <!-- ASESOR -->
+
+            <!-- ASESOR -->
+            <div class="col-10">
+                <a href="#">
+                    <div class="carta d-flex flex-column">
+
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                        <div clas="text-break">
+                            <!-- IMAGEN ASESOR -->
+                            <div class="imagen">
+                                <img class="w-100 h-100" src="images/asesor3.png" class="card-img-top" alt="...">
+                            </div>
+                            <!-- IMAGEN ASESOR -->
+
+                            <!-- TEXTO ANIMADO -->
+                            <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
+                            <!-- TEXTO ANIMADO -->
+                        </div>
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+
+
+                        <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-baseline jusutify-content-center">
+                                <i class="fas fa-user mr-2 verde"></i>
+                                <p id="nombre_asesor" class="pt-4 text-center font-weight-bold"> ROBINSON A. BAEZ CARDENAS </p>
+                            </div>
+                            <p class="pb-4 text-center font-weight-bold"> Asesor Comercial - Fidelizacion </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                    <a class="mr-2" href="mailto:comercialcanaveral@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
+                    <a class="mr-2" href="tel:3183863467"> <i class="fas fa-phone"></i> </a>
+                    <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+573183863467"> <i class="fab fa-whatsapp"></i> </a>
+                </div>
+            </div>
+            <!-- ASESOR -->
+
+            <!-- ASESOR -->
+            <div class="col-10">
+                <a href="#">
+                    <div class="carta d-flex flex-column">
+
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                        <div clas="text-break">
+                            <!-- IMAGEN ASESOR -->
+                            <div class="imagen">
+                                <img class="w-100 h-100" src="images/asesor2.png" class="card-img-top" alt="...">
+                            </div>
+                            <!-- IMAGEN ASESOR -->
+
+                            <!-- TEXTO ANIMADO -->
+                            <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
+                            <!-- TEXTO ANIMADO -->
+                        </div>
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+
+
+                        <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-baseline jusutify-content-center">
+                                <i class="fas fa-user mr-2 verde"></i>
+                                <p id="nombre_asesor" class="pt-4 text-center font-weight-bold"> YOLANY VERGEL ORTEGA </p>
+                            </div>
+                            <p class="pb-4 text-center font-weight-bold"> Ejecutiva Comercial Medios Electrónicos </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                    <a class="mr-2" href="mailto:canalelectrónico@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
+                    <a class="mr-2" href="tel:3153161507"> <i class="fas fa-phone"></i> </a>
+                    <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+573153161507"> <i class="fab fa-whatsapp"></i> </a>
+                </div>
+            </div>
+            <!-- ASESOR -->
+
+            <!-- ASESOR -->
+            <div class="col-10">
+                <a href="#">
+                    <div class="carta d-flex flex-column">
+
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+                        <div clas="text-break">
+                            <!-- IMAGEN ASESOR -->
+                            <div class="imagen">
+                                <img class="w-100 h-100" src="images/asesor2.png" class="card-img-top" alt="...">
+                            </div>
+                            <!-- IMAGEN ASESOR -->
+
+                            <!-- TEXTO ANIMADO -->
+                            <!-- <p class="texto-animado px-2 mr-3 mt-4 text-break"> Ejecutivo Comercial - Oficina Principal </p> -->
+                            <!-- TEXTO ANIMADO -->
+                        </div>
+                        <!-- IMAGEN ASESOR Y TEXTO ANIMADO -->
+
+
+                        <div class="caja_texto flex-column position-relative d-flex align-items-center justify-content-center">
+                            <div class="d-flex align-items-baseline jusutify-content-center">
+                                <i class="fas fa-user mr-2 verde"></i>
+                                <p id="nombre_asesor" class="pt-4 text-center font-weight-bold"> LILIANA ORTIZ NIEVES </p>
+                            </div>
+                            <p class="pb-4 text-center font-weight-bold"> Directora Comercial </p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <div class="position-absolute rounded border caja_verde d-flex align-items-center justify-content-center">
+
+                    <a class="mr-2" href="mailto:directorcomercial@dominguezparra.com.co"><i class="fas fa-envelope"> </i></a>
+                    <a class="mr-2" href="tel:"> <i class="fas fa-phone"></i> </a>
+                    <a target="blank" class="mr-2" href="https://api.whatsapp.com/send?phone=+57"> <i class="fab fa-whatsapp"></i> </a>
+                </div>
+            </div>
+            <!-- ASESOR -->
+
 
         </div>
 
-        <a class="carousel-control-prev" href="#carrusel2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon2" aria-hidden="true"> <i class="fas fa-caret-left"></i> </span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carrusel2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon2" aria-hidden="true"> <i class="fas fa-caret-right"></i> </span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
-    <!-- ASESORES -->
 
 
 
@@ -436,6 +392,27 @@ $page = "Asesores" ?>
     <!-- FOOTER -->
 
     <?php include 'layout/2archivos_footer.php' ?>
+
+    <script>
+        $('#aliados_slide').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            pagination: false,
+            autoplay: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    </script>
 
 </body>
 

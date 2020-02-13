@@ -107,3 +107,31 @@
 .viñetas {
     color:$verde;
 }
+
+#quienes_somos_imagen_responsive {
+    display: none;
+}
+
+#mision_vision_imagen_responsive {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    #quienes_somos_imagen {
+        display: none;
+    }
+    
+    #quienes_somos_imagen_responsive {
+        display: block;
+    }
+
+    #mision_vision_imagen {
+        display: none;
+    }
+
+    #mision_vision_imagen_responsive {
+        display: block;
+    }
+}
+

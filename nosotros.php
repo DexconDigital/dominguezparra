@@ -40,11 +40,14 @@ $page = "Nosotros" ?>
 
         <!-- NOSOTROS -->
         <div class="container mt-5">
-            <div class="col-12 p-0 d-flex align-items-center">
 
-                <div class="col-6 pl-0">
+            <!-- QUIENES SOMOS -->
+            <div class="col-12 p-0 d-flex align-items-center flex-wrap">
 
-                    <div class="col-12 pl-0 text-justify texto">
+                <!-- TEXTO -->
+                <div class="order-2 order-lg-1 order-xl-1 col-12 col-lg-6 col-xl-6 p-0 pl-lg-0 pl-xl-0">
+
+                    <div class="col-12 px-3 pl-lg-0 pl-xl-0 text-justify texto mt-4 mt-lg-0 mt-xl-0">
                         <h5 class="mb-3 d-inline-block m-0 position-relative linea font-weight-bold"> Sobre Nosotros </h5>
 
                         <p> <?php echo $texto_quienes_somos['nosotros']['parrafos']['0'] ?> </p>
@@ -53,7 +56,7 @@ $page = "Nosotros" ?>
                     </div>
 
 
-                    <div class="col-12 pl-0 mt-4 texto">
+                    <div class="col-12 px-3 pl-lg-0 pl-xl-0 mt-4 texto">
                         <h5 class="mb-3 d-inline-block m-0 position-relative linea font-weight-bold"> Matriculas Arrendador </h5>
 
                         <p> <span class='viñetas mr-2'>»</span>MA 023 Oficio 192/2003 - Bucaramanga </p>
@@ -64,37 +67,65 @@ $page = "Nosotros" ?>
                     </div>
 
                 </div>
+                <!-- TEXTO -->
 
-                <div class="col-6 pr-0 p-0">
+                <!-- IMAGEN -->
+                <div id="quienes_somos_imagen" class="order-1 order-lg-2 order-xl-2 col-12 col-lg-6 col-xl-6 p-0 pr-lg-0 pr-xl-0">
                     <div class="d-flex align-items-center justify-content-center imagen"> <img class="rounded" src="images/imagen_nosotros5.png" alt=""></div>
                 </div>
+                <!-- IMAGEN -->
+
+                <!-- IMAGEN (RESPONSIVE1)-->
+                <div id="quienes_somos_imagen_responsive" class="order-1 order-lg-2 order-xl-2 col-12 col-lg-6 col-xl-6 p-0 pr-lg-0 pr-xl-0">
+                    <div class="d-flex align-items-center justify-content-center imagen"> <img class="w-100 h-100 rounded" src="images/quienes_somos_responsive.jpg" alt=""></div>
+                </div>
+                <!-- IMAGEN (RESPONSIVE1)-->
+
 
             </div>
+            <!-- QUIENES SOMOS -->
 
-            <div class="col-12 p-0 d-flex mt-5">
 
-                <div class="col-6 pl-0 pr-3">
+            <!-- MISION/VISION -->
+            <div class="col-12 p-0 d-flex mt-5 flex-wrap">
+
+                <!-- IMAGEN -->
+                <div id="mision_vision_imagen" class="col-12 col-xl-6 col-lg-6 p-0 pl-lg-0 pl-xl-0 pr-0 pr-lg-3 pr-xl-3">
                     <div class="d-flex align-items-center justify-content-center w-100 h-100"> <img class="w-100 h-100 rounded" src="images/misionyvision.jpg" alt=""></div>
                 </div>
+                <!-- IMAGEN -->
 
-                <div class="col-6 pr-0">
+                <!-- IMAGEN (RESPONSIVE2)-->
+                <div id="mision_vision_imagen_responsive" class="col-12 col-xl-6 col-lg-6 p-0 pl-lg-0 pl-xl-0 pr-0 pr-lg-3 pr-xl-3">
+                    <div class="d-flex align-items-center justify-content-center w-100 h-100"> <img class="w-100 h-100 rounded" src="images/mision_responsive.jpg" alt=""></div>
+                </div>
+                <!-- IMAGEN (RESPONSIVE2)-->
 
-                    <div class="col-12 text-justify pl-0 texto">
+
+
+                <!-- TEXTO -->
+                <div class="col-12 col-xl-6 col-lg-6 p-0 pr-lg-0 pr-xl-0">
+
+                    <div class="col-12 text-justify px-3 pl-lg-0 pl-xl-0 mt-4 mt-lg-0 mt-xl-0 texto">
                         <h5 class="mb-3 d-inline-block m-0 position-relative linea font-weight-bold"> <?php echo $texto_quienes_somos['mision']['titulo'] ?> </h5>
                         <p> <?php echo $texto_quienes_somos['mision']['parrafo'] ?> </p>
                     </div>
 
-                    <div class="col-12 text-justify mt-4 pl-0 texto ">
+                    <div class="col-12 text-justify mt-4 px-3 pl-lg-0 pl-xl-0 texto ">
                         <h5 class="mb-3 d-inline-block m-0 position-relative linea font-weight-bold"> <?php echo $texto_quienes_somos['vision']['titulo'] ?> </h5>
                         <p> <?php echo $texto_quienes_somos['vision']['parrafo'] ?> </p>
                     </div>
                 </div>
+                <!-- TEXTO -->
+
 
 
 
 
 
             </div>
+            <!-- MISION/VISION -->
+
 
         </div>
         <!-- NOSOTROS -->
@@ -118,49 +149,49 @@ $page = "Nosotros" ?>
 
             <p class="p-3"> <?php echo  $texto_quienes_somos['reconocimientos']['parrafos']['0'] ?> </p>
 
-            <div class=" col-3 my-2 text-center rounded">
+            <div class=" col-12 col-md-6 col-lg-3 col-xl-3 my-2 text-center rounded">
                 <div class="card cajas p-2">
                     <p class="m-auto px-2"> <?php echo  $texto_quienes_somos['reconocimientos']['parrafos']['1'] ?> </p>
                 </div>
             </div>
 
-            <div class=" col-3 my-2 text-center rounded">
+            <div class=" col-12 col-md-6 col-lg-3 col-xl-3 my-2 text-center rounded">
                 <div class="card cajas">
                     <p class="m-auto px-2"> <?php echo  $texto_quienes_somos['reconocimientos']['parrafos']['2'] ?> </p>
                 </div>
             </div>
 
-            <div class=" col-3 my-2 text-center rounded">
+            <div class=" col-12 col-md-6 col-lg-3 col-xl-3 my-2 text-center rounded">
                 <div class="card cajas">
                     <p class="m-auto px-2"> <?php echo  $texto_quienes_somos['reconocimientos']['parrafos']['3'] ?> </p>
                 </div>
             </div>
 
-            <div class=" col-3 my-2 text-center rounded">
+            <div class=" col-12 col-md-6 col-lg-3 col-xl-3 my-2 text-center rounded">
                 <div class="card cajas">
                     <p class="m-auto px-2"> <?php echo  $texto_quienes_somos['reconocimientos']['parrafos']['4'] ?> </p>
                 </div>
             </div>
 
-            <div class=" col-3 my-2 text-center rounded">
+            <div class=" col-12 col-md-6 col-lg-3 col-xl-3 my-2 text-center rounded">
                 <div class="card cajas">
                     <p class="m-auto px-2"> <?php echo  $texto_quienes_somos['reconocimientos']['parrafos']['5'] ?> </p>
                 </div>
             </div>
 
-            <div class=" col-3 my-2 text-center rounded">
+            <div class=" col-12 col-md-6 col-lg-3 col-xl-3 my-2 text-center rounded">
                 <div class="card cajas">
                     <p class="m-auto px-2"> <?php echo  $texto_quienes_somos['reconocimientos']['parrafos']['6'] ?> </p>
                 </div>
             </div>
 
-            <div class=" col-3 my-2 text-center rounded">
+            <div class=" col-12 col-md-6 col-lg-3 col-xl-3 my-2 text-center rounded">
                 <div class="card cajas">
                     <p class="m-auto px-2"> <?php echo  $texto_quienes_somos['reconocimientos']['parrafos']['7'] ?> </p>
                 </div>
             </div>
 
-            <div class=" col-3 my-2 text-center rounded">
+            <div class=" col-12 col-md-6 col-lg-3 col-xl-3 my-2 text-center rounded">
                 <div class="card cajas">
                     <p class="m-auto px-2"> <?php echo  $texto_quienes_somos['reconocimientos']['parrafos']['8'] ?> </p>
                 </div>

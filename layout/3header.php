@@ -139,7 +139,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="ml-5 collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="menu1 ml-5 collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav d-flex align-items-center">
 
                         <li class="nav-item position-relative">
@@ -226,6 +226,82 @@
                     </ul>
 
                 </div>
+
+                <div class="menu2 pl-3 rounded collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex">
+
+                        <li class="nav-item position-relative">
+                            <a class="nav-link <?php if ($page == 'Inicio') {
+                                                    echo 'activoo';
+                                                } ?>" href="index.php"> Inicio </a>
+                        </li>
+
+                        <li class="nav-item position-relative">
+                            <a class="nav-link <?php if ($page == 'Nosotros') {
+                                                    echo 'activoo';
+                                                } ?>" href="nosotros.php"> Nosotros </a>
+                        </li>
+
+                        <li class="nav-item position-relative">
+                            <a class="nav-link <?php if ($page == 'Servicios') {
+                                                    echo 'activoo';
+                                                } ?>" href="servicios.php"> Servicios </a>
+                        </li>
+
+                        <li class="nav-item position-relative">
+                            <a class="nav-link <?php if ($page == 'Asesores') {
+                                                    echo 'activoo';
+                                                } ?>" href="asesores.php"> Asesores </a>
+                        </li>
+
+
+
+                        <li class="nav-item position-relative">
+                            <a class="nav-link <?php if ($page == 'Inmuebles') {
+                                                    echo 'activoo';
+                                                } ?>" href="inmuebles.php?"> Inmuebles </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Clientes
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" target="blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&tipo=2"> Arrendatarios </a>
+                                <a class="dropdown-item" target="blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&tipo=1"> Propietarios </a>
+                                <a class="dropdown-item" target="blank" href="https://www.mipagoamigo.com/MPA_WebSite/ServicePayments"> Pagos en línea </a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item position-relative">
+                            <a data-toggle="modal" data-target="#exampleModal" class="nav-link <?php if ($page == '') {
+                                                                                                    echo 'activoo';
+                                                                                                } ?>" href="index.php"> Consigne su Inmueble </a>
+                        </li>
+
+                        <!-- Button trigger modal -->
+
+
+                        <!-- Modal -->
+
+
+                        <li class="nav-item position-relative">
+                            <a class="nav-link <?php if ($page == 'Contáctenos') {
+                                                    echo 'activoo';
+                                                } ?>" href="contactenos.php"> Contáctenos </a>
+                        </li>
+
+                        <li style="width:0px" class="nav-item position-relative">
+                            <a href="https://www.mipagoamigo.com/MPA_WebSite/ServicePayments" target="blank" class="nav-link"> <img class="logo_pse" src="images/mpa.png" alt=""> </a>
+                        </li>
+
+
+
+                    </ul>
+
+                </div>
+
+
 
             </nav>
 
@@ -391,7 +467,7 @@
 <!-- MODAL DE CONSIGNAR INMUEBLE -->
 
 <!-- MODAL FORMULARIOS -->
-<div class="modal fade" id="formulario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="formulario3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
