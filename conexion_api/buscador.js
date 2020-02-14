@@ -15,6 +15,8 @@ $(document).ready(function () {
             $('#alcobas_buscar').attr("disabled", true);
             $('#garajes_buscar').attr("disabled", true);
             $('#price').attr("disabled", true);
+            
+
         } else {
             $('#ciudad_buscar').removeAttr("disabled");
             $('#barrio_buscar').removeAttr("disabled");
@@ -28,6 +30,7 @@ $(document).ready(function () {
             $('#alcobas_buscar').removeAttr("disabled");
             $('#garajes_buscar').removeAttr("disabled");
             $('#price').removeAttr("disabled");
+            
         }
     });
 

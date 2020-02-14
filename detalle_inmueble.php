@@ -188,15 +188,14 @@ $page = "Detalle de Inmueble" ?>
 
                 <div class="my-2 col-12 p-0 d-flex align-items-center justify-content-around w-100">
                     
-                    <a href="#" class="btn boton_principal"> Descargar ficha </a>
+                    <a href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=986-<?php echo $co ?>" target="_blank" class="btn boton_principal"> Descargar ficha </a>
 
                     <div class="d-flex align-items-center flex-column">
                         <p>Compartir en: </p>
                         <div>
-                            <a href="#"><i class="mx-1 fab fa-facebook-f"> </i></a>
-                            <a href="#"><i class="mx-1 fab fa-whatsapp"> </i></a>
-                            <a href="#"><i class="mx-1 fab fa-twitter"> </i></a>
-                            <a href="#"><i class="mx-1 fab fa-instagram"> </i></a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.dominguezparra.com%2Fdetalle_inmueble.php%3Fco%3D986-<?php echo $co; ?>" target="_blank"><i class="mx-1 fab fa-facebook-f"> </i></a>
+                            <a href="<?php echo 'https://wa.me/?text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] . '%20http://www.dominguezparra.com/detalleInmueble.php?codigo%3d' . $co ?>" target="_blank"><i class="mx-1 fab fa-whatsapp"> </i></a>
+                            <a href="<?php echo 'https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.dominguezparra.com%2Fdetalle_inmueble.php%3Fco%3D' . $co . '&text=' . $r['Tipo_Inmueble'] . '%20en%20' . $r['Gestion'] . '%20en%20' . $r['ciudad'] . '-' . $r['depto'] ?>" target="_blank"><i class="mx-1 fab fa-twitter"> </i></a>
                         </div>
                     </div>
                 </div>

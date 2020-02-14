@@ -18,8 +18,19 @@ curl_setopt($ch, CURLOPT_USERPWD, $headers);
 $result = curl_exec($ch);
 curl_close($ch);
 $r = json_decode($result, true);
+
+if (isset($r['msn'])) {
+
+    echo "<script>window.location.href='./error.php'</script>";
+    
+}
+
+
 $r['ValorVenta'] = number_format($r['ValorVenta']);
 $r['ValorCanon'] = number_format($r['ValorCanon']);
+
+
+
 
 
 $administracion = $r['Administracion'];
@@ -37,7 +48,7 @@ $descripcion = $r['descripcionlarga'];
 $garaje = $r['garaje'];
 $asesor = $r['asesor'][0];
 
-if($asesor['FotoAsesor'] == 'https://simicrm.app/mcomercialweb/'){
+if ($asesor['FotoAsesor'] == 'https://simicrm.app/mcomercialweb/') {
     $asesor['FotoAsesor'] = 'images/no_image.png';
 }
 
@@ -68,7 +79,7 @@ function similares($ciudad, $inmueble)
         curl_close($ch);
         $respuesta = json_decode($result, true);
         modelo_inmueble_similare($respuesta['Inmuebles'], 3);
-    }else{
+    } else {
         modelo_inmueble_similare($respuesta['Inmuebles'], 3);
     }
 }
