@@ -139,6 +139,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!-- MENU -->
                 <div class="menu1 ml-5 collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav d-flex align-items-center">
 
@@ -184,15 +185,12 @@
                                                                                                 } ?>"></span> Inmuebles </a>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Clientes
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" target="blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&tipo=2"> Arrendatarios </a>
-                                <a class="dropdown-item" target="blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&tipo=1"> Propietarios </a>
-                                <a class="dropdown-item" target="blank" href="https://www.mipagoamigo.com/MPA_WebSite/ServicePayments"> Pagos en línea </a>
-                            </div>
+                        <li class="nav-item position-relative">
+                            <a class="a2 nav-link <?php if ($page == 'Clientes') {
+                                                        echo 'span';
+                                                    } ?>" href="clientes.php?"> <span class="<?php if ($page == 'Clientes') {
+                                                                                                    echo 'active2';
+                                                                                                } ?>"></span> Clientes </a>
                         </li>
 
                         <li class="nav-item position-relative">
@@ -226,7 +224,9 @@
                     </ul>
 
                 </div>
+                <!-- MENU -->
 
+                <!-- MENU (RESPONSIVE) -->
                 <div class="menu2 pl-3 rounded collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav d-flex">
 
@@ -262,15 +262,10 @@
                                                 } ?>" href="inmuebles.php?"> Inmuebles </a>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Clientes
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" target="blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&tipo=2"> Arrendatarios </a>
-                                <a class="dropdown-item" target="blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&tipo=1"> Propietarios </a>
-                                <a class="dropdown-item" target="blank" href="https://www.mipagoamigo.com/MPA_WebSite/ServicePayments"> Pagos en línea </a>
-                            </div>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link <?php if ($page == 'Clientes') {
+                                                    echo 'activoo';
+                                                } ?>" href="clientes.php?"> Clientes </a>
                         </li>
 
                         <li class="nav-item position-relative">
@@ -300,6 +295,7 @@
                     </ul>
 
                 </div>
+                <!-- MENU (RESPONSIVE) -->
 
 
 
@@ -386,7 +382,7 @@
         <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Consignar Inmueble</h5>
+                    <h5 class="modal-title text-center w-100" id="exampleModalLabel"> Consigne gratis su inmueble </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>

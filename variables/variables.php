@@ -49,14 +49,14 @@ $datos_contacto = [
 			"imprimir" => "+57 (7) 652 0909",
 			"icono" => "fas fa-phone",
 		],
-		// "celular" => [
-			// "link"=> "+573505781268",
-			// "imprimir" => "350 578 1268",
-			// "icono" => "fas fa-mobile-alt",
-		// ],
-		 "whatsapp" => [
-			"link"=> "https://api.whatsapp.com/send?phone=573505781268&text=&source=&data=",
-			"imprimir" => "350 578 1268",
+		"celular" => [
+			"link"=> "+573005997366",
+			"imprimir" => "300 599 7366",
+			"icono" => "fas fa-mobile-alt",
+		],
+		"whatsapp" => [
+			"link"=> "https://api.whatsapp.com/send?phone=573005997366&text=&source=&data=",
+			"imprimir" => "300 599 7366",
 			"icono" => "fab fa-whatsapp",
 		],
 		"correo" => "principal@dominguezparra.com.co",
@@ -82,8 +82,8 @@ $datos_contacto = [
 			// "icono" => "fas fa-mobile-alt",
 		// ],
 		"whatsapp" => [
-			"link"=> "https://api.whatsapp.com/send?phone=573505781268&text=&source=&data=",
-			"imprimir" => "350 578 1268",
+			"link"=> "https://api.whatsapp.com/send?phone=573005997366&text=&source=&data=",
+			"imprimir" => "300 599 7366",
 			"icono" => "fab fa-whatsapp",
 		],
 		"correo" => "cabecera@dominguezparra.com.co",
@@ -109,8 +109,8 @@ $datos_contacto = [
 			// "icono" => "fas fa-mobile-alt",
 		// ],
 		"whatsapp" => [
-			"link"=> "https://api.whatsapp.com/send?phone=573505781268&text=&source=&data=",
-			"imprimir" => "350 578 1268",
+			"link"=> "https://api.whatsapp.com/send?phone=573005997366&text=&source=&data=",
+			"imprimir" => "300 599 7366",
 			"icono" => "fab fa-whatsapp",
 		],
 		"correo" => "canaveral@dominguezparra.com",
@@ -298,12 +298,17 @@ $texto_servicios = [
 		"titulo" => "Asesoría Jurídica, consultoría administrativa y contable en el campo inmobiliario",
 		"parrafo" => "En la INMOBILIARIA ALEJANDRO DOMINGUEZ PARRA S.A contamos con un excelente Equipo Profesional de Asesores y Consultores Jurídicos especializados en Derecho Inmobiliario y Comercial que le garantizan una correcta interpretación de las normas legales.",
 		],
-	// "mantenimiento" =>[
-		// "titulo" => "Mantenimiento",
-		// "parrafos" => [
-			// 0 => "Invierte en el extranjero sin salir de Colombia, Esta dinámica ha venido tomando mucha fuerza en ciudades de la Florida como Orlando que cuentan con diversos atractivos para los compradores. De hecho, en 2018 Colombia apareció en el primer lugar de la lista internacional de búsquedas de casas en la Florida. Según las mismas estadísticas, la adquisición de propiedades residenciales en el sur de la Florida alcanzó 15.400 unidades en 2017, reflejando un aumento de 40% en comparación con el año anterior.",
+	"mantenimiento" =>[
+		"titulo" => "Mantenimientos",
+		"parrafos" => [
+			0 => "Nos preocupamos por la conservación de su inmueble, contamos con personal calificado para ofrecer un servicio integral y garantizado.
+			En forma profesional atendemos las solicitudes de Propietarios y Arrendatarios en lo relacionado con:",
+			1 => "<span class='viñetas'>»</span> Electricidad",
+			2 => "<span class='viñetas'>»</span> Plomería",
+			3 => "<span class='viñetas'>»</span> Carpintería",
+			4 => "<span class='viñetas'>»</span> Mantenimiento gasodomésticos",
 		
-		// ],
-	// ],
+		],
+	],
 ];
 ?>

@@ -9,7 +9,7 @@ function modelo_inmueble($r, $cantidad_inmuebles)
         $api = $r[$i];
 
         echo '
-        <div class="col-12 col-lg-6 col-xl-6 col-md-6">
+        <div class="col-12 col-lg-4 col-xl-4 col-md-6">
         <div class="carta mb-5 ">
             <a href="./detalle_inmueble.php?co=' . $codigo . '" class="d-flex flex-wrap" id="inmuebles2">
 
@@ -211,7 +211,7 @@ function modelo_inmueble_similare($r)
 
         echo '
 
-        <div class="col-12 py-3">
+        <div class="p-0 col-md-6 col-xl-12 col-lg-12 py-3">
 
         <div class="d-flex align-items-center caja_direccion">
             <i class="mx-2 fas fa-map-marker-alt"></i>

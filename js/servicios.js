@@ -4,12 +4,17 @@ $(document).ready(function(){
 
         if(!$('#uno').hasClass('show')) {
             $('.verm1').html('Ver Menos. . .');
+            $('.card1 .d-flex h2').css({'white-space':'pre-line'});    
         } else {
             $('.verm1').html('Ver Más. . .');
+            $('.card1 .d-flex h2').css({'white-space':'nowrap'});    
         } 
         
-            $('.card5  .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card2  .d-flex h2').css({'white-space':'nowrap'});    
             $('.card3  .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card4  .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card5  .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card6  .d-flex h2').css({'white-space':'nowrap'});    
 
             $('.verm2').html('Ver Más. . .');
             $('.verm3').html('Ver Más. . .');
@@ -29,8 +34,12 @@ $(document).ready(function(){
             $('.verm2').html('Ver Más. . .');
         } 
 
-            $('.card5  .d-flex h2').css({'white-space':'nowrap'});    
-            $('.card3  .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card1 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card3 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card4 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card5 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card6 .d-flex h2').css({'white-space':'nowrap'});    
+
             $('.verm1').html('Ver Más. . .');
             $('.verm3').html('Ver Más. . .');
             $('.verm4').html('Ver Más. . .');
@@ -53,7 +62,11 @@ $(document).ready(function(){
             $('.verm3').html('Ver Más. . .');
         } 
 
-            $('.card5  .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card1 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card2 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card4 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card5 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card6 .d-flex h2').css({'white-space':'nowrap'});    
             $('.verm1').html('Ver Más. . .');
             $('.verm2').html('Ver Más. . .');
             $('.verm4').html('Ver Más. . .');
@@ -74,8 +87,12 @@ $(document).ready(function(){
             $('.verm4').html('Ver Más. . .');
         } 
 
-            $('.card5  .d-flex h2').css({'white-space':'nowrap'});    
-            $('.card3  .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card1 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card2 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card3 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card5 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card6 .d-flex h2').css({'white-space':'nowrap'}); 
+
             $('.verm1').html('Ver Más. . .');
             $('.verm2').html('Ver Más. . .');
             $('.verm3').html('Ver Más. . .');
@@ -98,7 +115,12 @@ $(document).ready(function(){
             $('.verm5').html('Ver Más. . .');
         } 
 
-            $('.card3 .d-flex h2').css({'white-space':'nowrap'});
+            $('.card1 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card2 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card3 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card4 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card6 .d-flex h2').css({'white-space':'nowrap'});    
+        
             $('.verm1').html('Ver Más. . .');
             $('.verm2').html('Ver Más. . .');
             $('.verm3').html('Ver Más. . .');
@@ -119,8 +141,12 @@ $(document).ready(function(){
             $('.verm6').html('Ver Más. . .');
         } 
 
-            $('.card5  .d-flex h2').css({'white-space':'nowrap'});    
-            $('.card3  .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card1 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card2 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card3 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card4 .d-flex h2').css({'white-space':'nowrap'});    
+            $('.card5 .d-flex h2').css({'white-space':'nowrap'});    
+
             $('.verm1').html('Ver Más. . .');
             $('.verm2').html('Ver Más. . .');
             $('.verm3').html('Ver Más. . .');

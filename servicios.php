@@ -48,7 +48,7 @@ $page = "Servicios" ?>
                             <button class="p-0 col-12 btn btn-link" type="button" data-toggle="collapse" data-target="#uno" aria-expanded="true" aria-controls="collapseOne">
                                 <div class="d-flex align-items-center justify-content-between">
 
-                                    <div class="d-flex">
+                                    <div class="d-flex align-items-center">
                                         <i class="iconos mr-2 <?php echo $iconos_servicios['arrendamientos'] ?>"></i>
                                         <h2 class="text-center m-0 font-weight-bold"> <?php echo $texto_servicios['arrendamientos']['titulo'] ?> </h2>
                                     </div>
@@ -89,7 +89,7 @@ $page = "Servicios" ?>
                             <button class="p-0 col-12 btn btn-link" type="button" data-toggle="collapse" data-target="#dos" aria-expanded="true" aria-controls="collapseOne">
                                 <div class="d-flex align-items-center justify-content-between">
 
-                                    <div class="d-flex">
+                                    <div class="d-flex align-items-center">
                                         <i class="iconos mr-2 <?php echo $iconos_servicios['ventas'] ?>"></i>
                                         <h2 class="text-center m-0 font-weight-bold"> <?php echo $texto_servicios['ventas']['titulo'] ?> </h2>
                                     </div>
@@ -129,7 +129,7 @@ $page = "Servicios" ?>
                             <button class="p-0 col-12 btn btn-link" type="button" data-toggle="collapse" data-target="#tres" aria-expanded="true" aria-controls="collapseOne">
                                 <div class="d-flex align-items-center justify-content-between">
 
-                                    <div class="d-flex">
+                                    <div class="d-flex align-items-center">
                                         <i class="iconos mr-2 <?php echo $iconos_servicios['propiedad'] ?>"></i>
                                         <h2 class="text-center m-0 font-weight-bold"> <?php echo $texto_servicios['propiedad']['titulo'] ?> </h2>
                                     </div>
@@ -159,7 +159,7 @@ $page = "Servicios" ?>
                             <button class="p-0 col-12 btn btn-link" type="button" data-toggle="collapse" data-target="#cuatro" aria-expanded="true" aria-controls="collapseOne">
                                 <div class="d-flex align-items-center justify-content-between">
 
-                                    <div class="d-flex">
+                                    <div class="d-flex align-items-center">
                                         <i class="iconos mr-2 <?php echo $iconos_servicios['avaluos'] ?>"></i>
                                         <h2 class="text-center m-0 font-weight-bold"> <?php echo $texto_servicios['avaluos']['titulo'] ?> </h2>
                                     </div>
@@ -191,7 +191,7 @@ $page = "Servicios" ?>
                             <button class="p-0 col-12 btn btn-link" type="button" data-toggle="collapse" data-target="#cinco" aria-expanded="true" aria-controls="collapseOne">
                                 <div class="d-flex align-items-center justify-content-between">
 
-                                    <div class="d-flex">
+                                    <div class="d-flex align-items-center">
                                         <i class="iconos mr-2 <?php echo $iconos_servicios['asesoria'] ?>"></i>
                                         <h2 id="holi" class="text-center m-0 font-weight-bold"> <?php echo $texto_servicios['asesoria']['titulo'] ?> </h2>
                                     </div>
@@ -221,7 +221,7 @@ $page = "Servicios" ?>
                             <button class="p-0 col-12 btn btn-link" type="button" data-toggle="collapse" data-target="#seis" aria-expanded="true" aria-controls="collapseOne">
                                 <div class="d-flex align-items-center justify-content-between">
 
-                                    <div class="d-flex">
+                                    <div class="d-flex align-items-center">
                                         <i class="iconos mr-2 fas fa-tools"></i>
                                         <h2 class="text-center m-0 font-weight-bold"> Mantenimientos </h2>
                                     </div>
@@ -238,7 +238,11 @@ $page = "Servicios" ?>
                 <div id="seis" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
                         <div class="container">
-                            <p> <strong> *Texto de Mantenimiento* (PENDIENTE DE ENVIAR)</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit culpa facere voluptas ut ipsa quibusdam maxime, rerum voluptatum, dolore iusto suscipit recusandae. Delectus illum in quidem esse laudantium autem repudiandae quis corrupti? Itaque quis illo unde sint et, dolorum temporibus eligendi ullam, maxime fuga reprehenderit recusandae cumque blanditiis nostrum aut. </p>
+                            <p>  <?php echo $texto_servicios['mantenimiento']['parrafos']['0'] ?> </p>
+                            <p>  <?php echo $texto_servicios['mantenimiento']['parrafos']['1'] ?> </p>
+                            <p>  <?php echo $texto_servicios['mantenimiento']['parrafos']['2'] ?> </p>
+                            <p>  <?php echo $texto_servicios['mantenimiento']['parrafos']['3'] ?> </p>
+                            <p>  <?php echo $texto_servicios['mantenimiento']['parrafos']['4'] ?> </p>
                         </div>
                     </div>
                 </div>

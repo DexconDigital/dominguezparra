@@ -51,8 +51,8 @@ $page = "Detalle de Inmueble" ?>
     <!-- BANNER -->
     <section id="banner" class="margin_top position-relative">
 
-        <div class="imagen">
-            <img src="images/banner_nosotros.jpg" alt="">
+        <div class="imagen imagen_d_inmueble">
+
         </div>
         <div id="fondo_negro"></div>
 
@@ -65,10 +65,10 @@ $page = "Detalle de Inmueble" ?>
     <!-- BANNER -->
 
 
-    <section id="imagenes_inmueble" class="container d-flex mt-5">
+    <section id="imagenes_inmueble" class="container d-flex flex-wrap mt-5">
 
         <!-- SECCION IZQUIERDA -->
-        <div id="seccion_izquierda" class="col-8">
+        <div id="seccion_izquierda" class="col-12 col-lg-8 col-xl-8">
 
             <!-- CARRUSEL DE IMAGENES -->
             <div>
@@ -114,15 +114,15 @@ $page = "Detalle de Inmueble" ?>
             <!-- CARRUSEL DE IMAGENES -->
 
             <!-- PRECIO Y DIRECCIÓN -->
-            <div class=" d-flex flex-column justify-content-center blanco precio_codigo col-12">
+            <div class=" d-flex flex-column justify-content-center blanco precio_codigo py-2 col-12">
 
-                <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center justify-content-between flex-wrap">
 
-                    <div class="d-flex align-items-center">
+                    <div class="p-0 d-flex col-12 col-lg-6 col-xl-6 d-block align-items-center">
                         <h5 class="m-0"> <?php echo $r['Tipo_Inmueble'] . ' /' . $r['Gestion']; ?> </h5>
                     </div>
 
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-baseline">
                         <i class="verde mr-2 fas fa-map-marker-alt"></i>
                         <h5 class="m-0"> <?php echo $r['barrio'] . ', ' . $r['ciudad']; ?> </h5>
                     </div>
@@ -143,20 +143,20 @@ $page = "Detalle de Inmueble" ?>
             <!-- PRECIO Y DIRECCIÓN -->
 
             <!-- CARACTERISTICAS Y CÓDIGO -->
-            <div class="caracteristicas d-flex align-items-center justify-content-between col-12">
+            <div class="py-2 caracteristicas d-flex align-items-center justify-content-between col-12 flex-wrap">
 
                 <!-- CARACTERISTICAS -->
-                <div class="d-flex">
+                <div class="d-flex flex-wrap col-12 col-md-9 col-lg-9 col-xl-9">
 
                     <!-- AREA -->
-                    <div class="d-flex mr-3 align-items-center">
+                    <div class="justify-content-center d-flex col-6 col-md-2 col-lg-2 col-xl-2 mr-0 mr-lg-2 mr-xl-3 align-items-center">
                         <i class="verde mr-1 fas fa-chart-area"> </i>
                         <p> <?php echo $r['AreaConstruida'] . 'm<sup>2'; ?> </p>
                     </div>
                     <!-- AREA -->
 
                     <!-- BAÑOS -->
-                    <div class="d-flex mr-3 align-items-center">
+                    <div class="justify-content-center d-flex col-6 col-md-2 col-lg-2 col-xl-2 mr-0 mr-lg-3 mr-xl-3 align-items-center">
                         <i class="verde mr-1 fas fa-bath"> </i>
                         <p> <?php echo $r['banos']; ?></php>
                         </p>
@@ -164,14 +164,14 @@ $page = "Detalle de Inmueble" ?>
                     <!-- BAÑOS -->
 
                     <!-- ALCOBAS -->
-                    <div class="d-flex mr-3 align-items-center">
+                    <div class="justify-content-center d-flex col-6 col-md-2 col-lg-2 col-xl-2 mr-0 mr-lg-3 mr-xl-3 align-items-center">
                         <i class="verde mr-1 fas fa-bed"> </i>
                         <p> <?php echo  $r['alcobas']; ?> </p>
                     </div>
                     <!-- ALCOBAS -->
 
                     <!-- GARAJES -->
-                    <div class="d-flex mr-3 align-items-center">
+                    <div class="justify-content-center d-flex col-6 col-md-2 col-lg-2 col-xl-2 mr-0 mr-lg-3 mr-xl-3 align-items-center">
                         <i class="verde mr-1 fas fa-warehouse"> </i>
                         <p> <?php echo $r['garaje']; ?> </p>
                     </div>
@@ -180,9 +180,27 @@ $page = "Detalle de Inmueble" ?>
                 </div>
                 <!-- CARACTERISTICAS -->
 
-                <div>
+                <!-- CODIGO -->
+                <div class="text-center text-lg-left text-xl-left col-12 col-md-3 col-lg-3 col-xl-3">
                     <p class="text-muted"> Código: <?php echo $co; ?> </p>
                 </div>
+                <!-- CODIGO -->
+
+                <div class="my-2 col-12 p-0 d-flex align-items-center justify-content-around w-100">
+                    
+                    <a href="#" class="btn boton_principal"> Descargar ficha </a>
+
+                    <div class="d-flex align-items-center flex-column">
+                        <p>Compartir en: </p>
+                        <div>
+                            <a href="#"><i class="mx-1 fab fa-facebook-f"> </i></a>
+                            <a href="#"><i class="mx-1 fab fa-whatsapp"> </i></a>
+                            <a href="#"><i class="mx-1 fab fa-twitter"> </i></a>
+                            <a href="#"><i class="mx-1 fab fa-instagram"> </i></a>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
             <!-- CARACTERISTICAS Y CÓDIGO -->
@@ -203,19 +221,19 @@ $page = "Detalle de Inmueble" ?>
 
                         <div class="d-flex flex-wrap mb-3">
 
-                            <div id="boton1" class="activo d-flex justify-content-center align-items-center boton_caracteristicas p-0 col-3" type="button" data-toggle="collapse" data-target="#uno" aria-expanded="true" aria-controls="collapseExample">
+                            <div id="boton1" class="activo d-flex justify-content-center align-items-center boton_caracteristicas p-0 col-12 col-md-3 col-lg-3 col-xl-3" type="button" data-toggle="collapse" data-target="#uno" aria-expanded="true" aria-controls="collapseExample">
                                 Características Internas
                             </div>
 
-                            <div id="boton2" class="d-flex justify-content-center align-items-center boton_caracteristicas p-0 col-3" type="button" data-toggle="collapse" data-target="#dos" aria-expanded="false" aria-controls="collapseExample">
+                            <div id="boton2" class="d-flex justify-content-center align-items-center boton_caracteristicas p-0 col-12 col-md-3 col-lg-3 col-xl-3" type="button" data-toggle="collapse" data-target="#dos" aria-expanded="false" aria-controls="collapseExample">
                                 Características Externas
                             </div>
 
-                            <div id="boton3" class="d-flex justify-content-center align-items-center boton_caracteristicas p-0 col-4" type="button" data-toggle="collapse" data-target="#tres" aria-expanded="false" aria-controls="collapseExample">
+                            <div id="boton3" class="d-flex justify-content-center align-items-center boton_caracteristicas p-0 col-12 col-md-4 col-lg-4 col-xl-4" type="button" data-toggle="collapse" data-target="#tres" aria-expanded="false" aria-controls="collapseExample">
                                 Características Alrededores
                             </div>
 
-                            <div id="boton4" class="d-flex justify-content-center align-items-center boton_caracteristicas p-0 col-2" type="button" data-toggle="collapse" data-target="#cuatro" aria-expanded="false" aria-controls="collapseExample">
+                            <div id="boton4" class="d-flex justify-content-center align-items-center boton_caracteristicas p-0 col-12 col-md-2 col-lg-2 col-xl-2" type="button" data-toggle="collapse" data-target="#cuatro" aria-expanded="false" aria-controls="collapseExample">
                                 Video
                             </div>
 
@@ -340,32 +358,34 @@ $page = "Detalle de Inmueble" ?>
         <!-- SECCION IZQUIERDA -->
 
         <!-- SECCION DERECHA -->
-        <div id="seccion_derecha" class="col-4">
+        <div id="seccion_derecha" class="col-12 col-lg-4 col-xl-4">
 
             <!-- ASESOR -->
             <div class="asesor">
                 <div>
-                    <h4 class="text-center mt-3 font-weight-bold"> Contacto con el Asesor </h4>
+                    <h4 class="text-center my-3 font-weight-bold"> Contacto con Nuestros Asesores </h4>
                 </div>
 
-                <div class="caja_asesor rounded m-auto w-75 pt-3">
-                    <img class="rounded w-100 h-100" src="<?php echo $asesor['FotoAsesor']; ?>" width="100%" height="100%" alt="">
-                </div>
-
-                <div class="d-flex align-items-center mt-4 mb-2">
-                    <i class="verde mr-2 fas fa-user"> </i>
-                    <p> <?php echo $asesor['ntercero']; ?> </p>
-                </div>
-
-                <a href="tel:+57<?php echo $asesor['celular']; ?>" class="d-flex align-items-center  my-2">
+                <a href="tel:<?php echo $datos_contacto['principal']['telefono_fijo']['link'] ?>" class="d-flex align-items-center  my-2">
                     <i class="verde mr-2 fas fa-phone"> </i>
-                    <p><?php echo $asesor['celular']; ?> </p>
+                    <p> Sede principal: <?php echo $datos_contacto['principal']['telefono_fijo']['imprimir'] ?> </p>
                 </a>
 
-                <a href="mailto:<?php echo $asesor['correo']; ?>" class="d-flex align-items-center my-2 text-break">
-                    <i class="verde mr-2 fas fa-envelope"> </i>
-                    <p> <?php echo $asesor['correo']; ?> </p>
+                <a href="tel:<?php echo $datos_contacto['cabecera']['telefono_fijo']['link'] ?>" class="d-flex align-items-center  my-2">
+                    <i class="verde mr-2 fas fa-phone"> </i>
+                    <p> Sede Cabecera: <?php echo $datos_contacto['cabecera']['telefono_fijo']['imprimir'] ?> </p>
                 </a>
+
+                <a href="tel:<?php echo $datos_contacto['cañaveral']['telefono_fijo']['link'] ?>" class="d-flex align-items-center  my-2">
+                    <i class="verde mr-2 fas fa-phone"> </i>
+                    <p> Sede Cañaveral: <?php echo $datos_contacto['cañaveral']['telefono_fijo']['imprimir'] ?> </p>
+                </a>
+
+                <a href="tel:<?php echo $datos_contacto['principal']['celular']['link'] ?>" class="d-flex align-items-center  my-2">
+                    <i class="verde mr-2 fas fa-mobile-alt"> </i>
+                    <p> Celular: <?php echo $datos_contacto['principal']['celular']['imprimir'] ?> </p>
+                </a>
+
             </div>
             <!-- ASESOR -->
 
@@ -374,9 +394,9 @@ $page = "Detalle de Inmueble" ?>
 
                 <h5 class="font-weight-bold"> Propiedades similares </h5>
 
-                <section id="inmuebles2" class="position-relative container">
+                <section id="inmuebles2" class="mb-5 position-relative container">
 
-                    <div class="d-flex align-items-start justify-content-between flex-wrap">
+                    <div class="d-flex align-items-center justify-content-center flex-wrap">
                         <?php similares($r['IdCiudad'], $r['IdTpInm']); ?>
                     </div>
 
@@ -388,6 +408,9 @@ $page = "Detalle de Inmueble" ?>
 
             </div>
             <!-- SECCION DERECHA -->
+
+        </div>
+        
 
     </section>
 

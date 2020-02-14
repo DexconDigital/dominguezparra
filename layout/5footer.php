@@ -14,7 +14,7 @@
 
                     <!-- SEDE PRINCIPAL -->
                     <div class="align-items-center justify-content-center d-flex flex-column col-6 col-md-4 col-lg-4 col-xl-4 mt-2">
-                        <h3 class="m-0 titulos text-justify d-flex justify-content-center"> <b class=" text-center verde_oscuro"> Sucursal Principal </b> </h3>
+                        <h3 class="m-0 titulos text-justify d-flex justify-content-center"> <b class=" text-center verde_oscuro"> Oficina Principal </b> </h3>
 
                         <!-- MODAL -->
                         <div class="d-flex justify-content-center mt-3">
@@ -29,7 +29,7 @@
                                     <div class="modal-content">
 
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel"> Sucursal Principal </h5>
+                                            <h5 class="modal-title" id="exampleModalLabel"> Principal </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -49,6 +49,13 @@
                                                 <a class="d-flex align-items-baseline" href="tel:<?php echo  $datos_contacto['principal']['telefono_fijo']['link'] ?>">
                                                     <i class="mr-1 <?php echo $datos_contacto['principal']['telefono_fijo']['icono'] ?>"> </i>
                                                     <p> <?php echo $datos_contacto['principal']['telefono_fijo']['imprimir'] ?> </p>
+                                                </a>
+                                            </div>
+
+                                            <div class="hover_iconos">
+                                                <a class="d-flex align-items-baseline" href="tel:<?php echo  $datos_contacto['principal']['celular']['link'] ?>">
+                                                    <i class="mr-1 <?php echo $datos_contacto['principal']['celular']['icono'] ?>"> </i>
+                                                    <p> <?php echo $datos_contacto['principal']['celular']['imprimir'] ?> </p>
                                                 </a>
                                             </div>
 
@@ -91,7 +98,7 @@
 
                     <!-- SEDE CABECERA -->
                     <div class="align-items-center justify-content-center d-flex flex-column col-6 col-md-4 col-lg-4 col-xl-4 mt-2">
-                        <h3 class="m-0 titulos text-justify d-flex justify-content-center"> <b class=" text-center verde_oscuro"> Sucursal Cabecera </b> </h3>
+                        <h3 class="m-0 titulos text-justify d-flex justify-content-center"> <b class=" text-center verde_oscuro"> Oficina Cabecera </b> </h3>
 
                         <!-- MODAL -->
                         <div class="d-flex justify-content-center mt-3">
@@ -106,7 +113,7 @@
                                     <div class="modal-content">
 
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel"> Sucursal Cabecera </h5>
+                                            <h5 class="modal-title" id="exampleModalLabel"> Cabecera </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -126,6 +133,13 @@
                                                 <a class="d-flex align-items-baseline" href="tel:<?php echo  $datos_contacto['cabecera']['telefono_fijo']['link'] ?>">
                                                     <i class="mr-1 <?php echo $datos_contacto['cabecera']['telefono_fijo']['icono'] ?>"> </i>
                                                     <p> <?php echo $datos_contacto['cabecera']['telefono_fijo']['imprimir'] ?> </p>
+                                                </a>
+                                            </div>
+
+                                            <div class="hover_iconos">
+                                                <a class="d-flex align-items-baseline" href="tel:<?php echo  $datos_contacto['principal']['celular']['link'] ?>">
+                                                    <i class="mr-1 <?php echo $datos_contacto['principal']['celular']['icono'] ?>"> </i>
+                                                    <p> <?php echo $datos_contacto['principal']['celular']['imprimir'] ?> </p>
                                                 </a>
                                             </div>
 
@@ -168,7 +182,7 @@
 
                     <!-- SEDE CAÑAVERAL -->
                     <div class="align-items-center justify-content-center d-flex flex-column col-6 col-md-4 col-lg-4 col-xl-4 mt-2">
-                        <h3 class="m-0 titulos text-justify d-flex justify-content-center"> <b class=" text-center verde_oscuro"> Sucursal Cañaveral </b> </h3>
+                        <h3 class="m-0 titulos text-justify d-flex justify-content-center"> <b class=" text-center verde_oscuro"> Oficina Cañaveral </b> </h3>
 
                         <!-- MODAL -->
                         <div class="d-flex justify-content-center mt-3">
@@ -183,7 +197,7 @@
                                     <div class="modal-content">
 
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel"> Sucursal Cañaveral </h5>
+                                            <h5 class="modal-title" id="exampleModalLabel"> Cañaveral </h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -204,6 +218,14 @@
                                                     <p> <?php echo $datos_contacto['cañaveral']['telefono_fijo']['imprimir'] ?> </p>
                                                 </a>
                                             </div>
+
+                                            <div class="hover_iconos">
+                                                <a class="d-flex align-items-baseline" href="tel:<?php echo  $datos_contacto['principal']['celular']['link'] ?>">
+                                                    <i class="mr-1 <?php echo $datos_contacto['principal']['celular']['icono'] ?>"> </i>
+                                                    <p> <?php echo $datos_contacto['principal']['celular']['imprimir'] ?> </p>
+                                                </a>
+                                            </div>
+
 
                                             <div class="hover_iconos">
                                                 <a class="d-flex align-items-baseline" target="blank" href="<?php echo  $datos_contacto['cañaveral']['whatsapp']['link'] ?>">
