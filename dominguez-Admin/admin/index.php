@@ -1,7 +1,6 @@
-<?php $page ="Inicio | Administrador";
-require("seguridad.php"); 
+<?php $page = "Inicio | Administrador";
+require("seguridad.php");
 require_once("conexion.php");
-
 ?>
 <?php
 $user = $_SESSION["usuarioactual"];
@@ -12,6 +11,12 @@ $usuario =  mysqli_fetch_array($sql);
 $imagen_inicio = $usuario[15];
 $page = "Inicio";
 $nombre_inmobiliaria = 'Inmobiliaria Alejandro Dominguez Parra - Bucaramanga';
+?>
+<?php
+$id_inmobiliria = 15;
+$con = Conect();
+$qry = "select * from asesores where id_inmobiliaria = '$id_inmobiliria' order by id DESC ";
+$sql = mysqli_query($con, $qry);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +33,7 @@ $nombre_inmobiliaria = 'Inmobiliaria Alejandro Dominguez Parra - Bucaramanga';
 
 <body>
 
-  <div id="position-relative d-flex align-items-center justify-content-center">
+    <div id="position-relative d-flex align-items-center justify-content-center">
         <div id="particles-js" class="position-absolute div_parti">
 
         </div>
@@ -93,18 +98,20 @@ $nombre_inmobiliaria = 'Inmobiliaria Alejandro Dominguez Parra - Bucaramanga';
                         </div>
                     </li>
                     <!-- cerrer sesion -->
-                    <li class="tile tile-small last tile-8 rotate3d rotate3dY" data-page-type="r-page" data-page-name="random-r-page">
-                        <div class="faces">
-                            <div class="front"><span class="icon-instagram"></span></div>
-                            <div class="back">
-                                <p>Cerrar Sesión</p>
+                    <a href="../salir.php">
+                        <li class="tile tile-small last tile-8 rotate3d rotate3dY" data-page-type="r-page" data-page-name="random-r-page">
+                            <div class="faces">
+                                <div class="front"><span class="icon-instagram"></span></div>
+                                <div class="back">
+                                    <p>Cerrar Sesión</p>
+                                </div>
                             </div>
-                        </div>
-                    </li>
+                        </li>
+                    </a>
                 </div>
                 <!-- texto de bienvenida -->
                 <div class="col3">
-                    <li class="tile tile-2xbig tile-9 fig-tile" data-page-name="random-r-page" data-toggle="modal" data-target="#lista_asesores">
+                    <li class="tile tile-2xbig tile-9 fig-tile" data-page-name="random-r-page" data-toggle="modal" data-target="index.php">
                         <figure class="border cont_logo">
                             <img src="images/logo_blanco.png" />
                             <figcaption class="tile-caption caption-bottom"> Bienvenido al administrador de asesores de tu pagina web, podras Agregar , Modificar y Eliminarlos cuando desees de una manera muy facil.
@@ -337,7 +344,7 @@ $nombre_inmobiliaria = 'Inmobiliaria Alejandro Dominguez Parra - Bucaramanga';
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form>
+                            <form method="POST" action="agregar_asesor.php" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label for="" class="col-sm-3 col-form-label">Nombre y apellido:</label>
                                     <input type="text" class="form-control" name="nom_asesor" id="nom_asesor" placeholder="Nombre y apellido" required>
@@ -351,7 +358,7 @@ $nombre_inmobiliaria = 'Inmobiliaria Alejandro Dominguez Parra - Bucaramanga';
                                 </div>
                                 <div class="form-group ">
                                     <label for="inputPassword" class="col-sm-3 col-form-label">Correo electrónico:</label>
-                                    <input type="email" class="form-control" name="cargo" id="cargo" placeholder="Asesor comercial" required>
+                                    <input type="email" class="form-control" name="cor_asesor" id="cor_asesor" placeholder="Asesor comercial" required>
                                     <small id="tituloHepl" class="form-text text-muted">Se recomienda ingresar correos corporativos.</small>
                                 </div>
                                 <div class="form-group ">
@@ -372,12 +379,13 @@ $nombre_inmobiliaria = 'Inmobiliaria Alejandro Dominguez Parra - Bucaramanga';
 
                                 </div>
                                 <input type="hidden" id="fecha" name="fecha">
-                            </form>
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn btn-primary" value="crear">Agregar asesor</button>
+                            <button class="btn btn-primary" value="crear">Agregar asesor</button>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -403,88 +411,123 @@ $nombre_inmobiliaria = 'Inmobiliaria Alejandro Dominguez Parra - Bucaramanga';
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Daniel Solano</td>
-                                        <td><a href="#editar_asesor" data-toggle="modal" data-target="#editar_asesor"><i style="color:black;" class="fas fa-edit"></i></a></td>
-                                        <td><a href="#confirm-delete_Asesor" data-toggle="modal" data-target="#confirm-delete_Asesor"><i style="color: black;" class="fas fa-trash-alt"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Daniel Solano</td>
-                                        <td><a style="color:black" href=""><i class="fas fa-edit"></i></a></td>
-                                        <td><a href=""><i style="color: black;" class="fas fa-trash-alt"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Daniel Solano</td>
-                                        <td><a style="color:black" href=""><i class="fas fa-edit"></i></a></td>
-                                        <td><a href=""><i style="color: black;" class="fas fa-trash-alt"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Daniel Solano</td>
-                                        <td><a style="color:black" href=""><i class="fas fa-edit"></i></a></td>
-                                        <td><a href=""><i style="color: black;" class="fas fa-trash-alt"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Daniel Solano</td>
-                                        <td><a style="color:black" href=""><i class="fas fa-edit"></i></a></td>
-                                        <td><a href=""><i style="color: black;" class="fas fa-trash-alt"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Daniel Solano</td>
-                                        <td><a style="color:black" href=""><i class="fas fa-edit"></i></a></td>
-                                        <td><a href=""><i style="color: black;" class="fas fa-trash-alt"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Daniel Solano</td>
-                                        <td><a style="color:black" href=""><i class="fas fa-edit"></i></a></td>
-                                        <td><a href=""><i style="color: black;" class="fas fa-trash-alt"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Daniel Solano</td>
-                                        <td><a style="color:black" href=""><i class="fas fa-edit"></i></a></td>
-                                        <td><a href=""><i style="color: black;" class="fas fa-trash-alt"></i></a></td>
-                                    </tr>
+                                    <?php
+                                    while ($res =  mysqli_fetch_array($sql)) {
+
+                                        echo '<tr>
+                                <td>' . $res["id"] . '</td>
+                                <td>' . $res["nombre"] . '</td>
+                                <td><a  data-toggle="modal" data-target="#editar_asesor" onclick="editar_asesor(id=' . $res["id"] . ')"><i style="color: #2C2C2C;" class="fas fa-edit"></i></a></td>
+                                <td><a href="#" data-href="eliminar_asesor.php?id=' . $res["id"] . '" data-toggle="modal" data-target="#confirm-delete"><i style="color: #2C2C2C;"class="fas fa-trash-alt"></i></a></td>
+                                           </tr>';
+                                    }
+                                    ?>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn btn-primary">Publicar Asesor</button>
+                        <!-- modal eliminar -->
+                        <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Eliminar</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ¿Estas seguro que quieres eliminar este asesor, recuerda que si lo eliminas no podra rehacer los cambios?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn color_cancelar rounded-0" data-dismiss="modal">Cancelar</button>
+                                        <a class="btn color_aceptar rounded-0 btn-ok">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal de eliminar asesor -->
-            <div class="modal fade" id="confirm-delete_Asesor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header modal_cabezera">
-                            <h5 class="modal-title" id="exampleModalLabel">Eliminar Asesor</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body modal_cuerpo">
-                            ¿Estas seguro de que quieres eliminar este asesor, recuerda que si lo eliminas no podra rehacer los cambios?
-                            <br>
+                        <script>
+                            $('#confirm-delete').on('show.bs.modal', function(e) {
+                                $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
+                                $('.debug-url').html('Delete URL: <strong>' + $(this).find('.btn-ok').attr('href') + '</strong>');
+                            });
+                        </script>
+                        <!-- modal editar -->
+                        <div class="modal fade" id="editar_asesor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modify Asesor</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form method="post" action="update_asesor.php" enctype="multipart/form-data">
+                                            <input type="hidden" name="id" id="id" value="<?php echo $res[0]; ?>">
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-3 col-form-label">Nombre y apellido:</label>
+                                                <input type="text" class="form-control" name="nom_asesor" id="nom_asesor" value="<?php echo $res[1]; ?>">
+                                                <small id="tituloHepl" class="form-text text-muted">Primer nombre y primer apellido del asesor preferiblemente.</small>
+                                            </div>
+                                            <div class="form-group ">
+                                                <label for="inputPassword" class="col-sm-3 col-form-label">Celular ó Teléfono:</label>
+                                                <input type="text" class="form-control" name="cel_asesor" id="cel_asesor" value="<?php echo $res[2]; ?>">
+                                                <small id="tituloHepl" class="form-text text-muted">Se recomienda ingresar solo numeros.</small>
 
-                        </div>
-                        <div class="modal-footer modal_pie">
-                            <button type="button" class="btn btn-secondary color_cancelar" data-dismiss="modal">Cancelar</button>
-                            <a class="btn btn-primary color_aceptar btn-ok">Eliminar</a>
+                                            </div>
+                                            <div class="form-group ">
+                                                <label for="inputPassword" class="col-sm-3 col-form-label">Correo electrónico:</label>
+                                                <input type="text" class="form-control" name="cor_asesor" id="cor_asesor" value="<?php echo $res[3]; ?>">
+                                                <small id="tituloHepl" class="form-text text-muted">Se recomienda ingresar correos corporativos.</small>
+                                            </div>
+                                            <div class="form-group ">
+                                                <label for="inputPassword" class="col-sm-3 col-form-label">Cargo del Asesor:</label>
+                                                <input type="text" class="form-control" name="cargo" id="cargo" value="<?php echo $res[7]; ?>">
+                                                <small id="tituloHepl" class="form-text text-muted">Es importante llenar este campo.</small>
+                                            </div>
+                                            <div class="custom-file mb-5">
+                                                <label for="inputPassword" class="col-sm-3 col-form-label">Descripcion:</label>
+                                                <textarea name="descrip" id="descrip"><?php echo $res[8]; ?></textarea>
+                                                <small id="tituloHepl" class="form-text text-muted"> Ingrese el Contenido de la publicación y si es un texto copiado no olvide borrar el formato.</small>
+
+                                            </div>
+                                            <div class="form-group mt-3 d-blok">
+                                                <label for="" class="col-sm-3 col-form-label">Imagen Actual</label>
+                                                <div class="col-sm-9">
+                                                    <img src="<?php echo $res[4]; ?>" alt="" width="200px" height="auto">
+                                                </div>
+                                                <small id="tituloHepl" class="form-text text-muted"> Esta es la imagen que tienes actualmente.</small>
+                                            </div>
+                                            <div class="custom-file mt-3">
+                                                <label for="" class="custom-file-label">Actualizar imagen</label>
+                                                <input type="file" class="custom-file-input" name="imagen" id="imagen" accept="image/*">
+                                                <small id="tituloHepl" class="form-text text-muted"> Ingrese una imagen que no supere las 2MB</small>
+
+                                            </div>
+                                            <input type="hidden" id="fecha" name="fecha">
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary">Actualizar</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Modal de editar asesor -->
-            <div class="modal fade" id="editar_asesor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <?php
+            require("seguridad.php");
+            require_once("conexion.php");
+            // $id = $_GET["id"];
+            $con = Conect();
+            $qry = "SELECT * FROM asesores where id ='40' and id_inmobiliaria = 15";
+            $sql = mysqli_query($con, $qry);
+            $res =  mysqli_fetch_array($sql);
+            ?>
+            <!-- <div class="modal fade" id="editar_asesor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-scrollable">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -494,36 +537,44 @@ $nombre_inmobiliaria = 'Inmobiliaria Alejandro Dominguez Parra - Bucaramanga';
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form>
+                            <form method="post" action="update_asesor.php" enctype="multipart/form-data">
+                                <input type="hidden" name="id" id="id" value="<?php echo $res[0]; ?>">
                                 <div class="form-group">
                                     <label for="" class="col-sm-3 col-form-label">Nombre y apellido:</label>
-                                    <input type="text" class="form-control" name="nom_asesor" id="nom_asesor" placeholder="Nombre y apellido" required>
+                                    <input type="text" class="form-control" name="nom_asesor" id="nom_asesor" value="<?php echo $res[1]; ?>">
                                     <small id="tituloHepl" class="form-text text-muted">Primer nombre y primer apellido del asesor preferiblemente.</small>
                                 </div>
                                 <div class="form-group ">
                                     <label for="inputPassword" class="col-sm-3 col-form-label">Celular ó Teléfono:</label>
-                                    <input type="text" class="form-control" name="cel_asesor" id="cel_asesor" placeholder="Celular" required>
+                                    <input type="text" class="form-control" name="cel_asesor" id="cel_asesor" value="<?php echo $res[2]; ?>">
                                     <small id="tituloHepl" class="form-text text-muted">Se recomienda ingresar solo numeros.</small>
 
                                 </div>
                                 <div class="form-group ">
                                     <label for="inputPassword" class="col-sm-3 col-form-label">Correo electrónico:</label>
-                                    <input type="email" class="form-control" name="cargo" id="cargo" placeholder="Asesor comercial" required>
+                                    <input type="text" class="form-control" name="cor_asesor" id="cor_asesor" value="<?php echo $res[3]; ?>">
                                     <small id="tituloHepl" class="form-text text-muted">Se recomienda ingresar correos corporativos.</small>
                                 </div>
                                 <div class="form-group ">
                                     <label for="inputPassword" class="col-sm-3 col-form-label">Cargo del Asesor:</label>
-                                    <input type="text" class="form-control" name="cargo" id="cargo" placeholder="Asesor comercial" required>
+                                    <input type="text" class="form-control" name="cargo" id="cargo" value="<?php echo $res[7]; ?>">
                                     <small id="tituloHepl" class="form-text text-muted">Es importante llenar este campo.</small>
                                 </div>
                                 <div class="custom-file mb-5">
                                     <label for="inputPassword" class="col-sm-3 col-form-label">Descripcion:</label>
-                                    <textarea name="descrip" id="descrip"></textarea>
+                                    <textarea name="descrip" id="descrip"><?php echo $res[8]; ?></textarea>
                                     <small id="tituloHepl" class="form-text text-muted"> Ingrese el Contenido de la publicación y si es un texto copiado no olvide borrar el formato.</small>
 
                                 </div>
+                                <div class="form-group mt-3 d-blok">
+                                    <label for="" class="col-sm-3 col-form-label">Imagen Actual</label>
+                                    <div class="col-sm-9">
+                                        <img src="<?php echo $res[4]; ?>" alt="" width="200px" height="auto">
+                                    </div>
+                                    <small id="tituloHepl" class="form-text text-muted"> Esta es la imagen que tienes actualmente.</small>
+                                </div>
                                 <div class="custom-file mt-3">
-                                    <label for="" class="custom-file-label">Imagen Actual</label>
+                                    <label for="" class="custom-file-label">Actualizar imagen</label>
                                     <input type="file" class="custom-file-input" name="imagen" id="imagen" accept="image/*">
                                     <small id="tituloHepl" class="form-text text-muted"> Ingrese una imagen que no supere las 2MB</small>
 
@@ -537,7 +588,7 @@ $nombre_inmobiliaria = 'Inmobiliaria Alejandro Dominguez Parra - Bucaramanga';
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- Modal configuracion user-->
             <div class="modal fade" id="config" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
@@ -616,7 +667,7 @@ $nombre_inmobiliaria = 'Inmobiliaria Alejandro Dominguez Parra - Bucaramanga';
                         </div>
                         <div class="modal-body text-center">
                             <h5>Vista previa de Asesores</h5>
-                            <a href="#" role="button" class="btn btn btn-outline-dark">Ir a la publicaión</a>
+                            <a href="../../asesores.php" target="_blank" role="button" class="btn btn btn-outline-dark">Ir a la publicaión</a>
                             <hr>
                             <h5>Vista previa de Publicaciones</h5>
                             <a href="#" role="button" class="btn btn-outline-dark">Ir a la publicaión</a>
@@ -661,4 +712,4 @@ $nombre_inmobiliaria = 'Inmobiliaria Alejandro Dominguez Parra - Bucaramanga';
 </div> -->
 
 
-<!-- <?php include 'layout/layoutFooter.php';?> -->
+<!-- <?php include 'layout/layoutFooter.php'; ?> -->
