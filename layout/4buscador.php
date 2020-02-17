@@ -1,4 +1,4 @@
-<section id="" class="d-flex flex-wrap">
+<section id="buscador" class="d-flex flex-wrap">
 
     <div class="py-3 d-flex align-items-center col-12 col-lg-3 col-xl-3 titulo_buscador">
         <div class="container">

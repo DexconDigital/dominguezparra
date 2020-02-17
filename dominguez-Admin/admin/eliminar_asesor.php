@@ -18,7 +18,7 @@
         if (!$sql) {
             echo 'No se logro realizar la peticion';
         } else {
-            header("Location: index.php");
+            header("Location: lista_asesores.php");
         }
         ?>
     
