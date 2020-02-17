@@ -156,6 +156,12 @@ $(document).ready(function () {
         busqueda();
     });
 
+    // Buscar por medio del boton creado en el buscador
+    $('#buscar1').click(function () {
+        busqueda();
+    });
+
+
     // buscar por medio de la tecla enter
     $('body').keyup(function (e) {
         if (e.keyCode == 13) {

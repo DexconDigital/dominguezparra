@@ -1004,7 +1004,7 @@ overflow: hidden;
 
 
 
-#formulario4 {
+.formulario4 {
     display: none!important;
 }
 
@@ -1017,12 +1017,12 @@ overflow: hidden;
 
 @media (max-width: 768px) {
  
-    #formulario4 {
+    .formulario4 {
         display: flex!important;
         background-color: #2C2C2C;
     }
 
-    #formulario2 { 
+    .formulario2 { 
         display: none!important;
     }
     
