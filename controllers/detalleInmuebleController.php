@@ -44,7 +44,6 @@ $tipo_inmueble = $r['Tipo_Inmueble'];
 $alcobas = $r['alcobas'];
 $banios = $r['banos'];
 $ciudad = $r['ciudad'];
-$canon = $r['Canon'];
 $descripcion = $r['descripcionlarga'];
 $garaje = $r['garaje'];
 $asesor = $r['asesor'][0];

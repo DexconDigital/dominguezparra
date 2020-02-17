@@ -5,6 +5,7 @@ $(document).ready(function () {
         if (value.length > 0) {
             $('#ciudad_buscar').attr("disabled", true);
             $('#barrio_buscar').attr("disabled", true);
+            debugger;
             $('#tipo_inmueble_buscar').attr("disabled", true);
             $('#tipo_gestion_buscar').attr("disabled", true);
             $('#precio_minimo_buscar').attr("disabled", true);

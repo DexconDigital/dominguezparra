@@ -128,17 +128,25 @@ $page = "Detalle de Inmueble" ?>
                     </div>
 
                 </div>
+                <div class="d-flex align-items-center justify-content-between flex-wrap">
+                    <div class="p-0 d-flex col-12 col-lg-6 col-xl-6 d-block align-items-center">
+                        <h5 class="mt-2 m-0">
+                            <?php if ($r['Gestion'] == 'Arriendo') {
+                                echo '<span class="precio">$ ' . $r['ValorCanon'] . '</span>';
+                            } else if ($r['Gestion'] == 'Venta') {
+                                echo '<span class="precio">$ ' . $r['ValorVenta'] . '</span>';
+                            } else {
+                                echo '<span class="precio">$ ' . $r['ValorCanon'] . ' /$' . $r['ValorVenta'] . '</span>';
+                            }
+                            ?>
+                        </h5>
+                    </div>
+                    <div class="d-flex align-items-baseline">
+                        <h5>Administración $<?php echo $r['Administracion'] ?></h5>
+                    </div>
+                </div>
 
-                <h5 class="mt-2 m-0">
-                    <?php if ($r['Gestion'] == 'Arriendo') {
-                        echo '<span class="precio">$ ' . $r['ValorCanon'] . '</span>';
-                    } else if ($r['Gestion'] == 'Venta') {
-                        echo '<span class="precio">$ ' . $r['ValorVenta'] . '</span>';
-                    } else {
-                        echo '<span class="precio">$ ' . $r['ValorCanon'] . ' /$' . $r['ValorVenta'] . '</span>';
-                    }
-                    ?>
-                </h5>
+
             </div>
             <!-- PRECIO Y DIRECCIÓN -->
 
@@ -187,7 +195,7 @@ $page = "Detalle de Inmueble" ?>
                 <!-- CODIGO -->
 
                 <div class="my-2 col-12 p-0 d-flex align-items-center justify-content-around w-100">
-                    
+
                     <a href="https://simicrm.app/mcomercialweb/fichas_tecnicas/fichatec3.php?reg=986-<?php echo $co ?>" target="_blank" class="btn boton_principal"> Descargar ficha </a>
 
                     <div class="d-flex align-items-center flex-column">
@@ -409,7 +417,7 @@ $page = "Detalle de Inmueble" ?>
             <!-- SECCION DERECHA -->
 
         </div>
-        
+
 
     </section>
 
