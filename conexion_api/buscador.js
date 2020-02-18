@@ -5,7 +5,6 @@ $(document).ready(function () {
         if (value.length > 0) {
             $('#ciudad_buscar').attr("disabled", true);
             $('#barrio_buscar').attr("disabled", true);
-            debugger;
             $('#tipo_inmueble_buscar').attr("disabled", true);
             $('#tipo_gestion_buscar').attr("disabled", true);
             $('#precio_minimo_buscar').attr("disabled", true);
@@ -249,9 +248,9 @@ var code,
 var busqueda = function () {
     code = $("#codigo_buscar").val();
     ciudad_buscar = $('#ciudad_buscar option:selected').val();
-    barrio_buscar = $('#barrio_buscar option:selected').val();
     gestion_buscar = $('#tipo_gestion_buscar option:selected').val();
     tipo_inmueble_buscar = $('#tipo_inmueble_buscar option:selected').val();
+    barrio_buscar = $('#barrio_buscar option:selected').val();
     /* precio_minimo_buscar = $('#precio_minimo_buscar').val();
     precio_maximo_buscar = $('#precio_maximo_buscar').val(); */
     area_minima_buscar = $('#area_minima_buscar').val();

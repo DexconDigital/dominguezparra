@@ -18,6 +18,17 @@ $con = Conect();
 $qry = "select * from asesores where id_inmobiliaria = '$id_inmobiliria' order by id DESC ";
 $sql = mysqli_query($con, $qry);
 ?>
+<?php
+$qry = "SELECT * FROM `usuarios` WHERE id_user = '$user'";
+$sql = mysqli_query($con, $qry);
+$usuario =  mysqli_fetch_array($sql);
+?>
+<?php
+$id_inmobiliria = 15;
+$con = Conect();
+$qry = "select * from asesores where id_inmobiliaria = '$id_inmobiliria' order by id DESC ";
+$sql = mysqli_query($con, $qry);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -417,8 +428,10 @@ $sql = mysqli_query($con, $qry);
                                         echo '<tr>
                                 <td>' . $res["id"] . '</td>
                                 <td>' . $res["nombre"] . '</td>
-                                <td><a  data-toggle="modal" data-target="#editar_asesor" onclick="editar_asesor(id=' . $res["id"] . ')"><i style="color: #2C2C2C;" class="fas fa-edit"></i></a></td>
-                                <td><a href="#" data-href="eliminar_asesor.php?id=' . $res["id"] . '" data-toggle="modal" data-target="#confirm-delete"><i style="color: #2C2C2C;"class="fas fa-trash-alt"></i></a></td>
+
+                        <td><a href="mi_ejemplo.php?id=' . $res["id"] . '" data-href="" data-target="#"><i style="color: #2C2C2C;" class="fas fa-edit"></i></a></td>
+
+                        <td><a href="#" data-href="eliminar_asesor.php?id=' . $res["id"] . '" data-toggle="modal" data-target="#confirm-delete"><i style="color: #2C2C2C;"class="fas fa-trash-alt"></i></a></td>
                                            </tr>';
                                     }
                                     ?>
@@ -451,83 +464,14 @@ $sql = mysqli_query($con, $qry);
                                 $('.debug-url').html('Delete URL: <strong>' + $(this).find('.btn-ok').attr('href') + '</strong>');
                             });
                         </script>
-                        <!-- modal editar -->
-                        <div class="modal fade" id="editar_asesor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Modify Asesor</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form method="post" action="update_asesor.php" enctype="multipart/form-data">
-                                            <input type="hidden" name="id" id="id" value="<?php echo $res[0]; ?>">
-                                            <div class="form-group">
-                                                <label for="" class="col-sm-3 col-form-label">Nombre y apellido:</label>
-                                                <input type="text" class="form-control" name="nom_asesor" id="nom_asesor" value="<?php echo $res[1]; ?>">
-                                                <small id="tituloHepl" class="form-text text-muted">Primer nombre y primer apellido del asesor preferiblemente.</small>
-                                            </div>
-                                            <div class="form-group ">
-                                                <label for="inputPassword" class="col-sm-3 col-form-label">Celular ó Teléfono:</label>
-                                                <input type="text" class="form-control" name="cel_asesor" id="cel_asesor" value="<?php echo $res[2]; ?>">
-                                                <small id="tituloHepl" class="form-text text-muted">Se recomienda ingresar solo numeros.</small>
-
-                                            </div>
-                                            <div class="form-group ">
-                                                <label for="inputPassword" class="col-sm-3 col-form-label">Correo electrónico:</label>
-                                                <input type="text" class="form-control" name="cor_asesor" id="cor_asesor" value="<?php echo $res[3]; ?>">
-                                                <small id="tituloHepl" class="form-text text-muted">Se recomienda ingresar correos corporativos.</small>
-                                            </div>
-                                            <div class="form-group ">
-                                                <label for="inputPassword" class="col-sm-3 col-form-label">Cargo del Asesor:</label>
-                                                <input type="text" class="form-control" name="cargo" id="cargo" value="<?php echo $res[7]; ?>">
-                                                <small id="tituloHepl" class="form-text text-muted">Es importante llenar este campo.</small>
-                                            </div>
-                                            <div class="custom-file mb-5">
-                                                <label for="inputPassword" class="col-sm-3 col-form-label">Descripcion:</label>
-                                                <textarea name="descrip" id="descrip"><?php echo $res[8]; ?></textarea>
-                                                <small id="tituloHepl" class="form-text text-muted"> Ingrese el Contenido de la publicación y si es un texto copiado no olvide borrar el formato.</small>
-
-                                            </div>
-                                            <div class="form-group mt-3 d-blok">
-                                                <label for="" class="col-sm-3 col-form-label">Imagen Actual</label>
-                                                <div class="col-sm-9">
-                                                    <img src="<?php echo $res[4]; ?>" alt="" width="200px" height="auto">
-                                                </div>
-                                                <small id="tituloHepl" class="form-text text-muted"> Esta es la imagen que tienes actualmente.</small>
-                                            </div>
-                                            <div class="custom-file mt-3">
-                                                <label for="" class="custom-file-label">Actualizar imagen</label>
-                                                <input type="file" class="custom-file-input" name="imagen" id="imagen" accept="image/*">
-                                                <small id="tituloHepl" class="form-text text-muted"> Ingrese una imagen que no supere las 2MB</small>
-
-                                            </div>
-                                            <input type="hidden" id="fecha" name="fecha">
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                        <button type="button" class="btn btn-primary">Actualizar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
             <!-- Modal de editar asesor -->
-            <?php
-            require("seguridad.php");
-            require_once("conexion.php");
-            // $id = $_GET["id"];
-            $con = Conect();
-            $qry = "SELECT * FROM asesores where id ='40' and id_inmobiliaria = 15";
-            $sql = mysqli_query($con, $qry);
-            $res =  mysqli_fetch_array($sql);
-            ?>
-            <!-- <div class="modal fade" id="editar_asesor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <script>
+                
+            </script>
+            <div class="modal fade" id="editar_asesor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-scrollable">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -588,10 +532,11 @@ $sql = mysqli_query($con, $qry);
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- Modal configuracion user-->
             <div class="modal fade" id="config" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Modal configuracion user</h5>
@@ -600,13 +545,12 @@ $sql = mysqli_query($con, $qry);
                             </button>
                         </div>
                         <div class="modal-body">
-                            <form>
+                            <form class="form-horizontal" method="post" action="updateperfil.php" enctype="multipart/form-data">
                                 <input type="hidden" name="id" value="<?php echo $usuario[0]; ?>">
-                                <input type="hidden" name="usuario" value="<?php echo $usuario[1]; ?>">
+                                <input type="hidden" name="usuario" value="<?php echo $usuario[1];?>">
                                 <div class="form-group">
                                     <label for="recipient-name" class="col-form-label">Contraseña de Usuario:</label>
-                                    <input type="text" class="form-control" name="titulo" id="titulo" placeholder="Mi contarseña">
-                                    <!-- <input type="text" class="form-control" name="pass" id="pass" value="<?php echo $usuario[2]; ?>" required> -->
+                                    <input type="text" class="form-control" name="pass" id="pass" value="<?php echo $usuario[2]; ?>">
                                     <small id="tituloHepl" class="form-text text-muted">Puede ingresar caracteres especiales @$#%&</small>
                                 </div>
                                 <div class="form-group ">
@@ -617,41 +561,38 @@ $sql = mysqli_query($con, $qry);
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPassword" class="col-form-label">Teléfono de Usuario:</label>
-                                    <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Teléfono">
+                                    <input type="number" class="form-control" name="telefono" id="telefono" value="<?php echo $usuario[4]; ?>">
                                     <small id="tituloHepl" class="form-text text-muted"> Se recomienda agregar agregar solo numeros </small>
-                                    <!-- <input type="text" class="form-control" name="telefono" id="telefono" value="<?php echo $usuario[4]; ?>" required> -->
                                 </div>
                                 <div class="form-group">
                                     <label class="col-form-label">Cargo de Usuario:</label>
-                                    <input type="text" class="form-control" name="cargo" id="cargo" placeholder="ejemplo: Administrador">
+                                    <input type="text" class="form-control" name="cargo" id="cargo" value="<?php echo $usuario[5]; ?>">
                                     <small id="tituloHepl" class="form-text text-muted"> Es un campo opcional</small>
-                                    <!-- <input type="text" class="form-control" name="cargo" id="cargo" value="<?php echo $usuario[5]; ?>" required> -->
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPassword" class="col-form-label">Dependencia:</label>
-                                    <input type="text" class="form-control" name="dependencia" id="dependencia" placeholder="ejemplo: Área de Sistemas">
+                                    <input type="text" class="form-control" name="dependencia" id="dependencia" value="<?php echo $usuario[6]; ?>">
                                     <small id="tituloHepl" class="form-text text-muted"> Es un campo opcional </small>
-                                    <!-- <input type="text" class="form-control" name="dependencia" id="dependencia" value="<?php echo $usuario[6]; ?>" required> -->
                                 </div>
                                 <div class="form-group">
                                     <label for="inputPassword" class="col-form-label">Foto de perfil de Usuario:</label>
-                                    <img width="70px" height="" src="img/no_image.png">
+                                    <img width="70px" height="" src="<?php echo $usuario[7]; ?>">
                                     <small id="tituloHepl" class="form-text text-muted">Esta es su foto de Usuario actualmente</small>
-                                    <!-- <img width="70px" height="" src="<?php echo $usuario[7]; ?>"> -->
                                 </div>
                                 <div class="custom-file">
                                     <label class="custom-file-label" for="customFile">Subir una nueva foto de perfil</label>
                                     <input type="file" class="custom-file-input" name="archivo" id="archivo" accept="application/pdf">
                                     <small id="tituloHepl" class="form-text text-muted"> No se recomienda subir una foto que supere los 900 pixeles de Ancho por 500 pixeles </small>
                                 </div>
-
-                            </form>
                         </div>
+                        
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Calcelar</button>
-                            <button type="button" class="btn btn-primary">Actualizar Perfil</button>
+                            <button type="submint" class="btn btn-secondary" data-dismiss="modal">Calcelar</button>
+                            <button class="btn btn-primary">Actualizar Perfil</button>
                         </div>
+                        </form> 
                     </div>
+
                 </div>
             </div>
 
@@ -707,9 +648,5 @@ $sql = mysqli_query($con, $qry);
 </script>
 
 </html>
-<!-- <div class="fondo_imagen">
 
-</div> -->
-
-
-<!-- <?php include 'layout/layoutFooter.php'; ?> -->
+<?php include 'layout/layoutFooter.php'; ?>
