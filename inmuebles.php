@@ -38,7 +38,6 @@ $page = "Inmuebles" ?>
 
     <!-- INMUEBLES -->
 
-
     <!-- <section id="buscador" class="formularioz">
 
         <div id="" class="rounded-bottom py-3 d-flex flex-wrap align-items-center justify-content-center col-12 contenido_buscador formulario4">
@@ -123,8 +122,6 @@ $page = "Inmuebles" ?>
         </div>
     </section> -->
 
-
-
     <section id="inmuebles2" class="container">
 
         <div class=" d-flex align-items-start justify-content-between flex-wrap">
@@ -157,7 +154,7 @@ $page = "Inmuebles" ?>
                         </div>
 
                         <div class="col-6 form-group f11 pl-0">
-                            <select class="form-control f1 barrio_buscar" id="barrio_buscar">
+                            <select class="form-control f1" id="barrio_buscar">
                                 <option selected default> Barrio </option>
                             </select>
                         </div>

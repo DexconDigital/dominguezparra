@@ -1,4 +1,4 @@
-<?php $page = "Agregar Noticia";
+<!-- <?php $page = "Agregar Noticia";
 require("seguridad.php");
 require_once("conexion.php");
 include 'layout/layout.php';
@@ -107,4 +107,4 @@ $usuario =  mysqli_fetch_array($sql);
         </div>
     </div>
 </div>
-<?php include 'layout/layoutFooter.php'; ?>
+<?php include 'layout/layoutFooter.php'; ?> -->
