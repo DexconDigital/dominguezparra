@@ -443,7 +443,7 @@
                             <div class="form-group col-12">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1" requiered="">
-                                    <label class="form-check-label" for="exampleCheck1">Acepto <a class="tratamiento politicas_contac" href="Politicas_de_seguridad.pdf" class="a-terminos" target="_blank">la política y tratamiento de datos</a></label>
+                                    <label class="form-check-label" for="exampleCheck1">Confirmo que he leído, entendido, <a target="_blank" class="tratamiento" href="archivos/autorizacion_datos.pdf">autorizo</a> y acepto la <a class="tratamiento" href="archivos/tratamiento_datos.pdf" target="_blank" >política de tratamiento de datos personales.</a>  </label>
                                 </div>
                             </div>
                             <div class="form-group col-12">

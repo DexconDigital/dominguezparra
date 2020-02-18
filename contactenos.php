@@ -46,7 +46,7 @@ $page = "Contáctenos" ?>
 
                     <div class="row list-group" id="list-tab" role="tablist">
 
-                        <h2 class="text-center m-0 mb-5"> Sucursales </h2>
+                        <h2 class="text-center m-0 mb-5"> Oficinas </h2>
 
                         <div class="d-flex flex-wrap">
                             <div class="pt-2 pt-md-0 pt-lg-0 pt-xl-0 col-12 col-md-3 col-lg-3 col-xl-3 m-auto">
@@ -320,7 +320,7 @@ $page = "Contáctenos" ?>
 
                             <div class="ml-3 form-group form-check">
                                 <input type="checkbox" class="form-check-input" required>
-                                <label class="form-check-label" for="exampleCheck1"> Confirmo que he leído, entendido y acepto la <a class="tratamiento" href="POLITICA_DE_PROTECCION_DE_DATOS.pdf" download="POLITICA_DE_PROTECCION_DE_DATOS.pdf">política de tratamiento de datos personales.</a> </label>
+                                <label class="form-check-label" for="exampleCheck1"> Confirmo que he leído, entendido, <a target="_blank" class="tratamiento" href="archivos/autorizacion_datos.pdf">autorizo</a> y acepto la <a class="tratamiento" href="archivos/tratamiento_datos.pdf" target="_blank" >política de tratamiento de datos personales.</a> </label>
                             </div>
 
 
