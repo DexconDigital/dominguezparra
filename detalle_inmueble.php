@@ -51,9 +51,9 @@ $page = "Detalle de Inmueble" ?>
     <!-- BANNER -->
     <section id="banner" class="margin_top position-relative">
 
-        <div class="imagen imagen_d_inmueble">
+        <div class="imagen imagen_d_inmueble d-none d-xl-block"></div>
+        <div class="imagen imagen_d_inmueble2 d-xl-none d-sm-block d-md-block d-lg-block"></div>
 
-        </div>
         <div id="fondo_negro"></div>
 
         <div class="contenido_banner d-flex align-items-center justify-content-center flex-column">
@@ -375,17 +375,17 @@ $page = "Detalle de Inmueble" ?>
 
                 <a href="tel:<?php echo $datos_contacto['principal']['telefono_fijo']['link'] ?>" class="d-flex align-items-center  my-2">
                     <i class="verde mr-2 fas fa-phone"> </i>
-                    <p> Sede principal: <?php echo $datos_contacto['principal']['telefono_fijo']['imprimir'] ?> </p>
+                    <p> Oficina principal: <?php echo $datos_contacto['principal']['telefono_fijo']['imprimir'] ?> </p>
                 </a>
 
                 <a href="tel:<?php echo $datos_contacto['cabecera']['telefono_fijo']['link'] ?>" class="d-flex align-items-center  my-2">
                     <i class="verde mr-2 fas fa-phone"> </i>
-                    <p> Sede Cabecera: <?php echo $datos_contacto['cabecera']['telefono_fijo']['imprimir'] ?> </p>
+                    <p> Oficina Cabecera: <?php echo $datos_contacto['cabecera']['telefono_fijo']['imprimir'] ?> </p>
                 </a>
 
                 <a href="tel:<?php echo $datos_contacto['cañaveral']['telefono_fijo']['link'] ?>" class="d-flex align-items-center  my-2">
                     <i class="verde mr-2 fas fa-phone"> </i>
-                    <p> Sede Cañaveral: <?php echo $datos_contacto['cañaveral']['telefono_fijo']['imprimir'] ?> </p>
+                    <p> Oficina Cañaveral: <?php echo $datos_contacto['cañaveral']['telefono_fijo']['imprimir'] ?> </p>
                 </a>
 
                 <a href="tel:<?php echo $datos_contacto['principal']['celular']['link'] ?>" class="d-flex align-items-center  my-2">

@@ -333,7 +333,7 @@
 
                     <div class=" w-100 d-flex align-items-center justify-content-center">
 
-                        <p class="mr-2"> Sede Principal: </p>
+                        <p class="mr-2"> Oficina Principal: </p>
 
                         <div><i class="verde <?php echo $datos_contacto['principal']['telefono_fijo']['icono'] ?>"></i></div>
 
@@ -346,7 +346,7 @@
 
                     <div class=" w-100 d-flex align-items-center justify-content-center">
 
-                        <p class="mr-2"> Sede Cabecera: </p>
+                        <p class="mr-2"> Oficina Cabecera: </p>
 
                         <div><i class="verde <?php echo $datos_contacto['cabecera']['telefono_fijo']['icono'] ?>"></i></div>
 
@@ -359,7 +359,7 @@
 
                     <div class=" w-100 d-flex align-items-center justify-content-center">
 
-                        <p class="mr-2"> Sede Cañaveral: </p>
+                        <p class="mr-2"> Oficina Cañaveral: </p>
 
                         <div><i class="verde <?php echo $datos_contacto['cañaveral']['telefono_fijo']['icono'] ?>"></i></div>
 

@@ -700,12 +700,23 @@ footer {
         z-index: 100;
     }
 
+    .imagen_nosotros2 {
+        background-image: url(../images/banner_nosotros.jpg);
+        background-size: cover;
+        z-index: 100;
+    }
+
     .imagen_servicios {
         background-image: url(../images/banner_servicio.jpg);
         background-position-y: 48px;
         background-attachment: fixed;
         background-size: contain;
         background-repeat: no-repeat;
+        z-index: 100;
+    }
+    .imagen_servicios2 {
+        background-image: url(../images/banner_servicio.jpg);
+        background-size: cover;
         z-index: 100;
     }
 
@@ -718,12 +729,24 @@ footer {
         z-index: 100;
     }
 
+    .imagen_inmuebles2 {
+        background-image: url(../images/banner_inmuebles.jpg);
+        background-size: cover;
+        z-index: 400;
+    }
+
+
     .imagen_contactanos {
         background-image: url(../images/banner_contacto.jpg);
         background-position-y: 48px;
         background-attachment: fixed;
         background-size: contain;
         background-repeat: no-repeat;
+        z-index: 100;
+    }
+    .imagen_contactanos2 {
+        background-image: url(../images/banner_contacto.jpg);
+        background-size: cover;
         z-index: 100;
     }
 
@@ -733,6 +756,11 @@ footer {
         background-attachment: fixed;
         background-size: contain;
         background-repeat: no-repeat;
+        z-index: 400;
+    }
+    .imagen_clientes2 {
+        background-image: url(../images/banner_clientes.jpg);
+        background-size: cover;
         z-index: 400;
     }
 
@@ -745,12 +773,23 @@ footer {
         z-index: 400;
     }
 
+    .imagen_asesores2 {
+        background-image: url(../images/banner_asesores.jpg);
+        background-size: cover;
+        z-index: 400;
+    }
+
     .imagen_d_inmueble {
         background-image: url(../images/banner_detalle_inmueble.jpg);
         background-position-y: 48px;
         background-attachment: fixed;
         background-size: contain;
         background-repeat: no-repeat;
+        z-index: 400;
+    }
+    .imagen_d_inmueble2 {
+        background-image: url(../images/banner_detalle_inmueble.jpg);
+        background-size: cover;
         z-index: 400;
     }
 

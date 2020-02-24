@@ -28,8 +28,9 @@ $page = "Clientes" ?>
     <!-- BANNER -->
     <section id="banner" class="margin_top position-relative">
 
-        <div class="imagen imagen_clientes">
-        </div>
+        <div class="imagen imagen_clientes d-none d-xl-block"> </div>
+        <div class="imagen imagen_clientes2 d-xl-none d-sm-block d-md-block d-lg-block"> </div>
+
         <div id="fondo_negro"></div>
 
         <div class="contenido_banner d-flex align-items-center justify-content-center flex-column">
@@ -48,7 +49,7 @@ $page = "Clientes" ?>
             <div class="position-relative imagen">
                 <img class="w-100 rounded position-absolute w-100 h-100" src="images/arrendatarios.jpg" alt="">
             </div>
-            <p class="mt-2 text-justify"> Señor arrendatario, aquí podrá descargar sus Recibos de Pago,Facturas y Certificados Tributarios </p>
+            <p class="mt-2 text-justify"> Señor arrendatario, aquí podrá descargar sus Recibos de Pago, Facturas y Certificados Tributarios </p>
             <br/>
             <br/>
             <a href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&amp;tipo=2" class="mt-2 boton_principal btn">  Ingrese </a>

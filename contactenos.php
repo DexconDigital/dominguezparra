@@ -23,7 +23,8 @@ $page = "Contáctenos" ?>
     <!-- BANNER -->
     <section id="banner" class="margin_top position-relative">
 
-        <div class="imagen imagen_contactanos"> </div>
+        <div class="imagen imagen_contactanos d-none d-xl-block"> </div>
+        <div class="imagen imagen_contactanos2 d-xl-none d-sm-block d-md-block d-lg-block"> </div>
 
         <div id="fondo_negro"></div>
 

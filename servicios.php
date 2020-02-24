@@ -23,7 +23,8 @@ $page = "Servicios" ?>
     <!-- BANNER -->
     <section id="banner" class="margin_top position-relative">
 
-        <div class="imagen imagen_servicios"> </div>
+        <div class="imagen imagen_servicios d-none d-xl-block"> </div>
+        <div class="imagen imagen_servicios2 d-xl-none d-sm-block d-md-block d-lg-block"> </div>
         
         <div id="fondo_negro"></div>
 

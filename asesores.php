@@ -28,8 +28,9 @@ $page = "Asesores" ?>
     <!-- BANNER -->
     <section id="banner" class="margin_top position-relative">
 
-        <div class="imagen imagen_asesores">
-        </div>
+        <div class="imagen imagen_asesores d-none d-xl-block"></div>
+        <div class="imagen imagen_asesores2 d-xl-none d-sm-block d-md-block d-lg-block"></div>
+
         <div id="fondo_negro"></div>
 
         <div class="contenido_banner d-flex align-items-center justify-content-center flex-column">
