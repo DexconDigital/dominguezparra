@@ -1,15 +1,8 @@
 $(document).ready(function () {
 
-        
-
-        if(screen.width >= 769){
-                // var a = $('.formularioz').clone();
-                $('.formularioz').remove();
-        }else if (screen.width < 769){
-
-                $('.formularioz1').remove();
-                
+        if(screen.width<769) {
+                $('#buscador').removeClass('sticky-top top_buscar');
+                $('.formularioz').css('background-color','#2C2C2C');
         }
-
 
 });

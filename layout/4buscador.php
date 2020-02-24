@@ -24,13 +24,13 @@
             </select>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group f11">
+        <div class="col-6 col-md-6 col-lg-3 col-xl-3 form-group f11">
             <select class="form-control f1" id="ciudad_buscar">
                 <option selected default> Ciudad </option>
             </select>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group f11">
+        <div class="col-6 col-md-6 col-lg-3 col-xl-3 form-group f11">
             <select class="form-control f1" id="barrio_buscar">
                 <option selected default> Barrio </option>
             </select>
@@ -69,11 +69,11 @@
         </div>
 
 
-        <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group f11">
+        <div class="col-6 col-md-6 col-lg-3 col-xl-3 form-group f11">
             <input placeholder="Baños" type="number" class="form-control f1" id="banios_buscar" aria-describedby="emailHelp">
         </div>
 
-        <div class="col-12 col-md-6 col-lg-3 col-xl-3 form-group f11">
+        <div class="col-6 col-md-6 col-lg-3 col-xl-3 form-group f11">
             <input placeholder="Alcobas" type="number" class="form-control f1" id="alcobas_buscar" aria-describedby="emailHelp">
         </div>
 
