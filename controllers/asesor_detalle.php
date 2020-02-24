@@ -33,7 +33,7 @@ while ($field = mysqli_fetch_array($result1)) {
 function modelo_asesor($r)
 {
      for ($i = 0; $i < count($r); $i++) {
-        $ruta_imagen = "./dominguez-Admin/admin/" . $r[$i]['imagen'];
+        $ruta_imagen = "./dominguez-admin/admin/" . $r[$i]['imagen'];
         echo '
         <div class="col-12 col-md-4 col-lg-3 col-xl-3 mb-5">
         <a href="#">

@@ -64,7 +64,9 @@ $sql = mysqli_query($con, $qry);
         <div id="particles-js" class="position-absolute div_parti">
 
         </div>
+
         <div id="segundo_div" class="dashboard clearfix position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+
             <ul class="tiles w-100">
 
                 <div class="col1">
@@ -143,7 +145,7 @@ $sql = mysqli_query($con, $qry);
                     <li class="tile tile-2xbig tile-9 fig-tile" data-page-name="random-r-page" data-toggle="modal" data-target="index.php">
                         <figure class="border cont_logo">
                             <img src="images/logo_blanco.png" />
-                            <figcaption class="tile-caption caption-bottom"> Bienvenido al administrador de asesores de tu pagina web, podras Agregar , Modificar y Eliminarlos cuando desees de una manera muy facil e interactiva.
+                            <figcaption class="tile-caption caption-bottom">Bienvenido, al administrador de asesores de tu página web, podrás Agregar, Modificar y Eliminarlos cuando desees y de una manera muy fácil e interactiva.
                         </figure>
                     </li>
                     <!-- <li class="tile tile-big tile-10" data-page-type="s-page" data-page-name="custom-page">
@@ -572,7 +574,7 @@ $sql = mysqli_query($con, $qry);
 
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Configuración de Usuario</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Configuración de Usuario Administrador</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -581,19 +583,19 @@ $sql = mysqli_query($con, $qry);
                             <form class="form-horizontal" method="post" action="updateperfil.php" enctype="multipart/form-data">
                                 <input type="hidden" name="id" value="<?php echo $usuario[0]; ?>">
                                 <input type="hidden" name="usuario" value="<?php echo $usuario[1]; ?>">
-                                <div class="form-group">
-                                    <label for="recipient-name" class="col-form-label">Contraseña de Usuario:</label>
-                                    <input type="text" class="form-control" name="pass" id="pass" value="<?php echo $usuario[2]; ?>">
-                                    <small id="tituloHepl" class="form-text text-muted">Puede ingresar caracteres especiales @$#%&</small>
-                                </div>
                                 <div class="form-group ">
-                                    <label for="inputPassword" class="col-form-label">Nombre de Usuario:</label>
-                                    <input type="text" class="form-control" name="nombre" id="descripcion" value="<?php echo $usuario[3]; ?>">
-                                    <small id="tituloHepl" class="form-text text-muted">Es un campo opcional</small>
-                                    
+                                    <label for="inputPassword" class="col-form-label">Nombre:</label>
+                                    <input type="text" class="form-control" name="usuario" id="usuario" value="<?php echo $usuario[1]; ?>">
+                                    <small id="tituloHepl" class="form-text text-muted">Puede ingresar letras y numeros, recuerde que si lo cambia debe ingresar con este nuevo usuario</small>
 
                                 </div>
                                 <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Contraseña:</label>
+                                    <input type="text" class="form-control" name="pass" id="pass" value="<?php echo $usuario[2]; ?>">
+                                    <small id="tituloHepl" class="form-text text-muted">Puede ingresar caracteres especiales @$#%&</small>
+                                </div>
+                               
+                                <!-- <div class="form-group">
                                     <label for="inputPassword" class="col-form-label">Teléfono de Usuario:</label>
                                     <input type="number" class="form-control" name="telefono" id="telefono" value="<?php echo $usuario[4]; ?>">
                                     <small id="tituloHepl" class="form-text text-muted"> Se recomienda agregar agregar solo numeros </small>
@@ -619,12 +621,12 @@ $sql = mysqli_query($con, $qry);
                                 <div class="custom-file">
                                     <label class="custom-file-label" for="customFile">Subir una nueva foto de perfil</label>
                                     <input type="file" class="custom-file-input" name="imagen" id="imagen" accept="application/jpg">
-                                    <small id="tituloHepl" class="form-text text-muted"> No se recomienda subir una foto que supere los 900 pixeles de Ancho por 500 pixeles </small>
-                                </div>
+                                    <small id="tituloHepl" class="form-text text-muted">Ingrese una imagen que no supere las 2MB de peso y tamaño de 900 pixeles de Ancho por 500 pixeles de Alto </small>
+                                </div> -->
                         </div>
 
                         <div class="modal-footer">
-                            <button type="submint" class="btn btn_cancelar" data-dismiss="modal">Calcelar</button>
+                            <button type="submint" class="btn btn_cancelar" data-dismiss="modal">Cancelar</button>
                             <button class="btn btn_publicar">Actualizar Perfil</button>
                         </div>
                         </form>
