@@ -9,7 +9,6 @@
             $imagen = $field['imagen'];
                       
         }
-        unlink($archivo);
         unlink($imagen);
 
         $qry = "DELETE FROM asesores WHERE id ='$id'  ";
