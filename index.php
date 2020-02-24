@@ -84,7 +84,7 @@ $page = "Inicio" ?>
             <div class="d-flex flex-wrap align-items-center justify-content-center">
 
                 <div class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
-                    <img src="images/a_Banco-Caja-Social .png" alt="">
+                    <img src="images/a_banco_caja_social.png" alt="">
                 </div>
 
                 <div class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
@@ -92,7 +92,7 @@ $page = "Inicio" ?>
                 </div>
 
                 <div class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
-                    <img src="images/a_Libertador.png" alt="">
+                    <img src="images/a_libertador.png" alt="">
                 </div>
 
                 <div class="d-flex align-items-center justify-content-center mt-0 mt-lg-5 mt-xl-5 logos1 col-12 col-md-6 col-lg-4 col-xl-4">
