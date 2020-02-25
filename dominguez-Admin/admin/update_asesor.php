@@ -5,6 +5,7 @@ require_once ('conexion.php');
 $id=$_REQUEST["id"];
 $nom_asesor=$_REQUEST["nom_asesor"];
 $cel_asesor=$_REQUEST["cel_asesor"];
+$wapp_asesor=$_REQUEST["wapp_asesor"];
 $cor_asesor= $_POST["cor_asesor"];
 $image=$_FILES["imagen"]["name"];
 $ruta=$_FILES["imagen"]["tmp_name"];
@@ -23,7 +24,7 @@ if($destino == $comparador_fotos){
             
             $destino = $res[4];
     $con = Conect();
-    $qry=("update asesores set nombre='$nom_asesor', telefono='$cel_asesor', correo='$cor_asesor', cargo='$cargo' , descripcion='$descrip' where id='$id '");
+    $qry=("update asesores set nombre='$nom_asesor', telefono='$cel_asesor', correo='$cor_asesor', cargo='$cargo' , descripcion='$descrip', celular='$wapp_asesor' where id='$id '");
     $sql=mysqli_query($con,$qry);
         if(!$sql){
     }else{
@@ -56,7 +57,7 @@ if($destino != $comparador_fotos && $destinos == $comparador_archivo){
     copy($rutas,$destinos);
     copy($ruta,$destino);
     $con = Conect();
-    $qry=("update asesores set nombre='$nom_asesor', telefono='$cel_asesor', correo='$cor_asesor', cargo='$cargo' , descripcion='$descrip', imagen='$destino' where id='$id '");
+    $qry=("update asesores set nombre='$nom_asesor', telefono='$cel_asesor', correo='$cor_asesor', cargo='$cargo' , descripcion='$descrip', celular='$wapp_asesor' imagen='$destino' where id='$id '");
     $sql=mysqli_query($con,$qry);  
 
     if(!$sql){
