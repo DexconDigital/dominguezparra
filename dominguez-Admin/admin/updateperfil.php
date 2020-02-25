@@ -12,6 +12,7 @@ $foto=$_FILES["imagen"]["name"];
 $ruta=$_FILES["imagen"]["tmp_name"];
 $destino="images/".$foto;
 $comparador="images/";
+
     $con = Conect();
     if($destino == $comparador){
         $qry=mysqli_query($con,"UPDATE `usuarios` SET `usuario` = '$usuario', `password` = '$pass', `nombre` = '$nombre', `telefono` = '$telefono', `cargo` = '$cargo', `dependencia` = '$dependencia' WHERE `usuarios`.`id_user` = $id;");

@@ -519,7 +519,7 @@ ul {
   cursor: pointer;
   position: relative;
   /* background-color: #fff; */
-  color: #333;
+  color: #53585A;
   position: relative;
   -webkit-transition: background-color 0.2s ease-out;
   -o-transition: background-color 0.2s ease-out;
@@ -568,7 +568,7 @@ ul {
 .tile-caption {
   position: absolute;
   z-index: 1;
-  background-color: #455962;
+  background-color: #605F5E;
   color: #fff;
   font-size: 1em;
   padding: 1em;
@@ -644,13 +644,13 @@ ul {
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* Color del primer div de la segunda fila  de izquierda a derecha */
 .tile-2 {
-  background-color: #455962;
+  background-color: #605F5E;
   color: white;
   opacity: 0.8; }
 
 .tile-2:hover {
   background-color: white;
-  color: #455962; }
+  color: #605F5E; }
 
 .slideTextRight div:first-child {
   left: -100%; }
@@ -664,13 +664,13 @@ ul {
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* Color del Segundo div de la segunda fila  de izquierda a derecha */
 .tile-3 {
-  background-color: #ddd;
-  color: #455962;
+  background-color: white;
+  color: #359829;
   opacity: 0.8; }
 
 .tile-3:hover {
   background-color: white;
-  color: #455962; }
+  color: #359829; }
 
 .tile-3 p {
   font-size: 4em;
@@ -691,7 +691,7 @@ ul {
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* Color del segundo div de la segunda fila  de izquierda a derecha */
 .tile-6 {
-  background-color: #3EC7F3;
+  background-color: #3BA52B;
   color: white;
   opacity: 0.8; }
 
@@ -798,15 +798,15 @@ ul {
 
 .rotate3dX .front {
   background-color: #455962;
-  color: #ddd; }
+  color: white; }
 
 .rotate3dY .front {
-  background-color: #ddd;
-  color: #455962; }
+  background-color: white;
+  color: #359829; }
 
 .faces .back {
   background-color: #455962;
-  color: #ddd; }
+  color: white; }
 
 .front span {
   display: inline-block;
@@ -1146,10 +1146,10 @@ input {
   #asesor:hover {
     opacity: 1;
     background-blend-mode: screen;
-    background: -webkit-gradient(linear, left top, left bottom, from(#56D9C9), to(#FCC120));
-    background: -webkit-linear-gradient(#56D9C9, #FCC120);
-    background: -o-linear-gradient(#56D9C9, #FCC120);
-    background: linear-gradient(#56D9C9, #FCC120); }
+    background: -webkit-gradient(linear, left top, left bottom, from(#359829), to(#53585A));
+    background: -webkit-linear-gradient(#359829, #53585A);
+    background: -o-linear-gradient(#359829, #53585A);
+    background: linear-gradient(#359829, #53585A); }
 
 /* ---- particles.js container ---- */
 .modal_cabezera {
@@ -1167,3 +1167,35 @@ input {
   background-color: #6C757D;
   border-top: 0px solid #dee2e6 !important;
   opacity: 0.8; }
+
+  .hover_footer{
+    color:#3BA52B;
+    text-decoration: none;
+  }
+  .hover_footer:hover{
+    color: black;
+    text-decoration: none;
+  }
+  .btn_cancelar{
+    background-color: #605F5E !important;
+    color: white !important;
+  }
+  .btn_cancelar:hover{
+    background-color: #53585A !important;
+    color: white !important;
+  }
+  .btn_cancelar:focus{
+    box-shadow: 0 0 0 0.1rem #53585A !important;
+  }
+  .btn_publicar{
+  background-color: #3BA52B !important;
+  color: white !important;
+  }
+  .btn_publicar:hover{
+    background-color: #359829 !important;
+    color: white !important;
+  }
+  .btn_publicar:focus{
+    box-shadow: 0 0 0 0.1rem #359829 !important;
+    
+  }
