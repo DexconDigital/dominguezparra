@@ -41,15 +41,15 @@
             <select id="price" class="form-control f1">
                 <option value="0">Precio</option>
                 <option value="1">$ 500.000 a $ 1.000.000</option>
-                <option value="2">$ 1.000.000 a $ 5.000.000</option>
-                <option value="3">$ 5.000.000 a $ 8.000.000</option>
-                <option value="4">$ 8.000.000 a $ 30.000.000</option>
-                <option value="5">$ 30.000.000 a $ 50.000.000</option>
+                <option value="2">$ 1.000.000 a $ 2.000.000</option>
+                <option value="3">$ 2.000.000 a $ 5.000.000</option>
+                <option value="4">$ 5.000.000 y más</option>
+                <!-- <option value="5">$ 30.000.000 a $ 50.000.000</option>
                 <option value="6">$ 50.000.000 a $ 300.000.000</option>
                 <option value="7">$ 300.000.000 a $ 600.000.000</option>
                 <option value="8">$ 600.000.000 a $ 1.000.000.000</option>
                 <option value="9">$1.000.000.000 a $ 2.000.000.000</option>
-                <option value="10">$2.000.000.000 a $ 12.000.000.000</option>
+                <option value="10">$2.000.000.000 a $ 12.000.000.000</option> -->
             </select>
         </div>
 

@@ -22,7 +22,7 @@ if($destino == $comparador_fotos){
             $sql1=mysqli_query($con1,$qry1);
             $res=  mysqli_fetch_array($sql1) ;
             
-            $destino = $res[4];
+            // $destino = $res[4];
     $con = Conect();
     $qry=("update asesores set nombre='$nom_asesor', telefono='$cel_asesor', correo='$cor_asesor', cargo='$cargo' , descripcion='$descrip', celular='$wapp_asesor' where id='$id '");
     $sql=mysqli_query($con,$qry);
@@ -33,42 +33,26 @@ if($destino == $comparador_fotos){
          window.location.href='index.php'
       </script>";
     }
-    
-// actualizar fotos pero no texto
 }
-
 if($destino != $comparador_fotos){
-    copy($ruta,$destino);
+    $con1 = Conect();
+     $qry1="SELECT * FROM asesores where id ='$id'";
+            $sql1=mysqli_query($con1,$qry1);
+            $res=  mysqli_fetch_array($sql1) ;
+            
+            // $destino = $res[4];
     $con = Conect();
-    $qry=("update asesores set  imagen='$destino' where id='$id '");
-    $sql=mysqli_query($con,$qry);  
-
-    if(!$sql){
-        echo 'No se logro actualizar';
+    $qry=("update asesores set nombre='$nom_asesor', telefono='$cel_asesor', correo='$cor_asesor', cargo='$cargo' , descripcion='$descrip', celular='$wapp_asesor',imagen='$destino' where id='$id '");
+    $sql=mysqli_query($con,$qry);
+        if(!$sql){
     }else{
-       echo  "<script language='javascript'>
-       alert('Asesor Modificado con Éxito');
-        window.location.href='index.php'
-     </script>";
+        echo  "<script language='javascript'>
+        alert('Asesor Modificado con Éxito');
+         window.location.href='index.php'
+      </script>";
     }
 }
-// actualizar  ambas cosas
-if($destino != $comparador_fotos && $destinos == $comparador_archivo){
-    copy($rutas,$destinos);
-    copy($ruta,$destino);
-    $con = Conect();
-    $qry=("update asesores set nombre='$nom_asesor', telefono='$cel_asesor', correo='$cor_asesor', cargo='$cargo' , descripcion='$descrip', celular='$wapp_asesor' imagen='$destino' where id='$id '");
-    $sql=mysqli_query($con,$qry);  
 
-    if(!$sql){
-        echo 'No se logro actualizar';
-    }else{
-        echo
-        "<script language='javascript'>
-           alert('Asesor Modificado con Éxito');
-            window.location.href='index.php'
-         </script>";
-        
-    }
-}
+
+
 ?>

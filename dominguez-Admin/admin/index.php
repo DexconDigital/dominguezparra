@@ -81,14 +81,16 @@ $sql = mysqli_query($con, $qry);
                         </div>
                     </li> -->
                     <!-- manual de usuario -->
-                    <li class="tile tile-small tile tile-2 slideTextRight" data-page-type="s-page" data-page-name="random-restored-page">
-                        <div>
-                            <p class="icon-arrow-right"></p>
-                        </div>
-                        <div>
-                            <p>Descargar Manual de Usuario</p>
-                        </div>
-                    </li>
+                    <a href="archivo/Instructivo_Administracion_Asesores.pdf" download="Instructivo Administración Asesores.pdf">
+                        <li class="tile tile-small tile tile-2 slideTextRight" data-page-type="s-page" data-page-name="random-restored-page">
+                            <div>
+                                <p class="icon-arrow-right"></p>
+                            </div>
+                            <div>
+                                <p>Descargar Manual de Usuario</p>
+                            </div>
+                        </li>
+                    </a>
                     <!-- configuracion de usuario -->
                     <li class="tile tile-small last tile-3" data-page-type="r-page" data-page-name="random-r-page" data-toggle="modal" data-target="#config">
                         <p class="icon-calendar-alt-fill"></p>
@@ -601,7 +603,7 @@ $sql = mysqli_query($con, $qry);
                                     <input type="text" class="form-control" name="pass" id="pass" value="<?php echo $usuario[2]; ?>">
                                     <small id="tituloHepl" class="form-text text-muted">Puede ingresar caracteres especiales @$#%&</small>
                                 </div>
-                               
+
                                 <!-- <div class="form-group">
                                     <label for="inputPassword" class="col-form-label">Teléfono de Usuario:</label>
                                     <input type="number" class="form-control" name="telefono" id="telefono" value="<?php echo $usuario[4]; ?>">
