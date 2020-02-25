@@ -146,7 +146,7 @@ $sql = mysqli_query($con, $qry);
                     <li class="tile tile-2xbig tile-9 fig-tile" data-page-name="random-r-page" data-toggle="modal" data-target="index.php">
                         <figure class="border cont_logo">
                             <img src="images/logo_blanco.png" />
-                            <figcaption class="tile-caption caption-bottom">Bienvenido, al administrador de asesores de tu página web, podrás Agregar, Modificar y Eliminarlos cuando desees y de una manera muy fácil e interactiva.
+                            <figcaption class="tile-caption caption-bottom">Bienvenido al administrador de asesores de tu página web, podrás Agregar, Modificar y Eliminarlos cuando desees y de una manera muy fácil e interactiva.
                         </figure>
                     </li>
                     <!-- <li class="tile tile-big tile-10" data-page-type="s-page" data-page-name="custom-page">
