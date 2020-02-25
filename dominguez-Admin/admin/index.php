@@ -513,7 +513,7 @@ $sql = mysqli_query($con, $qry);
 
                                                         </div>
                                                         <div class="form-group mt-3 d-blok">
-                                                            <label for="" class="col-sm-3 col-form-label">Imagen Actual:</label>
+                                                            <label for="" class="col-sm-3 col-form-label">Imagen actual:</label>
                                                             <div class="col-sm-9">
                                                                 <img src="" alt="" id="img_edit" width="200px" height="auto">
                                                             </div>
