@@ -491,7 +491,7 @@ $sql = mysqli_query($con, $qry);
 
                                                         </div>
                                                         <div class="form-group ">
-                                                        <label for="inputPassword" class="col-sm-3 col-form-label">Número de WhatsApp:</label>
+                                                        <label for="inputPassword" class="col-sm-4 col-form-label">Número de WhatsApp:</label>
                                                         <input type="text" class="form-control" name="wapp_asesor" id="wapp_asesor_edit" value="">
                                                         <small id="tituloHepl" class="form-text text-muted">Se recomienda ingresar solo numeros.</small>
 
