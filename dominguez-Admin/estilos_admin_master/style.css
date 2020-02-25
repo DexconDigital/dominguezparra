@@ -1195,3 +1195,7 @@ input {
     background-color: #359829 !important;
     color: white !important;
   }
+  .btn_publicar:focus{
+    box-shadow: 0 0 0 0.1rem #359829 !important;
+    
+  }
