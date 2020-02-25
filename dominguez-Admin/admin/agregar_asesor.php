@@ -16,23 +16,27 @@ $cargo = $_REQUEST["cargo"];
 // $descrip = $_REQUEST["descrip"];
 $id_inmo = 15;
 
-// echo $nom_asesor, '', $cel_asesor, '', $cor_asesor ,'',$image ,'',$ruta ,'', $nombre_foto ,'', $destino ,'',$fecha, '',$cargo, '',$descrip;
-// die();
+ //echo $nom_asesor, '', $cel_asesor, '', $cor_asesor ,'',$image ,'',$ruta ,'', $nombre_foto ,'', $destino ,'',$fecha, '',$cargo, '',$descrip;
+ //die();
 $con = Conect();
+copy($ruta, $destino);
+
 if (isset($destino)) {
-    mysqli_query($con, "INSERT INTO `asesores` (`id`, `nombre`,`telefono`,`correo`,`imagen`,`id_inmobiliaria`,`fecha`,`cargo`,`celular`) VALUES (NULL, '$nom_asesor','$tel_asesor','$cor_asesor','$destino','$id_inmo','$fecha','$cargo','$cel_asesor')");
+    mysqli_query($con, "INSERT INTO `asesores` (`id`, `nombre`,`telefono`,`correo`,`id_inmobiliaria`,`fecha`,`cargo`,`celular`) VALUES (NULL, '$nom_asesor','$tel_asesor','$cor_asesor','$id_inmo','$fecha','$cargo','$cel_asesor')");
     echo  "<script language='javascript'>
 alert('Asesor Agregado Con Éxito');
 window.location.href='index.php'
 </script>";
     
+}else{
+    mysqli_query($con, "INSERT INTO `asesores` (`id`, `nombre`,`telefono`,`correo`,`imagen`,`id_inmobiliaria`,`fecha`,`cargo`,`celular`) VALUES (NULL, '$nom_asesor','$tel_asesor','$cor_asesor','$destino','$id_inmo','$fecha','$cargo','$cel_asesor'')");
+    echo  "<script language='javascript'>
+        alert('Asesor Agregado Con Éxito');
+        window.location.href='index.php'
+        </script>";
 }
-copy($ruta, $destino);
-mysqli_query($con, "INSERT INTO `asesores` (`id`, `nombre`,`telefono`,`correo`,`imagen`,`id_inmobiliaria`,`fecha`,`cargo`,`celular`) VALUES (NULL, '$nom_asesor','$tel_asesor','$cor_asesor','$destino','$id_inmo','$fecha','$cargo','$cel_asesor'')");
-echo  "<script language='javascript'>
-    alert('Asesor Agregado Con Éxito');
-    window.location.href='index.php'
-    </script>";
+
+
 
 
 

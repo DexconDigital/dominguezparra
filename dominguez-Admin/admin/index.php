@@ -471,7 +471,7 @@ $sql = mysqli_query($con, $qry);
                                         <form method="post" id="form_data_1" action="update_asesor.php" enctype="multipart/form-data">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Actualiza de tu Asesor</h5>
+                                                    <h5 class="modal-title" id="exampleModalLabel">Actualiza tu Asesor</h5>
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
@@ -485,13 +485,13 @@ $sql = mysqli_query($con, $qry);
                                                             <small id="tituloHepl" class="form-text text-muted">Primer nombre y primer apellido del asesor preferiblemente.</small>
                                                         </div>
                                                         <div class="form-group ">
-                                                            <label for="inputPassword" class="col-sm-3 col-form-label">Celular</label>
+                                                            <label for="inputPassword" class="col-sm-3 col-form-label">Celular:</label>
                                                             <input type="text" class="form-control" name="cel_asesor" id="cel_asesor_edit" value="">
                                                             <small id="tituloHepl" class="form-text text-muted">Se recomienda ingresar solo numeros.</small>
 
                                                         </div>
                                                         <div class="form-group ">
-                                                        <label for="inputPassword" class="col-sm-3 col-form-label">Numero de whatsapp:</label>
+                                                        <label for="inputPassword" class="col-sm-3 col-form-label">Número de WhatsApp:</label>
                                                         <input type="text" class="form-control" name="wapp_asesor" id="wapp_asesor_edit" value="">
                                                         <small id="tituloHepl" class="form-text text-muted">Se recomienda ingresar solo numeros.</small>
 
@@ -502,18 +502,18 @@ $sql = mysqli_query($con, $qry);
                                                             <small id="tituloHepl" class="form-text text-muted">Se recomienda ingresar correos corporativos.</small>
                                                         </div>
                                                         <div class="form-group ">
-                                                            <label for="inputPassword" class="col-sm-3 col-form-label">Cargo del Asesor:</label>
+                                                            <label for="inputPassword" class="col-sm-3 col-form-label">Cargo del asesor:</label>
                                                             <input type="text" class="form-control" name="cargo" id="cargo_edit" value="">
                                                             <small id="tituloHepl" class="form-text text-muted">Es importante llenar este campo.</small>
                                                         </div>
                                                         <div class="custom-file mb-5" style="display: none;">
-                                                            <label for="inputPassword" class="col-sm-3 col-form-label">Descripcion:</label>
+                                                            <label for="inputPassword" class="col-sm-3 col-form-label">Descripción:</label>
                                                             <textarea name="descrip" id="descrip_edit"></textarea>
                                                             <small id="tituloHepl" class="form-text text-muted"> Ingrese el Contenido de la publicación y si es un texto copiado no olvide borrar el formato.</small>
 
                                                         </div>
                                                         <div class="form-group mt-3 d-blok">
-                                                            <label for="" class="col-sm-3 col-form-label">Imagen Actual</label>
+                                                            <label for="" class="col-sm-3 col-form-label">Imagen Actual:</label>
                                                             <div class="col-sm-9">
                                                                 <img src="" alt="" id="img_edit" width="200px" height="auto">
                                                             </div>
