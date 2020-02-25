@@ -415,7 +415,7 @@ $page = "Inicio" ?>
                         <img src="images/banco-caja-social_blanco.png" alt="">
                     </div>
 
-                    <div style="height:auto;" class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
+                    <div style="height:auto;"class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
                         <img src="images/fianzasantander_blanco.png" alt="">
                     </div>
 
