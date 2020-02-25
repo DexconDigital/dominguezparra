@@ -351,7 +351,7 @@ $sql = mysqli_query($con, $qry);
 
                                 </div>
                                 <div class="custom-file mt-3">
-                                    <label for="" class="custom-file-label">Imagen Actual</label>
+                                    <label for="" class="custom-file-label">Imagen actual</label>
                                     <input type="file" class="custom-file-input" name="imagen" id="imagen" accept="image/*">
                                     <small id="tituloHepl" class="form-text text-muted"> Ingrese una imagen que no supere las 2MB</small>
 
@@ -390,7 +390,7 @@ $sql = mysqli_query($con, $qry);
 
                                 </div>
                                 <div class="form-group ">
-                                    <label for="inputPassword" class="col-sm-3 col-form-label">Numero de whatsapp:</label>
+                                    <label for="inputPassword" class="col-sm-4 col-form-label">Número de WhatsApp:</label>
                                     <input type="text" class="form-control" name="tel_asesor" id="tel_asesor" placeholder="Celular">
                                     <small id="tituloHepl" class="form-text text-muted">Se recomienda ingresar solo numeros.(Opcional)</small>
 
@@ -401,7 +401,7 @@ $sql = mysqli_query($con, $qry);
                                     <small id="tituloHepl" class="form-text text-muted">Se recomienda ingresar correos corporativos.</small>
                                 </div>
                                 <div class="form-group ">
-                                    <label for="inputPassword" class="col-sm-3 col-form-label">Cargo del Asesor:</label>
+                                    <label for="inputPassword" class="col-sm-3 col-form-label">Cargo del asesor:</label>
                                     <input type="text" class="form-control" name="cargo" id="cargo" placeholder="Asesor comercial" required>
                                     <small id="tituloHepl" class="form-text text-muted">Es importante este campo.</small>
                                 </div>
