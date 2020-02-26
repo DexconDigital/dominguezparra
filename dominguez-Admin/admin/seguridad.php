@@ -1,4 +1,6 @@
 <?php
+require_once('../sesion.php');
+
 //Reanudamos la sesión 
 @session_start(); 
 //Validamos si existe realmente una sesión activa o no 

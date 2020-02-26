@@ -1,5 +1,5 @@
 <?php $page = "Inicio | Administrador";
-require("seguridad.php");
+require_once("seguridad.php");
 require_once("conexion.php");
 ?>
 <?php
@@ -59,7 +59,7 @@ $sql = mysqli_query($con, $qry);
     </script>
 </head>
 
-<body>
+<body onload="deshabilitaRetroceso()">
 
     <div id="position-relative d-flex align-items-center justify-content-center">
         <div id="particles-js" class="position-absolute div_parti">
@@ -699,7 +699,6 @@ $sql = mysqli_query($con, $qry);
         $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
     });
 </script>
-
 </html>
 
 <?php include 'layout/layoutFooter.php'; ?>
