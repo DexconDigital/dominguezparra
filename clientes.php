@@ -52,7 +52,7 @@ $page = "Clientes" ?>
             <p class="mt-2 text-justify"> Señor arrendatario, aquí podrá descargar sus Recibos de Pago, Facturas y Certificados Tributarios </p>
             <br/>
             <br/>
-            <a href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&amp;tipo=2" class="mt-2 boton_principal btn">  Ingrese </a>
+            <a target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&amp;tipo=2" class="mt-2 boton_principal btn">  Ingrese </a>
         </div>
 
         <div class="caja mb-3 mb-md-0 mb-lg-0 mb-xl-0 col-12 col-md-4 col-xl-4 col-lg-4 animacion_2" >
@@ -63,7 +63,7 @@ $page = "Clientes" ?>
             <p class="mt-2 text-justify"> Señor propietario, aquí podrá descargar sus Estados de Cuenta, Facturas y Certificados Tributarios </p>
             <br/>
             <br/>
-            <a href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&amp;tipo=1" class="mt-2 boton_principal btn"> Ingrese </a> 
+            <a target="_blank" href="https://www.simiinmobiliarias.com/base/simired/simidocsapi1.0/index.php?inmo=986&amp;tipo=1" class="mt-2 boton_principal btn"> Ingrese </a> 
         </div>
 
         <div class="caja col-12 col-md-4 col-xl-4 col-lg-4 animacion_3" >
@@ -74,7 +74,7 @@ $page = "Clientes" ?>
             <p class="mt-2 text-justify"> Pague seguro en línea con Mi Pago Amigo del Banco Caja Social </p>
             <br/>
             <br/>
-            <a href="https://www.mipagoamigo.com/MPA_WebSite/ServicePayments" class="mt-2 boton_principal btn"> Ingrese </a> 
+            <a target="_blank" href="https://www.mipagoamigo.com/MPA_WebSite/ServicePayments" class="mt-2 boton_principal btn"> Ingrese </a> 
         </div>
 
 
