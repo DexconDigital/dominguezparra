@@ -481,7 +481,7 @@
                 </div>
 
                 <div class="my-3 container-fluid d-flex flex-column align-items-center justify-content-center">
-                    <img class="w-50" src="images/a_fianzasantander-logo-1.png" alt="">
+                    <img class="w-50" src="images/fianzasantander.png" alt="">
                     <a target="blank" href="archivos/personas_naturales_y_juridicas_fianzacredito.pdf"> Persona Natural y Jurídica - Fianzacredito </a>
                 </div>
 

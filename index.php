@@ -91,8 +91,7 @@ $page = "Inicio" ?>
     <section class="">
         <?php include 'layout/5footer.php' ?>
     </section>
-    <!-- FOOTER -->
-
+    <!-- FOOTER -
 
 
     <!-- Carrusel -->
