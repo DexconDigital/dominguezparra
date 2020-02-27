@@ -266,34 +266,34 @@
                     <!-- SEDE CAÑAVERAL -->
 
                     <!-- NUESTROS ALIADOS -->
-                    <section id="nuestros_aliados" class="mt-5">
+                    <section id="nuestros_aliados" class="container-fluid mt-5">
 
-                        <div class="container">
+                        <div class="">
                             <h2 class="d-flex justify-content-center mb-5"> Nuestros Aliados </h2>
 
                             <div class="d-flex flex-wrap align-items-center justify-content-center">
 
-                                <div class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="p-0 d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
                                     <img src="images/banco-caja-social_blanco.png" alt="">
                                 </div>
 
-                                <div style="height:auto;" class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
+                                <div style="height:auto;" class="p-0 d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
                                     <img src="images/fianzasantander_blanco.png" alt="">
                                 </div>
 
-                                <div class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="p-0 d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
                                     <img src="images/libertador_blanco.png" alt="">
                                 </div>
 
-                                <div class="d-flex align-items-center justify-content-center mt-0 mt-lg-5 mt-xl-5 logos1 col-12 col-md-6 col-lg-4 col-xl-4">
+                                <div class="p-0 d-flex align-items-center justify-content-center mt-0 mt-lg-5 mt-xl-5 logos1 col-12 col-md-6 col-lg-4 col-xl-4">
                                     <img src="images/logo_lonja_2_lineas_blanco.png" alt="">
                                 </div>
 
-                                <div class="d-flex align-items-center justify-content-center mt-0 mt-lg-5 mt-xl-5 logos2 col-12 col-md-3 col-lg-4 col-xl-4">
+                                <div class="p-0 d-flex align-items-center justify-content-center mt-0 mt-lg-5 mt-xl-5 logos2 col-12 col-md-3 col-lg-4 col-xl-4">
                                     <img src="images/ccbucaramanga_blanco.png" alt="">
                                 </div>
 
-                                <div class="d-flex align-items-center justify-content-center mt-0 mt-lg-5 mt-xl-5 logos2 col-6 col-md-3 col-lg-2 col-xl-2">
+                                <div class="p-0 d-flex align-items-center justify-content-center mt-0 mt-lg-5 mt-xl-5 logos2 col-6 col-md-3 col-lg-2 col-xl-2">
                                     <img src="images/fenalco_blanco.png" alt="">
                                 </div>
 
