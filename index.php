@@ -74,47 +74,6 @@ $page = "Inicio" ?>
     </section>
     <!-- PROPIEDADES DESTACADAS -->
 
-
-    <!-- NUESTROS ALIADOS -->
-    <section id="nuestros_aliados" class="d-none d-lg-block d-xl-block mt-5">   
-
-        <div class="container">
-            <h2 class="d-flex justify-content-center mb-5"> Nuestros Aliados </h2>
-
-            <div class="d-flex flex-wrap align-items-center justify-content-center">
-
-                <div class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
-                    <img src="images/a_banco_caja_social.png" alt="">
-                </div>
-
-                <div style="height:auto;" class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
-                    <img src="images/fianzasantander.png" alt="">
-                </div>
-
-                <div class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
-                    <img src="images/a_libertador.png" alt="">
-                </div>
-
-                <div class="d-flex align-items-center justify-content-center mt-0 mt-lg-5 mt-xl-5 logos1 col-12 col-md-6 col-lg-4 col-xl-4">
-                    <img src="images/a_logo_lonja_color.png" alt="">
-                </div>
-
-                <div class="d-flex align-items-center justify-content-center mt-0 mt-lg-5 mt-xl-5 logos2 col-6 col-md-3 col-lg-2 col-xl-2">
-                    <img src="images/a_logo_fenalco_santander.png" alt="">
-                </div>
-
-                <div class="d-flex align-items-center justify-content-center mt-0 mt-lg-5 mt-xl-5 logos2 col-6 col-md-3 col-lg-4 col-xl-4">
-                    <img src="images/ccbucaramanga.png" alt="">
-                </div>
-
-
-            </div>
-        </div>
-
-
-    </section>
-    <!-- NUESTROS ALIADOS -->
-
     <!-- FORMULARIO DE ASEGURADORAS -->
     <section id="formulario_aseguradoras" class="mt-5">
         <div>
@@ -129,7 +88,7 @@ $page = "Inicio" ?>
     <!-- FORMULARIO DE ASEGURADORAS -->
 
     <!-- FOOTER -->
-    <section class="d-none d-lg-block d-xl-block">
+    <section class="">
         <?php include 'layout/5footer.php' ?>
     </section>
     <!-- FOOTER -->
@@ -403,45 +362,7 @@ $page = "Inicio" ?>
             </div>
         </div>
 
-        <!-- NUESTROS ALIADOS -->
-        <section id="nuestros_aliados" class="mt-5">
 
-            <div class="container">
-                <h2 class="d-flex justify-content-center mb-5"> Nuestros Aliados </h2>
-
-                <div class="d-flex flex-wrap align-items-center justify-content-center">
-
-                    <div class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
-                        <img src="images/banco-caja-social_blanco.png" alt="">
-                    </div>
-
-                    <div style="height:auto;"class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
-                        <img src="images/fianzasantander_blanco.png" alt="">
-                    </div>
-
-                    <div class="d-flex align-items-center justify-content-center logos1 col-12 col-md-6 col-lg-4 col-xl-4">
-                        <img src="images/libertador_blanco.png" alt="">
-                    </div>
-
-                    <div class="d-flex align-items-center justify-content-center mt-0 mt-lg-5 mt-xl-5 logos1 col-12 col-md-6 col-lg-4 col-xl-4">
-                        <img src="images/logo_lonja_2_lineas_blanco.png" alt="">
-                    </div>
-
-                    <div class="d-flex align-items-center justify-content-center mt-0 mt-lg-5 mt-xl-5 logos2 col-12 col-md-3 col-lg-4 col-xl-4">
-                        <img src="images/ccbucaramanga_blanco.png" alt="">
-                    </div>
-
-                    <div class="d-flex align-items-center justify-content-center mt-0 mt-lg-5 mt-xl-5 logos2 col-6 col-md-3 col-lg-2 col-xl-2">
-                        <img src="images/fenalco_blanco.png" alt="">
-                    </div>
-
-
-                </div>
-            </div>
-
-
-        </section>
-        <!-- NUESTROS ALIADOS -->
 
         <div class="copyright border-top p-2 mt-3">
             <p class="text-center px-2 text-justify"> Diseñado y Desarrollado por <a class="mx-1" target="blank" href="https://www.dexcondigital.com"> Dexcon Digital </a> ©Copyright 2020 para Inmobiliaria
