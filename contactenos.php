@@ -275,31 +275,31 @@ $page = "Contáctenos" ?>
 
                 <!-- FORMULARIO -->
                 <div class="container">
-                    <form action="email/enviarCorreo.php" method="POST" class="margen_contenedores_index">
+                    <form action="email/enviarContacto.php" method="POST" class="margen_contenedores_index">
 
                         <div class="text-center row">
 
                             <div class="my-3 col-12 col-md-6 col-lg-6 col-xl-6">
-                                <select class="border form-control" id="" required>
+                                <select class="border form-control" name="solicitud" required>
                                     <option selected disabled> Tipo de Solicitud </option>
-                                    <option> Información de Arriendos </option>
-                                    <option> Consignación de Inmuebe - Arriendo </option>
-                                    <option> Petición, Queja o Reclamo </option>
-                                    <option> Sugerencia </option>
-                                    <option> Reporte de Mantenimiento </option>
+                                    <option value="Información de Arriendos" > Información de Arriendos </option>
+                                    <option value="Consignacion de Inmueble Arriendo" > Consignación de Inmueble - Arriendo </option>
+                                    <option value="Consignacion de Inmuebe - Arriendo" > Petición, Queja o Reclamo </option>
+                                    <option value="Sugerencia" > Sugerencia </option>
+                                    <option value="Reporte de Mantenimiento" > Reporte de Mantenimiento </option>
                                 </select>
                             </div>
 
                             <div class="my-3 col-12 col-md-6 col-lg-6 col-xl-6">
-                                <input type="text" class="border form-control" id="" name="name" aria-describedby="emailHelp" placeholder="Nombre(s)" required>
+                                <input type="text" class="border form-control" id="" name="nombre" aria-describedby="emailHelp" placeholder="Nombre(s)" required>
                             </div>
 
                             <div class="my-3 col-12 col-md-6 col-lg-6 col-xl-6">
-                                <input type="text" class="border form-control" id="" name="name" aria-describedby="emailHelp" placeholder="Apellido(s)" required>
+                                <input type="text" class="border form-control" id="" name="apellido" aria-describedby="emailHelp" placeholder="Apellido(s)" required>
                             </div>
 
                             <div class="mb-3 mb-md-0 mb-lg-0 mb-xl-0 align-items-center d-flex col-12 col-md-6 col-lg-6 col-xl-6">
-                                <input type="number" class="border form-control" name="email" aria-describedby="emailHelp" placeholder="Celular" required>
+                                <input type="number" class="border form-control" name="celular" aria-describedby="emailHelp" placeholder="Celular" required>
                             </div>
 
                             <div class="mb-3 col-12 col-md-6 col-lg-6 col-xl-6">
@@ -307,7 +307,7 @@ $page = "Contáctenos" ?>
                             </div>
 
                             <div class="mb-3 align-items-center d-flex col-12 col-md-6 col-lg-6 col-xl-6">
-                                <input type="text" class="border form-control" name="email" aria-describedby="emailHelp" placeholder="Correo electrónico" required>
+                                <input type="text" class="border form-control" name="correo" aria-describedby="emailHelp" placeholder="Correo electrónico" required>
                             </div>
 
                             <div class="mb-3 col-12 col-md-6 col-lg-6 col-xl-6">
@@ -316,7 +316,7 @@ $page = "Contáctenos" ?>
 
                             <div class="mb-3 col-12 form-group d-flex align-items-start">
                                 <label for="exampleFormControlTextarea1"></label>
-                                <textarea class="form-control" name="message" placeholder="Ingresa tu mensaje" rows="3"></textarea>
+                                <textarea class="form-control" name="mensaje" placeholder="Ingresa tu mensaje" rows="3"></textarea>
                             </div>
 
                             <div class="ml-3 form-group form-check">
