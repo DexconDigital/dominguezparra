@@ -18,10 +18,7 @@ if ($_POST) {
 }
 if($solicitud == 'Información de Arriendos'){
     // $email = 'recepcionprincipal @ dominguezparra.com.co';
-    $email = 'wdsp9898@gmail.com';
-}elseif($solicitud == 'Consignacion de Inmueble Arriendo'){
-    // $email = 'direccioncomercial@dominguezparra.com.co';
-    $email = 'wdsp9898@gmail.com';
+   $email = 'wdsp9898@gmail.com';
 }elseif($solicitud == 'Peticion Queja o Reclamo'){
     // $email = 'recepcionprincipal@dominguezparra.com.co';
     $email = 'wdsp9898@gmail.com';

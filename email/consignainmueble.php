@@ -38,6 +38,7 @@ try{
     $mail->isHTML(true);
     $mail->setFrom('AlejandroDominguezParra@AlejandroDominguezParra.com', 'AlejandroDominguezParra@AlejandroDominguezParra.com');
     $mail->addAddress('wdsp9898@gmail.com');
+    // $mail->addAddress('direccioncomercial@dominguezparra.com.co');
     
 
     $mail->Subject='Mensaje desde la página web Inmobiliaria Alejandro Domínguez Parra';
