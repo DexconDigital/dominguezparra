@@ -17,15 +17,17 @@ if ($_POST) {
      
 }
 if($solicitud == 'Información de Arriendos'){
-    $email = '';
+    // $email = 'recepcionprincipal @ dominguezparra.com.co';
+    $email = 'wdsp9898@gmail.com';
 }elseif($solicitud == 'Consignacion de Inmueble Arriendo'){
-    $email = '';
-}elseif($solicitud == 'Consignacion de Inmuebe - Arriendo'){
-    $email = '';
-}elseif($solicitud == 'Sugerencia'){
-    $email = '';
+    // $email = 'direccioncomercial@dominguezparra.com.co';
+    $email = 'wdsp9898@gmail.com';
+}elseif($solicitud == 'Peticion Queja o Reclamo'){
+    // $email = 'recepcionprincipal@dominguezparra.com.co';
+    $email = 'wdsp9898@gmail.com';
 }elseif($solicitud == 'Reporte de Mantenimiento'){
-    $email = '';
+    // $email = 'mantenimiento@dominguezparra.com.co';
+    $email = 'wdsp9898@gmail.com';
 }
 
 $mail = new PHPMailer(true);
@@ -52,7 +54,7 @@ try{
     $mail->addAddress($email);
     
 
-    $mail->Subject='Mensaje desde la página web de Inmobiliaria Alejandro Domínguez Parra';
+    $mail->Subject='Mensaje desde la página web Inmobiliaria Alejandro Domínguez Parra';
     $mail->Body = '  <h3>Tipo de Solicitud: '.$solicitud.'</h3>
                     <span>Hola, '.$nombre.' '.$apellido.' quiere recibir información con respeto a:  <strong>'.$asunto.'</strong></span>
                     <h3>Sus datos de contacto son:</h3>

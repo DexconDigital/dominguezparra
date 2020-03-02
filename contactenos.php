@@ -284,8 +284,7 @@ $page = "Contáctenos" ?>
                                     <option selected disabled> Tipo de Solicitud </option>
                                     <option value="Información de Arriendos" > Información de Arriendos </option>
                                     <option value="Consignacion de Inmueble Arriendo" > Consignación de Inmueble - Arriendo </option>
-                                    <option value="Consignacion de Inmuebe - Arriendo" > Petición, Queja o Reclamo </option>
-                                    <option value="Sugerencia" > Sugerencia </option>
+                                    <option value="Peticion Queja o Reclamo" > Petición, Queja o Reclamo </option>
                                     <option value="Reporte de Mantenimiento" > Reporte de Mantenimiento </option>
                                 </select>
                             </div>
