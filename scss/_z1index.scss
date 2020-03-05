@@ -638,12 +638,19 @@ footer {
     }
 
     .copyright {
+
         a {
             color: $verde;
 
             &:hover {
                 color: $verde_oscuro
             }
+        }
+    }
+
+    @media (min-width:1024px) and (max-width: 1441px) {
+        .copyright {
+            padding-left: 112px;
         }
     }
 

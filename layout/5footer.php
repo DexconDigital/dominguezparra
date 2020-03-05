@@ -311,7 +311,7 @@
         </div>
     </div>
 
-    <div class="copyright border-top p-2 mt-3">
+    <div class="copyright border-top py-2 pr-2 mt-3">
         <p class="text-center px-2 text-justify"> Diseñado y Desarrollado por <a class="mx-1" target="blank" href="https://www.dexcondigital.com"> Dexcon Digital </a> ©Copyright 2020 para Inmobiliaria
             Alejandro Dominguez Parra. Todos los derechos reservados. </p>
     </div>

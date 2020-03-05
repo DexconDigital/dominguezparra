@@ -150,6 +150,8 @@ $page = "Inicio" ?>
     <script src="js/rangos.js"></script>
 
 
+
+
 </body>
 
 </html>
