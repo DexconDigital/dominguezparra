@@ -96,12 +96,12 @@ $page = "Contáctenos" ?>
                                         </a>
                                     </div>
 
-                                    <div class="p-0 col-12 col-xl-2 col-lg-2 d-flex align-items-baseline justify-content-center hover_iconos">
+                                    <!-- <div class="p-0 col-12 col-xl-2 col-lg-2 d-flex align-items-baseline justify-content-center hover_iconos">
                                         <a class="d-flex align-items-baseline justify-content-baseline" href="tel:<?php echo  $datos_contacto['principal']['celular']['link'] ?>">
                                             <i class="mr-1 verde fas fa-mobile-alt"></i>
                                             <p class="mt-2"> <?php echo $datos_contacto['principal']['celular']['imprimir'] ?> </p>
                                         </a>
-                                    </div>
+                                    </div> -->
 
                                     <div class="p-0 col-12 col-xl-2 col-lg-2 d-flex align-items-baseline justify-content-center hover_iconos">
                                         <a class="d-flex align-items-baseline justify-content-baseline" href="tel:<?php echo  $datos_contacto['principal']['telefono_fijo']['link'] ?>">
@@ -112,12 +112,12 @@ $page = "Contáctenos" ?>
 
 
 
-                                    <div class="p-0 col-12 col-xl-2 col-lg-2 d-flex align-items-baseline justify-content-center hover_iconos">
+                                    <!-- <div class="p-0 col-12 col-xl-2 col-lg-2 d-flex align-items-baseline justify-content-center hover_iconos">
                                         <a class="d-flex align-items-baseline justify-content-baseline" target="blank" href="<?php echo  $datos_contacto['principal']['whatsapp']['link'] ?>">
                                             <i class="mr-1 verde <?php echo $datos_contacto['principal']['whatsapp']['icono'] ?>"> </i>
                                             <p class="mt-2"> <?php echo $datos_contacto['principal']['whatsapp']['imprimir'] ?> </p>
                                         </a>
-                                    </div>
+                                    </div> -->
 
                                     <div class="col-12 d-flex align-items-center justify-content-center hover_iconos">
                                         <div class="d-flex align-items-baseline justify-content-baseline">
@@ -161,12 +161,12 @@ $page = "Contáctenos" ?>
                                         </a>
                                     </div>
 
-                                    <div class="p-0 col-12 col-xl-2 col-lg-2 d-flex align-items-baseline justify-content-center hover_iconos">
+                                    <!-- <div class="p-0 col-12 col-xl-2 col-lg-2 d-flex align-items-baseline justify-content-center hover_iconos">
                                         <a class="d-flex align-items-baseline justify-content-baseline" href="tel:<?php echo  $datos_contacto['principal']['celular']['link'] ?>">
                                             <i class="mr-1 verde fas fa-mobile-alt"></i>
                                             <p class="mt-2"> <?php echo $datos_contacto['principal']['celular']['imprimir'] ?> </p>
                                         </a>
-                                    </div>
+                                    </div> -->
 
                                     <div class="p-0 col-12 col-lg-2 col-xl-2  d-flex align-items-baseline justify-content-center hover_iconos">
                                         <a class="d-flex align-items-baseline justify-content-baseline" href="tel:<?php echo  $datos_contacto['cabecera']['telefono_fijo']['link'] ?>">
@@ -177,12 +177,12 @@ $page = "Contáctenos" ?>
 
 
 
-                                    <div class="p-0 col-12 col-lg-2 col-xl-2 d-flex align-items-baseline justify-content-center hover_iconos">
+                                    <!-- <div class="p-0 col-12 col-lg-2 col-xl-2 d-flex align-items-baseline justify-content-center hover_iconos">
                                         <a class="d-flex align-items-baseline justify-content-baseline" target="blank" href="<?php echo  $datos_contacto['principal']['whatsapp']['link'] ?>">
                                             <i class="mr-1 verde <?php echo $datos_contacto['principal']['whatsapp']['icono'] ?>"> </i>
                                             <p class="mt-2"> <?php echo $datos_contacto['principal']['whatsapp']['imprimir'] ?> </p>
                                         </a>
-                                    </div>
+                                    </div> -->
 
                                     <div class="col-12  d-flex align-items-center justify-content-center hover_iconos">
                                         <div class="d-flex align-items-baseline justify-content-baseline">
@@ -226,12 +226,12 @@ $page = "Contáctenos" ?>
                                         </a>
                                     </div>
 
-                                    <div class="p-0 col-12 col-xl-2 col-lg-2 d-flex align-items-baseline justify-content-center hover_iconos">
+                                    <!-- <div class="p-0 col-12 col-xl-2 col-lg-2 d-flex align-items-baseline justify-content-center hover_iconos">
                                         <a class="d-flex align-items-baseline justify-content-baseline" href="tel:<?php echo  $datos_contacto['principal']['celular']['link'] ?>">
                                             <i class="mr-1 verde fas fa-mobile-alt"></i>
                                             <p class="mt-2"> <?php echo $datos_contacto['principal']['celular']['imprimir'] ?> </p>
                                         </a>
-                                    </div>
+                                    </div> -->
 
                                     <div class="p-0 col-12 col-lg-2 col-xl-2  d-flex align-items-baseline justify-content-center hover_iconos">
                                         <a class="d-flex align-items-baseline justify-content-baseline" href="tel:<?php echo  $datos_contacto['cañaveral']['telefono_fijo']['link'] ?>">
@@ -242,12 +242,12 @@ $page = "Contáctenos" ?>
 
 
 
-                                    <div class="p-0 col-12 col-lg-2 col-xl-2  d-flex align-items-baseline justify-content-center hover_iconos">
+                                    <!-- <div class="p-0 col-12 col-lg-2 col-xl-2  d-flex align-items-baseline justify-content-center hover_iconos">
                                         <a class="d-flex align-items-baseline justify-content-baseline" target="blank" href="<?php echo  $datos_contacto['cañaveral']['whatsapp']['link'] ?>">
                                             <i class="mr-1 verde <?php echo $datos_contacto['cañaveral']['whatsapp']['icono'] ?>"> </i>
                                             <p class="mt-2"> <?php echo $datos_contacto['cañaveral']['whatsapp']['imprimir'] ?> </p>
                                         </a>
-                                    </div>
+                                    </div> -->
 
                                     <div class="col-12  d-flex align-items-center justify-content-center hover_iconos">
                                         <div class="d-flex align-items-baseline justify-content-baseline">

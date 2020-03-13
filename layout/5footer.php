@@ -52,7 +52,7 @@
                                                 </a>
                                             </div>
 
-                                            <div class="hover_iconos">
+                                            <!-- <div class="hover_iconos">
                                                 <a class="d-flex align-items-baseline" href="tel:<?php echo  $datos_contacto['principal']['celular']['link'] ?>">
                                                     <i class="mr-1 <?php echo $datos_contacto['principal']['celular']['icono'] ?>"> </i>
                                                     <p> <?php echo $datos_contacto['principal']['celular']['imprimir'] ?> </p>
@@ -64,7 +64,7 @@
                                                     <i class="mr-1 <?php echo $datos_contacto['principal']['whatsapp']['icono'] ?>"> </i>
                                                     <p> <?php echo $datos_contacto['principal']['whatsapp']['imprimir'] ?> </p>
                                                 </a>
-                                            </div>
+                                            </div> -->
 
                                             <div class="hover_iconos">
                                                 <a class="d-flex align-items-baseline" href="mailto:<?php echo  $datos_contacto['principal']['correo'] ?>">
@@ -136,7 +136,7 @@
                                                 </a>
                                             </div>
 
-                                            <div class="hover_iconos">
+                                            <!-- <div class="hover_iconos">
                                                 <a class="d-flex align-items-baseline" href="tel:<?php echo  $datos_contacto['principal']['celular']['link'] ?>">
                                                     <i class="mr-1 <?php echo $datos_contacto['principal']['celular']['icono'] ?>"> </i>
                                                     <p> <?php echo $datos_contacto['principal']['celular']['imprimir'] ?> </p>
@@ -148,7 +148,7 @@
                                                     <i class="mr-1 <?php echo $datos_contacto['cabecera']['whatsapp']['icono'] ?>"> </i>
                                                     <p> <?php echo $datos_contacto['cabecera']['whatsapp']['imprimir'] ?> </p>
                                                 </a>
-                                            </div>
+                                            </div> -->
 
                                             <div class="hover_iconos">
                                                 <a class="d-flex align-items-baseline" href="mailto:<?php echo  $datos_contacto['cabecera']['correo'] ?>">
@@ -219,7 +219,7 @@
                                                 </a>
                                             </div>
 
-                                            <div class="hover_iconos">
+                                            <!-- <div class="hover_iconos">
                                                 <a class="d-flex align-items-baseline" href="tel:<?php echo  $datos_contacto['principal']['celular']['link'] ?>">
                                                     <i class="mr-1 <?php echo $datos_contacto['principal']['celular']['icono'] ?>"> </i>
                                                     <p> <?php echo $datos_contacto['principal']['celular']['imprimir'] ?> </p>
@@ -232,7 +232,7 @@
                                                     <i class="mr-1 <?php echo $datos_contacto['cañaveral']['whatsapp']['icono'] ?>"> </i>
                                                     <p> <?php echo $datos_contacto['cañaveral']['whatsapp']['imprimir'] ?> </p>
                                                 </a>
-                                            </div>
+                                            </div> -->
 
                                             <div class="hover_iconos">
                                                 <a class="d-flex align-items-baseline" href="mailto:<?php echo  $datos_contacto['cañaveral']['correo'] ?>">
