@@ -88,7 +88,7 @@ $datos_contacto = [
 		],
 		"correo" => "cabecera@dominguezparra.com.co",
 		"horario" => [
-			"horario" => "Lunes a Viernes de 8:30 a.m. 12:30 a.m. – 2:30 p.m. 6:30 p.m. <br/> Sábados de 8:30 a.m. 12:30 p.m.",
+			"horario" => "Lunes a Viernes de 8:30 a.m. 12:30 a.m. – 2:30 p.m. 6:00 p.m. <br/> Sábados de 8:30 a.m. 12:30 p.m.",
 			"icono" => "fas fa-calendar-alt",
 		],
 	],
@@ -115,7 +115,7 @@ $datos_contacto = [
 		],
 		"correo" => "canaveral@dominguezparra.com",
 		"horario" => [
-			"horario" => "Lunes a Viernes de 8:30 a.m. 12:30 a.m. – 2:30 p.m. 6:30 p.m. <br/> Sábados de 8:30 a.m. 12:30 p.m.",
+			"horario" => "Lunes a Viernes de 8:30 a.m. 12:30 a.m. – 2:30 p.m. 6:00 p.m. <br/> Sábados de 8:30 a.m. 12:30 p.m.",
 			"icono" => "fas fa-calendar-alt",
 		],
 	],
