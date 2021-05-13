@@ -2,10 +2,10 @@
 <meta charset="UTF-8"/>
 
 <!-- Colocar aqui el nombre de la pagina que aparecera en la ventana del navegador, despues de la etiqueta php -->
-<title><?php if($page != ""){echo $page.' | ';}?>Inmobiliaria Alejandro Dominguez Parra - Bucaramanga, Floridablanca, Piedecuesta - Colombia</title>
+
 
 <!-- Colocar una breve descripcion de la empresa -->
-<meta name="description" content="Prestamos el servicios de Arriendos, Ventas, Avaluos en Bucaramanga y su area Metropolitana, ademas brindamos Asesoria Inmobiliaria y Gestionamos el Mantenimiento de los Inmuebles.">
+<meta name="description" content="Empresa de tradición familiar que ofrece servicios inmobiliarios, brindando confianza a las personas y organizaciones de área metropolitana de Bucaramanga.">
 
 <!-- Palabras clave, sobre la Inmobiliaria para la busqueda, casi no se usa pero los clientes pueden pedirlas colocar maximo 4 -->
 <meta name="keywords" content="

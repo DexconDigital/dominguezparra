@@ -1,6 +1,8 @@
 <?php require 'variables/variables.php';
+require 'variables/metaEtiquetas.php';
 require 'controllers/indexController.php';
 $page = "Inicio" ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -13,6 +15,34 @@ $page = "Inicio" ?>
 
     <title> <?php echo $page . ' | ' . $nombre_inmobiliaria ?> </title>
 </head>
+<script src="js/1jquery.min.js"></script>
+ <script>
+    $(document).ready(function() {
+        setTimeout(function() {
+            $('#myModal').modal('show')
+         }, 5000)
+     });
+ </script>
+<style>
+    .boton_footer {
+        color: white;
+        background-color: #3BA52B;
+    }
+
+    .boton_footer:hover {
+        color: #3BA52B;
+        background-color: white;
+        border: 1px solid #3BA52B;
+    }
+    .color_enalce{
+        color: #3BA52B;
+    }
+    .color_icono{
+        font-size: 22px;
+        color: #3BA52B;
+    }
+    
+</style>
 
 <body>
 
@@ -27,13 +57,16 @@ $page = "Inicio" ?>
         <div id="carouselExampleControls" class="margin_top carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/slide_1.jpg" alt="...">
+                    <img src="images/Cabezote-1.jpg" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slide_2.jpg" alt="...">
+                    <img src="images/Cabezote-2.jpg" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/slide_3.jpg" alt="...">
+                    <img src="images/Cabezote-3.jpg" alt="...">
+                </div>
+				<div class="carousel-item">
+                    <img src="images/Cabezote-4.jpg" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -47,6 +80,35 @@ $page = "Inicio" ?>
         </div>
     </section>
     <!-- CARRUSEL PRINCIPAL -->
+	
+	<!-- CARRUSEL PRINCIPAL (RESPONSIVE1)-->
+	<section id="carrusel_imagenes_responsive">
+        <div id="carouselExampleControls" class="margin_top carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Cabezote-1_responsive.jpg" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Cabezote-2_responsive.jpg" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Cabezote-3_responsive.jpg" alt="...">
+                </div>
+				<div class="carousel-item">
+                    <img src="images/Cabezote-4_responsive.jpg" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon1" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon1" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- CARRUSEL PRINCIPAL (RESPONSIVE1)-->
 
     <!-- BUSCADOR -->
     <section id="buscador">
@@ -91,7 +153,7 @@ $page = "Inicio" ?>
     <section class="">
         <?php include 'layout/5footer.php' ?>
     </section>
-    <!-- FOOTER -
+    <!-- FOOTER -->
 
 
     <!-- Carrusel -->
@@ -140,7 +202,26 @@ $page = "Inicio" ?>
     <!-- Carrusel -->
 
     <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle text-center">90 Años Generando Confianza</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <iframe class="w-100" src="https://www.youtube.com/embed/lmv23Sq0t3E" width="700" height="460" style="border: none; frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn boton_footer" data-dismiss="modal">Cerrar</button>
 
+                </div>
+            </div>
+        </div>
+    </div>
 
     <?php include 'layout/2archivos_footer.php' ?>
     <!-- buscador -->

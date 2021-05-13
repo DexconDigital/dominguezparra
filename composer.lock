@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa0366d6944f5fdef1ca3b286f6d071b",
+    "content-hash": "64b285819a48943e9ccb8a55656d74aa",
     "packages": [
         {
             "name": "jasongrimes/paginator",

@@ -72,13 +72,13 @@ $page = "Nosotros" ?>
 
                 <!-- IMAGEN -->
                 <div id="quienes_somos_imagen" class="order-1 order-lg-2 order-xl-2 col-12 col-lg-6 col-xl-6 p-0 pr-lg-0 pr-xl-0">
-                    <div class="d-flex align-items-center justify-content-center imagen"> <img class="rounded" src="images/imagen_nosotros5.png" alt=""></div>
+                    <div class="d-flex align-items-center justify-content-center imagen"> <img class="rounded" src="images/Sobre nosotros.jpg" alt=""></div>
                 </div>
                 <!-- IMAGEN -->
 
                 <!-- IMAGEN (RESPONSIVE1)-->
                 <div id="quienes_somos_imagen_responsive" class="order-1 order-lg-2 order-xl-2 col-12 col-lg-6 col-xl-6 p-0 pr-lg-0 pr-xl-0">
-                    <div class="d-flex align-items-center justify-content-center imagen"> <img class="w-100 h-100 rounded" src="images/quienes_somos_responsive.jpg" alt=""></div>
+                    <div class="d-flex align-items-center justify-content-center imagen"> <img class="w-100 h-100 rounded" src="images/Sobre nosotros_responsive.jpg" alt=""></div>
                 </div>
                 <!-- IMAGEN (RESPONSIVE1)-->
 
@@ -92,13 +92,13 @@ $page = "Nosotros" ?>
 
                 <!-- IMAGEN -->
                 <div id="mision_vision_imagen" class="col-12 col-xl-6 col-lg-6 p-0 pl-lg-0 pl-xl-0 pr-0 pr-lg-3 pr-xl-3">
-                    <div class="d-flex align-items-center justify-content-center w-100 h-100"> <img class="w-100 h-100 rounded" src="images/misionyvision.jpg" alt=""></div>
+                    <div class="d-flex align-items-center justify-content-center w-100 h-100"> <img class="w-100 h-100 rounded" src="images/Nuestra visión.jpg" alt=""></div>
                 </div>
                 <!-- IMAGEN -->
 
                 <!-- IMAGEN (RESPONSIVE2)-->
                 <div id="mision_vision_imagen_responsive" class="col-12 col-xl-6 col-lg-6 p-0 pl-lg-0 pl-xl-0 pr-0 pr-lg-3 pr-xl-3">
-                    <div class="d-flex align-items-center justify-content-center w-100 h-100"> <img class="w-100 h-100 rounded" src="images/mision_responsive.jpg" alt=""></div>
+                    <div class="d-flex align-items-center justify-content-center w-100 h-100"> <img class="w-100 h-100 rounded" src="images/Nuestra visión_responsive.jpg" alt=""></div>
                 </div>
                 <!-- IMAGEN (RESPONSIVE2)-->
 
