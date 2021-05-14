@@ -85,7 +85,7 @@
             </a>
 
 
-            <a title="Sede Cabecera" class="mr-2" href="tel:<?php echo $datos_contacto['cabecera']['telefono_fijo']['link'] ?>">
+            <!--<a title="Sede Cabecera" class="mr-2" href="tel:<?php echo $datos_contacto['cabecera']['telefono_fijo']['link'] ?>">
 
                 <div class=" w-100 d-flex align-items-center justify-content-center">
 
@@ -104,7 +104,7 @@
 
                     <div><?php echo $datos_contacto['cañaveral']['telefono_fijo']['imprimir'] ?></div>
                 </div>
-            </a>
+            </a>-->
 
         </div>
     </div>
@@ -117,7 +117,7 @@
 
             <div class="d-flex align-items-baseline" data-toggle="modal" data-target="#telefonos_responsive">
                 <i class="mr-2 <?php echo $datos_contacto['principal']['telefono_fijo']['icono'] ?>"></i>
-                <p> Teléfonos </p>
+                <p> Teléfono </p>
             </div>
 
         </div>
@@ -322,7 +322,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="linea position-relative modal-title" id="exampleModalLabel"> Teléfonos </h5>
+                <h5 class="linea position-relative modal-title" id="exampleModalLabel"> Teléfono </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -342,7 +342,7 @@
                 </a>
 
 
-                <a title="Sede Cabecera" class="mr-2" href="tel:<?php echo $datos_contacto['cabecera']['telefono_fijo']['link'] ?>">
+               <!-- <a title="Sede Cabecera" class="mr-2" href="tel:<?php echo $datos_contacto['cabecera']['telefono_fijo']['link'] ?>">
 
                     <div class=" w-100 d-flex align-items-center justify-content-center">
 
@@ -365,7 +365,7 @@
 
                         <div><?php echo $datos_contacto['cañaveral']['telefono_fijo']['imprimir'] ?></div>
                     </div>
-                </a>
+                </a>-->
             </div>
             <div class="modal-footer">
                 <button style="color:white" type="button" class="btn btn-secondary" data-dismiss="modal"> Cerrar </button>

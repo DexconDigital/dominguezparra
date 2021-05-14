@@ -45,8 +45,8 @@ $datos_contacto = [
 			"icono" => "fas fa-map-marker-alt",
 		],
 		"telefono_fijo" => [
-			"link"=> "0376520909",
-			"imprimir" => "+57 (7) 652 0909",
+			"link"=> "0376852828",
+			"imprimir" => "+57 (7) 685 2828",
 			"icono" => "fas fa-phone",
 		],
 		"celular" => [
@@ -72,8 +72,8 @@ $datos_contacto = [
 			"icono" => "fas fa-map-marker-alt",
 		],
 		"telefono_fijo" => [
-			"link"=> "0376321212",
-			"imprimir" => "+57 (7) 632 1212",
+			"link"=> "0376852828",
+			"imprimir" => "+57 (7) 685 2828",
 			"icono" => "fas fa-phone",
 		],
 		// "celular" => [
@@ -99,8 +99,8 @@ $datos_contacto = [
 			"icono" => "fas fa-map-marker-alt",
 		],
 		"telefono_fijo" => [
-			"link"=> "0376784848",
-			"imprimir" => "+57 (7) 678 4848",
+			"link"=> "0376852828",
+			"imprimir" => "+57 (7) 685 2828",
 			"icono" => "fas fa-phone",
 		],
 		// "celular" => [
