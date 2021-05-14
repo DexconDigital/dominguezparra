@@ -1,4 +1,4 @@
-p<?php require 'variables/variables.php';
+<?php require 'variables/variables.php';
     require 'controllers/inmueblesController.php';
     $page = "Inmuebles" ?>
 <!DOCTYPE html>
@@ -124,7 +124,15 @@ p<?php require 'variables/variables.php';
         </section> -->
 
     <section id="inmuebles2" class="">
-
+        <div class="container-fluid mt-3">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Apreciado usuario:</strong><br>
+                Les informamos que los valores de arriendo y administración indicados en el sitio pueden variar sin previo aviso, por razones ajenas a la inmobiliaria, por favor validar dichos precios antes de realizar cualquier operación, agradecemos su comprensión.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+        </div>
         <div class=" d-flex align-items-start justify-content-between flex-wrap">
 
 
