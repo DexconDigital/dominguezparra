@@ -375,7 +375,7 @@ $page = "Detalle de Inmueble" ?>
 
                 <a href="tel:<?php echo $datos_contacto['principal']['telefono_fijo']['link'] ?>" class="d-flex align-items-center  my-2">
                     <i class="verde mr-2 fas fa-phone"> </i>
-                    <p> Oficina principal: <?php echo $datos_contacto['principal']['telefono_fijo']['imprimir'] ?> </p>
+                    <p class="h5"> Telefono: <?php echo $datos_contacto['principal']['telefono_fijo']['imprimir'] ?> </p>
                 </a>
 
              <!--   <a href="tel:<?php echo $datos_contacto['cabecera']['telefono_fijo']['link'] ?>" class="d-flex align-items-center  my-2">
@@ -390,7 +390,7 @@ $page = "Detalle de Inmueble" ?>
 
                 <a href="tel:<?php echo $datos_contacto['principal']['celular']['link'] ?>" class="d-flex align-items-center  my-2">
                     <i class="verde mr-2 fas fa-mobile-alt"> </i>
-                    <p> Celular: <?php echo $datos_contacto['principal']['celular']['imprimir'] ?> </p>
+                    <p class="h5 ml-1"> Celular: <?php echo $datos_contacto['principal']['celular']['imprimir'] ?> </p>
                 </a> 
 
             </div>
