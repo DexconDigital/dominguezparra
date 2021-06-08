@@ -325,17 +325,13 @@ $page = "Detalle de Inmueble" ?>
                                     <?php if ($r['video'] != "") {
                                         echo
                                             ' <h5 class="font-weight-bold mt-3 d-inline-block linea position-relative"> Video </h5>
-                                    <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Video</h5>
-                                    <div class="row">
-                                        <div class="col-12 col-md-4">
-                                        <iframe class="w-100" height="409" src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                ';
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Video</h5>
+                                                        <iframe class="w-100" height="409" src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            ';
                                     } ?>
 
                                 </div>
