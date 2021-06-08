@@ -72,18 +72,26 @@
     <!-- CAJA VERDE CON CELULAR -->
     <div id="celulares" class="caja_telefono w-100 position-relative col-12">
 
-        <div class="w-auto align-items-center d-flex h-100 justify-content-center position-absolute telefono">
+        <div class="w-auto align-items-center d-flex h-100 justify-content-center position-absolute telefono h6">
 
-            <a title="Sede Principal" class="mr-2" href="tel:<?php echo $datos_contacto['principal']['telefono_fijo']['link'] ?>">
+            <a title="Sede Principal" class="mr-3" href="tel:<?php echo $datos_contacto['principal']['telefono_fijo']['link'] ?>">
 
-                <div class=" w-100 d-flex align-items-center justify-content-center">
+                <div class=" w-100 d-flex align-items-center justify-content-center h6">
 
                     <div><i class="<?php echo $datos_contacto['principal']['telefono_fijo']['icono'] ?>"></i></div>
 
                     <div><?php echo $datos_contacto['principal']['telefono_fijo']['imprimir'] ?></div>
                 </div>
             </a>
+            <a title="Sede Principal" class="mr-2" href="tel:<?php echo $datos_contacto['principal']['celular']['link'] ?>">
 
+                <div class=" w-100 d-flex align-items-center justify-content-center h6">
+
+                    <div><i class="<?php echo $datos_contacto['principal']['celular']['icono'] ?>"></i></div>
+
+                    <div><?php echo $datos_contacto['principal']['celular']['imprimir'] ?></div>
+                </div>
+            </a>
 
             <!--<a title="Sede Cabecera" class="mr-2" href="tel:<?php echo $datos_contacto['cabecera']['telefono_fijo']['link'] ?>">
 
