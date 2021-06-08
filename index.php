@@ -153,7 +153,7 @@ $page = "Inicio" ?>
     </section>
     <!-- FOOTER -->
 
-    <!-- Modal -->
+    <!-- Modal 
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -173,7 +173,7 @@ $page = "Inicio" ?>
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <?php include 'layout/2archivos_footer.php' ?>
     <!-- buscador -->
