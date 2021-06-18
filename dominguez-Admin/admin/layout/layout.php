@@ -2,9 +2,10 @@
 $user = $_SESSION["usuarioactual"];
 $con = Conect();
 $qry = "SELECT * FROM usuarios where usuario ='$user'";
-$sql = mysqli_query($con, $qry);
-$usuario =  mysqli_fetch_array($sql);
-$imagen_inicio = $usuario[15];
+$result = $con->prepare( $qry );
+$result->execute();
+$usuario = $result->fetch();
+$imagen_inicio = $usuario["imagen"];
 $page = "Inicio";
 $nombre_inmobiliaria = 'Inmobiliaria Alejandro Dominguez Parra - Bucaramanga';
 ?>
