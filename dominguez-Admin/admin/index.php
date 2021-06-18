@@ -5,10 +5,11 @@ require_once("conexion.php");
 <?php
 $user = $_SESSION["usuarioactual"];
 $con = Conect();
-$qry = "SELECT * FROM usuarios where usuario ='$user'";
-$sql = mysqli_query($con, $qry);
-$usuario =  mysqli_fetch_array($sql);
-$imagen_inicio = $usuario[15];
+$qry = "SELECT * FROM usuarios where id_user ='$user'";
+$resultado=$con->prepare($qry);
+$resultado->execute(array($user));
+$usuario =  $resultado->fetch();
+$imagen_inicio = $usuario["imagen"];
 $page = "Inicio";
 $nombre_inmobiliaria = 'Inmobiliaria Alejandro Dominguez Parra - Bucaramanga';
 ?>
@@ -16,18 +17,15 @@ $nombre_inmobiliaria = 'Inmobiliaria Alejandro Dominguez Parra - Bucaramanga';
 $id_inmobiliria = 15;
 $con = Conect();
 $qry = "select * from asesores where id_inmobiliaria = '$id_inmobiliria' order by id DESC ";
-$sql = mysqli_query($con, $qry);
-?>
-<?php
-$qry = "SELECT * FROM `usuarios` WHERE id_user = '$user'";
-$sql = mysqli_query($con, $qry);
-$usuario =  mysqli_fetch_array($sql);
+$resultado=$con->prepare($qry);
+$resultado->execute(array($id_inmobiliria));
 ?>
 <?php
 $id_inmobiliria = 15;
 $con = Conect();
 $qry = "select * from asesores where id_inmobiliaria = '$id_inmobiliria' order by id DESC ";
-$sql = mysqli_query($con, $qry);
+$resultado=$con->prepare($qry);
+$resultado->execute(array($id_inmobiliria));
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -455,7 +453,7 @@ $sql = mysqli_query($con, $qry);
                                 </thead>
                                 <tbody>
                                     <?php
-                                    while ($res =  mysqli_fetch_array($sql)) {
+                                    while ($res = $resultado->fetch()) {
 
                                         echo '<tr>
                                        <td>' . $res["id"] . '</td>
@@ -632,7 +630,7 @@ $sql = mysqli_query($con, $qry);
                                     <input type="file" class="custom-file-input" name="imagen" id="imagen" accept="application/jpg">
                                     <small id="tituloHepl" class="form-text text-muted">Ingrese una imagen que no supere las 2MB de peso y tamaño de 900 pixeles de Ancho por 500 pixeles de Alto </small>
                                 </div> -->
-                        </div>
+                        </div> 
 
                         <div class="modal-footer">
                             <button type="submint" class="btn btn_cancelar" data-dismiss="modal">Cancelar</button>

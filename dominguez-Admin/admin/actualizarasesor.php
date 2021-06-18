@@ -1,12 +1,13 @@
 <?php $page = "Lista de Asesores";
-require("seguridad.php");
-require_once("conexion.php");
+require( "seguridad.php" );
+require_once( "conexion.php" );
 include 'layout/layout.php';
-$id = $_GET["id"];
+$id = ( isset( $_GET["id"] ) ) ? $_GET["id"] : 0;
 $con = Conect();
 $qry = "SELECT * FROM asesores where id ='$id' and id_inmobiliaria = 12";
-$sql = mysqli_query($con, $qry);
-$res =  mysqli_fetch_array($sql);
+$result = $con->prepare( $qry );
+$result->execute();
+$res = $result->fetch();
 ?>
 <style>
     .contenedor_color {
@@ -23,24 +24,25 @@ $res =  mysqli_fetch_array($sql);
     }
 
     input[type]:focus {
-        border-color: #B58D10
-         !important;
-        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #B58D10
-         !important;
+        border-color: #B58D10 !important;
+        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px #B58D10 !important;
         outline: 0 none;
     }
-    .color_botton{
-        background-color: #002230 ;
+
+    .color_botton {
+        background-color: #002230;
         color: white;
     }
-    .color_botton:hover{
+
+    .color_botton:hover {
         color: white;
     }
+
     .boton_imagen {
         margin-left: 40%;
         margin-top: 5%;
     }
-    
+
 </style>
 <div class="container contenedor_color">
     <div class="row justify-content-center">
@@ -98,4 +100,4 @@ $res =  mysqli_fetch_array($sql);
     </div>
 </div>
 
-<?php include 'layout/layoutFooter.php'; ?>
+<?php include 'layout/layoutFooter.php';?>

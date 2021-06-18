@@ -5,8 +5,9 @@
         $id = $_GET["id"];
         $con = Conect();
         $query ="SELECT * FROM `asesores` WHERE id = $id AND id_inmobiliaria = 15";
-        $sql = mysqli_query($con, $query);
-        $res = json_encode($sql->fetch_array(MYSQLI_ASSOC));
+        $resultado=$con->prepare($query);
+        $resultado->execute();
+        $res = json_encode($resultado->fetch());
         echo($res);
 
     ?> 

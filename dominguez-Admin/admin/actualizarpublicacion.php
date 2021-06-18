@@ -2,11 +2,12 @@
 require("seguridad.php");
 require_once("conexion.php");
 include 'layout/layout.php';
-$id = $_GET["id"];
+$id = (isset($_GET["id"])) ? $_GET["id"] : 0;
 $con = Conect();
-$qry = "SELECT * FROM noticias where id ='$id' and id_inmobiliaria2 = 12";
-$sql = mysqli_query($con, $qry);
-$res =  mysqli_fetch_array($sql);
+$qry = "SELECT * FROM noticias where id ='$id' and id_inmobiliaria2 = 15";
+$result = $con->prepare( $qry );
+$result->execute();
+$res = $result->fetch();
 ?>
 <style>
     .color_boton {

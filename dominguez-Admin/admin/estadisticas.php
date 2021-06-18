@@ -1,12 +1,14 @@
 <?php $page = "Agregar Noticia";
-require("seguridad.php");
-require_once("conexion.php");
-require_once('id_inmobiliaria/inmobiliaria.php');
+require( "seguridad.php" );
+require_once( "conexion.php" );
+require_once( 'id_inmobiliaria/inmobiliaria.php' );
 include 'layout/layout.php';
-            $con=Conect();
-            $qry="SELECT * FROM estadisticas where id ='$id_inmobiliaria'";
-            $sql=mysqli_query($con,$qry);
-            $res=  mysqli_fetch_array($sql) ; 
+$con = Conect();
+$qry = "SELECT * FROM estadisticas where id ='$id_inmobiliaria'";
+$result = $con->prepare( $qry );
+$result->execute();
+$res = $result->fetch();
+
 ?>
 
 <div class="container">
@@ -14,7 +16,7 @@ include 'layout/layout.php';
         <div class="col-9">
             <h2 class="text-center">Estadisticas</h2>
             <form method="post" action="uptade_estadisticas.php" enctype="multipart/form-data">
-            <input type="hidden" name="id" id="id" value="<?php echo $res[0]?>">
+                <input type="hidden" name="id" id="id" value="<?php echo $res[0]?>">
                 <div class="form-group row">
                     <label for="" class="col-sm-2 col-form-label">Numero de Clientes</label>
                     <div class="col-sm-10">
@@ -48,4 +50,5 @@ include 'layout/layout.php';
         </div>
     </div>
 </div>
-<?php include 'layout/layoutFooter.php'; ?>
+<?php include 'layout/layoutFooter.php';
+?>
