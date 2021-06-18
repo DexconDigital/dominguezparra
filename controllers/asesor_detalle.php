@@ -2,12 +2,16 @@
 
 require_once("conexion.php");
 
-$link = Conect();
+$con = Conect();
 $array = array();
 
 $sql1 = "SELECT * FROM asesores  where id_inmobiliaria = 15 order by id desc";
-$result1 = mysqli_query($link, $sql1) or die(mysqli_error($link));
-while ($field = mysqli_fetch_array($result1)) {
+$result = $con->prepare( $sql1 );
+$result->execute();
+
+$resultado = $result->fetchAll();
+
+foreach ( $resultado as $key => $field ) {
     $nombre = $field['nombre'];
     $id = $field['id'];
     $telefono = $field['telefono'];
@@ -28,7 +32,6 @@ while ($field = mysqli_fetch_array($result1)) {
         'celular' => $celular,
     );
 }
-
 
 function modelo_asesor($r)
 {
