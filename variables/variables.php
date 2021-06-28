@@ -59,7 +59,8 @@ $datos_contacto = [
 			"imprimir" => "300 599 7366",
 			"icono" => "fab fa-whatsapp",
 		],
-		"correo" => "principal@dominguezparra.com.co",
+		//"correo" => "principal@dominguezparra.com.co",
+        "correo" => "recepcion@dominguezparra.com.co",
 		"horario" => [
 			"horario" => "Lunes a Viernes de 8:00 a.m. 12:00 am – 2:00 p.m. 6:00 p.m. <br/> Sábados de 8:30 a.m. 12:30 p.m.",
 			"icono" => "fas fa-calendar-alt",
@@ -99,8 +100,8 @@ $datos_contacto = [
 			"icono" => "fas fa-map-marker-alt",
 		],
 		"telefono_fijo" => [
-			"link"=> "0376852828",
-			"imprimir" => "+57 (7) 685 2828",
+			"link"=> "573005997366",
+			"imprimir" => "+57 300 5997366",
 			"icono" => "fas fa-phone",
 		],
 		// "celular" => [
