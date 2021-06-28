@@ -124,7 +124,8 @@
                                             <div class="hover_iconos2">
                                                 <div class="d-flex align-items-baseline">
                                                     <i class="mr-1 <?php echo $datos_contacto['cabecera']['direccion']['icono'] ?>"> </i>
-                                                    <p> <?php echo $datos_contacto['cabecera']['direccion']['direccion'] ?> </p>
+                                                    <!--<p> <?php echo $datos_contacto['cabecera']['direccion']['direccion'] ?> </p>-->
+                                                    <p> <?php echo $datos_contacto['principal']['direccion']['direccion'] ?> </p>
                                                 </div>
                                             </div>
 
@@ -153,7 +154,8 @@
                                             <div class="hover_iconos">
                                                 <a class="d-flex align-items-baseline" href="mailto:<?php echo  $datos_contacto['cabecera']['correo'] ?>">
                                                     <i class="mr-1 fas fa-envelope"></i>
-                                                    <p> <?php echo $datos_contacto['cabecera']['correo'] ?> </p>
+                                                    <!--<p> <?php echo $datos_contacto['cabecera']['correo'] ?> </p>-->
+                                                    <p> <?php echo $datos_contacto['principal']['correo'] ?> </p>
                                                 </a>
                                             </div>
 
@@ -208,7 +210,8 @@
                                             <div class="hover_iconos2">
                                                 <div class="d-flex align-items-baseline">
                                                     <i class="mr-1 <?php echo $datos_contacto['cañaveral']['direccion']['icono'] ?>"> </i>
-                                                    <p> <?php echo $datos_contacto['cañaveral']['direccion']['direccion'] ?> </p>
+                                                    <!--<p> <?php echo $datos_contacto['cañaveral']['direccion']['direccion'] ?> </p>-->
+                                                    <p> <?php echo $datos_contacto['principal']['direccion']['direccion'] ?> </p>
                                                 </div>
                                             </div>
 
@@ -237,7 +240,8 @@
                                             <div class="hover_iconos">
                                                 <a class="d-flex align-items-baseline" href="mailto:<?php echo  $datos_contacto['cañaveral']['correo'] ?>">
                                                     <i class="mr-1 fas fa-envelope"></i>
-                                                    <p> <?php echo $datos_contacto['cañaveral']['correo'] ?> </p>
+                                                    <!--<p> <?php echo $datos_contacto['cañaveral']['correo'] ?> </p>-->
+                                                    <p> <?php echo $datos_contacto['principal']['correo'] ?> </p>
                                                 </a>
                                             </div>
 
