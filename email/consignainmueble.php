@@ -37,7 +37,7 @@ try{
     
     $mail->isHTML(true);
     $mail->setFrom('AlejandroDominguezParra@AlejandroDominguezParra.com', 'AlejandroDominguezParra@AlejandroDominguezParra.com');
-    $mail->addAddress('wdsp9898@gmail.com');
+    $mail->addAddress('recepcion@dominguezparra.com.co');
     // $mail->addAddress('direccioncomercial@dominguezparra.com.co');
     
 
