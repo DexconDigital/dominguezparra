@@ -18,13 +18,13 @@ $page = "Inicio";?>
 <script src="js/1jquery.min.js"></script>
 <script>
     $(document).ready(function() {
-        setTimeout(function() {
-            $('#myModal').modal('show')
-        }, 5000)
-        
         var url = window.location.href;
-        if(url.indexOf('consignar_inmueble') != -1 ) {
+        if (url.indexOf('consignar_inmueble') != -1) {
             $('#exampleModal').modal('show');
+        } else {
+            setTimeout(function() {
+                $('#myModal').modal('show')
+            }, 5000)
         }
     });
 
@@ -158,7 +158,7 @@ $page = "Inicio";?>
     </section>
     <!-- FOOTER -->
 
-    <!-- Modal 
+    <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -169,7 +169,7 @@ $page = "Inicio";?>
                     </button>
                 </div>
                 <div class="modal-body text-center">
-                    <iframe class="w-100" src="https://www.youtube.com/embed/lmv23Sq0t3E" width="700" height="460" style="border: none;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="w-100" src="https://www.youtube.com/embed/AXBUivd0SSA" width="700" height="460" style="border: none;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 </div>
                 <div class="modal-footer">
@@ -178,7 +178,7 @@ $page = "Inicio";?>
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
 
     <?php include 'layout/2archivos_footer.php' ?>
     <!-- buscador -->
