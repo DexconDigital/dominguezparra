@@ -157,7 +157,8 @@ $page = "Contáctenos" ?>
                                     <div class="p-0 col-12 col-lg-4 col-xl-4 d-flex align-items-baseline justify-content-center hover_iconos">
                                         <a class="d-flex align-items-baseline justify-content-baseline" href="mailto:<?php echo  $datos_contacto['cabecera']['correo'] ?>">
                                             <i class="mr-1 verde fas fa-envelope"></i>
-                                            <p class="mt-2"> <?php echo $datos_contacto['cabecera']['correo'] ?> </p>
+                                            <!--<p class="mt-2"> <?php echo $datos_contacto['cabecera']['correo'] ?> </p>-->
+                                            <p class="mt-2"> <?php echo $datos_contacto['principal']['correo'] ?> </p>
                                         </a>
                                     </div>
 
@@ -222,7 +223,8 @@ $page = "Contáctenos" ?>
                                     <div class="p-0 col-12 col-lg-4 col-xl-4 d-flex align-items-baseline justify-content-center hover_iconos">
                                         <a class="d-flex align-items-baseline justify-content-baseline" href="mailto:<?php echo  $datos_contacto['cañaveral']['correo'] ?>">
                                             <i class="mr-1 verde fas fa-envelope"></i>
-                                            <p class="mt-2"> <?php echo $datos_contacto['cañaveral']['correo'] ?> </p>
+                                            <!--<p class="mt-2"> <?php echo $datos_contacto['cañaveral']['correo'] ?> </p>-->
+                                            <p class="mt-2"> <?php echo $datos_contacto['principal']['correo'] ?> </p>
                                         </a>
                                     </div>
 
