@@ -166,7 +166,7 @@ $page = "Detalle de Inmueble" ?>
                     <!-- BAÑOS -->
                     <div class="justify-content-center d-flex col-6 col-md-2 col-lg-2 col-xl-2 mr-0 mr-lg-3 mr-xl-3 align-items-center">
                         <i class="verde mr-1 fas fa-bath"> </i>
-                        <p> <?php echo $r['banos']; ?></php>
+                        <p> <?php echo $r['banos']; ?>
                         </p>
                     </div>
                     <!-- BAÑOS -->
@@ -328,7 +328,7 @@ $page = "Detalle de Inmueble" ?>
                                                 <div class="card">
                                                     <div class="card-body">
                                                         <h5 class="card-title">Video</h5>
-                                                        <iframe class="w-100" height="409" src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                        <iframe id="video" class="w-100" height="409" src="' . $r['video'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                     </div>
                                                 </div>
                                             ';
@@ -355,7 +355,6 @@ $page = "Detalle de Inmueble" ?>
                 </div>
             </div>
             <!-- MAPA -->
-
 
         </div>
         <!-- SECCION IZQUIERDA -->
@@ -468,6 +467,7 @@ $page = "Detalle de Inmueble" ?>
                 }
             ]
         });
+        
     </script>
     <!-- Carrusel -->
 
@@ -475,6 +475,24 @@ $page = "Detalle de Inmueble" ?>
     <!-- mapa del inmueble -->
     <script src="mapas/leaflet.js" crossorigin=""></script>
     <script>
+        var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if(isMobile && screen.availHeight < screen.availWidth){
+            $("header").addClass("d-none");
+            $("#banner").addClass("mt-0");
+            $("#video").height(300);
+        }
+        $(window).resize(function() {
+            if(isMobile && screen.availHeight < screen.availWidth){
+                $("header").addClass("d-none");
+                $("#banner").addClass("mt-0");
+                $("#video").height(300);
+            }else{
+                $("header").removeClass("d-none");
+                $("#banner").removeClass("mt-0");
+                $("#video").height(409);
+            }
+        });
+        
         var map = L.map('map').setView([<?php echo $r['latitud']; ?>, <?php echo $r['longitud'] ?>], 14);
 
         L.tileLayer('https://api.maptiler.com/maps/streets/256/{z}/{x}/{y}.png?key=1rAGHv3KcO1nrS6S9cgI', {
@@ -485,7 +503,24 @@ $page = "Detalle de Inmueble" ?>
             .bindPopup('<img src="<?php echo $r['fotos'][0]['foto'] ?>"])" alt="" width="55px" height="auto"><br>Ubicación')
             .openPopup();
     </script>
-
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = '717cadccedb380b056e4c6e1715c90bd3cb0bb03';
+        window.smartsupp || (function(d) {
+            var s, c, o = smartsupp = function() {
+                o._.push(arguments)
+            };
+            o._ = [];
+            s = d.getElementsByTagName('script')[0];
+            c = d.createElement('script');
+            c.type = 'text/javascript';
+            c.charset = 'utf-8';
+            c.async = true;
+            c.src = 'https://www.smartsuppchat.com/loader.js?';
+            s.parentNode.insertBefore(c, s);
+        })(document);
+    </script>
 
 </body>
 

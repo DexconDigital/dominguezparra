@@ -1,7 +1,7 @@
 <?php require 'variables/variables.php';
 require 'variables/metaEtiquetas.php';
 require 'controllers/indexController.php';
-$page = "Inicio" ?>
+$page = "Inicio";?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -21,6 +21,11 @@ $page = "Inicio" ?>
         setTimeout(function() {
             $('#myModal').modal('show')
         }, 5000)
+        
+        var url = window.location.href;
+        if(url.indexOf('consignar_inmueble') != -1 ) {
+            $('#exampleModal').modal('show');
+        }
     });
 
 </script>

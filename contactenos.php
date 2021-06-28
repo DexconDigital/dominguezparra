@@ -122,7 +122,7 @@ $page = "Contáctenos" ?>
                                     <div class="col-12 d-flex align-items-center justify-content-center hover_iconos">
                                         <div class="d-flex align-items-baseline justify-content-baseline">
                                             <i class="mr-1 verde <?php echo $datos_contacto['principal']['horario']['icono'] ?>"> </i>
-                                            <p class="mt-3 w-100"> Lunes a Viernes de 8:00 a.m. 12:00 am – 2:00 p.m. 6:00 p.m. Sábados de 8:30 a.m. 12:30 p.m.</p>
+                                            <p class="mt-3 w-100"> Lunes a Viernes de 8:00 am  a 12:30  y de 1:30 pm a 5:30 pm. Sabados  de 8:00 am a 12:30. </p>
                                         </div>
                                     </div>
 
@@ -187,7 +187,7 @@ $page = "Contáctenos" ?>
                                     <div class="col-12  d-flex align-items-center justify-content-center hover_iconos">
                                         <div class="d-flex align-items-baseline justify-content-baseline">
                                             <i class="mr-1 verde <?php echo $datos_contacto['principal']['horario']['icono'] ?>"> </i>
-                                            <p class="mt-3 w-100"> Lunes a Viernes de 8:30 a.m. 12:30 a.m. – 2:30 p.m. 6:00 p.m. Sábados de 8:30 a.m. 12:30 p.m. </p>
+                                            <p class="mt-3 w-100"> Lunes a Viernes de 8:00 am  a 12:30  y de 1:30 pm a 5:30 pm. Sabados  de 8:00 am a 12:30. </p>
                                         </div>
                                     </div>
 
@@ -252,7 +252,7 @@ $page = "Contáctenos" ?>
                                     <div class="col-12  d-flex align-items-center justify-content-center hover_iconos">
                                         <div class="d-flex align-items-baseline justify-content-baseline">
                                             <i class="mr-1 verde <?php echo $datos_contacto['cañaveral']['horario']['icono'] ?>"> </i>
-                                            <p class="mt-3 w-100"> Lunes a Viernes de 8:30 a.m. 12:30 a.m. – 2:30 p.m. 6:00 p.m. Sábados de 8:30 a.m. 12:30 p.m. </p>
+                                            <p class="mt-3 w-100"> Lunes a Viernes de 8:00 am  a 12:30  y de 1:30 pm a 5:30 pm. Sabados  de 8:00 am a 12:30. </p>
                                         </div>
                                     </div>
 
@@ -324,9 +324,8 @@ $page = "Contáctenos" ?>
 
 
                             <div class="m-0 justify-content-center justify-content-lg-start justify-content-xl-start col-12 mb-3 row">
-                                <button class="col-3 boton_contactenos btn" type="submit" value="Enviar"> Enviar
+                                <button class="col-3 boton_contactenos btn" type="submit" value="Enviar"> Enviar</button>
                             </div>
-
                         </div>
                     </form>
                 </div>
