@@ -12871,7 +12871,7 @@ footer .copyright a:hover {
     width: 50px !important;
     height: 50px !important;
     border-radius: 25px;
-    right: 20px;
+    left: 20px;
     -webkit-box-shadow: -1px 1px 5px 1px grey;
     box-shadow: -1px 1px 5px 1px grey;
     z-index: 1000;
@@ -13669,6 +13669,11 @@ footer .copyright a:hover {
     opacity: 0;
     z-index: 100;
     background-color: white
+}
+
+#chat-application {
+    right: 11px !important;
+    left: initial !important;
 }
 
 @-webkit-keyframes animacion_clientes {
