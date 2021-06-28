@@ -218,7 +218,7 @@
                                             <div class="hover_iconos">
                                                 <a class="d-flex align-items-baseline" href="tel:<?php echo  $datos_contacto['cañaveral']['telefono_fijo']['link'] ?>">
                                                     <i class="mr-1 <?php echo $datos_contacto['cañaveral']['telefono_fijo']['icono'] ?>"> </i>
-                                                    <p> <?php echo $datos_contacto['cañaveral']['telefono_fijo']['imprimir'] ?> </p>
+                                                    <p> <?php echo $datos_contacto['principal']['telefono_fijo']['imprimir'] ?> </p>
                                                 </a>
                                             </div>
 
