@@ -238,7 +238,7 @@ $page = "Contáctenos" ?>
                                     <div class="p-0 col-12 col-lg-4 col-xl-4  d-flex align-items-baseline justify-content-center hover_iconos">
                                         <a class="d-flex align-items-baseline justify-content-baseline" href="tel:<?php echo  $datos_contacto['cañaveral']['telefono_fijo']['link'] ?>">
                                             <i class="mr-1 verde <?php echo $datos_contacto['cañaveral']['telefono_fijo']['icono'] ?>"> </i>
-                                            <p class="mt-2"> <?php echo $datos_contacto['cañaveral']['telefono_fijo']['imprimir'] ?> </p>
+                                            <p class="mt-2"> <?php echo $datos_contacto['principal']['telefono_fijo']['imprimir'] ?> </p>
                                         </a>
                                     </div>
 
