@@ -62,7 +62,8 @@ $datos_contacto = [
 		//"correo" => "principal@dominguezparra.com.co",
         "correo" => "recepcion@dominguezparra.com.co",
 		"horario" => [
-			"horario" => "Lunes a Viernes de 8:00 a.m. 12:00 am – 2:00 p.m. 6:00 p.m. <br/> Sábados de 8:30 a.m. 12:30 p.m.",
+			//"horario" => "Lunes a VierneLunes a Viernes de 8:00 am  a 12:30  y de 1:30 pm a 5:30 pm. Sabados  de 8:00 am a 12:30.s de 8:00 a.m. 12:00 am – 2:00 p.m. 6:00 p.m. <br/> Sábados de 8:30 a.m. 12:30 p.m.",
+            "horario" => "Lunes a Viernes de 8:00 am  a 12:30  y de 1:30 pm a 5:30 pm. Sabados  de 8:00 am a 12:30.",
 			"icono" => "fas fa-calendar-alt",
 		],
 	],
