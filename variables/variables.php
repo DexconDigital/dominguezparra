@@ -45,8 +45,8 @@ $datos_contacto = [
 			"icono" => "fas fa-map-marker-alt",
 		],
 		"telefono_fijo" => [
-			"link"=> "0376852828",
-			"imprimir" => "+57 (7) 685 2828",
+			"link"=> "6076852828",
+			"imprimir" => "(607) 685 2828",
 			"icono" => "fas fa-phone",
 		],
 		"celular" => [
@@ -74,8 +74,8 @@ $datos_contacto = [
 			"icono" => "fas fa-map-marker-alt",
 		],
 		"telefono_fijo" => [
-			"link"=> "0376852828",
-			"imprimir" => "+57 (7) 685 2828",
+			"link"=> "6076852828",
+			"imprimir" => "(607) 685 2828",
 			"icono" => "fas fa-phone",
 		],
 		// "celular" => [
